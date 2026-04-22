@@ -209,7 +209,7 @@ export default function HomePage() {
       <section className="py-20 bg-zinc-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-crimson font-bold mb-6">
-            Exposición en el Hospital Real
+            Proyecto de Exposición 2026
           </h2>
           <p className="text-xl text-zinc-300 mb-8 font-libre max-w-2xl mx-auto">
             Una oportunidad única para conocer en profundidad la vida y obra de Mariano Maresca a través de documentos, fotografías, multimedia y experiencias interactivas.
@@ -218,7 +218,7 @@ export default function HomePage() {
             href="/exposicion"
             className="inline-block bg-white text-zinc-900 px-8 py-4 rounded-full font-libre font-semibold hover:bg-zinc-100 transition-colors"
           >
-            Información de la exposición
+            Información del proyecto
           </Link>
         </div>
       </section>

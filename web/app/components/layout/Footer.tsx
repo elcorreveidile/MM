@@ -39,8 +39,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4 font-libre">Información</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/exposicion#ubicacion" className="hover:text-white transition-colors">Hospital Real</Link></li>
-              <li><Link href="/exposicion#horario" className="hover:text-white transition-colors">Horarios</Link></li>
+              <li><Link href="/exposicion#informacion" className="hover:text-white transition-colors">Proyecto</Link></li>
+              <li><Link href="/exposicion#informacion" className="hover:text-white transition-colors">Promotores</Link></li>
               <li><Link href="/exposicion#contacto" className="hover:text-white transition-colors">Contacto</Link></li>
               <li><Link href="https://olvidosdegranada.es" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Olvidosdegranada</Link></li>
             </ul>
@@ -50,7 +50,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-zinc-500">
-            © 2024 Exposición Mariano Maresca. Universidad de Granada.
+            © 2026 Proyecto Exposición Mariano Maresca. Asociación Cultural Olvidos de Granada.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/creditos" className="text-sm text-zinc-500 hover:text-white transition-colors">
