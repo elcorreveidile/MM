@@ -17,7 +17,7 @@ export default function HomePage() {
               Memoria Viva de la Cultura Granadina
             </p>
             <p className="text-lg text-zinc-400 mb-12 leading-relaxed max-w-2xl">
-              Editor de Olvidosdegranada, director de La Fábrica del Sur y productor cultural. Nació en Almería (1945) y falleció en Granada (2023). Su mesa habitual en el Botánico se convirtió en legendario punto de encuentro de la cultura granadina.
+              Profesor de Filosofía del Derecho, editor de Olvidosdegranada y estudioso de Clarín y Pasolini. Nació en Almería (1945) y falleció en Granada, 10 enero 2023. Su mesa habitual en el Botánico se convirtió en legendario punto de encuentro de la cultura granadina.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/biografia" className="bg-white text-zinc-900 px-8 py-4 rounded-full font-libre font-semibold hover:bg-zinc-100 transition-colors text-center">
@@ -232,9 +232,15 @@ export default function HomePage() {
               },
               {
                 title: 'Columna "Países" en El País',
-                year: '2004-2023',
-                description: 'Columnista durante casi dos décadas en el diario El País con reflections sobre memoria y cultura.',
+                year: '2004-2008',
+                description: 'Columnista en el diario El País (edición Andalucía) con reflexiones sobre memoria y cultura.',
                 category: 'Literatura',
+              },
+              {
+                title: 'Documental "Palabra a palabra"',
+                year: '2015',
+                description: 'Documental de José Sánchez Montes sobre la recuperación tras el ictus de noviembre 2011.',
+                category: 'Cine',
               },
               {
                 title: 'Exposición "La mesa de Mariano"',

@@ -75,10 +75,35 @@ export default function BiographyPage() {
 
                 <div>
                   <h3 className="text-2xl font-crimson font-semibold text-zinc-900 mb-3">
+                    Escritor y ensayista
+                  </h3>
+                  <p className="text-zinc-700 leading-relaxed font-libre mb-3">
+                    Autor de libros fundamentales sobre literatura y cine:
+                  </p>
+                  <ul className="list-disc list-inside text-zinc-700 font-libre space-y-2">
+                    <li><strong>"Hipótesis sobre Clarín"</strong> (Granada, 1985) - Estudio sobre Leopoldo Alas "Clarín"</li>
+                    <li><strong>"Salò. El infierno según Pasolini"</strong> (Córdoba, 1993) - Con J. Ignacio Mendiguchía</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-crimson font-semibold text-zinc-900 mb-3">
                     Comisario y promotor cultural
                   </h3>
                   <p className="text-zinc-700 leading-relaxed font-libre">
-                    Más allá de su labor editorial, Maresca organizó y comisarió numerosos eventos culturales, desde conciertos de tango hasta exposiciones de fotografía, ciclos de cine y presentaciones de libros.
+                    Más allá de su labor editorial, Maresca organizó y comisarió numerosos eventos culturales, desde conciertos de tango hasta exposiciones de fotografía, ciclos de cine y presentaciones de libros. Colaboró en el programa "Imaginaria" de Canal 2 Andalucía y tuvo un programa de radio en Almería.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-2xl font-crimson font-semibold text-zinc-900 mb-3">
+                    El ictus de 2011 y la recuperación
+                  </h3>
+                  <p className="text-zinc-700 leading-relaxed font-libre mb-3">
+                    El 18 de noviembre de 2011, Mariano sufrió un ictus que le hizo perder el habla y la memoria. Su historia de recuperación fue recogida por José Sánchez Montes en el documental <strong>"Mariano Maresca. Palabra a palabra"</strong> (2015), que muestra sus esfuerzos para reconectar los caminos de su cerebro tras el accidente.
+                  </p>
+                  <p className="text-zinc-700 leading-relaxed font-libre">
+                    En enero de 2012, Almudena Grandes le dedicó una emotiva carta de amor en El País Semanal, titulada "Una carta de amor para Mariano Maresca", donde escribió: "No podía aceptar que no pudieras hablar tú, precisamente tú, el amo de todas las palabras".
                   </p>
                 </div>
               </div>
@@ -214,12 +239,22 @@ export default function BiographyPage() {
                 </li>
                 <li>
                   <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Columnas "Países" en El País (2004-23)
+                    Libro sobre Clarín (1985)
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    La mesa de Mariano - Botánico 2023
+                    Libro sobre Pasolini (1993)
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
+                    Columnas en El País (2004-08)
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
+                    Documental "Palabra a palabra" (2015)
                   </a>
                 </li>
               </ul>

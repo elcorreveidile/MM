@@ -19,7 +19,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed">
-              Exposición homenaje a Mariano Maresca (Almería 1945 - Granada 2023), editor de Olvidosdegranada, director de La Fábrica del Sur y productor cultural.
+              Exposición homenaje a Mariano Maresca García-Esteller (Almería 1945 - Granada 2023), profesor de Filosofía del Derecho, editor de Olvidosdegranada y estudioso de Clarín y Pasolini.
             </p>
           </div>
 
