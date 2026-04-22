@@ -1,0 +1,139 @@
+# 🚀 INSTRUCCIONES PARA CREAR REPOSITORIO GITHUB Y DEPLOY EN VERCEL
+
+## PASO 1: Crear Repositorio en GitHub (2 minutos)
+
+1. **Ir a GitHub:**
+   - Abre tu navegador: https://github.com/new
+
+2. **Crear nuevo repositorio:**
+   - Repository name: `mariano-maresca-exposicion`
+   - Description: "Web exposición Mariano Maresca - Memoria Viva de la Cultura Granadina"
+   - Privacy: Public (o Private si prefieres)
+   - **NO** marcar "Add a README file" (ya tenemos uno)
+   - **NO** marcar "Add .gitignore" (ya creamos uno)
+   - Click: **"Create repository"**
+
+3. **Copiar la URL del repositorio:**
+   - GitHub te mostrará una URL como:
+     `https://github.com/TU_USUARIO/mariano-maresca-exposicion.git`
+   - **COPIA ESA URL** (la necesitaremos en el paso 2)
+
+## PASO 2: Conectar Local con GitHub (1 minuto)
+
+1. **En tu terminal, ejecuta estos comandos:**
+
+```bash
+# Reemplaza TU_USUARIO con tu nombre de usuario de GitHub
+git remote add origin https://github.com/TU_USUARIO/mariano-maresca-exposicion.git
+git branch -M main
+git push -u origin main
+```
+
+2. **Te pedirá usuario y contraseña de GitHub:**
+   - Usuario: tu email de GitHub
+   - Contraseña: tu personal access token (si usas 2FA) o contraseña
+
+## PASO 3: Deploy en Vercel (5 minutos)
+
+1. **Ir a Vercel:**
+   - Abre: https://vercel.com/new
+   - Login con GitHub (o crear cuenta)
+
+2. **Importar repositorio:**
+   - Click: "Import Project"
+   - Selecciona: `mariano-maresca-exposicion` de la lista
+   - Click: "Import"
+
+3. **Configurar proyecto:**
+   - **Framework Preset:** Next.js (detectado automáticamente)
+   - **Root Directory:** `web` (MUY IMPORTANTE - escribir "web")
+   - **Build Command:** `npm run build` (automático)
+   - **Output Directory:** `.next` (automático)
+
+4. **Environment Variables (Opcional por ahora):**
+   - Puedes añadir estas variables más tarde:
+     - NEXT_PUBLIC_SANITY_PROJECT_ID=tu_project_id
+     - NEXT_PUBLIC_SANITY_DATASET=production
+
+5. **Deploy:**
+   - Click: **"Deploy"**
+   - Esperar 2-3 minutos
+   - **¡LISTO!** Vercel te dará una URL como: `https://mariano-maresca-exposicion.vercel.app`
+
+## PASO 4: Verificar Deploy (1 minuto)
+
+1. **Abrir la URL que te dio Vercel**
+2. **Verificar que:**
+   - Todas las páginas cargan
+   - El diseño se ve bien
+   - La navegación funciona
+   - Responsive funciona (probar en móvil)
+
+3. **¡COMPARTIR LA URL!** 🎉
+
+## PASO 5: Dominio Personalizado (Opcional)
+
+Si quieres usar tu propio dominio (ej: marianomaresca.es):
+
+1. **En Vercel Dashboard:**
+   - Settings > Domains
+   - Añadir tu dominio
+   - Configurar DNS según instrucciones de Vercel
+
+2. **Esperar 24-48h** para propagación DNS
+
+## 🎯 RESUMEN RÁPIDO
+
+```bash
+# 1. Crear repo en GitHub: https://github.com/new
+# 2. Conectar:
+git remote add origin https://github.com/TU_USUARIO/mariano-maresca-exposicion.git
+git branch -M main
+git push -u origin main
+
+# 3. Deploy en Vercel: https://vercel.com/new
+#    - Root Directory: web
+#    - Deploy
+
+# 4. ¡Listo! Compartir URL
+```
+
+## 📞 AYUDA
+
+**Problemas comunes:**
+
+1. **"git remote already exists":**
+```bash
+git remote remove origin
+git remote add origin https://github.com/TU_USUARIO/mariano-maresca-exposicion.git
+```
+
+2. **"Authentication failed":**
+   - Verificar usuario y contraseña de GitHub
+   - Si usas 2FA, necesitas Personal Access Token
+
+3. **Build falla en Vercel:**
+   - Verificar que "Root Directory" sea "web"
+   - Verificar logs en Vercel Dashboard
+
+4. **Página no carga:**
+   - Esperar unos minutos (propagación CDN)
+   - Verificar que el build fue exitoso
+
+## ✅ CHECKLIST
+
+- [ ] Repositorio GitHub creado
+- [ ] Código subido a GitHub
+- [ ] Proyecto importado en Vercel
+- [ ] Root Directory configurado como "web"
+- [ ] Deploy exitoso
+- [ ] Página verificada en navegador
+- [ ] URL compartida
+
+---
+
+**Tiempo estimado total:** 10-15 minutos
+**Dificultad:** Fácil
+**Resultado:** Web en producción accesible para todo el mundo
+
+¡Vamos a lanzar la web de Mariano Maresca al mundo! 🚀
