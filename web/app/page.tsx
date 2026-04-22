@@ -17,7 +17,7 @@ export default function HomePage() {
               Memoria Viva de la Cultura Granadina
             </p>
             <p className="text-lg text-zinc-400 mb-12 leading-relaxed max-w-2xl">
-              Profesor de Filosofía del Derecho, editor de Olvidosdegranada y figura fundamental de la cultura granadina desde finales de los años 60 hasta 2023.
+              Editor de Olvidosdegranada, director de La Fábrica del Sur y productor cultural. Nació en Almería (1945) y falleció en Granada (2023). Su mesa habitual en el Botánico se convirtió en legendario punto de encuentro de la cultura granadina.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/biografia" className="bg-white text-zinc-900 px-8 py-4 rounded-full font-libre font-semibold hover:bg-zinc-100 transition-colors text-center">
