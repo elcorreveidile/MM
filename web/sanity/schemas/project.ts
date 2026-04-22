@@ -1,6 +1,6 @@
 import { defineField, defineType } from 'sanity'
 
-export default defineType({
+export const projectSchema = defineType({
   name: 'project',
   title: 'Proyecto de Mariano Maresca',
   type: 'document',
@@ -24,7 +24,7 @@ export default defineType({
       name: 'type',
       title: 'Tipo de Proyecto',
       type: 'string',
-      options: [
+      options: { list: [
         { title: '📰 Revista', value: 'magazine' },
         { title: '📚 Libro', value: 'book' },
         { title: '🎵 Música', value: 'music' },
@@ -33,7 +33,7 @@ export default defineType({
         { title: '🎨 Exposición', value: 'exhibition' },
         { title: '✍️ Columna', value: 'column' },
         { title: '🎭 Evento Cultural', value: 'event' },
-      ],
+      ], },
     }),
     defineField({
       name: 'years',
@@ -42,7 +42,7 @@ export default defineType({
       fields: [
         { name: 'start', title: 'Año Inicio', type: 'number' },
         { name: 'end', title: 'Año Fin', type: 'number' },
-      ],
+      ], },
     }),
     defineField({
       name: 'displayYear',
@@ -54,7 +54,7 @@ export default defineType({
       name: 'discipline',
       title: 'Disciplina Artística',
       type: 'string',
-      options: [
+      options: { list: [
         { title: 'Literatura', value: 'literature' },
         { title: 'Música', value: 'music' },
         { title: 'Cine', value: 'cinema' },
@@ -64,7 +64,7 @@ export default defineType({
         { title: 'Cómic', value: 'comics' },
         { title: 'Filosofía', value: 'philosophy' },
         { title: 'Interdisciplinar', value: 'interdisciplinary' },
-      ],
+      ], },
     }),
     defineField({
       name: 'shortDescription',
@@ -83,15 +83,15 @@ export default defineType({
           type: 'image',
           fields: [
             { name: 'caption', title: 'Pie de foto', type: 'string' },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'role',
       title: 'Rol de Mariano',
       type: 'string',
-      options: [
+      options: { list: [
         { title: 'Director', value: 'director' },
         { title: 'Editor', value: 'editor' },
         { title: 'Autor', value: 'author' },
@@ -100,7 +100,7 @@ export default defineType({
         { title: 'Colaborador', value: 'collaborator' },
         { title: 'Productor', value: 'producer' },
         { title: 'Organizador', value: 'organizer' },
-      ],
+      ], },
     }),
     defineField({
       name: 'collaborators',
@@ -112,9 +112,9 @@ export default defineType({
           fields: [
             { name: 'name', title: 'Nombre', type: 'string' },
             { name: 'role', title: 'Rol', type: 'string' },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'links',
@@ -127,16 +127,16 @@ export default defineType({
             { name: 'title', title: 'Título', type: 'string' },
             { name: 'url', title: 'URL', type: 'url' },
             { name: 'type', title: 'Tipo',
-              options: [
+              options: { list: [
                 { title: 'Fuente primaria', value: 'primary' },
                 { title: 'PDF/Documento', value: 'document' },
                 { title: 'Video', value: 'video' },
                 { title: 'Audio', value: 'audio' },
-              ],
+              ], },
             },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'images',
@@ -148,9 +148,9 @@ export default defineType({
           fields: [
             { name: 'caption', title: 'Pie de foto', type: 'string' },
             { name: 'alt', title: 'Texto alternativo', type: 'string' },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'featured',
@@ -169,10 +169,10 @@ export default defineType({
       name: 'sources',
       title: 'Fuentes',
       type: 'array',
-      of: [{ type: 'string' }],
+      of: [{ type: 'string' }], },
       description: 'Fuentes donde se encontró información',
     }),
-  ],
+  ], },
   preview: {
     select: {
       title: 'title',

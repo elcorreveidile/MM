@@ -47,9 +47,9 @@ export default defineType({
           type: 'image',
           fields: [
             { name: 'caption', title: 'Pie de foto', type: 'string' },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'projects',
@@ -58,9 +58,9 @@ export default defineType({
       of: [
         {
           type: 'reference',
-          to: [{ type: 'project' }],
+          to: [{ type: 'project' }], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'relatedEvents',
@@ -69,9 +69,9 @@ export default defineType({
       of: [
         {
           type: 'reference',
-          to: [{ type: 'event' }],
+          to: [{ type: 'event' }], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'images',
@@ -83,9 +83,9 @@ export default defineType({
           fields: [
             { name: 'caption', title: 'Pie de foto', type: 'string' },
             { name: 'alt', title: 'Texto alternativo', type: 'string' },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'order',
@@ -93,7 +93,7 @@ export default defineType({
       type: 'number',
       description: 'Orden de aparición en listados',
     }),
-  ],
+  ], },
   preview: {
     select: {
       title: 'title',

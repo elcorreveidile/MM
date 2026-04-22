@@ -18,7 +18,7 @@ export default defineType({
         { name: 'year', title: 'Año', type: 'number' },
         { name: 'month', title: 'Mes', type: 'number' },
         { name: 'day', title: 'Día', type: 'number' },
-      ],
+      ], },
     }),
     defineField({
       name: 'displayDate',
@@ -36,14 +36,14 @@ export default defineType({
       name: 'content',
       title: 'Contenido Detallado',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [{ type: 'block' }], },
       description: 'Información adicional opcional',
     }),
     defineField({
       name: 'category',
       title: 'Categoría',
       type: 'string',
-      options: [
+      options: { list: [
         { title: '🎒 Vida Personal', value: 'personal' },
         { title: '📚 Académico', value: 'academic' },
         { title: '📖 Olvidosdegranada', value: 'olvidos' },
@@ -52,17 +52,17 @@ export default defineType({
         { title: '📰 Prensa y Media', value: 'media' },
         { title: '🎬 Publicaciones', value: 'publications' },
         { title: '🎭 Eventos Culturales', value: 'cultural' },
-      ],
+      ], },
     }),
     defineField({
       name: 'importance',
       title: 'Importancia',
       type: 'string',
-      options: [
+      options: { list: [
         { title: '⭐ Normal', value: 'normal' },
         { title: '⭐⭐ Importante', value: 'important' },
         { title: '⭐⭐⭐ Fundamental', value: 'fundamental' },
-      ],
+      ], },
       initialValue: 'normal',
     }),
     defineField({
@@ -75,9 +75,9 @@ export default defineType({
           fields: [
             { name: 'caption', title: 'Pie de foto', type: 'string' },
             { name: 'alt', title: 'Texto alternativo', type: 'string' },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'links',
@@ -91,27 +91,27 @@ export default defineType({
             { name: 'url', title: 'URL', type: 'url' },
             { name: 'type', title: 'Tipo',
               type: 'string',
-              options: [
+              options: { list: [
                 { title: 'Fuente primaria', value: 'primary' },
                 { title: 'Artículo', value: 'article' },
                 { title: 'Video', value: 'video' },
                 { title: 'Documento', value: 'document' },
-              ],
+              ], },
             },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'tags',
       title: 'Etiquetas',
       type: 'array',
-      of: [{ type: 'string' }],
+      of: [{ type: 'string' }], },
       options: {
         layout: 'tags',
       },
     }),
-  ],
+  ], },
   orderings: [
     {
       title: 'Cronológico',
@@ -120,9 +120,9 @@ export default defineType({
         { field: 'date.year', direction: 'asc' },
         { field: 'date.month', direction: 'asc' },
         { field: 'date.day', direction: 'asc' },
-      ],
+      ], },
     },
-  ],
+  ], },
   preview: {
     select: {
       title: 'title',

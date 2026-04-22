@@ -26,7 +26,7 @@ export default defineType({
         { name: 'year', title: 'Año', type: 'number' },
         { name: 'city', title: 'Ciudad', type: 'string' },
         { name: 'country', title: 'País', type: 'string' },
-      ],
+      ], },
     }),
     defineField({
       name: 'death',
@@ -37,7 +37,7 @@ export default defineType({
         { name: 'month', title: 'Mes', type: 'string' },
         { name: 'day', title: 'Día', type: 'number' },
         { name: 'city', title: 'Ciudad', type: 'string' },
-      ],
+      ], },
     }),
     defineField({
       name: 'profession',
@@ -49,7 +49,7 @@ export default defineType({
       name: 'roles',
       title: 'Roles',
       type: 'array',
-      of: [{ type: 'string' }],
+      of: [{ type: 'string' }], },
       options: {
         layout: 'tags',
       },
@@ -72,9 +72,9 @@ export default defineType({
           fields: [
             { name: 'caption', title: 'Pie de foto', type: 'string' },
             { name: 'alt', title: 'Texto alternativo', type: 'string' },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'keyPlaces',
@@ -88,16 +88,16 @@ export default defineType({
             { name: 'description', title: 'Descripción', type: 'text' },
             { name: 'type', title: 'Tipo',
               type: 'string',
-              options: [
+              options: { list: [
                 { title: 'Café', value: 'cafe' },
                 { title: 'Universidad', value: 'university' },
                 { title: 'Espacio cultural', value: 'cultural' },
                 { title: 'Otro', value: 'other' },
-              ],
+              ], },
             },
-          ],
+          ], },
         },
-      ],
+      ], },
     }),
     defineField({
       name: 'photo',
@@ -113,9 +113,9 @@ export default defineType({
         { name: 'title', title: 'Título SEO', type: 'string' },
         { name: 'description', title: 'Descripción', type: 'text' },
         { name: 'keywords', title: 'Palabras clave', type: 'array', of: [{ type: 'string' }] },
-      ],
+      ], },
     }),
-  ],
+  ], },
   preview: {
     select: {
       title: 'shortName',
