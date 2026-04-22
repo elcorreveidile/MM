@@ -1,7 +1,21 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+export async function generateStaticParams() {
+  return [
+    { slug: 'literatura' },
+    { slug: 'musica' },
+    { slug: 'cine' },
+    { slug: 'fotografia' },
+    { slug: 'arquitectura' },
+    { slug: 'diseno' },
+    { slug: 'comic' },
+    { slug: 'filosofia' },
+  ]
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
   const disciplinasInfo: Record<string, { title: string; description: string }> = {
     literatura: {
       title: 'Literatura - Mariano Maresca',
@@ -37,9 +51,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     }
   }
 
-  const info = disciplinasInfo[params.slug] || {
-    title: `${params.slug} - Mariano Maresca`,
-    description: `Contribuciones de Mariano Maresca al ${params.slug}`
+  const info = disciplinasInfo[slug] || {
+    title: `${slug} - Mariano Maresca`,
+    description: `Contribuciones de Mariano Maresca al ${slug}`
   }
 
   return {
@@ -48,7 +62,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-export default function DisciplinaPage({ params }: { params: { slug: string } }) {
+export default async function DisciplinaPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
   const disciplinasData: Record<string, {
     nombre: string
     descripcion: string
@@ -189,7 +204,7 @@ export default function DisciplinaPage({ params }: { params: { slug: string } })
     }
   }
 
-  const data = disciplinasData[params.slug]
+  const data = disciplinasData[slug]
 
   if (!data) {
     return (
