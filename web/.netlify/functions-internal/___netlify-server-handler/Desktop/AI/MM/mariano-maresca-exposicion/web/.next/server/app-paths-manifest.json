@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/archivo/page": "app/archivo/page.js",
+  "/biografia/page": "app/biografia/page.js",
+  "/buscador/page": "app/buscador/page.js",
+  "/cronologia/page": "app/cronologia/page.js",
+  "/disciplinas/[slug]/page": "app/disciplinas/[slug]/page.js",
+  "/exposicion/page": "app/exposicion/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/galeria/page": "app/galeria/page.js",
+  "/page": "app/page.js"
+}

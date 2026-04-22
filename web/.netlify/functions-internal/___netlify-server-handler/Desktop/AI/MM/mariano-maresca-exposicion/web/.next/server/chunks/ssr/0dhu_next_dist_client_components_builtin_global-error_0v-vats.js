@@ -1,0 +1,3 @@
+module.exports=[15784,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(19499);a.n(d("[project]/Desktop/AI/MM/mariano-maresca-exposicion/web/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},18914,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(19499);a.n(d("[project]/Desktop/AI/MM/mariano-maresca-exposicion/web/node_modules/next/dist/client/components/builtin/global-error.js"))},77491,a=>{"use strict";a.i(15784);var b=a.i(18914);a.n(b)},27897,a=>{a.n(a.i(77491))}];
+
+//# sourceMappingURL=0dhu_next_dist_client_components_builtin_global-error_0v-vats.js.map

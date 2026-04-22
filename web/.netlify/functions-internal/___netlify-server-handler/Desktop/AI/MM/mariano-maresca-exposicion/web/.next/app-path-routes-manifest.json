@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/archivo/page": "/archivo",
+  "/biografia/page": "/biografia",
+  "/buscador/page": "/buscador",
+  "/cronologia/page": "/cronologia",
+  "/disciplinas/[slug]/page": "/disciplinas/[slug]",
+  "/exposicion/page": "/exposicion",
+  "/favicon.ico/route": "/favicon.ico",
+  "/galeria/page": "/galeria",
+  "/page": "/"
+}
