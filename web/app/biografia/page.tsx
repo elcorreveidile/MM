@@ -41,7 +41,7 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Mariano Maresca nació en Granada, donde desarrolló desde joven una pasión por la filosofía, el arte y la literatura. Su formación académica le llevó a especializarse en Filosofía del Derecho, disciplina que ejerció como profesor en la Universidad de Granada.
+                  Mariano Maresca nació en Almería en 1945, donde desarrolló desde joven una pasión por la filosofía, el arte y la literatura. Su formación académica le llevó a especializarse en Filosofía del Derecho, disciplina que ejerció como profesor en la Universidad de Granada hasta su fallecimiento en 2023.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
                   Sin embargo, su interés por las manifestaciones artísticas y culturales trascendió el ámbito puramente académico, llevándole a involucrarse activamente en la vida cultural de la ciudad desde muy joven.
@@ -84,6 +84,27 @@ export default function BiographyPage() {
               </div>
             </section>
 
+            {/* Botánico Section */}
+            <section className="bg-zinc-50 p-8 rounded-lg shadow-md border-l-4 border-zinc-900">
+              <h2 className="text-3xl font-crimson font-bold text-zinc-900 mb-6">
+                La mesa de Mariano en Botánico
+              </h2>
+              <div className="space-y-4">
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  El café Botánico en Granada fue el segundo hogar de Mariano Maresca. Su mesa habitual se convirtió en un legendario punto de encuentro de la cultura granadina, una "informal alternativa a su despacho en la Facultad".
+                </p>
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  Allí se gestaron proyectos, se compartieron ideas y se tejió la red cultural que Mariano cultivó durante décadas. La mesa era conocida por su nombre, testigo de conversaciones, libros, cuadernos y proyectos que marcaron la vida cultural de Granada.
+                </p>
+                <div className="bg-white p-6 rounded-lg border-l-4 border-zinc-700 mt-6">
+                  <p className="text-zinc-700 italic font-libre text-lg">
+                    "El trabajo de la memoria es esencial, casi nuestra única arma"
+                  </p>
+                  <p className="text-sm text-zinc-600 mt-3 font-libre">— Columna "Países", El País (2004-2023)</p>
+                </div>
+              </div>
+            </section>
+
             {/* Legacy */}
             <section className="bg-zinc-900 text-white p-8 rounded-lg shadow-md">
               <h2 className="text-3xl font-crimson font-bold mb-6">
@@ -93,7 +114,7 @@ export default function BiographyPage() {
                 El legado de Mariano Maresca es inmenso y diverso. A través de Olvidosdegranada y sus innumerables proyectos culturales, construyó un archivo de la memoria granadina que sigue siendo referencia obligada para investigadores, artistas y amantes de la cultura.
               </p>
               <p className="text-zinc-300 leading-relaxed font-libre">
-                Esta exposición, que tendrá lugar en el Hospital Real de la Universidad de Granada, pretende rendir homenaje a su figura y recuperar su importancia para las generaciones presentes y futuras.
+                Esta exposición conmemorativa e itinerante en 2026, organizada por la Asociación Cultural Olvidos de Granada, pretende rendir homenaje a su figura y recuperar su importancia para las generaciones presentes y futuras.
               </p>
             </section>
           </div>
@@ -108,23 +129,23 @@ export default function BiographyPage() {
               <dl className="space-y-3">
                 <div>
                   <dt className="text-sm font-semibold text-zinc-600">Nacimiento</dt>
-                  <dd className="text-zinc-900 font-libre">Finales de los años 60</dd>
+                  <dd className="text-zinc-900 font-libre">Almería, 1945</dd>
                 </div>
                 <div>
                   <dt className="text-sm font-semibold text-zinc-600">Fallecimiento</dt>
-                  <dd className="text-zinc-900 font-libre">2023</dd>
+                  <dd className="text-zinc-900 font-libre">Granada, 2023</dd>
                 </div>
                 <div>
                   <dt className="text-sm font-semibold text-zinc-600">Profesión</dt>
                   <dd className="text-zinc-900 font-libre">Profesor de Filosofía del Derecho</dd>
                 </div>
                 <div>
-                  <dt className="text-sm font-semibold text-zinc-600">Proyecto principal</dt>
-                  <dd className="text-zinc-900 font-libre">Editor de Olvidosdegranada</dd>
+                  <dt className="text-sm font-semibold text-zinc-600">Lugar emblemático</dt>
+                  <dd className="text-zinc-900 font-libre">Botánico (café Granada)</dd>
                 </div>
                 <div>
-                  <dt className="text-sm font-semibold text-zinc-600">Lugar de actividad</dt>
-                  <dd className="text-zinc-900 font-libre">Granada, España</dd>
+                  <dt className="text-sm font-semibold text-zinc-600">Proyecto principal</dt>
+                  <dd className="text-zinc-900 font-libre">Editor de Olvidosdegranada</dd>
                 </div>
               </dl>
             </div>
@@ -178,27 +199,27 @@ export default function BiographyPage() {
               <ul className="space-y-3">
                 <li>
                   <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Festival de Tango de Granada
+                    Olvidos de Granada (1984-87)
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Disco Omega de Morente
+                    La Fábrica del Sur (1989-90)
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Rimado de Ciudad de TNT
+                    Rimado de ciudad (1983)
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Letra Clara en la Facultad de Letras
+                    Columnas "Países" en El País (2004-23)
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Archivo de Fotografía Granadina
+                    La mesa de Mariano - Botánico 2023
                   </a>
                 </li>
               </ul>

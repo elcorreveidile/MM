@@ -137,6 +137,63 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Botánico Section */}
+      <section className="py-20 bg-zinc-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-crimson font-bold text-zinc-900 mb-6">
+                La mesa de Mariano en Botánico
+              </h2>
+              <p className="text-lg text-zinc-700 mb-6 leading-relaxed font-libre">
+                El café Botánico en Granada fue el segundo hogar de Mariano Maresca. Su mesa habitual se convirtió en un legendario punto de encuentro de la cultura granadina, una "informal alternativa a su despacho en la Facultad".
+              </p>
+              <p className="text-zinc-600 mb-6 leading-relaxed font-libre">
+                Allí se gestaron proyectos, se compartieron ideas y se tejió la red cultural que Mariano cultivó durante décadas. La mesa era conocida por su nombre, testigo de conversaciones, libros, cuadernos y proyectos.
+              </p>
+              <div className="bg-white p-6 rounded-lg border-l-4 border-zinc-900 mb-6">
+                <p className="text-zinc-700 italic font-libre">
+                  "El trabajo de la memoria es esencial, casi nuestra única arma"
+                </p>
+                <p className="text-sm text-zinc-500 mt-2 font-libre">— Columna "Países", El País</p>
+              </div>
+              <p className="text-zinc-600 leading-relaxed font-libre">
+                En abril-junio de 2023, sus amigos organizaron una exposición póstuma "La mesa de Mariano" con placa conmemorativa, honrando el espacio que fue corazón de su vida cultural.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-lg shadow-lg">
+              <h3 className="font-crimso n font-semibold text-2xl text-zinc-900 mb-6">
+                Exposición homenaje 2023
+              </h3>
+              <div className="space-y-4">
+                <div className="border-b border-zinc-200 pb-4">
+                  <h4 className="font-semibold text-zinc-900 mb-1">Fechas</h4>
+                  <p className="text-zinc-600 font-libre text-sm">Abril - Junio 2023</p>
+                  <p className="text-zinc-600 font-libre text-sm">Inauguración: 20 de abril 2023</p>
+                </div>
+                <div className="border-b border-zinc-200 pb-4">
+                  <h4 className="font-semibold text-zinc-900 mb-1">Lugar</h4>
+                  <p className="text-zinc-600 font-libre text-sm">Botánico (café histórico de Granada)</p>
+                </div>
+                <div className="border-b border-zinc-200 pb-4">
+                  <h4 className="font-semibold text-zinc-900 mb-1">Organizadores</h4>
+                  <p className="text-zinc-600 font-libre text-sm">
+                    José Miguel Molero, Luis Jarillo, Manuel Rodríguez Alcázar,<br />
+                    Rafael Goicoechea, Rosa Alonso, Nacho Mendiguchía
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-zinc-900 mb-1">Contenido</h4>
+                  <p className="text-zinc-600 font-libre text-sm">
+                    Exposición de imágenes y textos, placa conmemorativa en su mesa habitual, homenaje póstumo por amigos y comunidad
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Projects */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -162,10 +219,28 @@ export default function HomePage() {
                 category: 'Música',
               },
               {
-                title: 'Rimado de Ciudad de TNT',
-                year: '1994',
-                description: 'Proyecto poético y visual que fusionó literatura y arte urbano.',
+                title: 'Rimado de ciudad (1983)',
+                year: '1983',
+                description: 'Disco pionero que integró rock, poesía y fotografía de manera insólita. Proyecto de fusión artística.',
+                category: 'Música',
+              },
+              {
+                title: 'La Fábrica del Sur',
+                year: '1989-1990',
+                description: 'Dirección de esta revista cultural que continuó el trabajo editorial de Olvidos de Granada.',
                 category: 'Literatura',
+              },
+              {
+                title: 'Columna "Países" en El País',
+                year: '2004-2023',
+                description: 'Columnista durante casi dos décadas en el diario El País con reflections sobre memoria y cultura.',
+                category: 'Literatura',
+              },
+              {
+                title: 'Exposición "La mesa de Mariano"',
+                year: '2023',
+                description: 'Homenaje póstumo en el Botánico con placa conmemorativa en su mesa habitual.',
+                category: 'Fotografía',
               },
               {
                 title: 'Letra Clara en la Facultad de Letras',
