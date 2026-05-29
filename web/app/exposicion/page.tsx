@@ -1,251 +1,160 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Las cosas que hemos leído — Mariano Maresca',
+  description: 'Muestra significativa de la biblioteca personal de Mariano Maresca. Organizada por la Asociación Cultural Olvidos de Granada.',
+}
+
 export default function ExposicionPage() {
   return (
-    <div className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Hero Section */}
-        <div className="bg-gradient-to-br from-zinc-900 to-zinc-800 text-white rounded-lg p-12 mb-12">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl font-crimson font-bold mb-6">
-              Exposición Mariano Maresca
+    <div className="min-h-screen bg-[#E8447A] text-black font-libre">
+
+      {/* Hero: título + texto intro */}
+      <section className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pt-20 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+          {/* Columna izquierda: título + texto de la exposición */}
+          <div>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black uppercase leading-[0.92] tracking-tight mb-8">
+              Las cosas<br />
+              que hemos<br />
+              leído
             </h1>
-            <p className="text-xl text-zinc-300 mb-8 font-libre leading-relaxed">
-              Memoria Viva de la Cultura Granadina
-            </p>
-            <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
-              Una exposición única que recorre la vida y obra de Mariano Maresca, editor de Olvidosdegranada y figura fundamental de la cultura granadina.
-            </p>
-            <div className="flex flex-wrap gap-4 text-sm">
-              <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <span className="font-semibold">Proyecto:</span> Exposición conmemorativa
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-                <span className="font-semibold">Año:</span> 2026
-              </div>
+
+            <div className="text-base sm:text-lg leading-relaxed space-y-5 max-w-xl">
+              <p>
+                <span className="font-black uppercase">Las cosas que hemos leído</span> es una muestra significativa
+                de la biblioteca personal de Mariano Maresca. Desde el mismo día de su despedida, la familia quiso
+                que los más de tres mil títulos que conformaban el legado de su hermano, de su tío, no se perdieran.
+                Contactaron con la Asociación Cultural Olvidos de Granada, creada por el propio Mariano, para gestionar
+                la donación; la Universidad de Granada se comprometió a hacerse cargo, y en menos de un año el proceso
+                se había completado. Los volúmenes se distribuyeron entre varias bibliotecas de la Universidad de
+                Granada y la Biblioteca Pública de Andalucía, según la naturaleza temática de los fondos. Esa dispersión
+                refleja también el perfil intelectual de Maresca: filósofo del derecho, lector de Clarín, Pasolini,
+                Gramsci y de la poesía contemporánea española.
+              </p>
+
+              <p>
+                La muestra se organiza en cuatro vitrinas: la dedicada a Pasolini y al trabajo editorial de{' '}
+                <em>Saló: el infierno según Pasolini</em>; la que recoge su relación con Almudena Grandes y Luis
+                García Montero; la centrada en sus propios escritos y materiales de trabajo; y la formada por libros
+                dedicados por autores amigos.
+              </p>
+
+              <p>
+                El recorrido se completa con ejemplares de <em>Olvidos de Granada</em> y{' '}
+                <em>La Fábrica del Sur</em>, revistas que dirigió, además de diapositivas proyectadas del rodaje
+                de <em>Saló</em> y fragmentos de <em>Imaginaria</em>, el programa cultural nocturno que Canal Sur
+                emitía desde Granada.
+              </p>
+
+              <p className="pt-4 font-medium">
+                Javier Benítez
+              </p>
             </div>
           </div>
+
+          {/* Columna derecha: MM + biografía */}
+          <div>
+            <div className="text-[8rem] sm:text-[10rem] font-black leading-none tracking-tighter mb-6 select-none">
+              MM
+            </div>
+
+            <div className="text-sm sm:text-base leading-relaxed max-w-md space-y-4">
+              <p>
+                Mariano Maresca (Almería, 1945–Granada, 2023) profesor titular de Filosofía del Derecho en la UGR,
+                ensayista y figura clave en la vida cultural granadina de las últimas décadas, ejerció una influencia
+                notable como mentor y agitador cultural de varias generaciones impulsando proyectos de muy diversa
+                índole, marcados, tanto por una lucidez alejada de cualquier dogma, como por el amor que sentía por
+                todas las formas de creación artística.
+              </p>
+
+              <p>
+                Entre sus obras figuran <em>Hipótesis sobre Clarín. El pensamiento crítico del reformismo español</em>{' '}
+                (1985), vinculada a su investigación doctoral, y trabajos posteriores sobre Pier Paolo Pasolini, una
+                referencia clave en su pensamiento. Su magisterio se asoció a una visión humanista de la universidad y
+                a la conexión entre la reflexión ética y política, y las diversas artes como la literatura, el
+                urbanismo, el comic, la música y el cine.
+              </p>
+
+              <p>
+                En los años ochenta y noventa tuvo un papel muy activo en la vida cultural de Granada: dirigió la
+                revista <em>Olvidos de Granada</em> (1982–1987, impresa y luego digital 2011) y{' '}
+                <em>La Fábrica del Sur</em> (1989–90), espacios de debate estético y literario. También participó
+                como guionista en <em>Imaginaria</em> (Canal Sur, 1999) y fue columnista en{' '}
+                <em>El País Andalucía</em> (2004–2008).
+              </p>
+
+              <p>
+                Su firme vocación como agitador de la esfera pública y como productor, se plasmó en innumerables
+                iniciativas de múltiples disciplinas, llevadas a cabo siempre y de forma irrenunciable en compañía
+                de amigos.
+              </p>
+            </div>
+          </div>
+
         </div>
+      </section>
 
-        {/* Information Section */}
-        <section id="informacion" className="mb-16">
-          <h2 className="text-4xl font-crimson font-bold text-zinc-900 mb-8">
-            Información del proyecto
+      {/* Las cuatro vitrinas */}
+      <section className="bg-black text-white py-16">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+          <h2 className="text-3xl sm:text-4xl font-black uppercase mb-10 tracking-tight">
+            Las cuatro vitrinas
           </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Information Card */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="flex items-start mb-6">
-                <div className="w-12 h-12 bg-zinc-900 text-white rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-crimson font-bold text-zinc-900 mb-2">
-                    Proyecto de Exposición
-                  </h3>
-                  <p className="text-zinc-600 font-libre">2026</p>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div>
-                  <h4 className="font-semibold text-zinc-900 mb-1">Promotor</h4>
-                  <p className="text-zinc-700 font-libre">Asociación Cultural Olvidos de Granada</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-zinc-900 mb-1">Formato</h4>
-                  <p className="text-zinc-700 font-libre">Exposición conmemorativa e itinerante</p>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-zinc-900 mb-1">Objetivo</h4>
-                  <p className="text-zinc-700 font-libre">Recuperar y difundir la figura y obra de Mariano Maresca</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Curators Card */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <div className="flex items-start mb-6">
-                <div className="w-12 h-12 bg-zinc-900 text-white rounded-lg flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 016-0v-1a6 6 0 016-0V3a6 6 0 016-6H9a6 6 0 00-6 6v1a6 6 0 006 6v1a6 6 0 006 6v1a6 6 0 006 6h6a6 6 0 006-6v-1a6 6 0 006-6V9a6 6 0 00-6-6V3" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-crimson font-bold text-zinc-900 mb-2">
-                    Comisariado
-                  </h3>
-                  <p className="text-zinc-600 font-libre">Equipo de comisarios</p>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-zinc-900 text-white rounded-full flex items-center justify-center mr-3 font-crimson font-bold text-sm">
-                    MM
-                  </div>
-                  <p className="text-zinc-700 font-libre">Mariano Maresca (póstumo)</p>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-zinc-700 text-white rounded-full flex items-center justify-center mr-3 font-crimson font-bold text-sm">
-                    JB
-                  </div>
-                  <p className="text-zinc-700 font-libre">Javier Benítez</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Exhibition Sections */}
-        <section className="mb-16">
-          <h2 className="text-4xl font-crimson font-bold text-zinc-900 mb-8">
-            Contenido de la exposición
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-zinc-800">
             {[
               {
-                title: 'Sala de Entrada',
-                description: 'Timeline visual y contexto histórico de la vida de Mariano Maresca.',
-                icon: '🚪',
+                num: 'I',
+                title: 'Pasolini',
+                desc: 'Dedicada a Pasolini y al trabajo editorial de Saló: el infierno según Pasolini.',
               },
               {
-                title: 'Sala Olvidosdegranada',
-                description: 'La revista como archivo vivo: editoriales, artículos y colaboraciones.',
-                icon: '📖',
+                num: 'II',
+                title: 'Almudena Grandes y Luis García Montero',
+                desc: 'La que recoge su relación con Almudena Grandes y Luis García Montero.',
               },
               {
-                title: 'Sala Interdisciplinar',
-                description: 'Las 7 disciplinas artísticas: literatura, música, cine, fotografía, arquitectura, diseño y cómic.',
-                icon: '🎨',
+                num: 'III',
+                title: 'Escritos propios',
+                desc: 'La centrada en sus propios escritos y materiales de trabajo.',
               },
               {
-                title: 'Sala Interactiva',
-                description: 'Multimedia y experiencias auditivas: entrevistas, música, proyecciones.',
-                icon: '🎧',
+                num: 'IV',
+                title: 'Libros dedicados',
+                desc: 'La formada por libros dedicados por autores amigos.',
               },
-              {
-                title: 'Sala Documental',
-                description: 'Archivos originales, manuscritos, correspondencia y fotografías.',
-                icon: '📜',
-              },
-              {
-                title: 'Sala de Recursos',
-                description: 'Bibliografía, documentos digitales y materiales de consulta.',
-                icon: '📚',
-              },
-            ].map((section, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-zinc-100 rounded-lg flex items-center justify-center mr-4">
-                    <span className="text-2xl">{section.icon}</span>
-                  </div>
-                  <h3 className="text-xl font-crimson font-bold text-zinc-900">
-                    {section.title}
-                  </h3>
-                </div>
-                <p className="text-zinc-700 font-libre leading-relaxed">
-                  {section.description}
-                </p>
+            ].map((v) => (
+              <div key={v.num} className="bg-black p-8">
+                <div className="text-5xl font-black text-[#E8447A] mb-4 leading-none">{v.num}</div>
+                <h3 className="text-lg font-bold mb-3 leading-snug">{v.title}</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Curators and Organization */}
-        <section className="mb-16">
-          <h2 className="text-4xl font-crimson font-bold text-zinc-900 mb-8">
-            Comisariado y organización
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Curators */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-crimson font-bold text-zinc-900 mb-6">
-                Comisarios
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-zinc-900 text-white rounded-full flex items-center justify-center mr-4 font-crimson font-bold">
-                    MM
-                  </div>
-                  <div>
-                    <p className="text-zinc-900 font-semibold font-libre">Mariano Maresca (póstumo)</p>
-                    <p className="text-zinc-600 text-sm font-libre">Comisario honorífico</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-zinc-700 text-white rounded-full flex items-center justify-center mr-4 font-crimson font-bold">
-                    JB
-                  </div>
-                  <div>
-                    <p className="text-zinc-900 font-semibold font-libre">Javier Benítez</p>
-                    <p className="text-zinc-600 text-sm font-libre">Comisario principal</p>
-                  </div>
-                </div>
-              </div>
+      {/* Datos del proyecto */}
+      <section className="bg-[#E8447A] py-12 border-t border-black/20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+          <dl className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm">
+            <div>
+              <dt className="font-black uppercase text-xs tracking-widest mb-1 opacity-60">Organización</dt>
+              <dd className="font-medium">Asociación Cultural Olvidos de Granada<br />Universidad de Granada<br />Biblioteca Pública de Andalucía</dd>
             </div>
-
-            {/* Organization */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-crimson font-bold text-zinc-900 mb-6">
-                Organización
-              </h3>
-              <ul className="space-y-3">
-                <li className="flex items-start text-zinc-700 font-libre">
-                  <svg className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  Asociación Cultural Olvidos de Granada
-                </li>
-                <li className="flex items-start text-zinc-700 font-libre">
-                  <svg className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  Revista Olvidosdegranada
-                </li>
-                <li className="flex items-start text-zinc-700 font-libre">
-                  <svg className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  Colaboradores y amigos de Mariano
-                </li>
-                <li className="flex items-start text-zinc-700 font-libre">
-                  <svg className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                    Comunidad cultural granadina
-                </li>
-              </ul>
+            <div>
+              <dt className="font-black uppercase text-xs tracking-widest mb-1 opacity-60">Comisariado</dt>
+              <dd className="font-medium">Javier Benítez</dd>
             </div>
-          </div>
-        </section>
+            <div>
+              <dt className="font-black uppercase text-xs tracking-widest mb-1 opacity-60">Año</dt>
+              <dd className="font-medium">2026</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
 
-        {/* CTA Section */}
-        <section className="bg-gradient-to-r from-zinc-900 to-zinc-800 text-white rounded-lg p-12 text-center">
-          <h2 className="text-3xl font-crimson font-bold mb-4">
-            ¿Quieres colaborar con la exposición?
-          </h2>
-          <p className="text-zinc-300 mb-8 font-libre max-w-2xl mx-auto">
-            Si tienes material, recuerdos o documentos sobre Mariano Maresca que puedan enriquecer esta exposición,
-            nos encantaría contar con tu colaboración.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:contacto@marianomaresca.es"
-              className="bg-white text-zinc-900 px-8 py-4 rounded-full font-libre font-semibold hover:bg-zinc-100 transition-colors"
-            >
-              Contactar con los comisarios
-            </a>
-            <a
-              href="#"
-              className="border-2 border-white text-white px-8 py-4 rounded-full font-libre font-semibold hover:bg-white hover:text-zinc-900 transition-colors"
-            >
-              Más información sobre la colaboración
-            </a>
-          </div>
-        </section>
-      </div>
     </div>
   )
 }
