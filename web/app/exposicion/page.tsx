@@ -64,7 +64,7 @@ export default function ExposicionPage() {
               </p>
 
               <p className="pt-4 font-medium">
-                Asociación Cultural Olvidos de Granada
+                Javier Benítez
               </p>
             </div>
           </div>
