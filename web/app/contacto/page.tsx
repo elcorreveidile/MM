@@ -1,11 +1,11 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { sendContact } from './actions'
+
+const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID ?? ''
 
 export default function ContactoPage() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
-  const [errorMsg, setErrorMsg] = useState('')
   const tsRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
@@ -17,20 +17,31 @@ export default function ContactoPage() {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setStatus('sending')
-    setErrorMsg('')
 
-    const formData = new FormData(e.currentTarget)
-    const result = await sendContact(formData)
+    const form = e.currentTarget
+    const formData = new FormData(form)
 
-    if ('success' in result) {
-      setStatus('success')
-    } else {
-      if (result.error === 'spam') {
-        setStatus('success') // silent — don't reveal spam detection
+    // Time gate: reject silently if submitted in under 3 seconds
+    const ts = Number(formData.get('_ts'))
+    if (!ts || Date.now() - ts < 3000) {
+      setStatus('success') // silent rejection
+      return
+    }
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: formData,
+      })
+      const data = await res.json()
+      if (data.ok) {
+        setStatus('success')
       } else {
         setStatus('error')
-        setErrorMsg(result.error)
       }
+    } catch {
+      setStatus('error')
     }
   }
 
@@ -70,16 +81,9 @@ export default function ContactoPage() {
         ) : (
           <div className="bg-white p-8">
             <form onSubmit={handleSubmit} noValidate>
-              {/* Honeypot — hidden from real users */}
-              <input
-                type="text"
-                name="website"
-                tabIndex={-1}
-                autoComplete="off"
-                aria-hidden="true"
-                style={{ display: 'none' }}
-              />
-              {/* Timestamp for time-gate */}
+              {/* Honeypot — Formspree ignores submissions where this is filled */}
+              <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+              {/* Timestamp for client-side time gate */}
               <input type="hidden" name="_ts" ref={tsRef} />
 
               <div className="space-y-6">
@@ -125,8 +129,10 @@ export default function ContactoPage() {
                   />
                 </div>
 
-                {status === 'error' && errorMsg && (
-                  <p className="font-libre text-sm text-red-600">{errorMsg}</p>
+                {status === 'error' && (
+                  <p className="font-libre text-sm text-red-600">
+                    No se pudo enviar el mensaje. Inténtalo de nuevo.
+                  </p>
                 )}
 
                 <button
