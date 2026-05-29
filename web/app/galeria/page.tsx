@@ -74,9 +74,6 @@ export default function GaleriaPage() {
           <p className="font-libre text-zinc-300 max-w-2xl text-lg leading-relaxed">
             Fotografías de la exposición <em>Las cosas que hemos leído</em>. Inauguración: 29 de mayo de 2026.
           </p>
-          <p className="font-libre text-zinc-500 text-xs tracking-widest uppercase mt-4">
-            Fotos: Javier Martín Ruiz
-          </p>
         </div>
       </div>
 
