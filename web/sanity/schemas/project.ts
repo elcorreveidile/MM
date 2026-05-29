@@ -1,6 +1,6 @@
 import { defineField, defineType } from 'sanity'
 
-export const projectSchema = defineType({
+const projectSchema = defineType({
   name: 'project',
   title: 'Proyecto de Mariano Maresca',
   type: 'document',
@@ -180,3 +180,5 @@ export const projectSchema = defineType({
     },
   },
 })
+
+export default projectSchema
