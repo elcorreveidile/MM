@@ -43,19 +43,9 @@ const fotos = [
     caption: 'Lectura en el acto de inauguración. Al fondo, el panel «Mariano y los libros» con el texto de Luis García Montero.',
   },
   {
-    src: '/exposicion/foto-04.jpg',
-    alt: 'Vista general durante la inauguración',
-    caption: 'Vista general de la sala durante la inauguración. Las vitrinas recogen documentos, libros dedicados y materiales de trabajo de Mariano Maresca.',
-  },
-  {
     src: '/exposicion/foto-07.jpg',
     alt: 'El público durante el acto de inauguración',
     caption: 'El público durante el acto de inauguración. Biblioteca de la Facultad de Derecho, UGR, 29 de mayo de 2026.',
-  },
-  {
-    src: '/exposicion/foto-08.jpg',
-    alt: 'Familia y amigos de Mariano Maresca',
-    caption: 'Familia y amigos de Mariano Maresca durante la inauguración.',
   },
   {
     src: '/exposicion/foto-09.jpg',
@@ -66,11 +56,6 @@ const fotos = [
     src: '/exposicion/foto-05.jpg',
     alt: 'La sala durante el acto inaugural',
     caption: 'La sala durante el acto inaugural con los paneles de la exposición al fondo.',
-  },
-  {
-    src: '/exposicion/foto-06.jpg',
-    alt: 'Vista lateral de la sala durante la inauguración',
-    caption: 'Vista lateral de la sala durante la inauguración.',
   },
   {
     src: '/exposicion/foto-10.jpg',
