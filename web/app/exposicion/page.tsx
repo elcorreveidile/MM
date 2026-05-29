@@ -2,36 +2,39 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Las cosas que hemos leído — Mariano Maresca',
-  description: 'Exposición inaugurada el 29 de mayo de 2026. Muestra significativa de la biblioteca personal de Mariano Maresca. Hasta el 31 de julio de 2026.',
+  description: 'Exposición bibliográfica. Donación Mariano Maresca. Biblioteca de Derecho, Universidad de Granada. 29 de mayo – 31 de julio de 2026.',
 }
 
 export default function ExposicionPage() {
   return (
     <div className="min-h-screen bg-[#E8447A] text-black font-libre">
 
-      {/* Franja de fechas */}
+      {/* Franja de fechas y lugar */}
       <div className="border-b border-black/20">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <p className="font-black uppercase text-xs tracking-[0.2em]">
             Inaugurada el 29 de mayo de 2026
           </p>
           <p className="font-black uppercase text-xs tracking-[0.2em]">
-            Hasta el 31 de julio de 2026
+            Biblioteca de Derecho · Universidad de Granada · Hasta el 31 de julio
           </p>
         </div>
       </div>
 
-      {/* Hero: título + texto intro */}
+      {/* Hero: título + textos */}
       <section className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pt-20 pb-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
-          {/* Columna izquierda: título + texto de la exposición */}
+          {/* Columna izquierda: título + texto de Javier Benítez */}
           <div>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black uppercase leading-[0.92] tracking-tight mb-8">
               Las cosas<br />
               que hemos<br />
               leído
             </h1>
+            <p className="font-black uppercase text-xs tracking-[0.2em] mb-6 opacity-60">
+              Donación Mariano Maresca · Exposición Bibliográfica
+            </p>
 
             <div className="text-base sm:text-lg leading-relaxed space-y-5 max-w-xl">
               <p>
@@ -61,7 +64,7 @@ export default function ExposicionPage() {
               </p>
 
               <p className="pt-4 font-medium">
-                Javier Benítez
+                Asociación Cultural Olvidos de Granada
               </p>
             </div>
           </div>
@@ -108,41 +111,141 @@ export default function ExposicionPage() {
         </div>
       </section>
 
-      {/* Las cuatro vitrinas */}
+      {/* Cita Luis García Montero */}
       <section className="bg-black text-white py-16">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-          <h2 className="text-3xl sm:text-4xl font-black uppercase mb-10 tracking-tight">
+          <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-8">
+            Mariano y los libros
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <blockquote className="text-lg sm:text-xl leading-relaxed text-zinc-200 space-y-5">
+              <p>
+                Mariano Maresca no era un libro abierto, sino una bibliografía completa. Su manera de unir el
+                conocimiento universitario y la cultura vital se llenaba de citas, páginas, matices y rincones.
+                Daba gusto oírle hablar sobre lo que había vivido en sus títulos más amados y lo que había leído
+                en sus amores y sus desamores.
+              </p>
+              <p>
+                Los libros de Mariano son un testimonio, reúnen en cuerpo y alma la experiencia de un tiempo en
+                el que las ciudades españolas, las universidades, las barras de los bares, las librerías, los
+                compañeros y los amigos lucharon por conquistar la democracia y asumieron después la necesidad de
+                aprender a vivir en ella. Las preguntas sobre el poeta, el filósofo o el jurista que estábamos
+                leyendo eran inseparables de los horizontes que se veían desde nuestras ventanas o de las puertas
+                que se cerraban a nuestras espaldas.
+              </p>
+              <cite className="block text-sm text-zinc-400 not-italic pt-2">
+                — Luis García Montero
+              </cite>
+            </blockquote>
+
+            <div className="space-y-0 border border-zinc-700">
+              <div className="p-6 border-b border-zinc-700">
+                <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Agradecimientos</p>
+                <p className="text-zinc-300 text-sm leading-relaxed">
+                  Luis García Montero · Javier Benítez · José Miguel Molero · José Sánchez Montes · Miguel Ángel Ruiz Maresca · Javier Martín Ruiz
+                </p>
+              </div>
+              <div className="p-6 border-b border-zinc-700">
+                <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Coordinación</p>
+                <p className="text-zinc-300 text-sm">Antonio Arias</p>
+              </div>
+              <div className="p-6 border-b border-zinc-700">
+                <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Diseño</p>
+                <p className="text-zinc-300 text-sm">Manigua</p>
+              </div>
+              <div className="p-6">
+                <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Fotos</p>
+                <p className="text-zinc-300 text-sm">Javier Martín Ruiz</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Las cuatro vitrinas */}
+      <section className="py-16 bg-[#FAF7F2]">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+          <h2 className="text-3xl sm:text-4xl font-black uppercase mb-10 tracking-tight text-zinc-900">
             Las cuatro vitrinas
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-zinc-800">
-            {[
-              {
-                num: 'I',
-                title: 'Pasolini',
-                desc: 'Dedicada a Pasolini y al trabajo editorial de Saló: el infierno según Pasolini.',
-              },
-              {
-                num: 'II',
-                title: 'Almudena Grandes y Luis García Montero',
-                desc: 'La que recoge su relación con Almudena Grandes y Luis García Montero.',
-              },
-              {
-                num: 'III',
-                title: 'Escritos propios',
-                desc: 'La centrada en sus propios escritos y materiales de trabajo.',
-              },
-              {
-                num: 'IV',
-                title: 'Libros dedicados',
-                desc: 'La formada por libros dedicados por autores amigos.',
-              },
-            ].map((v) => (
-              <div key={v.num} className="bg-black p-8">
-                <div className="text-5xl font-black text-[#E8447A] mb-4 leading-none">{v.num}</div>
-                <h3 className="text-lg font-bold mb-3 leading-snug">{v.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">{v.desc}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-zinc-300">
+
+            <div className="bg-[#E84878] p-10">
+              <div className="text-6xl font-black mb-6 leading-none opacity-40">I</div>
+              <h3 className="text-xl font-black uppercase tracking-tight mb-4">Pasolini</h3>
+              <p className="text-sm leading-relaxed">
+                Pasolini fue, para Mariano Maresca, mucho más que un cineasta o un escritor: fue una manera
+                de pensar el mundo. Esta vitrina recoge ese diálogo sostenido durante décadas. En su centro,
+                dos libros: <em>Saló: el infierno según Pasolini</em> (1993), que coeditó con Juan Ignacio
+                Mendiguchía, y el colectivo <em>Visiones de Pasolini</em> (2006), donde firmó un texto.
+                Los materiales originales de aquella maquetación —fotografías, pruebas y notas de imprenta—
+                muestran además su trabajo como editor, oficio que ejerció toda la vida desde la fundación de{' '}
+                <em>Olvidos de Granada</em> en 1982.
+              </p>
+              <p className="text-sm leading-relaxed mt-4">
+                La vitrina resume uno de los rasgos centrales de Mariano: pensar el cine como pensaba la
+                literatura, la filosofía o el derecho, sin separar nunca lo aprendido en una sala oscura
+                de lo aprendido en una página leída.
+              </p>
+            </div>
+
+            <div className="bg-[#E8A090] p-10">
+              <div className="text-6xl font-black mb-6 leading-none opacity-40">II</div>
+              <h3 className="text-xl font-black uppercase tracking-tight mb-4">Almudena Grandes y Luis García Montero</h3>
+              <p className="text-sm leading-relaxed">
+                Esta vitrina documenta una de las amistades más decisivas en la vida de Mariano Maresca:
+                la que sostuvo durante más de cuatro décadas con Luis García Montero. No fue cercanía social;
+                fue oficio compartido. Luis le dedicó, uno a uno, muchos de los libros que publicó, desde{' '}
+                <em>Y ahora ya eres dueño del puente de Brooklyn</em> (1980) hasta la{' '}
+                <em>Balada en la muerte de la poesía</em>, pasando por <em>El jardín extranjero</em>,{' '}
+                <em>Diario cómplice</em> o la <em>Poesía reunida 1980–2005</em>.
+              </p>
+              <p className="text-sm leading-relaxed mt-4">
+                Con Almudena Grandes, la relación tuvo otro tono, igual de intenso. Le enviaba sus manuscritos
+                antes de publicarlos. La vitrina muestra uno de esos originales mecanografiados de{' '}
+                <em>El corazón helado</em> con observaciones manuscritas al margen, y la{' '}
+                <em>Carta de amor para Mariano Maresca</em> que Almudena le dedicó en <em>El País Semanal</em>{' '}
+                en enero de 2012.
+              </p>
+            </div>
+
+            <div className="bg-[#C9B8D4] p-10">
+              <div className="text-6xl font-black mb-6 leading-none opacity-40">III</div>
+              <h3 className="text-xl font-black uppercase tracking-tight mb-4">Escritos propios y papeles de trabajo</h3>
+              <p className="text-sm leading-relaxed">
+                Esta vitrina reúne la obra publicada y los papeles de trabajo de Maresca: el rastro material
+                de un pensador que escribía a mano antes de imprimir. En el centro aparecen su tesis doctoral{' '}
+                <em>Hipótesis sobre Clarín. El pensamiento crítico</em> (1982) en versión mecanografiada
+                original y el volumen publicado en 1985.
+              </p>
+              <p className="text-sm leading-relaxed mt-4">
+                Entre sus libros como ensayista: <em>Argumentos morales</em> (2004) y{' '}
+                <em>Las cosas que hemos visto</em> (2011). En colaboración: <em>Granada Tango</em> (1982),{' '}
+                <em>Un debate sobre natural y artificial</em> (1997), <em>Del otro lado de la barra</em> (2005)
+                y <em>Un día feliz</em>, álbum de Javier Egea en el que Maresca participó también como diseñador.
+                Cierran la vitrina hojas anotadas sobre Alfred von Martin, Marcuse y Clarín.
+              </p>
+            </div>
+
+            <div className="bg-[#E84878] p-10">
+              <div className="text-6xl font-black mb-6 leading-none opacity-40">IV</div>
+              <h3 className="text-xl font-black uppercase tracking-tight mb-4">Libros dedicados</h3>
+              <p className="text-sm leading-relaxed">
+                Una biblioteca personal es también un archivo de amistades. Esta vitrina lo demuestra.
+                Reúne libros dedicados por autores con quienes Maresca compartió oficio, conversación y tiempo:
+                Rafael Juárez (<em>Canciones y sonetos</em>), José Carlos Rosales (<em>Un paisaje</em>),
+                Javier Egea (<em>Gris perla</em>), Luis Antonio de Villena (<em>Poesía 1970–1982</em>),
+                Rafael Alberti (<em>Los hijos del drago</em>), Juan Barja (<em>Nudos de tiempo</em>),
+                Sergio Hinojosa (<em>Santa Anorexia</em>). Aparece también un <em>Birthday book</em> de Andy
+                Warhol con dedicatoria de Chuchi, y el <em>Federico y su mundo</em> de Francisco García Lorca
+                firmado por Laura García Lorca.
+              </p>
+              <p className="text-sm leading-relaxed mt-4">
+                Cada dedicatoria es, en el fondo, una conversación interrumpida que el visitante, al asomarse
+                hoy a la vitrina, puede continuar en silencio.
+              </p>
+            </div>
+
           </div>
         </div>
       </section>
