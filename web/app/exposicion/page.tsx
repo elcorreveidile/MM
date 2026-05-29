@@ -154,22 +154,30 @@ export default function ExposicionPage() {
 
             <div className="space-y-0 border border-zinc-700">
               <div className="p-6 border-b border-zinc-700">
-                <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Agradecimientos</p>
-                <p className="text-zinc-300 text-sm leading-relaxed">
-                  Luis García Montero · Javier Benítez · José Miguel Molero · José Sánchez Montes · Miguel Ángel Ruiz Maresca · Javier Martín Ruiz
-                </p>
+                <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Organización</p>
+                <p className="text-zinc-300 text-sm leading-relaxed">Biblioteca de la Facultad de Derecho · Universidad de Granada</p>
               </div>
               <div className="p-6 border-b border-zinc-700">
                 <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Coordinación</p>
                 <p className="text-zinc-300 text-sm">Antonio Arias</p>
               </div>
               <div className="p-6 border-b border-zinc-700">
+                <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Colaboración</p>
+                <p className="text-zinc-300 text-sm">Asociación Cultural Olvidos de Granada</p>
+              </div>
+              <div className="p-6 border-b border-zinc-700">
                 <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Diseño</p>
                 <p className="text-zinc-300 text-sm">Manigua</p>
               </div>
-              <div className="p-6">
+              <div className="p-6 border-b border-zinc-700">
                 <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Fotos</p>
                 <p className="text-zinc-300 text-sm">Javier Martín Ruiz</p>
+              </div>
+              <div className="p-6">
+                <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Agradecimientos</p>
+                <p className="text-zinc-300 text-sm leading-relaxed">
+                  Luis García Montero · Javier Benítez · José Miguel Molero · José Sánchez Montes · Miguel Ángel Ruiz Maresca · Javier Martín Ruiz
+                </p>
               </div>
             </div>
           </div>
