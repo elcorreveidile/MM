@@ -67,6 +67,11 @@ const fotos = [
     alt: 'Vitrina con los documentos expuestos',
     caption: 'Vista de las vitrinas con los documentos expuestos y los paneles al fondo.',
   },
+  {
+    src: '/exposicion/foto-17.jpg',
+    alt: 'Comida tras la inauguración',
+    caption: 'Comida de celebración tras la inauguración. 29 de mayo de 2026.',
+  },
 ]
 
 export default function GaleriaPage() {
