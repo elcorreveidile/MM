@@ -19,7 +19,7 @@ export default function HomePage() {
                 Mariano<br />Maresca
               </h1>
               <p className="font-libre text-xl md:text-2xl mb-8 max-w-2xl leading-relaxed opacity-90">
-                Profesor de Filosofía del Derecho, editor de Olvidosdegranada y estudioso de Clarín y Pasolini. Su mesa en el Botánico fue legendario punto de encuentro de la cultura granadina.
+                Había en Granada un hombre que lo había leído todo, que escuchaba mejor que nadie y que sabía a quién presentar con quién. Se llamaba Mariano Maresca.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/biografia" className="bg-zinc-900 text-white px-8 py-4 font-libre font-semibold hover:bg-zinc-700 transition-colors text-center">
