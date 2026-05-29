@@ -172,6 +172,54 @@ export default function ExposicionPage() {
         </div>
       </section>
 
+      {/* Las estanterías */}
+      <section className="py-16 bg-[#FAF7F2]">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+          <h2 className="text-3xl sm:text-4xl font-black uppercase mb-2 tracking-tight text-zinc-900">
+            Las estanterías
+          </h2>
+          <p className="font-libre text-xs tracking-[0.3em] uppercase text-zinc-400 mb-10">Un recorrido</p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+            <div className="space-y-5 text-base leading-relaxed text-zinc-700">
+              <p className="text-zinc-900 font-medium">
+                A un lado y otro de estas estanterías se despliega una muestra representativa de la biblioteca,
+                ordenada por los territorios que Maresca habitó como lector. Conviene recorrerlas de arriba abajo.
+              </p>
+              <p>
+                La primera columna abre con sus propios libros intervenidos —escritos y dibujos de su mano—
+                presididos por el número 9 de <em>Olvidos de Granada</em>, cuya portada ilustró él mismo. Debajo,
+                el cine: monografías sobre Pasolini, Fassbinder, Fritz Lang, Buñuel, Visconti, con la revista{' '}
+                <em>La Fábrica del Sur</em> —que dirigió tras <em>Olvidos</em>— en el centro. Más abajo, el
+                pensamiento: filosofía política, historia del movimiento obrero, Bakunin, Foucault, Bataille.
+                Luego el derecho y la filosofía del derecho, núcleo de su cátedra. Y al pie, la pintura y el
+                dibujo: Matisse, Cézanne, Bacon, Caravaggio, el Francisco Bores para un Lorca.
+              </p>
+            </div>
+
+            <div className="space-y-5 text-base leading-relaxed text-zinc-700">
+              <p>
+                La segunda columna reúne arriba los libros en otras lenguas que leía en su idioma original.
+                Debajo, narrativa y poesía, con el <em>Raro de luna</em> de Javier Egea y, en el centro, el
+                número 13 de <em>Olvidos</em>, el más emblemático de la revista, dedicado a homenajear a los
+                poetas y novelistas de la generación del 50. Sigue la novela internacional con los géneros que
+                más disfrutaba —la novela negra, la narrativa americana contemporánea, Sciascia, Le Carré,
+                Ellroy, Lethem—. Más abajo, la música, el flamenco, la ciudad, el urbanismo y la fotografía:
+                la Alhambra, Calatrava, Le Corbusier, los vedutistas, el Francisco Boix de Mauthausen, la
+                revista <em>Boronia</em> con Enrique Morente en portada. Y al final, la filosofía, que lo
+                sostenía todo.
+              </p>
+              <p className="text-zinc-900 font-medium border-l-4 border-[#E84878] pl-4">
+                Recorrer estas baldas es seguir el mapa de una inteligencia que no separaba compartimentos:
+                del derecho al flamenco, de Pasolini a Bakunin, de la poesía granadina a la novela negra,
+                todo formaba parte de la misma conversación. La biblioteca no clasifica a Mariano Maresca,
+                lo retrata.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Las cuatro vitrinas */}
       <section className="py-16 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
