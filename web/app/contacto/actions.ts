@@ -36,7 +36,7 @@ export async function sendContact(formData: FormData): Promise<ContactResult> {
 
   try {
     const { error } = await resend.emails.send({
-      from: 'Web Mariano Maresca <noreply@olvidosdegranada.es>',
+      from: 'onboarding@resend.dev',
       to: 'olvidosdegranada@gmail.com',
       replyTo: email,
       subject: `Contacto web — ${name}`,
