@@ -2,299 +2,190 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const disciplinasInfo: Record<string, { title: string; description: string }> = {
-    literatura: {
-      title: 'Literatura - Mariano Maresca',
-      description: 'Contribuciones de Mariano Maresca a la literatura granadina: Rimado de Ciudad, Letra Clara, y la otra sentimentalidad'
-    },
-    musica: {
-      title: 'Música - Mariano Maresca',
-      description: 'Festival de Tango de Granada, disco Omega de Morente, y contribuciones a la música granadina'
-    },
-    cine: {
-      title: 'Cine - Mariano Maresca',
-      description: 'Crítica cinematográfica, ciclos de cine, y contribuciones al cine en Granada'
-    },
-    fotografia: {
-      title: 'Fotografía - Mariano Maresca',
-      description: 'Archivo de Fotografía Granadina, crítica fotográfica, y exposiciones'
-    },
-    arquitectura: {
-      title: 'Arquitectura - Mariano Maresca',
-      description: 'Crítica de arquitectura, urbanismo, y contribuciones al diseño arquitectónico en Granada'
-    },
-    diseno: {
-      title: 'Diseño - Mariano Maresca',
-      description: 'Diseño editorial, identidad visual, y contribuciones al diseño gráfico'
-    },
-    comic: {
-      title: 'Cómic - Mariano Maresca',
-      description: 'Investigación, divulgación y contribuciones al mundo del cómic en Granada'
-    },
-    filosofia: {
-      title: 'Filosofía - Mariano Maresca',
-      description: 'Trayectoria académica como profesor de Filosofía del Derecho en la Universidad de Granada'
-    },
-    'pensamiento-politico': {
-      title: 'Pensamiento Político - Mariano Maresca',
-      description: 'Reflexión política, pensamiento crítico y compromiso cívico de Mariano Maresca'
-    }
-  }
+type Seccion = { nombre: string; count: number; autores: string }
+type DisciplinaData = {
+  nombre: string
+  subtitulo: string
+  descripcion: string
+  libros: { total: number; secciones: Seccion[] } | null
+}
 
-  const info = disciplinasInfo[params.slug] || {
-    title: `${params.slug} - Mariano Maresca`,
-    description: `Contribuciones de Mariano Maresca al ${params.slug}`
-  }
+const disciplinasData: Record<string, DisciplinaData> = {
+  literatura: {
+    nombre: 'Literatura',
+    subtitulo: 'Poesía, narrativa y ensayo',
+    descripcion: 'La literatura fue el territorio central de la curiosidad intelectual de Mariano Maresca. Su biblioteca reúne más de 800 títulos literarios distribuidos en siete tradiciones: la española —con Luis García Montero como el autor más presente, seguido de Ángel González, Javier Egea, Federico García Lorca, Luis Cernuda y Antonio Machado—, la anglosajona (Hemingway, Fitzgerald, Carver, Dickens), la alemana y centroeuropea (Brecht, Kafka, Canetti, Hölderlin), la italiana —donde Pasolini ocupa un lugar central—, la francesa (Camus, Rimbaud, Proust, Gide), la hispanoamericana (Borges, García Márquez, Bioy Casares, Rulfo) y la rusa (Chéjov, Dostoievski, Tolstói). La poesía española de la segunda mitad del siglo XX —la llamada «otra sentimentalidad», con García Montero, Álvaro Salvador y Javier Egea— es la sección más densa y personal de la biblioteca.',
+    libros: {
+      total: 802,
+      secciones: [
+        { nombre: 'Poesía y literatura española', count: 282, autores: 'Luis García Montero · Ángel González · Javier Egea · Federico García Lorca · Luis Cernuda · Antonio Machado · Álvaro Salvador · Antonio Muñoz Molina' },
+        { nombre: 'Literatura anglosajona', count: 145, autores: 'Ernest Hemingway · F. Scott Fitzgerald · Raymond Carver · Charles Dickens · Shakespeare · Dylan Thomas' },
+        { nombre: 'Literatura alemana y centroeuropea', count: 118, autores: 'Bertolt Brecht · Franz Kafka · Elias Canetti · Friedrich Hölderlin · Bernhard Schlink' },
+        { nombre: 'Literatura italiana', count: 95, autores: 'Pier Paolo Pasolini · Antonio Tabucchi · Cesare Pavese · Carlo Ginzburg · Trieste y el mito centroeuropeo' },
+        { nombre: 'Literatura francesa', count: 75, autores: 'Albert Camus · Arthur Rimbaud · Marcel Proust · André Gide · André Malraux' },
+        { nombre: 'Literatura hispanoamericana', count: 65, autores: 'Jorge Luis Borges · Gabriel García Márquez · Adolfo Bioy Casares · Juan Rulfo · César Vallejo · Juan Carlos Onetti' },
+        { nombre: 'Literatura rusa y eslava', count: 22, autores: 'Antón Chéjov · Fiodor Dostoievski · León Tolstói · Ryszard Kapuscinski' },
+      ],
+    },
+  },
+  filosofia: {
+    nombre: 'Filosofía',
+    subtitulo: 'Filosofía del Derecho y pensamiento contemporáneo',
+    descripcion: 'Catedrático de Filosofía del Derecho en la Universidad de Granada, Maresca dedicó su vida académica a la reflexión filosófica sobre el poder, el derecho y la sociedad. Su biblioteca filosófica, de más de 300 títulos, refleja un pensamiento marcado por la tradición marxista y el materialismo histórico —Gramsci, Negri, Althusser, Foucault— junto a los clásicos del empirismo y la filosofía analítica anglosajona: Hume, A.J. Ayer. La sección jurídico-filosófica incluye a Beccaria, Hobbes, Adam Smith, Bobbio y Ferrajoli. El derecho no como técnica, sino como campo de disputa política y filosófica.',
+    libros: {
+      total: 319,
+      secciones: [
+        { nombre: 'Filosofía y pensamiento', count: 304, autores: 'Antonio Gramsci · Michel Foucault · Antonio Negri · Althusser · David Hume · A.J. Ayer · Friedrich Nietzsche · Alicia H. Puleo' },
+        { nombre: 'Derecho y filosofía política', count: 15, autores: 'Cesare Beccaria · Thomas Hobbes · Adam Smith · Norberto Bobbio · Luigi Ferrajoli' },
+      ],
+    },
+  },
+  'pensamiento-politico': {
+    nombre: 'Pensamiento Político',
+    subtitulo: 'Historia, política y compromiso intelectual',
+    descripcion: 'El compromiso político de Maresca estuvo siempre fundado en el rigor histórico y filosófico. Su biblioteca de historia y política —donde conviven Hobsbawm, Josep Fontana, Kapuscinski, Gramsci y Pannekoek— refleja un pensamiento de izquierdas crítico, atento a las tradiciones obreras y a la historia desde abajo. Columnista en El País Andalucía con la sección «La nuestra» y editor de Olvidos de Granada, ejerció como intelectual público durante más de cuatro décadas. La memoria —la memoria de los vencidos, la memoria cultural— fue su arma teórica y política constante.',
+    libros: {
+      total: 37,
+      secciones: [
+        { nombre: 'Historia y política', count: 37, autores: 'Eric Hobsbawm · Josep Fontana · Ryszard Kapuscinski · Antonio Gramsci · Anton Pannekoek · V.I. Lenin · Fernand Braudel' },
+      ],
+    },
+  },
+  cine: {
+    nombre: 'Cine',
+    subtitulo: 'Crítica cinematográfica y ciclos de cine',
+    descripcion: 'El cine fue para Maresca una forma de pensamiento. Organizó ciclos de cine en Granada y publicó crítica cinematográfica en Olvidos de Granada durante décadas. Entre todos los cineastas, Pier Paolo Pasolini ocupa un lugar central en su biblioteca: varios libros sobre su obra —incluido el catálogo de sus pinturas y dibujos— revelan una afinidad profunda con ese intelectual total que fue también poeta, novelista y polemista. Maresca compartía con Pasolini la convicción de que la cultura es siempre un campo de combate.',
+    libros: {
+      total: 49,
+      secciones: [
+        { nombre: 'Arte, cine y estética', count: 49, autores: 'Pier Paolo Pasolini · Juan Vida · Velázquez · Miguel Ángel · Picasso · Fundación Rodríguez-Acosta' },
+      ],
+    },
+  },
+  fotografia: {
+    nombre: 'Fotografía',
+    subtitulo: 'Archivo y memoria visual',
+    descripcion: 'Maresca contribuyó a preservar la memoria visual de Granada. Impulsó el Archivo de Fotografía Granadina y organizó exposiciones fotográficas que documentaron la vida cultural de la ciudad a lo largo de décadas. La fotografía, en su visión, era ante todo un instrumento de memoria histórica: una manera de fijar lo efímero y de resistir al olvido.',
+    libros: null,
+  },
+  arquitectura: {
+    nombre: 'Arquitectura',
+    subtitulo: 'Urbanismo y espacio público',
+    descripcion: 'La ciudad fue para Maresca un objeto de reflexión constante. A través de la crítica arquitectónica y el ensayo urbano, analizó las transformaciones del espacio público granadino y el modo en que la arquitectura configura —o destruye— la vida colectiva. Sus textos en Olvidos de Granada abordaron las grandes intervenciones urbanísticas en Granada con la misma exigencia crítica que aplicaba a la literatura o al cine.',
+    libros: null,
+  },
+  diseno: {
+    nombre: 'Diseño',
+    subtitulo: 'Diseño editorial e identidad visual',
+    descripcion: 'El cuidado formal de Olvidos de Granada, que dirigió durante décadas, convirtió a la publicación en una referencia del diseño editorial granadino. Maresca entendía que el diseño era parte inseparable del contenido: la forma en que se presenta un texto es también un argumento. La colaboración con Manigua para la identidad visual de este proyecto memorial —la plaquita MM, las tipografías, los colores— es heredera directa de esa convicción.',
+    libros: null,
+  },
+  comic: {
+    nombre: 'Cómic',
+    subtitulo: 'El noveno arte',
+    descripcion: 'Maresca fue uno de los primeros en tratar el cómic como forma artística legítima en Granada. Su trabajo de divulgación y crítica contribuyó a que la historieta fuera reconocida como parte del patrimonio cultural de la ciudad. Organizó exposiciones y publicó artículos en Olvidos de Granada que exploraban la especificidad del lenguaje del cómic y reivindicaban a sus autores como artistas de pleno derecho.',
+    libros: null,
+  },
+  musica: {
+    nombre: 'Música',
+    subtitulo: 'Festival de Tango y crítica musical',
+    descripcion: 'La contribución de Maresca a la música granadina fue monumental. Fundó y dirigió el Festival de Tango de Granada durante más de tres décadas, convirtiendo la ciudad en referencia del tango en España. La historia de ese festival es inseparable de la historia cultural de Granada en la democracia. También publicó crítica musical en Olvidos de Granada y colaboró en proyectos de música flamenca, incluido el célebre disco Omega de Enrique Morente, ese encuentro imposible y necesario entre el flamenco y Leonard Cohen.',
+    libros: null,
+  },
+}
 
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const data = disciplinasData[slug]
+  if (!data) return { title: 'Disciplina no encontrada · Mariano Maresca' }
   return {
-    title: info.title,
-    description: info.description
+    title: `${data.nombre} — Las cosas que hemos leído · Mariano Maresca`,
+    description: data.descripcion.slice(0, 160),
   }
 }
 
-export default function DisciplinaPage({ params }: { params: { slug: string } }) {
-  const disciplinasData: Record<string, {
-    nombre: string
-    descripcion: string
-    contenido: string[]
-    proyectos: Array<{ nombre: string; año: string; descripcion: string }>
-  }> = {
-    literatura: {
-      nombre: 'Literatura',
-      descripcion: 'Mariano Maresca desarrolló una labor fundamental en el ámbito literario granadino, tanto como crítico como promotor de autores y proyectos.',
-      contenido: [
-        'Rimado de Ciudad de TNT (1994): Proyecto poético y visual que fusionó literatura y arte urbano',
-        'Letra Clara en la Facultad de Letras: Serie de conferencias y encuentros literarios',
-        'Crítica literaria y ensayos publicados en Olvidosdegranada',
-        'Promoción de "la otra sentimentalidad" con autores como Javier Egea, Juan Vida y Álvaro Salvador'
-      ],
-      proyectos: [
-        { nombre: 'Rimado de Ciudad de TNT', año: '1994', descripcion: 'Proyecto poético y visual' },
-        { nombre: 'Letra Clara', año: '1980-1990', descripcion: 'Conferencias literarias en la Facultad de Letras' },
-        { nombre: 'Crítica literaria', año: '1982-2023', descripcion: 'Ensayos y artículos en Olvidosdegranada' }
-      ],
-    },
-    musica: {
-      nombre: 'Música',
-      descripcion: 'La contribución de Maresca a la música granadina fue monumental, especialmente a través del Festival de Tango y su trabajo con Enrique Morente.',
-      contenido: [
-        'Festival de Tango de Granada (1990-2023): Evento que llevó el tango a las calles de la ciudad durante más de tres décadas',
-        'Disco Omega de Morente (2008): Contribución crítica y divulgativa en este álbum seminal del flamenco',
-        'Crítica musical y divulgación en Olvidosdegranada',
-        'Organización de conciertos y eventos musicales'
-      ],
-      proyectos: [
-        { nombre: 'Festival de Tango de Granada', año: '1990-2023', descripcion: 'Festival anual de tango' },
-        { nombre: 'Disco Omega de Morente', año: '2008', descripcion: 'Contribución crítica y divulgativa' },
-        { nombre: 'Conciertos y eventos', año: '1982-2023', descripcion: 'Organización de eventos musicales' }
-      ],
-    },
-    cine: {
-      nombre: 'Cine',
-      descripcion: 'Maresca contribuyó al cine granadino a través de la crítica, la organización de ciclos y la promoción del cine de autor.',
-      contenido: [
-        'Crítica cinematográfica en Olvidosdegranada',
-        'Organización de ciclos de cine',
-        'Proyecciones y eventos cinematográficos',
-        'Ensayos sobre teoría cinematográfica'
-      ],
-      proyectos: [
-        { nombre: 'Ciclos de cine', año: '1985-2023', descripcion: 'Organización de ciclos cinematográficos' },
-        { nombre: 'Crítica de cine', año: '1982-2023', descripcion: 'Artículos y ensayos cinematográficos' }
-      ],
-    },
-    fotografia: {
-      nombre: 'Fotografía',
-      descripcion: 'El archivo de fotografía granadina que Maresca contribuyó a crear es una referencia fundamental para entender la historia visual de la ciudad.',
-      contenido: [
-        'Archivo de Fotografía Granadina: Recopilación y preservación de la historia visual',
-        'Crítica fotográfica en Olvidosdegranada',
-        'Organización de exposiciones fotográficas',
-        'Investigación sobre fotografía granadina'
-      ],
-      proyectos: [
-        { nombre: 'Archivo de Fotografía Granadina', año: '2010-2023', descripcion: 'Recopilación histórica' },
-        { nombre: 'Exposiciones fotográficas', año: '1985-2023', descripcion: 'Comisariado de exposiciones' }
-      ],
-    },
-    arquitectura: {
-      nombre: 'Arquitectura',
-      descripcion: 'La crítica arquitectónica de Maresca contribuyó al debate sobre el urbanismo y la arquitectura de Granada.',
-      contenido: [
-        'Crítica de arquitectura y urbanismo',
-        'Ensayos sobre el espacio público granadino',
-        'Análisis de intervenciones arquitectónicas',
-        'Debate sobre la transformación de la ciudad'
-      ],
-      proyectos: [
-        { nombre: 'Crítica arquitectónica', año: '1978-2023', descripcion: 'Análisis de arquitectura y urbanismo' },
-        { nombre: 'Espacio público', año: '1980-2023', descripcion: 'Ensayos sobre la ciudad' }
-      ],
-    },
-    diseno: {
-      nombre: 'Diseño',
-      descripcion: 'Maresca contribuyó al diseño gráfico y editorial a través de su trabajo en Olvidosdegranada y otros proyectos.',
-      contenido: [
-        'Diseño editorial de Olvidosdegranada',
-        'Identidad visual de proyectos culturales',
-        'Crítica de diseño',
-        'Promoción del diseño granadino'
-      ],
-      proyectos: [
-        { nombre: 'Diseño Olvidosdegranada', año: '1982-2023', descripcion: 'Diseño editorial' },
-        { nombre: 'Identidad visual', año: '1982-2023', descripcion: 'Proyectos de identidad visual' }
-      ],
-    },
-    comic: {
-      nombre: 'Cómic',
-      descripcion: 'Maresca investigó y divulgó el cómic como forma de arte y expresión cultural.',
-      contenido: [
-        'Investigación sobre cómic español',
-        'Divulgación del noveno arte',
-        'Artículos sobre cómic en Olvidosdegranada',
-        'Promoción de autores de cómic'
-      ],
-      proyectos: [
-        { nombre: 'Investigación cómic', año: '1985-2023', descripcion: 'Investigación y divulgación' },
-        { nombre: 'Artículos sobre cómic', año: '1982-2023', descripcion: 'Publicaciones sobre cómic' }
-      ],
-    },
-    filosofia: {
-      nombre: 'Filosofía',
-      descripcion: 'Como profesor de Filosofía del Derecho en la Universidad de Granada, Maresca formó a generaciones de juristas con una sólida base filosófica.',
-      contenido: [
-        'Cátedra de Filosofía del Derecho en la UGR',
-        'Investigación en teoría del derecho',
-        'Publicaciones académicas',
-        'Formación de generaciones de juristas'
-      ],
-      proyectos: [
-        { nombre: 'Cátedra Filosofía del Derecho', año: '1978-2023', descripcion: 'Profesor universitario' },
-        { nombre: 'Publicaciones académicas', año: '1980-2023', descripcion: 'Investigación y publicación' }
-      ]
-    },
-    'pensamiento-politico': {
-      nombre: 'Pensamiento Político',
-      descripcion: 'Mariano Maresca ejerció como intelectual comprometido, combinando el rigor académico con la reflexión política y el activismo cultural.',
-      contenido: [
-        'Reflexión política en Olvidosdegranada: artículos y editoriales sobre el poder, la democracia y la sociedad',
-        'Colaboraciones en medios: columna «La nuestra» en El País (Andalucía), con análisis político y cultural',
-        'Pensamiento crítico sobre la transición, la memoria histórica y los movimientos sociales'
-      ],
-      proyectos: [
-        { nombre: 'Columna «La nuestra»', año: '2004-2008', descripcion: 'Análisis político y cultural en El País Andalucía' },
-        { nombre: 'Editoriales Olvidosdegranada', año: '1984-2023', descripcion: 'Reflexión política y cultural desde la revista' }
-      ]
-    }
-  }
-
-  const data = disciplinasData[params.slug]
+export default async function DisciplinaPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const data = disciplinasData[slug]
 
   if (!data) {
     return (
-      <div className="min-h-screen py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-crimson font-bold text-zinc-900 mb-8">
-            Disciplina no encontrada
-          </h1>
-          <Link href="/" className="text-zinc-600 hover:text-zinc-900">
-            Volver al inicio
-          </Link>
+      <div className="min-h-screen bg-[#FAF7F2]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <h1 className="font-crimson text-4xl font-bold text-zinc-900 mb-8">Disciplina no encontrada</h1>
+          <Link href="/#disciplinas" className="font-libre text-zinc-600 hover:text-zinc-900">← Volver</Link>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-12">
-          <Link href="/#disciplinas" className="text-zinc-600 hover:text-zinc-900 font-libre mb-4 inline-block">
-            ← Volver a disciplinas
+    <div className="min-h-screen bg-[#FAF7F2]">
+
+      <div className="bg-zinc-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link href="/#disciplinas" className="font-libre text-xs tracking-[0.3em] uppercase text-zinc-400 hover:text-zinc-200 mb-6 inline-block transition-colors">
+            ← Mariano Maresca
           </Link>
-          <div className="flex items-center mb-6">
-            <div className="relative w-24 h-24 mr-6 rounded-lg overflow-hidden flex-shrink-0">
+          <div className="flex items-center gap-6 mb-6">
+            <div className="relative w-20 h-20 flex-shrink-0 overflow-hidden">
               <Image
-                src={`/disciplinas/${params.slug}.png`}
+                src={`/disciplinas/${slug}.png`}
                 alt={data.nombre}
                 fill
                 className="object-cover"
               />
             </div>
             <div>
-              <h1 className="text-5xl font-crimson font-bold text-zinc-900 mb-2">
+              <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-2">
+                {data.subtitulo}
+              </p>
+              <h1 className="font-crimson font-bold" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
                 {data.nombre}
               </h1>
-              <p className="text-xl text-zinc-600 font-libre">
-                Contribuciones de Mariano Maresca
-              </p>
             </div>
           </div>
-          <p className="text-lg text-zinc-700 font-libre leading-relaxed max-w-3xl">
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div className="max-w-3xl mb-12">
+          <p className="font-libre text-zinc-700 text-lg leading-relaxed">
             {data.descripcion}
           </p>
         </div>
 
-        {/* Contenido Principal */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-          <div className="lg:col-span-2">
-            <h2 className="text-3xl font-crimson font-bold text-zinc-900 mb-6">
-              Áreas de trabajo
-            </h2>
-            <div className="space-y-6">
-              {data.contenido.map((item, index) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-                  <p className="text-zinc-700 font-libre leading-relaxed">
-                    {item}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Sidebar */}
+        {data.libros && (
           <div>
-            <h3 className="text-2xl font-crimson font-bold text-zinc-900 mb-6">
-              Proyectos destacados
-            </h3>
-            <div className="space-y-4">
-              {data.proyectos.map((proyecto, index) => (
-                <div key={index} className="bg-zinc-50 p-6 rounded-lg">
-                  <div className="flex items-center justify-between mb-2">
-                    <h4 className="text-lg font-crimson font-semibold text-zinc-900">
-                      {proyecto.nombre}
-                    </h4>
-                    <span className="text-sm text-zinc-600 font-libre">{proyecto.año}</span>
+            <div className="flex items-baseline gap-4 mb-6">
+              <h2 className="font-crimson font-bold text-zinc-900 text-2xl">En su biblioteca</h2>
+              <span className="font-libre text-sm text-zinc-500">{data.libros.total} títulos</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {data.libros.secciones.map((s) => (
+                <div key={s.nombre} className="bg-white border border-zinc-100 p-6">
+                  <div className="flex items-baseline justify-between mb-3">
+                    <h3 className="font-crimson font-bold text-zinc-900 text-lg">{s.nombre}</h3>
+                    <span className="font-libre text-xs text-zinc-400 ml-2 flex-shrink-0">{s.count} títulos</span>
                   </div>
-                  <p className="text-zinc-700 font-libre text-sm">
-                    {proyecto.descripcion}
-                  </p>
+                  <p className="font-libre text-xs text-zinc-500 leading-relaxed">{s.autores}</p>
                 </div>
               ))}
             </div>
+            <div className="mt-6">
+              <Link
+                href="/archivo"
+                className="font-libre text-xs tracking-widest uppercase text-zinc-500 hover:text-zinc-900 transition-colors"
+              >
+                Ver el inventario completo →
+              </Link>
+            </div>
           </div>
-        </div>
+        )}
 
-        {/* CTA */}
-        <div className="bg-zinc-900 text-white p-8 rounded-lg text-center">
-          <h2 className="text-2xl font-crimson font-bold mb-4">
-            ¿Tienes información sobre estos proyectos?
-          </h2>
-          <p className="text-zinc-300 mb-6 font-libre max-w-2xl mx-auto">
-            Si tienes documentos, fotografías u otros materiales relacionados con
-            el trabajo de Mariano Maresca en {data.nombre.toLowerCase()},
-            nos encantaría incorporarlos al archivo.
-          </p>
-          <Link
-            href="/exposicion"
-            className="inline-block bg-white text-zinc-900 px-8 py-3 rounded-full font-libre font-semibold hover:bg-zinc-100 transition-colors"
-          >
-            Contactar con los comisarios
-          </Link>
-        </div>
       </div>
+
     </div>
   )
 }
