@@ -166,7 +166,7 @@ export default function HomePage() {
                   «El trabajo de la memoria es esencial, casi nuestra única arma»
                 </p>
                 <cite className="text-sm text-zinc-500 mt-2 font-libre not-italic block">
-                  — Columna «Países», El País
+                  — Columna «La nuestra», El País Andalucía
                 </cite>
               </blockquote>
             </div>
@@ -211,7 +211,7 @@ export default function HomePage() {
               { title: 'Disco Omega de Morente', year: '2008', description: 'Contribución crítica y divulgativa en este álbum seminal del flamenco.', category: 'Música' },
               { title: 'Rimado de ciudad', year: '1983', description: 'Disco pionero que integró rock, poesía y fotografía de manera insólita.', category: 'Música' },
               { title: 'La Fábrica del Sur', year: '1989–1990', description: 'Dirección de esta revista cultural que continuó el trabajo editorial de Olvidos.', category: 'Literatura' },
-              { title: 'Columna «Países» en El País', year: '2004–2008', description: 'Columnista en El País (Andalucía) con reflexiones sobre memoria y cultura.', category: 'Literatura' },
+              { title: 'Columna «La nuestra» en El País Andalucía', year: '2004–2008', description: 'Columnista en El País (Andalucía) con reflexiones sobre memoria y cultura.', category: 'Literatura' },
               { title: 'Documental «Palabra a palabra»', year: '2015', description: 'Documental de José Sánchez Montes sobre su recuperación tras el ictus de 2011.', category: 'Cine' },
               { title: 'Exposición «La mesa de Mariano»', year: '2023', description: 'Homenaje póstumo en el Botánico con placa conmemorativa en su mesa habitual.', category: 'Fotografía' },
             ].map((project, index) => (

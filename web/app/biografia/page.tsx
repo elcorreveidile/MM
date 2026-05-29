@@ -76,7 +76,7 @@ export default function BiographyPage() {
                   Autor de libros fundamentales sobre literatura y cine: <em>Hipótesis sobre Clarín</em> (Granada, 1985), un estudio de rigor sobre Leopoldo Alas; y <em>Salò. El infierno según Pasolini</em> (Córdoba, 1993), escrito junto a J. Ignacio Mendiguchía.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Entre 2004 y 2008 publicó regularmente la columna «Países» en <em>El País</em> (edición Andalucía). Esos artículos los reunió en <em>Las cosas que hemos visto</em> (Renacimiento), con prólogo de Luis García Montero — libro cuyo título inspira directamente el de la exposición de 2026: <em>Las cosas que hemos leído</em>.
+                  Entre 2004 y 2008 publicó regularmente la columna «La nuestra» en <em>El País</em> (edición Andalucía). Esos artículos los reunió en <em>Las cosas que hemos visto</em> (Renacimiento), con prólogo de Luis García Montero — libro cuyo título inspira directamente el de la exposición de 2026: <em>Las cosas que hemos leído</em>.
                 </p>
               </div>
             </section>
@@ -109,7 +109,7 @@ export default function BiographyPage() {
                   { label: 'Nacimiento', value: 'Almería, 1945' },
                   { label: 'Fallecimiento', value: 'Granada, 2023' },
                   { label: 'Profesión', value: 'Profesor de Filosofía del Derecho, UGR' },
-                  { label: 'Lugar emblemático', value: 'Café Botánico, calle Duquesa, Granada' },
+                  { label: 'Lugares emblemáticos', value: 'La Tertulia (calle Elvira) · Café Botánico (calle Duquesa)' },
                   { label: 'Proyecto principal', value: 'Editor de Olvidosdegranada (desde 1982)' },
                 ].map(item => (
                   <div key={item.label}>
@@ -126,7 +126,7 @@ export default function BiographyPage() {
                   «El trabajo de la memoria es esencial, casi nuestra única arma»
                 </p>
                 <cite className="font-libre text-xs text-zinc-900 opacity-70 not-italic tracking-wider uppercase">
-                  Países · El País · 2004
+                  «La nuestra» · El País Andalucía · 2004–2008
                 </cite>
               </blockquote>
             </div>
