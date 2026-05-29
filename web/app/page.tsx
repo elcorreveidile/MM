@@ -142,23 +142,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Botánico — fondo crudo */}
+      {/* Botánico y La Tertulia — fondo crudo */}
       <section className="py-20 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-4">
-                Café Botánico · La Tertulia · Granada
+                Dos lugares · Dos épocas · Granada
               </p>
               <h2 className="font-crimson font-bold text-zinc-900 mb-6" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
-                El Botánico y La Tertulia
+                La Tertulia y el Botánico
               </h2>
-              <p className="text-lg text-zinc-700 mb-4 leading-relaxed font-libre">
-                El café Botánico, en la calle Duquesa, fue el segundo hogar de Mariano Maresca: «informal alternativa a su despacho en la Facultad» y punto de encuentro legendario de la cultura granadina.
-              </p>
-              <p className="text-zinc-600 mb-6 leading-relaxed font-libre">
-                Allí nació y vivió <strong>La Tertulia</strong>: un espacio de conversación y creación en torno a su mesa que fue escuela y trampolín para escritores como Antonio Muñoz Molina, Luis García Montero y Javier Egea.
-              </p>
+              <div className="space-y-4 mb-6">
+                <p className="text-lg text-zinc-700 leading-relaxed font-libre">
+                  <strong>La Tertulia</strong> —el mítico bar-librería de la calle Elvira, fundado en 1980 por Horacio Rébora— fue el centro de la vida nocturna y cultural de Mariano desde sus inicios. Allí nació <em>La Otra Sentimentalidad</em>, el movimiento poético de García Montero, Egea y Álvaro Salvador. Allí Maresca organizó un concurso de letras de tango cuyos ganadores fueron Javier Egea, García Montero y otros poetas granadinos. La Tertulia cierra sus puertas definitivamente el 30 de mayo de 2026.
+                </p>
+                <p className="text-zinc-600 leading-relaxed font-libre">
+                  Años después llegaría el <strong>café Botánico</strong>, en la calle Duquesa: su espacio de trabajo diurno, «informal alternativa a su despacho en la Facultad», donde recibía a amigos, leía y escribía. A menudo la jornada transcurría entre el Botánico, alguna librería y La Tertulia al caer la noche.
+                </p>
+              </div>
               <blockquote className="border-l-4 border-[#E84878] pl-6 py-2 mb-8">
                 <p className="text-zinc-700 italic font-libre text-lg leading-relaxed">
                   «El trabajo de la memoria es esencial, casi nuestra única arma»

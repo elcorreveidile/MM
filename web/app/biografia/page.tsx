@@ -41,14 +41,14 @@ export default function BiographyPage() {
 
             <section className="p-8">
               <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
-                La Tertulia y la mesa del Botánico
+                La Tertulia y el Botánico
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Su mesa en el café Botánico de la calle Duquesa fue el epicentro de una vida cultural extraordinaria. Punto de encuentro que Maresca convirtió en «informal alternativa a su despacho en la Facultad», allí se gestaron proyectos, se discutieron ideas y se tejió la red cultural que marcaría a toda una generación.
+                  Desde que abrió en 1980, <strong>La Tertulia</strong> —el mítico bar-librería de la calle Elvira fundado por el argentino Horacio Rébora— fue el centro de la vida cultural nocturna de Mariano Maresca. Allí nació <em>La Otra Sentimentalidad</em>, el movimiento que reunió a Luis García Montero, Javier Egea y Álvaro Salvador bajo la guía intelectual de su profesor Juan Carlos Rodríguez. Maresca fue el articulador de aquellas noches: organizó un histórico concurso de letras de tango cuyas bases él mismo redactó, y del que salió un libro con poemas de Egea, García Montero, Álvaro Salvador, Juan de Loxa y otros. La Tertulia cierra sus puertas el 30 de mayo de 2026, tras 46 años.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  En torno a aquella mesa y a su tertulia se formaron escritores que luego serían figuras de primer orden de las letras españolas: Antonio Muñoz Molina, Luis García Montero, Javier Egea. Maresca fue para ellos un referente, un interlocutor exigente y un impulsor generoso del talento ajeno.
+                  Años después, cuando el Botánico ya existía, Maresca hizo del <strong>café Botánico</strong> —calle Duquesa— su espacio de trabajo diurno: «informal alternativa a su despacho en la Facultad». A menudo la jornada completaba el círculo: Botánico, alguna librería del centro, y La Tertulia al caer la noche.
                 </p>
               </div>
             </section>
