@@ -217,7 +217,7 @@ export default function DisciplinaPage({ params }: { params: { slug: string } })
           <div className="flex items-center mb-6">
             <div className="relative w-24 h-24 mr-6 rounded-lg overflow-hidden flex-shrink-0">
               <Image
-                src={`/disciplinas/${params.slug}.jpg`}
+                src={`/disciplinas/${params.slug}.png`}
                 alt={data.nombre}
                 fill
                 className="object-cover"

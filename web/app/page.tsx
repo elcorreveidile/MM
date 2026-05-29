@@ -62,7 +62,7 @@ export default function HomePage() {
                 <div className="rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 bg-zinc-100">
                   <div className="relative aspect-square">
                     <Image
-                      src={`/disciplinas/${discipline.slug}.jpg`}
+                      src={`/disciplinas/${discipline.slug}.png`}
                       alt={discipline.name}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
