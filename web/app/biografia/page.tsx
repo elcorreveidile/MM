@@ -48,7 +48,7 @@ export default function BiographyPage() {
                   Desde que abrió en 1980, <strong>La Tertulia</strong> —el mítico bar-librería de la calle Elvira fundado por el argentino Horacio Rébora— fue el centro de la vida cultural nocturna de Mariano Maresca. Allí nació <em>La Otra Sentimentalidad</em>, el movimiento que reunió a Luis García Montero, Javier Egea y Álvaro Salvador bajo la guía intelectual de su profesor Juan Carlos Rodríguez. Maresca fue el articulador de aquellas noches: organizó un histórico concurso de letras de tango cuyas bases él mismo redactó, y del que salió un libro con poemas de Egea, García Montero, Álvaro Salvador, Juan de Loxa y otros. La Tertulia cierra sus puertas el 30 de mayo de 2026, tras 46 años.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Años después, cuando el Botánico ya existía, Maresca hizo del <strong>café Botánico</strong> —calle Duquesa— su espacio de trabajo diurno: «informal alternativa a su despacho en la Facultad». A menudo la jornada completaba el círculo: Botánico, alguna librería del centro, y La Tertulia al caer la noche.
+                  Más tarde, el <strong>café Botánico</strong> —calle Duquesa, al lado de la Facultad— se convirtió en otro lugar habitual: iba a comer, a veces a cenar o a tomar algo. A menudo la jornada terminaba pasando por alguna librería y acabando la noche en La Tertulia.
                 </p>
               </div>
             </section>
