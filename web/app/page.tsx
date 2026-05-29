@@ -36,13 +36,13 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-crimson font-bold text-zinc-900 mb-4 text-center">
-            Las 8 Disciplinas Artísticas
+            Las 9 Disciplinas Artísticas
           </h2>
           <p className="text-center text-zinc-600 mb-16 font-libre max-w-2xl mx-auto">
             Mariano Maresca trabajó incansablemente en múltiples manifestaciones artísticas que enriquecieron la vida cultural de Granada.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { name: 'Literatura', slug: 'literatura' },
               { name: 'Música', slug: 'musica' },
@@ -51,6 +51,7 @@ export default function HomePage() {
               { name: 'Arquitectura', slug: 'arquitectura' },
               { name: 'Diseño', slug: 'diseno' },
               { name: 'Cómic', slug: 'comic' },
+              { name: 'Filosofía', slug: 'filosofia' },
               { name: 'Pensamiento Político', slug: 'pensamiento-politico' },
             ].map((discipline) => (
               <Link

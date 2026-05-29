@@ -32,6 +32,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       title: 'Cómic - Mariano Maresca',
       description: 'Investigación, divulgación y contribuciones al mundo del cómic en Granada'
     },
+    filosofia: {
+      title: 'Filosofía - Mariano Maresca',
+      description: 'Trayectoria académica como profesor de Filosofía del Derecho en la Universidad de Granada'
+    },
     'pensamiento-politico': {
       title: 'Pensamiento Político - Mariano Maresca',
       description: 'Reflexión política, pensamiento crítico y compromiso cívico de Mariano Maresca'
@@ -156,18 +160,30 @@ export default function DisciplinaPage({ params }: { params: { slug: string } })
         { nombre: 'Artículos sobre cómic', año: '1982-2023', descripcion: 'Publicaciones sobre cómic' }
       ],
     },
+    filosofia: {
+      nombre: 'Filosofía',
+      descripcion: 'Como profesor de Filosofía del Derecho en la Universidad de Granada, Maresca formó a generaciones de juristas con una sólida base filosófica.',
+      contenido: [
+        'Cátedra de Filosofía del Derecho en la UGR',
+        'Investigación en teoría del derecho',
+        'Publicaciones académicas',
+        'Formación de generaciones de juristas'
+      ],
+      proyectos: [
+        { nombre: 'Cátedra Filosofía del Derecho', año: '1978-2023', descripcion: 'Profesor universitario' },
+        { nombre: 'Publicaciones académicas', año: '1980-2023', descripcion: 'Investigación y publicación' }
+      ]
+    },
     'pensamiento-politico': {
       nombre: 'Pensamiento Político',
       descripcion: 'Mariano Maresca ejerció como intelectual comprometido, combinando el rigor académico con la reflexión política y el activismo cultural.',
       contenido: [
         'Reflexión política en Olvidosdegranada: artículos y editoriales sobre el poder, la democracia y la sociedad',
-        'Cátedra de Filosofía del Derecho en la UGR: formación de generaciones de juristas con conciencia crítica',
         'Colaboraciones en medios: columna "Países" en El País (Andalucía), con análisis político y cultural',
         'Pensamiento crítico sobre la transición, la memoria histórica y los movimientos sociales'
       ],
       proyectos: [
         { nombre: 'Columna "Países"', año: '2004-2008', descripcion: 'Análisis político y cultural en El País Andalucía' },
-        { nombre: 'Cátedra Filosofía del Derecho', año: '1978-2023', descripcion: 'Formación jurídica y pensamiento crítico en la UGR' },
         { nombre: 'Editoriales Olvidosdegranada', año: '1984-2023', descripcion: 'Reflexión política y cultural desde la revista' }
       ]
     }
