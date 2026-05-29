@@ -8,7 +8,10 @@ export default function Footer() {
           {/* Column 1: Logo y descripción */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-12 h-12 bg-white text-zinc-900 flex items-center justify-center font-serif text-2xl font-bold">
+              <div
+                className="w-12 h-12 flex items-center justify-center font-crimson font-bold text-2xl leading-none"
+                style={{ backgroundColor: '#F2BE2A', color: '#8B1A1A' }}
+              >
                 MM
               </div>
               <div>
