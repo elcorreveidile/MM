@@ -158,7 +158,7 @@ export default function HomePage() {
                   <strong>La Tertulia</strong> —el mítico bar-librería de la calle Elvira, fundado en 1980 por Horacio Rébora— fue el corazón de la vida cultural y nocturna de Mariano desde sus inicios. Allí nació <em>La Otra Sentimentalidad</em> con García Montero, Egea y Álvaro Salvador. Allí Maresca organizó un histórico concurso de letras de tango. Tres generaciones de escritores, músicos y artistas granadinos pasaron por sus mesas. La Tertulia cierra el 30 de mayo de 2026, tras 46 años.
                 </p>
                 <p className="text-zinc-600 leading-relaxed font-libre">
-                  Con el tiempo llegó también el <strong>café Botánico</strong> —calle Duquesa, junto a la Facultad—: allí citaba a comer a amigos, a la familia, a compañeros y a sus discípulos. Pero La Tertulia siguió siendo La Tertulia, y Mariano siguió yendo hasta el final.
+                  Con el tiempo llegó también el <strong>café Botánico</strong> —calle Duquesa, junto a la Facultad—: allí citaba a comer a amigos, a la familia, a compañeros y a sus discípulos. Pero La Tertulia siguió siendo La Tertulia, y Mariano siguió yendo hasta el ictus de 2011.
                 </p>
               </div>
               <blockquote className="border-l-4 border-[#E84878] pl-6 py-2 mb-8">
