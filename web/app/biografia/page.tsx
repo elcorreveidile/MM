@@ -153,7 +153,9 @@ export default function BiographyPage() {
                   'Rimado de ciudad (1983)',
                   'Hipótesis sobre Clarín (1985)',
                   'Salò. El infierno según Pasolini (1993)',
-                  'Columnas en El País (2004–2008)',
+                  'Imaginaria (Canal Sur, 1999)',
+                  'Columnas «La nuestra» en El País Andalucía (2004–2008)',
+                  'Las cosas que hemos visto (Renacimiento)',
                   'Documental «Palabra a palabra» (2015)',
                 ].map((item, i) => (
                   <li key={i} className="font-libre text-sm text-zinc-600 flex items-start gap-2">
