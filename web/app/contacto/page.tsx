@@ -114,14 +114,6 @@ export default function ContactoPage() {
           </div>
         )}
 
-        <div className="mt-8 p-6 bg-zinc-900 text-white">
-          <p className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-3">
-            También puedes escribirnos a
-          </p>
-          <p className="font-crimson text-xl text-white">
-            olvidosdegranada@gmail.com
-          </p>
-        </div>
       </div>
 
     </div>
