@@ -40,7 +40,7 @@ const fotos = [
   {
     src: '/exposicion/foto-03.jpg',
     alt: 'Lectura en el acto de inauguración',
-    caption: 'Lectura en el acto de inauguración. Al fondo, el panel «Mariano y los libros» con el texto de Luis García Montero.',
+    caption: 'Antonio Arias leyendo en el acto de inauguración. Al fondo, Pedro Mercado, rector de la Universidad de Granada, y la directora de la Biblioteca de la Facultad de Derecho.',
   },
   {
     src: '/exposicion/foto-07.jpg',
