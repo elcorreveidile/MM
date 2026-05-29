@@ -105,7 +105,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-4">
-                Desde 1984
+                Desde 1982
               </p>
               <h2 className="font-crimson font-bold text-white mb-6" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
                 Olvidosdegranada
@@ -208,8 +208,6 @@ export default function HomePage() {
               { title: 'Columna «Países» en El País', year: '2004–2008', description: 'Columnista en El País (Andalucía) con reflexiones sobre memoria y cultura.', category: 'Literatura' },
               { title: 'Documental «Palabra a palabra»', year: '2015', description: 'Documental de José Sánchez Montes sobre su recuperación tras el ictus de 2011.', category: 'Cine' },
               { title: 'Exposición «La mesa de Mariano»', year: '2023', description: 'Homenaje póstumo en el Botánico con placa conmemorativa en su mesa habitual.', category: 'Fotografía' },
-              { title: 'Letra Clara', year: '1980–1990', description: 'Serie de conferencias y encuentros literarios que marcaron una generación.', category: 'Literatura' },
-              { title: 'Archivo de Fotografía Granadina', year: '1985–2023', description: 'Recopilación y preservación de la historia visual de Granada.', category: 'Fotografía' },
             ].map((project, index) => (
               <div key={index} className="bg-white p-8 hover:bg-[#FAF7F2] transition-colors">
                 <div className="flex items-center justify-between mb-6">
@@ -234,16 +232,16 @@ export default function HomePage() {
       <section className="py-20 bg-[#E84878]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-crimson font-bold text-zinc-900 mb-6" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}>
-            Proyecto de Exposición 2026
+            La Exposición · 2026
           </h2>
           <p className="text-xl text-zinc-900 mb-10 font-libre max-w-2xl mx-auto opacity-80 leading-relaxed">
-            Una oportunidad única para conocer la vida y obra de Mariano Maresca a través de documentos, fotografías y experiencias.
+            Abierta hasta el 31 de julio en la Biblioteca de Derecho de la Universidad de Granada. Documentos, fotografías y la biblioteca personal de Mariano Maresca.
           </p>
           <Link
             href="/exposicion"
             className="inline-block bg-zinc-900 text-white px-10 py-5 font-libre font-semibold hover:bg-zinc-700 transition-colors text-lg"
           >
-            Información del proyecto
+            Ver la exposición
           </Link>
         </div>
       </section>
