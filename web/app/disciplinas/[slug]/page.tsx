@@ -179,11 +179,11 @@ export default function DisciplinaPage({ params }: { params: { slug: string } })
       descripcion: 'Mariano Maresca ejerció como intelectual comprometido, combinando el rigor académico con la reflexión política y el activismo cultural.',
       contenido: [
         'Reflexión política en Olvidosdegranada: artículos y editoriales sobre el poder, la democracia y la sociedad',
-        'Colaboraciones en medios: columna "Países" en El País (Andalucía), con análisis político y cultural',
+        'Colaboraciones en medios: columna «La nuestra» en El País (Andalucía), con análisis político y cultural',
         'Pensamiento crítico sobre la transición, la memoria histórica y los movimientos sociales'
       ],
       proyectos: [
-        { nombre: 'Columna "Países"', año: '2004-2008', descripcion: 'Análisis político y cultural en El País Andalucía' },
+        { nombre: 'Columna «La nuestra»', año: '2004-2008', descripcion: 'Análisis político y cultural en El País Andalucía' },
         { nombre: 'Editoriales Olvidosdegranada', año: '1984-2023', descripcion: 'Reflexión política y cultural desde la revista' }
       ]
     }

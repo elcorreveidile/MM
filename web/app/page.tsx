@@ -142,26 +142,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Botánico — fondo crudo */}
+      {/* Botánico y La Tertulia — fondo crudo */}
       <section className="py-20 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-4">
-                Café Botánico · Granada
+                Dos lugares · Dos épocas · Granada
               </p>
               <h2 className="font-crimson font-bold text-zinc-900 mb-6" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
-                La mesa de Mariano
+                La Tertulia y el Botánico
               </h2>
-              <p className="text-lg text-zinc-700 mb-6 leading-relaxed font-libre">
-                El café Botánico fue el segundo hogar de Mariano Maresca. Su mesa habitual se convirtió en un legendario punto de encuentro de la cultura granadina, una «informal alternativa a su despacho en la Facultad».
-              </p>
+              <div className="space-y-4 mb-6">
+                <p className="text-lg text-zinc-700 leading-relaxed font-libre">
+                  <strong>La Tertulia</strong> —el mítico bar-librería de la calle Pintor López Mezquita, fundado en 1980 por Horacio Rébora— fue el corazón de la vida cultural y nocturna de Mariano desde sus inicios. Allí nació <em>La Otra Sentimentalidad</em> con García Montero, Egea y Álvaro Salvador. Allí Maresca organizó un histórico concurso de letras de tango. Tres generaciones de escritores, músicos y artistas granadinos pasaron por sus mesas. La Tertulia cierra el 30 de mayo de 2026, tras 46 años.
+                </p>
+                <p className="text-zinc-600 leading-relaxed font-libre">
+                  Con el tiempo llegó también el <strong>café Botánico</strong> —calle Duquesa, junto a la Facultad—: allí citaba a comer a amigos, a la familia, a compañeros y a sus discípulos. Pero La Tertulia siguió siendo La Tertulia, y Mariano siguió yendo hasta el ictus de 2011.
+                </p>
+              </div>
               <blockquote className="border-l-4 border-[#E84878] pl-6 py-2 mb-8">
                 <p className="text-zinc-700 italic font-libre text-lg leading-relaxed">
                   «El trabajo de la memoria es esencial, casi nuestra única arma»
                 </p>
                 <cite className="text-sm text-zinc-500 mt-2 font-libre not-italic block">
-                  — Columna «Países», El País
+                  — Columna «La nuestra», El País Andalucía
                 </cite>
               </blockquote>
             </div>
@@ -172,7 +177,7 @@ export default function HomePage() {
               <div className="space-y-6">
                 {[
                   { label: 'Fechas', value: 'Abril – Junio 2023 · Inauguración: 20 de abril' },
-                  { label: 'Lugar', value: 'Botánico (café histórico de Granada)' },
+                  { label: 'Lugar', value: 'Café Botánico · Calle Duquesa, Granada' },
                   { label: 'Organizadores', value: 'José Miguel Molero, Luis Jarillo, Manuel Rodríguez Alcázar, Rafael Goicoechea, Rosa Alonso, Nacho Mendiguchía' },
                   { label: 'Contenido', value: 'Imágenes y textos, placa conmemorativa en su mesa habitual, homenaje póstumo' },
                 ].map((item, i) => (
@@ -186,6 +191,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
 
       {/* Proyectos — fondo blanco */}
       <section className="py-20 bg-white">
@@ -205,7 +211,7 @@ export default function HomePage() {
               { title: 'Disco Omega de Morente', year: '2008', description: 'Contribución crítica y divulgativa en este álbum seminal del flamenco.', category: 'Música' },
               { title: 'Rimado de ciudad', year: '1983', description: 'Disco pionero que integró rock, poesía y fotografía de manera insólita.', category: 'Música' },
               { title: 'La Fábrica del Sur', year: '1989–1990', description: 'Dirección de esta revista cultural que continuó el trabajo editorial de Olvidos.', category: 'Literatura' },
-              { title: 'Columna «Países» en El País', year: '2004–2008', description: 'Columnista en El País (Andalucía) con reflexiones sobre memoria y cultura.', category: 'Literatura' },
+              { title: 'Columna «La nuestra» en El País Andalucía', year: '2004–2008', description: 'Columnista en El País (Andalucía) con reflexiones sobre memoria y cultura.', category: 'Literatura' },
               { title: 'Documental «Palabra a palabra»', year: '2015', description: 'Documental de José Sánchez Montes sobre su recuperación tras el ictus de 2011.', category: 'Cine' },
               { title: 'Exposición «La mesa de Mariano»', year: '2023', description: 'Homenaje póstumo en el Botánico con placa conmemorativa en su mesa habitual.', category: 'Fotografía' },
             ].map((project, index) => (

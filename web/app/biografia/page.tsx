@@ -41,14 +41,14 @@ export default function BiographyPage() {
 
             <section className="p-8">
               <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
-                La Tertulia y la mesa del Botánico
+                La Tertulia y el Botánico
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Su mesa en el café Botánico de la calle Duquesa fue el epicentro de una vida cultural extraordinaria. Punto de encuentro que Maresca convirtió en «informal alternativa a su despacho en la Facultad», allí se gestaron proyectos, se discutieron ideas y se tejió la red cultural que marcaría a toda una generación.
+                  Desde que abrió en 1980, <strong>La Tertulia</strong> —el mítico bar-librería de la calle Pintor López Mezquita fundado por el argentino Horacio Rébora— fue el centro de la vida cultural nocturna de Mariano Maresca. Allí nació <em>La Otra Sentimentalidad</em>, el movimiento que reunió a Luis García Montero, Javier Egea y Álvaro Salvador bajo la guía intelectual de su profesor Juan Carlos Rodríguez. Maresca fue el articulador de aquellas noches: organizó un histórico concurso de letras de tango cuyas bases él mismo redactó, y del que salió un libro con poemas de Egea, García Montero, Álvaro Salvador, Juan de Loxa y otros. La Tertulia cierra sus puertas el 30 de mayo de 2026, tras 46 años.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  En torno a aquella mesa y a su tertulia se formaron escritores que luego serían figuras de primer orden de las letras españolas: Antonio Muñoz Molina, Luis García Montero, Javier Egea. Maresca fue para ellos un referente, un interlocutor exigente y un impulsor generoso del talento ajeno.
+                  Con el tiempo, el <strong>café Botánico</strong> —calle Duquesa, junto a la Facultad— sumó otro escenario: allí citaba a comer a amigos, a la familia, a compañeros de Facultad, a discípulos. Pero La Tertulia nunca dejó de ser su lugar: siguió yendo hasta el ictus de noviembre de 2011.
                 </p>
               </div>
             </section>
@@ -76,7 +76,7 @@ export default function BiographyPage() {
                   Autor de libros fundamentales sobre literatura y cine: <em>Hipótesis sobre Clarín</em> (Granada, 1985), un estudio de rigor sobre Leopoldo Alas; y <em>Salò. El infierno según Pasolini</em> (Córdoba, 1993), escrito junto a J. Ignacio Mendiguchía.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Entre 2004 y 2008 publicó regularmente la columna «Países» en <em>El País</em> (edición Andalucía), una de las voces más singulares del periodismo cultural de aquellos años.
+                  Entre 2004 y 2008 publicó regularmente la columna «La nuestra» en <em>El País</em> (edición Andalucía). Esos artículos los reunió en <em>Las cosas que hemos visto</em> (Renacimiento), con prólogo de Luis García Montero — libro cuyo título inspira directamente el de la exposición de 2026: <em>Las cosas que hemos leído</em>.
                 </p>
               </div>
             </section>
@@ -109,7 +109,7 @@ export default function BiographyPage() {
                   { label: 'Nacimiento', value: 'Almería, 1945' },
                   { label: 'Fallecimiento', value: 'Granada, 2023' },
                   { label: 'Profesión', value: 'Profesor de Filosofía del Derecho, UGR' },
-                  { label: 'Lugar emblemático', value: 'Café Botánico, calle Duquesa, Granada' },
+                  { label: 'Lugares emblemáticos', value: 'La Tertulia (calle Pintor López Mezquita) · Café Botánico (calle Duquesa)' },
                   { label: 'Proyecto principal', value: 'Editor de Olvidosdegranada (desde 1982)' },
                 ].map(item => (
                   <div key={item.label}>
@@ -126,7 +126,7 @@ export default function BiographyPage() {
                   «El trabajo de la memoria es esencial, casi nuestra única arma»
                 </p>
                 <cite className="font-libre text-xs text-zinc-900 opacity-70 not-italic tracking-wider uppercase">
-                  Países · El País · 2004
+                  «La nuestra» · El País Andalucía · 2004–2008
                 </cite>
               </blockquote>
             </div>
@@ -153,7 +153,7 @@ export default function BiographyPage() {
                   'Rimado de ciudad (1983)',
                   'Hipótesis sobre Clarín (1985)',
                   'Salò. El infierno según Pasolini (1993)',
-                  'Columnas en El País (2004–2008)',
+                  'Columnas en El País (2004–2008) · Las cosas que hemos visto (Renacimiento)',
                   'Documental «Palabra a palabra» (2015)',
                 ].map((item, i) => (
                   <li key={i} className="font-libre text-sm text-zinc-600 flex items-start gap-2">
