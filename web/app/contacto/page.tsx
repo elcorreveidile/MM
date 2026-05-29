@@ -1,11 +1,10 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-
-const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_ID ?? ''
+import { useEffect, useRef } from 'react'
+import { useForm, ValidationError } from '@formspree/react'
 
 export default function ContactoPage() {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+  const [state, handleSubmit] = useForm('xgoqqlqv')
   const tsRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
@@ -13,37 +12,6 @@ export default function ContactoPage() {
       tsRef.current.value = String(Date.now())
     }
   }, [])
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setStatus('sending')
-
-    const form = e.currentTarget
-    const formData = new FormData(form)
-
-    // Time gate: reject silently if submitted in under 3 seconds
-    const ts = Number(formData.get('_ts'))
-    if (!ts || Date.now() - ts < 3000) {
-      setStatus('success') // silent rejection
-      return
-    }
-
-    try {
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
-        method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: formData,
-      })
-      const data = await res.json()
-      if (data.ok) {
-        setStatus('success')
-      } else {
-        setStatus('error')
-      }
-    } catch {
-      setStatus('error')
-    }
-  }
 
   return (
     <div className="min-h-screen bg-[#FAF7F2]">
@@ -63,7 +31,7 @@ export default function ContactoPage() {
       </div>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {status === 'success' ? (
+        {state.succeeded ? (
           <div className="bg-white p-10 text-center">
             <div
               className="w-16 h-16 flex items-center justify-center font-crimson font-bold text-2xl leading-none mx-auto mb-6"
@@ -83,7 +51,7 @@ export default function ContactoPage() {
             <form onSubmit={handleSubmit} noValidate>
               {/* Honeypot — Formspree ignores submissions where this is filled */}
               <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
-              {/* Timestamp for client-side time gate */}
+              {/* Time gate — bots submit instantly */}
               <input type="hidden" name="_ts" ref={tsRef} />
 
               <div className="space-y-6">
@@ -99,6 +67,7 @@ export default function ContactoPage() {
                     autoComplete="name"
                     className="w-full border border-zinc-300 px-4 py-3 font-libre text-zinc-900 focus:outline-none focus:border-zinc-900 transition-colors"
                   />
+                  <ValidationError field="name" prefix="Nombre" errors={state.errors} className="font-libre text-sm text-red-600 mt-1" />
                 </div>
 
                 <div>
@@ -113,6 +82,7 @@ export default function ContactoPage() {
                     autoComplete="email"
                     className="w-full border border-zinc-300 px-4 py-3 font-libre text-zinc-900 focus:outline-none focus:border-zinc-900 transition-colors"
                   />
+                  <ValidationError field="email" prefix="Correo" errors={state.errors} className="font-libre text-sm text-red-600 mt-1" />
                 </div>
 
                 <div>
@@ -127,20 +97,17 @@ export default function ContactoPage() {
                     maxLength={2000}
                     className="w-full border border-zinc-300 px-4 py-3 font-libre text-zinc-900 focus:outline-none focus:border-zinc-900 transition-colors resize-y"
                   />
+                  <ValidationError field="message" prefix="Mensaje" errors={state.errors} className="font-libre text-sm text-red-600 mt-1" />
                 </div>
 
-                {status === 'error' && (
-                  <p className="font-libre text-sm text-red-600">
-                    No se pudo enviar el mensaje. Inténtalo de nuevo.
-                  </p>
-                )}
+                <ValidationError errors={state.errors} className="font-libre text-sm text-red-600" />
 
                 <button
                   type="submit"
-                  disabled={status === 'sending'}
+                  disabled={state.submitting}
                   className="bg-zinc-900 text-white px-8 py-4 font-libre font-semibold hover:bg-zinc-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {status === 'sending' ? 'Enviando…' : 'Enviar mensaje'}
+                  {state.submitting ? 'Enviando…' : 'Enviar mensaje'}
                 </button>
               </div>
             </form>
