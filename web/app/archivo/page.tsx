@@ -1,240 +1,176 @@
 'use client'
 
-import { useState } from 'react'
-import Link from 'next/link'
+import { useState, useMemo } from 'react'
+import inventario from './inventario.json'
+
+type Entry = { title: string; author: string; dedicated?: boolean; annotated?: boolean }
+type Category = { name: string; count: number; slug: string; entries: Entry[] }
+
+const ALL_SLUG = 'todos'
 
 export default function ArchivoPage() {
-  const [filters, setFilters] = useState({
-    tipo: 'todos',
-    ano: 'todos',
-    busqueda: ''
-  })
+  const [activeSlug, setActiveSlug] = useState(ALL_SLUG)
+  const [search, setSearch] = useState('')
+  const [filter, setFilter] = useState<'todos' | 'dedicados' | 'anotados'>('todos')
 
-  // Datos simulados de documentos - luego vendrán de Sanity CMS
-  const documentos = [
-    {
-      id: 1,
-      titulo: 'Granada tiene un tango',
-      tipo: 'articulo',
-      ano: 1982,
-      revista: 'Olvidosdegranada',
-      numero: 1,
-      descripcion: 'Discurso fundacional de Mariano Maresca en el Ayuntamiento de Granada.',
-      autor: 'Mariano Maresca',
-      etiquetas: ['tango', 'fundacional', 'discurso']
-    },
-    {
-      id: 2,
-      titulo: 'La otra sentimentalidad',
-      tipo: 'articulo',
-      ano: 1983,
-      revista: 'Olvidosdegranada',
-      numero: 3,
-      descripcion: 'Ensayo sobre la poesía granadina de los años 80.',
-      autor: 'Javier Egea',
-      etiquetas: ['poesía', 'granada', 'otra sentimentalidad']
-    },
-    {
-      id: 3,
-      titulo: 'Cuarteto Cedrón en Granada',
-      tipo: 'entrevista',
-      ano: 1982,
-      revista: 'Olvidosdegranada',
-      numero: 1,
-      descripcion: 'Entrevista con el Cuarteto Cedrón sobre el exilio argentino.',
-      autor: 'Mariano Maresca',
-      etiquetas: ['música', 'exilio', 'tango']
-    },
-    {
-      id: 4,
-      titulo: 'Carta a los colaboradores',
-      tipo: 'carta',
-      ano: 1984,
-      revista: 'Olvidosdegranada',
-      numero: null,
-      descripcion: 'Correspondencia con colaboradores de la revista.',
-      autor: 'Mariano Maresca',
-      etiquetas: ['editorial', 'correspondencia']
-    },
-    {
-      id: 5,
-      titulo: 'Festival de Tango 1990',
-      tipo: 'foto',
-      ano: 1990,
-      revista: null,
-      numero: null,
-      descripcion: 'Fotografías del primer Festival de Tango de Granada.',
-      autor: 'Archivo Olvidos',
-      etiquetas: ['festival', 'tango', 'evento']
+  const categories: Category[] = inventario.categories as Category[]
+
+  const activeEntries = useMemo(() => {
+    let entries: (Entry & { category: string })[] = []
+    const cats = activeSlug === ALL_SLUG ? categories : categories.filter(c => c.slug === activeSlug)
+    for (const cat of cats) {
+      for (const e of cat.entries) {
+        entries.push({ ...e, category: cat.name })
+      }
     }
-  ]
-
-  const tipos = ['articulo', 'entrevista', 'carta', 'foto', 'manuscrito']
-  const anos = [...new Set(documentos.map(d => d.ano))].sort()
-
-  const filteredDocs = documentos.filter(doc => {
-    const matchTipo = filters.tipo === 'todos' || doc.tipo === filters.tipo
-    const matchAno = filters.ano === 'todos' || doc.ano === parseInt(filters.ano)
-    const matchBusqueda = filters.busqueda === '' ||
-      doc.titulo.toLowerCase().includes(filters.busqueda.toLowerCase()) ||
-      doc.descripcion.toLowerCase().includes(filters.busqueda.toLowerCase())
-    return matchTipo && matchAno && matchBusqueda
-  })
+    if (filter === 'dedicados') entries = entries.filter(e => e.dedicated)
+    if (filter === 'anotados') entries = entries.filter(e => e.annotated)
+    if (search.trim()) {
+      const q = search.toLowerCase()
+      entries = entries.filter(e =>
+        e.title.toLowerCase().includes(q) || e.author.toLowerCase().includes(q)
+      )
+    }
+    return entries
+  }, [activeSlug, search, filter, categories])
 
   return (
-    <div className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-5xl font-crimson font-bold text-zinc-900 mb-4">
-            Archivo Documental
+    <div className="min-h-screen bg-[#FAF7F2]">
+
+      {/* Header */}
+      <div className="bg-zinc-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-4">
+            Donación Mariano Maresca
+          </p>
+          <h1 className="font-crimson font-bold mb-6" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+            La Biblioteca
           </h1>
-          <p className="text-xl text-zinc-600 font-libre max-w-3xl">
-            Acceso digital al archivo completo de Mariano Maresca y Olvidosdegranada
+          <p className="font-libre text-zinc-300 max-w-2xl text-lg leading-relaxed">
+            Selección de obras canónicas, dedicadas y anotadas de la biblioteca personal
+            de Mariano Maresca, clasificadas por temas.
           </p>
-        </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="text-3xl font-crimson font-bold text-zinc-900 mb-2">
-              {documentos.length}
-            </div>
-            <div className="text-sm text-zinc-600 font-libre">Documentos digitales</div>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="text-3xl font-crimson font-bold text-zinc-900 mb-2">
-              17
-            </div>
-            <div className="text-sm text-zinc-600 font-libre">Números Olvidos</div>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="text-3xl font-crimson font-bold text-zinc-900 mb-2">
-              1982-2023
-            </div>
-            <div className="text-sm text-zinc-600 font-libre">Periodo cubierto</div>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="text-3xl font-crimson font-bold text-zinc-900 mb-2">
-              {anos.length}
-            </div>
-            <div className="text-sm text-zinc-600 font-libre">Años representados</div>
-          </div>
-        </div>
-
-        {/* Filters */}
-        <div className="bg-white p-6 rounded-lg shadow-md mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
-              <label className="block text-sm font-semibold text-zinc-700 mb-2">Tipo de documento</label>
-              <select
-                value={filters.tipo}
-                onChange={(e) => setFilters({...filters, tipo: e.target.value})}
-                className="w-full px-4 py-2 border border-zinc-300 rounded-lg focus:ring-2 focus:ring-zinc-500 focus:border-transparent"
-              >
-                <option value="todos">Todos los tipos</option>
-                {tipos.map(tipo => (
-                  <option key={tipo} value={tipo}>{tipo.charAt(0).toUpperCase() + tipo.slice(1)}</option>
-                ))}
-              </select>
-            </div>
-            <div>
-              <label className="block text-sm font-semibold text-zinc-700 mb-2">Año</label>
-              <select
-                value={filters.ano}
-                onChange={(e) => setFilters({...filters, ano: e.target.value})}
-                className="w-full px-4 py-2 border border-zinc-300 rounded-lg focus:ring-2 focus:ring-zinc-500 focus:border-transparent"
-              >
-                <option value="todos">Todos los años</option>
-                {anos.map(ano => (
-                  <option key={ano} value={ano}>{ano}</option>
-                ))}
-              </select>
-            </div>
-            <div>
-              <label className="block text-sm font-semibold text-zinc-700 mb-2">Buscar</label>
-              <input
-                type="text"
-                value={filters.busqueda}
-                onChange={(e) => setFilters({...filters, busqueda: e.target.value})}
-                placeholder="Título, descripción, autor..."
-                className="w-full px-4 py-2 border border-zinc-300 rounded-lg focus:ring-2 focus:ring-zinc-500 focus:border-transparent"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Results */}
-        <div className="mb-4 flex items-center justify-between">
-          <p className="text-zinc-600 font-libre">
-            Mostrando <span className="font-semibold">{filteredDocs.length}</span> de {documentos.length} documentos
-          </p>
-        </div>
-
-        {/* Document Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          {filteredDocs.map(doc => (
-            <div key={doc.id} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <span className="text-xs font-libre font-semibold bg-zinc-900 text-white px-3 py-1 rounded-full">
-                    {doc.tipo.charAt(0).toUpperCase() + doc.tipo.slice(1)}
-                  </span>
-                  {doc.revista && (
-                    <span className="ml-2 text-xs text-zinc-600 font-libre">
-                      {doc.revista} {doc.numero && `#${doc.numero}`}
-                    </span>
-                  )}
-                </div>
-                <span className="text-sm text-zinc-500 font-libre">{doc.ano}</span>
+          {/* Stats */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10">
+            {[
+              { n: '3.794', label: 'entradas totales' },
+              { n: '3.521', label: 'libros' },
+              { n: String(inventario.summary.dedicated), label: 'libros dedicados' },
+              { n: String(inventario.summary.annotated), label: 'con anotaciones' },
+            ].map(s => (
+              <div key={s.label} className="border border-zinc-700 p-4">
+                <div className="font-crimson font-bold text-3xl text-[#E84878]">{s.n}</div>
+                <div className="font-libre text-xs text-zinc-400 uppercase tracking-wider mt-1">{s.label}</div>
               </div>
-              <h3 className="text-xl font-crimson font-bold text-zinc-900 mb-2">
-                {doc.titulo}
-              </h3>
-              <p className="text-zinc-700 font-libre mb-4 leading-relaxed">
-                {doc.descripcion}
-              </p>
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-zinc-600 font-libre">
-                  Autor: {doc.autor}
-                </span>
-                <Link
-                  href={`/archivo/${doc.id}`}
-                  className="text-zinc-900 hover:text-zinc-700 font-libre text-sm font-semibold"
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Filters */}
+      <div className="sticky top-0 z-10 bg-white border-b border-zinc-200 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Category tabs */}
+          <div className="flex gap-0 overflow-x-auto border-b border-zinc-100">
+            <button
+              onClick={() => setActiveSlug(ALL_SLUG)}
+              className={`flex-shrink-0 px-4 py-3 font-libre text-xs uppercase tracking-widest border-b-2 transition-colors ${
+                activeSlug === ALL_SLUG
+                  ? 'border-[#E84878] text-zinc-900 font-bold'
+                  : 'border-transparent text-zinc-500 hover:text-zinc-900'
+              }`}
+            >
+              Todos
+            </button>
+            {categories.map(cat => (
+              <button
+                key={cat.slug}
+                onClick={() => setActiveSlug(cat.slug)}
+                className={`flex-shrink-0 px-4 py-3 font-libre text-xs uppercase tracking-widest border-b-2 transition-colors whitespace-nowrap ${
+                  activeSlug === cat.slug
+                    ? 'border-[#E84878] text-zinc-900 font-bold'
+                    : 'border-transparent text-zinc-500 hover:text-zinc-900'
+                }`}
+              >
+                {cat.name} <span className="text-zinc-400 ml-1">({cat.count})</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Search + filter */}
+          <div className="flex flex-col sm:flex-row gap-3 py-3">
+            <input
+              type="text"
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              placeholder="Buscar título o autor…"
+              className="flex-1 px-4 py-2 border border-zinc-300 font-libre text-sm focus:outline-none focus:border-zinc-900 bg-white"
+            />
+            <div className="flex gap-2">
+              {(['todos', 'dedicados', 'anotados'] as const).map(f => (
+                <button
+                  key={f}
+                  onClick={() => setFilter(f)}
+                  className={`px-4 py-2 font-libre text-xs uppercase tracking-wider border transition-colors ${
+                    filter === f
+                      ? 'bg-zinc-900 text-white border-zinc-900'
+                      : 'bg-white text-zinc-600 border-zinc-300 hover:border-zinc-900'
+                  }`}
                 >
-                  Ver documento →
-                </Link>
+                  {f === 'todos' ? 'Todos' : f === 'dedicados' ? '★ Dedicados' : '✎ Anotados'}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Results */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <p className="font-libre text-sm text-zinc-500 mb-6">
+          {activeEntries.length} {activeEntries.length === 1 ? 'obra' : 'obras'}
+          {search ? ` para «${search}»` : ''}
+        </p>
+
+        <div className="divide-y divide-zinc-200 bg-white">
+          {activeEntries.map((entry, i) => (
+            <div key={i} className="py-3 px-4 flex items-baseline justify-between gap-4 hover:bg-[#FAF7F2] transition-colors">
+              <div className="min-w-0">
+                <span className="font-crimson text-zinc-900 text-base leading-snug">
+                  {entry.dedicated && <span className="text-[#E84878] mr-1" title="Libro dedicado">★</span>}
+                  {entry.annotated && <span className="text-purple-500 mr-1" title="Con anotaciones de Maresca">✎</span>}
+                  {entry.title}
+                </span>
+                {entry.author && (
+                  <span className="font-libre text-zinc-500 text-sm ml-2">— {entry.author}</span>
+                )}
               </div>
-              {doc.etiquetas && (
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {doc.etiquetas.map(tag => (
-                    <span key={tag} className="text-xs bg-zinc-100 text-zinc-700 px-2 py-1 rounded">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              {activeSlug === ALL_SLUG && (
+                <span className="flex-shrink-0 font-libre text-xs text-zinc-400 uppercase tracking-wider hidden sm:block">
+                  {entry.category}
+                </span>
               )}
             </div>
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="bg-zinc-900 text-white p-8 rounded-lg text-center">
-          <h2 className="text-2xl font-crimson font-bold mb-4">
-            ¿Tienes material de Mariano Maresca?
-          </h2>
-          <p className="text-zinc-300 mb-6 font-libre">
-            Si tienes documentos, fotografías u otros materiales que puedan enriquecer este archivo,
-            nos encantaría incorporarlos.
-          </p>
-          <Link
-            href="/exposicion"
-            className="inline-block bg-white text-zinc-900 px-8 py-3 rounded-full font-libre font-semibold hover:bg-zinc-100 transition-colors"
-          >
-            Contactar con los comisarios
-          </Link>
+        {activeEntries.length === 0 && (
+          <div className="text-center py-20 text-zinc-400 font-libre">
+            Sin resultados{search ? ` para «${search}»` : ''}
+          </div>
+        )}
+      </div>
+
+      {/* Legend */}
+      <div className="border-t border-zinc-200 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex gap-6 font-libre text-xs text-zinc-500">
+          <span><span className="text-[#E84878]">★</span> Libro con dedicatoria autógrafa</span>
+          <span><span className="text-purple-500">✎</span> Libro con anotaciones de Maresca</span>
         </div>
       </div>
+
     </div>
   )
 }

@@ -1,267 +1,173 @@
 export default function BiographyPage() {
   return (
-    <div className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-5xl font-crimson font-bold text-zinc-900 mb-4">
-            Biografía
+    <div className="min-h-screen bg-[#FAF7F2]">
+
+      {/* Header */}
+      <div className="bg-zinc-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-4">
+            Almería, 1945 · Granada, 2023
+          </p>
+          <h1 className="font-crimson font-bold mb-6" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+            Mariano Maresca
           </h1>
-          <p className="text-xl text-zinc-600 font-libre max-w-3xl">
-            La vida y obra de Mariano Maresca, profesor, editor y figura fundamental de la cultura granadina
+          <p className="font-libre text-zinc-300 max-w-2xl text-lg leading-relaxed">
+            Profesor de Filosofía del Derecho, editor de Olvidosdegranada, crítico y promotor cultural.
+            Una de las figuras más influyentes de la cultura granadina del siglo XX.
           </p>
         </div>
+      </div>
 
-        {/* Main Content */}
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Main biography text */}
-          <div className="lg:col-span-2 space-y-8">
-            {/* Introduction */}
-            <section className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-3xl font-crimson font-bold text-zinc-900 mb-6">
+
+          {/* Main biography */}
+          <div className="lg:col-span-2 bg-white divide-y divide-zinc-100">
+
+            <section className="p-8">
+              <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
                 Una vida dedicada a la cultura
               </h2>
-              <div className="prose prose-lg max-w-none">
-                <p className="text-zinc-700 leading-relaxed mb-4 font-libre">
-                  Mariano Maresca fue profesor de Filosofía del Derecho en la Universidad de Granada, pero su labor trascendió el ámbito académico para convertirse en una de las figuras más influyentes de la cultura granadina contemporánea.
-                </p>
-                <p className="text-zinc-700 leading-relaxed mb-4 font-libre">
-                  Desde finales de los años 60 hasta su fallecimiento en 2023, Maresca trabajó incansablemente en múltiples disciplinas artísticas y culturales, dejando una huella imborrable en la ciudad que tanto amó.
+              <div className="space-y-4">
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  Mariano Maresca nació en Almería en 1945. Profesor de Filosofía del Derecho en la Universidad de Granada, su labor trascendió desde el primer momento el ámbito académico para convertirse en una de las figuras más influyentes de la cultura granadina contemporánea.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Como editor de la revista Olvidosdegranada, creó un archivo vivo de la memoria cultural granadina, dando voz a escritores, artistas, músicos y pensadores que de otra manera habrían quedado en el olvido.
+                  Desde finales de los años sesenta hasta su fallecimiento en 2023 trabajó incansablemente en múltiples disciplinas —literatura, música, cine, fotografía, arquitectura, diseño, cómic, filosofía, pensamiento político—, dejando una huella imborrable en la ciudad que amó.
                 </p>
               </div>
             </section>
 
-            {/* Early Life and Education */}
-            <section className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-3xl font-crimson font-bold text-zinc-900 mb-6">
-                Formación y primeros años
+            <section className="p-8">
+              <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
+                La Tertulia y la mesa del Botánico
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Mariano Maresca nació en Almería en 1945, donde desarrolló desde joven una pasión por la filosofía, el arte y la literatura. Su formación académica le llevó a especializarse en Filosofía del Derecho, disciplina que ejerció como profesor en la Universidad de Granada hasta su fallecimiento en 2023.
+                  Su mesa en el café Botánico de la calle Duquesa fue el epicentro de una vida cultural extraordinaria. Punto de encuentro que Maresca convirtió en «informal alternativa a su despacho en la Facultad», allí se gestaron proyectos, se discutieron ideas y se tejió la red cultural que marcaría a toda una generación.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Sin embargo, su interés por las manifestaciones artísticas y culturales trascendió el ámbito puramente académico, llevándole a involucrarse activamente en la vida cultural de la ciudad desde muy joven.
+                  En torno a aquella mesa y a su tertulia se formaron escritores que luego serían figuras de primer orden de las letras españolas: Antonio Muñoz Molina, Luis García Montero, Javier Egea. Maresca fue para ellos un referente, un interlocutor exigente y un impulsor generoso del talento ajeno.
                 </p>
               </div>
             </section>
 
-            {/* Professional Career */}
-            <section className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-3xl font-crimson font-bold text-zinc-900 mb-6">
-                Trayectoria profesional
-              </h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-2xl font-crimson font-semibold text-zinc-900 mb-3">
-                    Profesor de Filosofía del Derecho
-                  </h3>
-                  <p className="text-zinc-700 leading-relaxed font-libre">
-                    Como profesor universitario, Maresca formó a generaciones de juristas, transmitiendo no solo conocimientos teóricos sino también una visión crítica y comprometida del derecho y la justicia.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-crimson font-semibold text-zinc-900 mb-3">
-                    Editor de Olvidosdegranada
-                  </h3>
-                  <p className="text-zinc-700 leading-relaxed font-libre">
-                    En 1984 comenzó a publicarse la revista Olvidos de Granada, convirtiéndose Maresca en su editor principal. Durante décadas, la revista ha sido un referente ineludible para entender la cultura granadina, publicando artículos, ensayos, entrevistas y documentos que han construido un archivo invaluable.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-crimson font-semibold text-zinc-900 mb-3">
-                    Escritor y ensayista
-                  </h3>
-                  <p className="text-zinc-700 leading-relaxed font-libre mb-3">
-                    Autor de libros fundamentales sobre literatura y cine:
-                  </p>
-                  <ul className="list-disc list-inside text-zinc-700 font-libre space-y-2">
-                    <li><strong>"Hipótesis sobre Clarín"</strong> (Granada, 1985) - Estudio sobre Leopoldo Alas "Clarín"</li>
-                    <li><strong>"Salò. El infierno según Pasolini"</strong> (Córdoba, 1993) - Con J. Ignacio Mendiguchía</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-crimson font-semibold text-zinc-900 mb-3">
-                    Comisario y promotor cultural
-                  </h3>
-                  <p className="text-zinc-700 leading-relaxed font-libre">
-                    Más allá de su labor editorial, Maresca organizó y comisarió numerosos eventos culturales, desde conciertos de tango hasta exposiciones de fotografía, ciclos de cine y presentaciones de libros. Colaboró en el programa "Imaginaria" de Canal 2 Andalucía y tuvo un programa de radio en Almería.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-2xl font-crimson font-semibold text-zinc-900 mb-3">
-                    El ictus de 2011 y la recuperación
-                  </h3>
-                  <p className="text-zinc-700 leading-relaxed font-libre mb-3">
-                    El 18 de noviembre de 2011, Mariano sufrió un ictus que le hizo perder el habla y la memoria. Su historia de recuperación fue recogida por José Sánchez Montes en el documental <strong>"Mariano Maresca. Palabra a palabra"</strong> (2015), que muestra sus esfuerzos para reconectar los caminos de su cerebro tras el accidente.
-                  </p>
-                  <p className="text-zinc-700 leading-relaxed font-libre">
-                    En enero de 2012, Almudena Grandes le dedicó una emotiva carta de amor en El País Semanal, titulada "Una carta de amor para Mariano Maresca", donde escribió: "No podía aceptar que no pudieras hablar tú, precisamente tú, el amo de todas las palabras".
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            {/* Botánico Section */}
-            <section className="bg-zinc-50 p-8 rounded-lg shadow-md border-l-4 border-zinc-900">
-              <h2 className="text-3xl font-crimson font-bold text-zinc-900 mb-6">
-                La mesa de Mariano en Botánico
+            <section className="p-8">
+              <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
+                Editor de Olvidosdegranada
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  El café Botánico en Granada fue el segundo hogar de Mariano Maresca. Su mesa habitual se convirtió en un legendario punto de encuentro de la cultura granadina, una "informal alternativa a su despacho en la Facultad".
+                  En 1982 Maresca fundó la revista <em>Olvidos de Granada</em>, que dirigió durante décadas. La publicación se convirtió en el archivo vivo de la creación artística y cultural granadina, dando voz a escritores, artistas, músicos y pensadores que de otra manera habrían quedado en el olvido.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Allí se gestaron proyectos, se compartieron ideas y se tejió la red cultural que Mariano cultivó durante décadas. La mesa era conocida por su nombre, testigo de conversaciones, libros, cuadernos y proyectos que marcaron la vida cultural de Granada.
+                  A través de sus páginas construyó un corpus documental invaluable: entrevistas, ensayos, crónicas, fotografías y memorias que hoy constituyen una fuente de primer orden para entender la cultura de Granada en el último tercio del siglo XX.
                 </p>
-                <div className="bg-white p-6 rounded-lg border-l-4 border-zinc-700 mt-6">
-                  <p className="text-zinc-700 italic font-libre text-lg">
-                    "El trabajo de la memoria es esencial, casi nuestra única arma"
-                  </p>
-                  <p className="text-sm text-zinc-600 mt-3 font-libre">— Columna "Países", El País (2004-2023)</p>
-                </div>
               </div>
             </section>
 
-            {/* Legacy */}
-            <section className="bg-zinc-900 text-white p-8 rounded-lg shadow-md">
-              <h2 className="text-3xl font-crimson font-bold mb-6">
-                Legado y reconocimiento
+            <section className="p-8">
+              <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
+                Obra escrita
               </h2>
-              <p className="text-zinc-300 leading-relaxed mb-4 font-libre">
-                El legado de Mariano Maresca es inmenso y diverso. A través de Olvidosdegranada y sus innumerables proyectos culturales, construyó un archivo de la memoria granadina que sigue siendo referencia obligada para investigadores, artistas y amantes de la cultura.
-              </p>
-              <p className="text-zinc-300 leading-relaxed font-libre">
-                Esta exposición conmemorativa e itinerante en 2026, organizada por la Asociación Cultural Olvidos de Granada, pretende rendir homenaje a su figura y recuperar su importancia para las generaciones presentes y futuras.
-              </p>
+              <div className="space-y-4">
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  Autor de libros fundamentales sobre literatura y cine: <em>Hipótesis sobre Clarín</em> (Granada, 1985), un estudio de rigor sobre Leopoldo Alas; y <em>Salò. El infierno según Pasolini</em> (Córdoba, 1993), escrito junto a J. Ignacio Mendiguchía.
+                </p>
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  Entre 2004 y 2008 publicó regularmente la columna «Países» en <em>El País</em> (edición Andalucía), una de las voces más singulares del periodismo cultural de aquellos años.
+                </p>
+              </div>
             </section>
+
+            <section className="p-8">
+              <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
+                El ictus de 2011 y «Palabra a palabra»
+              </h2>
+              <div className="space-y-4">
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  El 18 de noviembre de 2011 Mariano sufrió un ictus que le hizo perder el habla y la memoria. Su proceso de recuperación fue documentado por José Sánchez Montes en el documental <em>Mariano Maresca. Palabra a palabra</em> (2015, 46 min), narrado por Almudena Grandes. El filme —íntegramente optimista— muestra sus esfuerzos para reconectar los caminos de su cerebro.
+                </p>
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  En enero de 2012, Almudena Grandes le dedicó en El País Semanal una carta: «No podía aceptar que no pudieras hablar tú, precisamente tú, el amo de todas las palabras».
+                </p>
+              </div>
+            </section>
+
           </div>
 
           {/* Sidebar */}
-          <div className="space-y-8">
-            {/* Quick Facts */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-crimson font-bold text-zinc-900 mb-4">
-                Datos clave
+          <div className="space-y-6">
+
+            <div className="bg-zinc-900 text-white p-6">
+              <h3 className="font-crimson font-bold text-xl mb-6 pb-4 border-b border-zinc-700">
+                Datos biográficos
               </h3>
-              <dl className="space-y-3">
-                <div>
-                  <dt className="text-sm font-semibold text-zinc-600">Nacimiento</dt>
-                  <dd className="text-zinc-900 font-libre">Almería, 1945</dd>
-                </div>
-                <div>
-                  <dt className="text-sm font-semibold text-zinc-600">Fallecimiento</dt>
-                  <dd className="text-zinc-900 font-libre">Granada, 2023</dd>
-                </div>
-                <div>
-                  <dt className="text-sm font-semibold text-zinc-600">Profesión</dt>
-                  <dd className="text-zinc-900 font-libre">Profesor de Filosofía del Derecho</dd>
-                </div>
-                <div>
-                  <dt className="text-sm font-semibold text-zinc-600">Lugar emblemático</dt>
-                  <dd className="text-zinc-900 font-libre">Botánico (café Granada)</dd>
-                </div>
-                <div>
-                  <dt className="text-sm font-semibold text-zinc-600">Proyecto principal</dt>
-                  <dd className="text-zinc-900 font-libre">Editor de Olvidosdegranada</dd>
-                </div>
+              <dl className="space-y-4">
+                {[
+                  { label: 'Nacimiento', value: 'Almería, 1945' },
+                  { label: 'Fallecimiento', value: 'Granada, 2023' },
+                  { label: 'Profesión', value: 'Profesor de Filosofía del Derecho, UGR' },
+                  { label: 'Lugar emblemático', value: 'Café Botánico, calle Duquesa, Granada' },
+                  { label: 'Proyecto principal', value: 'Editor de Olvidosdegranada (desde 1982)' },
+                ].map(item => (
+                  <div key={item.label}>
+                    <dt className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-1">{item.label}</dt>
+                    <dd className="text-zinc-300 font-libre text-sm">{item.value}</dd>
+                  </div>
+                ))}
               </dl>
             </div>
 
-            {/* Disciplines */}
-            <div className="bg-zinc-50 p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-crimson font-bold text-zinc-900 mb-4">
-                Áreas de trabajo
-              </h3>
-              <ul className="space-y-2">
-                <li className="flex items-center text-zinc-700 font-libre">
-                  <span className="w-2 h-2 bg-zinc-900 rounded-full mr-2"></span>
-                  Literatura
-                </li>
-                <li className="flex items-center text-zinc-700 font-libre">
-                  <span className="w-2 h-2 bg-zinc-900 rounded-full mr-2"></span>
-                  Música
-                </li>
-                <li className="flex items-center text-zinc-700 font-libre">
-                  <span className="w-2 h-2 bg-zinc-900 rounded-full mr-2"></span>
-                  Cine
-                </li>
-                <li className="flex items-center text-zinc-700 font-libre">
-                  <span className="w-2 h-2 bg-zinc-900 rounded-full mr-2"></span>
-                  Fotografía
-                </li>
-                <li className="flex items-center text-zinc-700 font-libre">
-                  <span className="w-2 h-2 bg-zinc-900 rounded-full mr-2"></span>
-                  Arquitectura
-                </li>
-                <li className="flex items-center text-zinc-700 font-libre">
-                  <span className="w-2 h-2 bg-zinc-900 rounded-full mr-2"></span>
-                  Diseño
-                </li>
-                <li className="flex items-center text-zinc-700 font-libre">
-                  <span className="w-2 h-2 bg-zinc-900 rounded-full mr-2"></span>
-                  Cómic
-                </li>
-                <li className="flex items-center text-zinc-700 font-libre">
-                  <span className="w-2 h-2 bg-zinc-900 rounded-full mr-2"></span>
-                  Filosofía del Derecho
-                </li>
-              </ul>
+            <div className="bg-[#E84878] p-6">
+              <blockquote>
+                <p className="font-crimson text-xl text-zinc-900 leading-snug italic mb-3">
+                  «El trabajo de la memoria es esencial, casi nuestra única arma»
+                </p>
+                <cite className="font-libre text-xs text-zinc-900 opacity-70 not-italic tracking-wider uppercase">
+                  Países · El País · 2004
+                </cite>
+              </blockquote>
             </div>
 
-            {/* Featured Projects */}
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-crimson font-bold text-zinc-900 mb-4">
+            <div className="bg-white border border-zinc-200 p-6">
+              <blockquote>
+                <p className="font-crimson text-xl text-zinc-900 leading-snug italic mb-3">
+                  «Cuando un día despertemos de este sueño idiota, tendremos que volver a abrir los libros»
+                </p>
+                <cite className="font-libre text-xs text-zinc-500 not-italic tracking-wider uppercase">
+                  Imaginaria · Canal Sur · 1999
+                </cite>
+              </blockquote>
+            </div>
+
+            <div className="bg-white border border-zinc-200 p-6">
+              <h3 className="font-crimson font-bold text-zinc-900 text-xl mb-4 pb-3 border-b border-zinc-100">
                 Proyectos destacados
               </h3>
               <ul className="space-y-3">
-                <li>
-                  <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Olvidos de Granada (1984-87)
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    La Fábrica del Sur (1989-90)
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Rimado de ciudad (1983)
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Libro sobre Clarín (1985)
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Libro sobre Pasolini (1993)
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Columnas en El País (2004-08)
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-                    Documental "Palabra a palabra" (2015)
-                  </a>
-                </li>
+                {[
+                  'Olvidosdegranada (desde 1982)',
+                  'La Fábrica del Sur (1989–1990)',
+                  'Rimado de ciudad (1983)',
+                  'Hipótesis sobre Clarín (1985)',
+                  'Salò. El infierno según Pasolini (1993)',
+                  'Columnas en El País (2004–2008)',
+                  'Documental «Palabra a palabra» (2015)',
+                ].map((item, i) => (
+                  <li key={i} className="font-libre text-sm text-zinc-600 flex items-start gap-2">
+                    <span className="text-[#E84878] flex-shrink-0">—</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
+
           </div>
         </div>
       </div>
+
     </div>
   )
 }
