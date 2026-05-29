@@ -148,13 +148,16 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-4">
-                Café Botánico · Granada
+                Café Botánico · La Tertulia · Granada
               </p>
               <h2 className="font-crimson font-bold text-zinc-900 mb-6" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
-                La mesa de Mariano
+                El Botánico y La Tertulia
               </h2>
-              <p className="text-lg text-zinc-700 mb-6 leading-relaxed font-libre">
-                El café Botánico fue el segundo hogar de Mariano Maresca. Su mesa habitual se convirtió en un legendario punto de encuentro de la cultura granadina, una «informal alternativa a su despacho en la Facultad».
+              <p className="text-lg text-zinc-700 mb-4 leading-relaxed font-libre">
+                El café Botánico, en la calle Duquesa, fue el segundo hogar de Mariano Maresca: «informal alternativa a su despacho en la Facultad» y punto de encuentro legendario de la cultura granadina.
+              </p>
+              <p className="text-zinc-600 mb-6 leading-relaxed font-libre">
+                Allí nació y vivió <strong>La Tertulia</strong>: un espacio de conversación y creación en torno a su mesa que fue escuela y trampolín para escritores como Antonio Muñoz Molina, Luis García Montero y Javier Egea.
               </p>
               <blockquote className="border-l-4 border-[#E84878] pl-6 py-2 mb-8">
                 <p className="text-zinc-700 italic font-libre text-lg leading-relaxed">
@@ -172,7 +175,7 @@ export default function HomePage() {
               <div className="space-y-6">
                 {[
                   { label: 'Fechas', value: 'Abril – Junio 2023 · Inauguración: 20 de abril' },
-                  { label: 'Lugar', value: 'Botánico (café histórico de Granada)' },
+                  { label: 'Lugar', value: 'Café Botánico · Calle Duquesa, Granada' },
                   { label: 'Organizadores', value: 'José Miguel Molero, Luis Jarillo, Manuel Rodríguez Alcázar, Rafael Goicoechea, Rosa Alonso, Nacho Mendiguchía' },
                   { label: 'Contenido', value: 'Imágenes y textos, placa conmemorativa en su mesa habitual, homenaje póstumo' },
                 ].map((item, i) => (
@@ -186,6 +189,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
 
       {/* Proyectos — fondo blanco */}
       <section className="py-20 bg-white">
