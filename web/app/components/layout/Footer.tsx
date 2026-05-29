@@ -51,10 +51,18 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-8 pt-8 border-t border-zinc-800">
+        <div className="mt-8 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-zinc-500">
             © 2026 Asociación Cultural Olvidos de Granada
           </p>
+          <div className="flex space-x-6">
+            <Link href="/creditos" className="text-sm text-zinc-500 hover:text-white transition-colors">
+              Créditos
+            </Link>
+            <Link href="/privacidad" className="text-sm text-zinc-500 hover:text-white transition-colors">
+              Privacidad
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
