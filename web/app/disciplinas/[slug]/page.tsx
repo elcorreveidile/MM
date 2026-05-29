@@ -2,12 +2,12 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 
-type Seccion = { nombre: string; count: number; autores: string }
+type Seccion = { nombre: string; count?: number; autores: string }
 type DisciplinaData = {
   nombre: string
   subtitulo: string
   descripcion: string
-  libros: { total: number; secciones: Seccion[] } | null
+  libros: { total?: number; secciones: Seccion[] } | null
 }
 
 const disciplinasData: Record<string, DisciplinaData> = {
@@ -54,42 +54,58 @@ const disciplinasData: Record<string, DisciplinaData> = {
   cine: {
     nombre: 'Cine',
     subtitulo: 'Crítica cinematográfica y ciclos de cine',
-    descripcion: 'El cine fue para Maresca una forma de pensamiento. Organizó ciclos de cine en Granada y publicó crítica cinematográfica en Olvidos de Granada durante décadas. Entre todos los cineastas, Pier Paolo Pasolini ocupa un lugar central en su biblioteca: varios libros sobre su obra —incluido el catálogo de sus pinturas y dibujos— revelan una afinidad profunda con ese intelectual total que fue también poeta, novelista y polemista. Maresca compartía con Pasolini la convicción de que la cultura es siempre un campo de combate.',
+    descripcion: 'El cine fue para Maresca una forma de pensamiento. Organizó ciclos de cine en Granada y publicó crítica cinematográfica en Olvidos de Granada durante décadas. La biblioteca refleja una cinefilia de gran amplitud: de los clásicos del cine de autor europeo —Pasolini, Fritz Lang, Fassbinder, Luchino Visconti, Truffaut, Bergman— al cine español contemporáneo (Almodóvar) y al Hollywood del gran estudio (Kubrick). *La Fábrica del Sur* nº1 (1989), la revista andaluza que recogió buena parte de la cultura de la transición, abre también con cine. Pasolini ocupa un lugar central: varios libros sobre su obra —incluido el catálogo de sus pinturas— revelan una afinidad profunda con ese intelectual total que fue también poeta, novelista y polemista.',
     libros: {
       total: 49,
       secciones: [
-        { nombre: 'Arte, cine y estética', count: 49, autores: 'Pier Paolo Pasolini · Juan Vida · Velázquez · Miguel Ángel · Picasso · Fundación Rodríguez-Acosta' },
+        { nombre: 'Arte, cine y estética', count: 49, autores: 'Pier Paolo Pasolini · Fritz Lang · Rainer W. Fassbinder · Luchino Visconti · François Truffaut · Pedro Almodóvar · Stanley Kubrick · Ingmar Bergman · Juan Vida · Velázquez · Picasso' },
       ],
     },
   },
   fotografia: {
     nombre: 'Fotografía',
-    subtitulo: 'Archivo y memoria visual',
-    descripcion: 'Maresca contribuyó a preservar la memoria visual de Granada. Impulsó el Archivo de Fotografía Granadina y organizó exposiciones fotográficas que documentaron la vida cultural de la ciudad a lo largo de décadas. La fotografía, en su visión, era ante todo un instrumento de memoria histórica: una manera de fijar lo efímero y de resistir al olvido.',
-    libros: null,
+    subtitulo: 'Memoria visual e imagen documental',
+    descripcion: 'La fotografía interesó a Maresca como instrumento de memoria histórica y de combate político. El libro más significativo de su biblioteca en este campo es *El fotógrafo de Mauthausen*, sobre Francisco Boix —el fotógrafo republicano catalán que sobrevivió al campo de concentración nazi y cuyas fotografías fueron la única prueba visual en los juicios de Núremberg—. *Imágenes de la Guerra Civil Española* completa esa mirada sobre la imagen como archivo de los vencidos. Maresca impulsó también el Archivo de Fotografía Granadina y organizó exposiciones fotográficas que documentaron la vida cultural de la ciudad.',
+    libros: {
+      secciones: [
+        { nombre: 'Fotografía e imagen documental', autores: 'Francisco Boix: El fotógrafo de Mauthausen · Imágenes de la Guerra Civil Española · Diego Lara' },
+      ],
+    },
   },
   arquitectura: {
     nombre: 'Arquitectura',
-    subtitulo: 'Urbanismo y espacio público',
-    descripcion: 'La ciudad fue para Maresca un objeto de reflexión constante. A través de la crítica arquitectónica y el ensayo urbano, analizó las transformaciones del espacio público granadino y el modo en que la arquitectura configura —o destruye— la vida colectiva. Sus textos en Olvidos de Granada abordaron las grandes intervenciones urbanísticas en Granada con la misma exigencia crítica que aplicaba a la literatura o al cine.',
-    libros: null,
+    subtitulo: 'Urbanismo, ciudad y espacio público',
+    descripcion: 'La ciudad fue para Maresca un objeto de reflexión constante. Su biblioteca de arquitectura y urbanismo incluye a Ledoux —el arquitecto utópico de la Ilustración—, a Álvaro Siza, la monografía sobre la iconografía de la Alhambra y un libro específico sobre *La Gran Vía de Granada*, esa cicatriz urbana que fascina y escandaliza a partes iguales. Las *Escenografías* de Adolphe Appia —que pensó el espacio teatral como arquitectura viva— y *Metrópolis* cierran una biblioteca que entiende la ciudad como texto político y estético. Sus escritos en Olvidos de Granada abordaron las grandes transformaciones urbanísticas de la ciudad con la misma exigencia con que leía una novela.',
+    libros: {
+      secciones: [
+        { nombre: 'Arquitectura y ciudad', autores: 'Ledoux: La Arquitectura · Álvaro Siza · La Alhambra: iconografía · La Gran Vía de Granada · Adolphe Appia: Escenografías · Metrópolis · Le Corbusier' },
+      ],
+    },
   },
   diseno: {
     nombre: 'Diseño',
-    subtitulo: 'Diseño editorial e identidad visual',
-    descripcion: 'El cuidado formal de Olvidos de Granada, que dirigió durante décadas, convirtió a la publicación en una referencia del diseño editorial granadino. Maresca entendía que el diseño era parte inseparable del contenido: la forma en que se presenta un texto es también un argumento. La colaboración con Manigua para la identidad visual de este proyecto memorial —la plaquita MM, las tipografías, los colores— es heredera directa de esa convicción.',
-    libros: null,
+    subtitulo: 'Arte, diseño editorial e identidad visual',
+    descripcion: 'La biblioteca de arte de Maresca —Matisse, Francis Bacon, Paul Cézanne, Caravaggio, Andy Warhol— revela un ojo educado en la modernidad del siglo XX. *Matisse in Morocco*, *Matisse: Gouaches découpées*, el libro sobre Francisco Bores (*Para un Lorca*) o el volumen sobre Juan Vida forman una colección de arte que dialoga permanentemente con su trabajo editorial. *La Fábrica del Sur* nº1 (1989) encarna ese ideal: una revista donde el diseño era argumento, donde la tipografía y la imagen tenían tanto peso como el texto. El cuidado formal de Olvidos de Granada, que dirigió durante décadas, fue heredero directo de esa convicción.',
+    libros: {
+      secciones: [
+        { nombre: 'Arte y diseño visual', autores: 'Henri Matisse · Francis Bacon · Paul Cézanne · Caravaggio · Andy Warhol · Francisco Bores: Para un Lorca · Juan Vida · La Fábrica del Sur' },
+      ],
+    },
   },
   comic: {
     nombre: 'Cómic',
     subtitulo: 'El noveno arte',
-    descripcion: 'Maresca fue uno de los primeros en tratar el cómic como forma artística legítima en Granada. Su trabajo de divulgación y crítica contribuyó a que la historieta fuera reconocida como parte del patrimonio cultural de la ciudad. Organizó exposiciones y publicó artículos en Olvidos de Granada que exploraban la especificidad del lenguaje del cómic y reivindicaban a sus autores como artistas de pleno derecho.',
-    libros: null,
+    descripcion: 'Maresca fue uno de los primeros en tratar el cómic como forma artística legítima en Granada. *Boronia* —la revista de historieta que forma parte de su biblioteca— es una muestra de ese interés por las formas de expresión que escapaban a la alta cultura tradicional. Su trabajo de divulgación y crítica contribuyó a que la historieta fuera reconocida como parte del patrimonio cultural de la ciudad. Publicó artículos en Olvidos de Granada que exploraban el lenguaje del cómic y reivindicaban a sus autores como artistas de pleno derecho.',
+    libros: {
+      secciones: [
+        { nombre: 'Cómic e historieta', autores: 'Boronia' },
+      ],
+    },
   },
   musica: {
     nombre: 'Música',
     subtitulo: 'Festival de Tango y crítica musical',
-    descripcion: 'La contribución de Maresca a la música granadina fue monumental. Fundó y dirigió el Festival de Tango de Granada durante más de tres décadas, convirtiendo la ciudad en referencia del tango en España. La historia de ese festival es inseparable de la historia cultural de Granada en la democracia. También publicó crítica musical en Olvidos de Granada y colaboró en proyectos de música flamenca, incluido el célebre disco Omega de Enrique Morente, ese encuentro imposible y necesario entre el flamenco y Leonard Cohen.',
+    descripcion: 'La contribución de Maresca a la música granadina fue monumental. Fundó y dirigió el Festival de Tango de Granada durante más de tres décadas, convirtiendo la ciudad en referencia del tango en España. La historia de ese festival es inseparable de la historia cultural de Granada en la democracia. También publicó crítica musical en Olvidos de Granada y colaboró en proyectos de música flamenca, incluido el célebre disco *Omega* de Enrique Morente —ese encuentro imposible y necesario entre el flamenco y Leonard Cohen que solo podía nacer en Granada—. Organizó también el histórico concurso de letras de tango en La Tertulia, donde nació buena parte de la escena cultural de la ciudad.',
     libros: null,
   },
 }
@@ -160,14 +176,14 @@ export default async function DisciplinaPage({ params }: { params: Promise<{ slu
           <div>
             <div className="flex items-baseline gap-4 mb-6">
               <h2 className="font-crimson font-bold text-zinc-900 text-2xl">En su biblioteca</h2>
-              <span className="font-libre text-sm text-zinc-500">{data.libros.total} títulos</span>
+              {data.libros.total && <span className="font-libre text-sm text-zinc-500">{data.libros.total} títulos</span>}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {data.libros.secciones.map((s) => (
                 <div key={s.nombre} className="bg-white border border-zinc-100 p-6">
                   <div className="flex items-baseline justify-between mb-3">
                     <h3 className="font-crimson font-bold text-zinc-900 text-lg">{s.nombre}</h3>
-                    <span className="font-libre text-xs text-zinc-400 ml-2 flex-shrink-0">{s.count} títulos</span>
+                    {s.count && <span className="font-libre text-xs text-zinc-400 ml-2 flex-shrink-0">{s.count} títulos</span>}
                   </div>
                   <p className="font-libre text-xs text-zinc-500 leading-relaxed">{s.autores}</p>
                 </div>
