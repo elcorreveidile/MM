@@ -32,8 +32,11 @@ export default function ExposicionPage() {
               que hemos<br />
               leído
             </h1>
-            <p className="font-black uppercase text-xs tracking-[0.2em] mb-6 opacity-60">
+            <p className="font-black uppercase text-xs tracking-[0.2em] mb-2 opacity-60">
               Donación Mariano Maresca · Exposición Bibliográfica
+            </p>
+            <p className="text-sm italic opacity-70 mb-6">
+              Título inspirado en <em className="not-italic font-semibold">Las cosas que hemos visto</em> (Renacimiento), el libro de artículos de Maresca con prólogo de Luis García Montero.
             </p>
 
             <div className="text-base sm:text-lg leading-relaxed space-y-5 max-w-xl">
@@ -96,8 +99,9 @@ export default function ExposicionPage() {
                 En los años ochenta y noventa tuvo un papel muy activo en la vida cultural de Granada: dirigió la
                 revista <em>Olvidos de Granada</em> (1982–1987, impresa y luego digital 2011) y{' '}
                 <em>La Fábrica del Sur</em> (1989–90), espacios de debate estético y literario. También participó
-                como guionista en <em>Imaginaria</em> (Canal Sur, 1999) y fue columnista en{' '}
-                <em>El País Andalucía</em> (2004–2008).
+                en <em>Imaginaria</em> (Canal Sur, 1999), el programa cultural nocturno, y fue columnista en{' '}
+                <em>El País Andalucía</em> (2004–2008), artículos que reunió en <em>Las cosas que hemos visto</em>{' '}
+                (Renacimiento, con prólogo de Luis García Montero).
               </p>
 
               <p>

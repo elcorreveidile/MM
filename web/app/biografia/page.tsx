@@ -76,7 +76,7 @@ export default function BiographyPage() {
                   Autor de libros fundamentales sobre literatura y cine: <em>Hipótesis sobre Clarín</em> (Granada, 1985), un estudio de rigor sobre Leopoldo Alas; y <em>Salò. El infierno según Pasolini</em> (Córdoba, 1993), escrito junto a J. Ignacio Mendiguchía.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Entre 2004 y 2008 publicó regularmente la columna «Países» en <em>El País</em> (edición Andalucía), una de las voces más singulares del periodismo cultural de aquellos años.
+                  Entre 2004 y 2008 publicó regularmente la columna «Países» en <em>El País</em> (edición Andalucía). Esos artículos los reunió en <em>Las cosas que hemos visto</em> (Renacimiento), con prólogo de Luis García Montero — libro cuyo título inspira directamente el de la exposición de 2026: <em>Las cosas que hemos leído</em>.
                 </p>
               </div>
             </section>
@@ -153,7 +153,7 @@ export default function BiographyPage() {
                   'Rimado de ciudad (1983)',
                   'Hipótesis sobre Clarín (1985)',
                   'Salò. El infierno según Pasolini (1993)',
-                  'Columnas en El País (2004–2008)',
+                  'Columnas en El País (2004–2008) · Las cosas que hemos visto (Renacimiento)',
                   'Documental «Palabra a palabra» (2015)',
                 ].map((item, i) => (
                   <li key={i} className="font-libre text-sm text-zinc-600 flex items-start gap-2">
