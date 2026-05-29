@@ -45,7 +45,7 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Desde que abrió en 1980, <strong>La Tertulia</strong> —el mítico bar-librería de la calle Elvira fundado por el argentino Horacio Rébora— fue el centro de la vida cultural nocturna de Mariano Maresca. Allí nació <em>La Otra Sentimentalidad</em>, el movimiento que reunió a Luis García Montero, Javier Egea y Álvaro Salvador bajo la guía intelectual de su profesor Juan Carlos Rodríguez. Maresca fue el articulador de aquellas noches: organizó un histórico concurso de letras de tango cuyas bases él mismo redactó, y del que salió un libro con poemas de Egea, García Montero, Álvaro Salvador, Juan de Loxa y otros. La Tertulia cierra sus puertas el 30 de mayo de 2026, tras 46 años.
+                  Desde que abrió en 1980, <strong>La Tertulia</strong> —el mítico bar-librería de la calle Pintor López Mezquita fundado por el argentino Horacio Rébora— fue el centro de la vida cultural nocturna de Mariano Maresca. Allí nació <em>La Otra Sentimentalidad</em>, el movimiento que reunió a Luis García Montero, Javier Egea y Álvaro Salvador bajo la guía intelectual de su profesor Juan Carlos Rodríguez. Maresca fue el articulador de aquellas noches: organizó un histórico concurso de letras de tango cuyas bases él mismo redactó, y del que salió un libro con poemas de Egea, García Montero, Álvaro Salvador, Juan de Loxa y otros. La Tertulia cierra sus puertas el 30 de mayo de 2026, tras 46 años.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
                   Con el tiempo, el <strong>café Botánico</strong> —calle Duquesa, junto a la Facultad— sumó otro escenario: allí citaba a comer a amigos, a la familia, a compañeros de Facultad, a discípulos. Pero La Tertulia nunca dejó de ser su lugar: siguió yendo hasta el ictus de noviembre de 2011.
@@ -109,7 +109,7 @@ export default function BiographyPage() {
                   { label: 'Nacimiento', value: 'Almería, 1945' },
                   { label: 'Fallecimiento', value: 'Granada, 2023' },
                   { label: 'Profesión', value: 'Profesor de Filosofía del Derecho, UGR' },
-                  { label: 'Lugares emblemáticos', value: 'La Tertulia (calle Elvira) · Café Botánico (calle Duquesa)' },
+                  { label: 'Lugares emblemáticos', value: 'La Tertulia (calle Pintor López Mezquita) · Café Botánico (calle Duquesa)' },
                   { label: 'Proyecto principal', value: 'Editor de Olvidosdegranada (desde 1982)' },
                 ].map(item => (
                   <div key={item.label}>
