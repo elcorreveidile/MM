@@ -13,11 +13,6 @@ const fotos = [
     caption: 'Las estanterías. Selección representativa de la biblioteca personal de Mariano Maresca: ejemplares de Olvidos de Granada, La Fábrica del Sur, cine, pensamiento político y poesía.',
   },
   {
-    src: '/exposicion/foto-02.jpg',
-    alt: 'Asistente ante las estanterías durante la inauguración',
-    caption: 'Un asistente contempla las estanterías durante la inauguración.',
-  },
-  {
     src: '/exposicion/foto-14.jpg',
     alt: 'Cartel de la exposición en la puerta de entrada',
     caption: 'El cartel de entrada a la Biblioteca de Derecho. Mariano Maresca leyendo el periódico Ideal. Diseño: Manigua. 29.5 / 31.7 / 2026.',
