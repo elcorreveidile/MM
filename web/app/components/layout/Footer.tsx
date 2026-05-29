@@ -8,7 +8,10 @@ export default function Footer() {
           {/* Column 1: Logo y descripción */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-12 h-12 bg-white text-zinc-900 flex items-center justify-center font-serif text-2xl font-bold">
+              <div
+                className="w-12 h-12 flex items-center justify-center font-crimson font-bold text-2xl leading-none"
+                style={{ backgroundColor: '#F2BE2A', color: '#8B1A1A' }}
+              >
                 MM
               </div>
               <div>
@@ -39,20 +42,19 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4 font-libre">Información</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/exposicion#informacion" className="hover:text-white transition-colors">Proyecto</Link></li>
-              <li><Link href="/exposicion#informacion" className="hover:text-white transition-colors">Promotores</Link></li>
-              <li><Link href="/exposicion#contacto" className="hover:text-white transition-colors">Contacto</Link></li>
+              <li><Link href="/exposicion" className="hover:text-white transition-colors">Proyecto</Link></li>
+              <li><Link href="/contacto" className="hover:text-white transition-colors">Contacto</Link></li>
               <li><Link href="https://olvidosdegranada.es" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Olvidosdegranada</Link></li>
             </ul>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-8 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center">
+        <div className="mt-8 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-zinc-500">
-            © 2026 Proyecto Exposición Mariano Maresca. Asociación Cultural Olvidos de Granada.
+            © 2026 Asociación Cultural Olvidos de Granada
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="flex space-x-6">
             <Link href="/creditos" className="text-sm text-zinc-500 hover:text-white transition-colors">
               Créditos
             </Link>

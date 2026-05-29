@@ -1,183 +1,104 @@
-'use client'
-
-import { useState } from 'react'
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Galería — Las cosas que hemos leído · Mariano Maresca',
+  description: 'Fotografías de la exposición «Las cosas que hemos leído». Biblioteca de Derecho, Universidad de Granada, 29 de mayo – 31 de julio de 2026.',
+}
+
+const fotos = [
+  {
+    src: '/exposición/foto-01.jpg',
+    alt: 'Las estanterías de la exposición',
+    caption: 'Las estanterías. Selección representativa de la biblioteca personal de Mariano Maresca: ejemplares de Olvidos de Granada, La Fábrica del Sur, cine, pensamiento político y poesía.',
+  },
+  {
+    src: '/exposición/foto-14.jpg',
+    alt: 'Cartel de la exposición en la puerta de entrada',
+    caption: 'El cartel de entrada a la Biblioteca de Derecho. Mariano Maresca leyendo el periódico Ideal. Diseño: Manigua. 29.5 / 31.7 / 2026.',
+  },
+  {
+    src: '/exposición/foto-15.jpg',
+    alt: 'Vista general de la sala de exposición',
+    caption: 'Vista general de la sala. Los paneles con los retratos de Mariano y el texto «Mariano y los libros», de Luis García Montero, y las vitrinas con los documentos expuestos.',
+  },
+  {
+    src: '/exposición/foto-12.jpg',
+    alt: 'La sala de exposición con paneles y estanterías',
+    caption: 'La sala de la exposición. Paneles con «Las cosas que hemos leído» y el logotipo MM, las estanterías al fondo y los viniles en las ventanas.',
+  },
+  {
+    src: '/exposición/foto-13.jpg',
+    alt: 'Paneles con citas de Mariano Maresca',
+    caption: '«El trabajo de la memoria es esencial, casi nuestra única arma» · «Cuando un día despertemos de este sueño idiota, tendremos que volver a abrir los libros». Junto al televisor que reproduce fragmentos de Imaginaria (Canal Sur, 1999).',
+  },
+  {
+    src: '/exposición/foto-16.jpg',
+    alt: 'Vitrina con libros dedicados y manuscritos',
+    caption: 'Vitrina con libros dedicados y manuscritos. En primer plano, Granada Tango (1982).',
+  },
+  {
+    src: '/exposición/foto-3.jpg',
+    alt: 'Lectura en el acto de inauguración',
+    caption: 'Antonio Mª Álvarez Arias de Saavedra leyendo en el acto de inauguración. Al fondo, Pedro Mercado, rector de la Universidad de Granada.',
+  },
+  {
+    src: '/exposición/foto-7.jpg',
+    alt: 'El público durante el acto de inauguración',
+    caption: 'El público durante el acto de inauguración. Biblioteca de la Facultad de Derecho, UGR, 29 de mayo de 2026.',
+  },
+  {
+    src: '/exposición/foto-9.jpg',
+    alt: 'El público asistente',
+    caption: 'En primera fila, la familia de Mariano Maresca: sus hermanas Luisa y Maruja y su hermano Paco.',
+  },
+  {
+    src: '/exposición/foto-17.jpg',
+    alt: 'Comida tras la inauguración',
+    caption: 'Comida de celebración tras la inauguración. La familia de Mariano Maresca, Nene y Javier Benítez, amigos de Mariano. 29 de mayo de 2026.',
+  },
+]
 
 export default function GaleriaPage() {
-  const [filter, setFilter] = useState('todos')
-
-  // Datos simulados de galería - luego vendrán de Sanity CMS
-  const items = [
-    {
-      id: 1,
-      titulo: 'Mariano Maresca en el Ayuntamiento',
-      categoria: 'foto',
-      ano: 1982,
-      descripcion: 'Maresca durante la presentación de Granada Tango',
-      disciplina: 'música'
-    },
-    {
-      id: 2,
-      titulo: 'Cuarteto Cedrón en concierto',
-      categoria: 'video',
-      ano: 1982,
-      descripcion: 'Actuación del Cuarteto Cedrón en las Jornadas del Tango',
-      disciplina: 'música'
-    },
-    {
-      id: 3,
-      titulo: 'Entrevista a Mariano Maresca',
-      categoria: 'audio',
-      ano: 1990,
-      descripcion: 'Entrevista radiofónica sobre el Festival de Tango',
-      disciplina: 'música'
-    },
-    {
-      id: 4,
-      titulo: 'Portada Olvidosdegranada nº1',
-      categoria: 'documento',
-      ano: 1982,
-      descripcion: 'Primera portada de la revista',
-      disciplina: 'literatura'
-    },
-    {
-      id: 5,
-      titulo: 'Javier Egea y Mariano Maresca',
-      categoria: 'foto',
-      ano: 1985,
-      descripcion: 'Los dos editadores de Olvidosdegranada',
-      disciplina: 'literatura'
-    },
-    {
-      id: 6,
-      titulo: 'Festival de Tango 1990',
-      categoria: 'video',
-      ano: 1990,
-      descripcion: 'Imágenes del primer festival',
-      disciplina: 'música'
-    }
-  ]
-
-  const categorias = ['todos', 'foto', 'video', 'audio', 'documento']
-
-  const filteredItems = filter === 'todos'
-    ? items
-    : items.filter(item => item.categoria === filter)
-
   return (
-    <div className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-5xl font-crimson font-bold text-zinc-900 mb-4">
-            Galería Multimedia
+    <div className="min-h-screen bg-[#FAF7F2]">
+
+      <div className="bg-zinc-900 text-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-4">
+            Biblioteca de Derecho · Universidad de Granada
+          </p>
+          <h1 className="font-crimson font-bold mb-4" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
+            Galería
           </h1>
-          <p className="text-xl text-zinc-600 font-libre max-w-3xl">
-            Fotografías, videos, audio y documentos de la vida y obra de Mariano Maresca
+          <p className="font-libre text-zinc-300 max-w-2xl text-lg leading-relaxed">
+            Fotografías de la exposición <em>Las cosas que hemos leído</em>. Inauguración: 29 de mayo de 2026.
           </p>
-        </div>
-
-        {/* Filters */}
-        <div className="flex flex-wrap gap-2 mb-8">
-          {categorias.map(categoria => (
-            <button
-              key={categoria}
-              onClick={() => setFilter(categoria)}
-              className={`px-6 py-2 rounded-full font-libre font-semibold transition-all ${
-                filter === categoria
-                  ? 'bg-zinc-900 text-white'
-                  : 'bg-white text-zinc-700 hover:bg-zinc-100'
-              }`}
-            >
-              {categoria.charAt(0).toUpperCase() + categoria.slice(1)}
-            </button>
-          ))}
-        </div>
-
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredItems.map(item => (
-            <div key={item.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              {/* Placeholder for media */}
-              <div className="relative h-48 bg-zinc-200 flex items-center justify-center">
-                {item.categoria === 'foto' && (
-                  <div className="text-zinc-400 text-center">
-                    <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-sm">Imagen</span>
-                  </div>
-                )}
-                {item.categoria === 'video' && (
-                  <div className="text-zinc-400 text-center">
-                    <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
-                    </svg>
-                    <span className="text-sm">Video</span>
-                  </div>
-                )}
-                {item.categoria === 'audio' && (
-                  <div className="text-zinc-400 text-center">
-                    <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-sm">Audio</span>
-                  </div>
-                )}
-                {item.categoria === 'documento' && (
-                  <div className="text-zinc-400 text-center">
-                    <svg className="w-16 h-16 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-sm">Documento</span>
-                  </div>
-                )}
-              </div>
-
-              <div className="p-4">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-xs font-libre font-semibold bg-zinc-900 text-white px-3 py-1 rounded-full">
-                    {item.categoria.charAt(0).toUpperCase() + item.categoria.slice(1)}
-                  </span>
-                  <span className="text-xs text-zinc-500 font-libre">{item.ano}</span>
-                </div>
-                <h3 className="text-lg font-crimson font-bold text-zinc-900 mb-2">
-                  {item.titulo}
-                </h3>
-                <p className="text-zinc-600 font-libre text-sm leading-relaxed">
-                  {item.descripcion}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <div className="mt-12 bg-zinc-100 p-8 rounded-lg text-center">
-          <h2 className="text-2xl font-crimson font-bold text-zinc-900 mb-4">
-            Colección en crecimiento
-          </h2>
-          <p className="text-zinc-700 mb-6 font-libre max-w-2xl mx-auto">
-            Estamos digitalizando y añadiendo constantemente nuevo material al archivo.
-            Si tienes fotografías, videos o documentos relacionados con Mariano Maresca,
-            nos encantaría incorporarlos.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:contacto@marianomaresca.es"
-              className="bg-zinc-900 text-white px-6 py-3 rounded-full font-libre font-semibold hover:bg-zinc-800 transition-colors"
-            >
-              Enviar material
-            </a>
-            <a
-              href="/exposicion"
-              className="border-2 border-zinc-900 text-zinc-900 px-6 py-3 rounded-full font-libre font-semibold hover:bg-zinc-900 hover:text-white transition-colors"
-            >
-              Información sobre la exposición
-            </a>
-          </div>
         </div>
       </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="columns-1 md:columns-2 gap-4">
+          {fotos.map((foto, i) => (
+            <figure key={i} className="break-inside-avoid mb-4 bg-white">
+              <div className="relative w-full overflow-hidden bg-zinc-200">
+                <Image
+                  src={foto.src}
+                  alt={foto.alt}
+                  width={900}
+                  height={1200}
+                  className="w-full h-auto object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+              <figcaption className="px-4 py-3 border-t border-zinc-100">
+                <p className="font-libre text-xs text-zinc-500 leading-relaxed">{foto.caption}</p>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+
     </div>
   )
 }

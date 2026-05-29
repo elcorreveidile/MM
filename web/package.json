@@ -13,6 +13,7 @@
     "sanity:start": "sanity start"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "@sanity/client": "^7.21.0",
     "next": "16.2.4",
     "next-sanity": "^12.3.0",

@@ -12,7 +12,10 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-zinc-900 text-white flex items-center justify-center font-serif text-xl font-bold">
+            <div
+              className="w-10 h-10 flex items-center justify-center font-crimson font-bold text-xl leading-none"
+              style={{ backgroundColor: '#F2BE2A', color: '#8B1A1A' }}
+            >
               MM
             </div>
             <div className="hidden sm:block">

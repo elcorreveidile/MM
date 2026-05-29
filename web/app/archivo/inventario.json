@@ -1,0 +1,5334 @@
+{
+  "summary": {
+    "total": 3794,
+    "books": 3521,
+    "dedicated": 63,
+    "annotated": 15
+  },
+  "dedicated": [
+    {
+      "title": "Bob Dylan. Crónicas",
+      "author": "Izquierdo"
+    },
+    {
+      "title": "Montaigne en mouvement",
+      "author": "Jean Starbinski"
+    },
+    {
+      "title": "Balada en la muerte de la poesía",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Secreto de amistad",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Luis García Montero(14)",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Antología poética",
+      "author": "Angel González"
+    },
+    {
+      "title": "El embrujo Shanghai",
+      "author": "Juan Marsé"
+    },
+    {
+      "title": "Rabos de lagartija",
+      "author": "Juan Marsé"
+    },
+    {
+      "title": "Un invierno propio",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Vista cansada",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "El fantasma del cine Roxy",
+      "author": "Juan Marsé"
+    },
+    {
+      "title": "Habitaciones separadas",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Raro de luna",
+      "author": "Javier Egea"
+    },
+    {
+      "title": "Antes y después",
+      "author": "Concha González -Badía"
+    },
+    {
+      "title": "Diario cómplice",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Autorretrato y paisaje",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "El jardín extranjero",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Quedarse sin ciudad",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Poeta y la ciudad",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Antología personal",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Canciones",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Y ahora ya eres dueño del puente Brooklin",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Las flores del frío",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Casi cien poemas",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Poética y poesía",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Antología poética",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Otra casa",
+      "author": "Rafael Juárez"
+    },
+    {
+      "title": "Auluaga",
+      "author": "Rafael Juárez"
+    },
+    {
+      "title": "Juan Vida: Vida y Milagros",
+      "author": "Galería Almirante"
+    },
+    {
+      "title": "Juan Vida. Obra gráfica 1984-2007",
+      "author": "Fundación Provincial de Artes plásticas &quot;Rafael Batí&quot;"
+    },
+    {
+      "title": "Juan Vida: Mayo- Junio 1997",
+      "author": "Afinsa -Allmirante"
+    },
+    {
+      "title": "Sin ir mas lejos",
+      "author": "Juan Vida"
+    },
+    {
+      "title": "Lecciones sobre jurisprudencia",
+      "author": "Adm Smith"
+    },
+    {
+      "title": "La macchina e l`ìngranaggio",
+      "author": "Massimo N. Marzi"
+    },
+    {
+      "title": "De los años en toro",
+      "author": "Perfecto Andrés Ibañez"
+    },
+    {
+      "title": "Derecho, Política y Razón",
+      "author": "Nicolás López Calera"
+    },
+    {
+      "title": "John Locke: Lecciones sobre la ley natural",
+      "author": "John Locke"
+    },
+    {
+      "title": "Los dialoghi d´amore de leon hebreo…",
+      "author": "Andres Soria Olmedo"
+    },
+    {
+      "title": "Filosofía del Derecho como contrasecularización…",
+      "author": "Andres Ollero Tassara"
+    },
+    {
+      "title": "La imaginación del poder",
+      "author": "Antonio Serrano"
+    },
+    {
+      "title": "Hegel y los derechos humanos",
+      "author": "Nicolas María López Calera"
+    },
+    {
+      "title": "La bandiera degli elettori italiani",
+      "author": "Francesco Ingrao"
+    },
+    {
+      "title": "Los consejos obreros",
+      "author": "Anton Pannekoek"
+    },
+    {
+      "title": "La mafia non esiste",
+      "author": "Alfredo Galasso"
+    },
+    {
+      "title": "Capital de la gloria. Poemas de la defensa de Madrid.",
+      "author": "Jesús García Sánchez"
+    },
+    {
+      "title": "El aprendizaje del aprendizaje",
+      "author": "Juan Ramón Capella"
+    },
+    {
+      "title": "Historia del movimiento obrero…",
+      "author": "Edouard Dolleans"
+    },
+    {
+      "title": "Kant vida y doctrina",
+      "author": "E. Cassirer"
+    },
+    {
+      "title": "La canción de la ley",
+      "author": "María Theres Fögen"
+    },
+    {
+      "title": "Filosofía del arte",
+      "author": "José García Leal"
+    },
+    {
+      "title": "Kierkegaard vivo",
+      "author": "Sartre Heidegger Jasper y otros"
+    },
+    {
+      "title": "Una forma de resistencia",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "Vagabundo en África",
+      "author": "Javier Reverte"
+    },
+    {
+      "title": "Para siempre",
+      "author": "Rafael Juárez"
+    },
+    {
+      "title": "Entre ruinas",
+      "author": "Antonio Dafos, Gabriel Cabello"
+    },
+    {
+      "title": "Los misterios de Madrid",
+      "author": "Antonio Muñoz Molina"
+    },
+    {
+      "title": "El Robinson urbano",
+      "author": "Antonio Muñoz Molina"
+    },
+    {
+      "title": "Diario del Nautilus",
+      "author": "Antonio Muñoz Molina"
+    },
+    {
+      "title": "Poesía",
+      "author": "Francisco García Lorca"
+    },
+    {
+      "title": "Las cariatides y otros cuentos góticos",
+      "author": "Isak Dinesen"
+    },
+    {
+      "title": "Semblanzas",
+      "author": "Federico García Lorca"
+    },
+    {
+      "title": "Diario complice",
+      "author": "Luis García Montero"
+    },
+    {
+      "title": "La gastrite di Platone",
+      "author": "Antonio Tabucci"
+    }
+  ],
+  "annotated": [
+    {
+      "title": "Sciata. El maestro de Regalpetra",
+      "author": "Matteo Collura"
+    },
+    {
+      "title": "Retrato de Hemingway",
+      "author": "Lillian Ross"
+    },
+    {
+      "title": "Heinrich Heine",
+      "author": "Max Brod"
+    },
+    {
+      "title": "Delito por bailar el cha cha cha",
+      "author": "Guillermo Cabrera Infante"
+    },
+    {
+      "title": "Seis propuestas para el próximo milenio",
+      "author": "Italo Calvino"
+    },
+    {
+      "title": "La ideología del pequeño burgués",
+      "author": "Jorge Pleganov"
+    },
+    {
+      "title": "Populismo y marxismo en Rusia",
+      "author": "Andrzej Walicki"
+    },
+    {
+      "title": "La crítica kantiana de la sociedad y de la religión",
+      "author": "Enrique M. Ureña"
+    },
+    {
+      "title": "Teoría Crítica",
+      "author": "Max Horkheimer"
+    },
+    {
+      "title": "Significación actual del realismo crítico",
+      "author": "Georg Lukács"
+    },
+    {
+      "title": "l&apos;Emile ou l&apos;interdit de la jouissance",
+      "author": "Francis Inbert"
+    },
+    {
+      "title": "Memorias del subsuelo",
+      "author": "Fiodor M. Dostoievski"
+    },
+    {
+      "title": "El alma del controlador aéreo",
+      "author": "Justo Navarro"
+    },
+    {
+      "title": "Camino de Los Ángeles",
+      "author": "John Fante"
+    },
+    {
+      "title": "Sueños de Bunker Hill",
+      "author": "John Fante"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Filosofía y pensamiento",
+      "count": 304,
+      "slug": "filosofia",
+      "entries": [
+        {
+          "title": "Hume: Diálogos sobre la religión natural —",
+          "author": ""
+        },
+        {
+          "title": "Hume",
+          "author": "A.J. Ayer"
+        },
+        {
+          "title": "Dialectica de la sexualidad: Género y sexo en la filosofía contemporánea",
+          "author": "Alicia H. Puleo"
+        },
+        {
+          "title": "Para una crítica del fetichismo literario",
+          "author": "Althusser, Poulantzas, Balibar, et al."
+        },
+        {
+          "title": "Filosofía del Derecho como contrasecularización…",
+          "author": "Andres Ollero Tassara",
+          "dedicated": true
+        },
+        {
+          "title": "Filosofía Política",
+          "author": "Anthony Quinton"
+        },
+        {
+          "title": "Voltaire y el siglo XVIII",
+          "author": "Antonio Espina"
+        },
+        {
+          "title": "La construcción del partido comunista",
+          "author": "Antonio Gramsci"
+        },
+        {
+          "title": "Note sul Machiavelli sulla politica e sullo stato moderno",
+          "author": "Antonio Gramsci"
+        },
+        {
+          "title": "L´anomalia selvaggia",
+          "author": "Antonio Negri"
+        },
+        {
+          "title": "El trabajo de Dionisos",
+          "author": "Antonio Negri; Michel Hardt"
+        },
+        {
+          "title": "Introduzione a Hume",
+          "author": "Antonio Santucci"
+        },
+        {
+          "title": "J.J. Rousseau e la fondazione dei valori…",
+          "author": "Augusto Illuminati"
+        },
+        {
+          "title": "Michel Foucault, filósofo",
+          "author": "Balbier; Deleuze; Dreyfus y otros"
+        },
+        {
+          "title": "Ciencia y filosofia en la antigüedad",
+          "author": "Benjamin Farrington"
+        },
+        {
+          "title": "El ateismo de Nietzsche y el cristianismo",
+          "author": "Bernahard Welte"
+        },
+        {
+          "title": "Analisis de Michael Foucault",
+          "author": "Burguelin; O. Dàllonnes; Amiot….."
+        },
+        {
+          "title": "El concepto de lo político",
+          "author": "Carl Schmitt"
+        },
+        {
+          "title": "La dictadura desde los comienzos del …",
+          "author": "Carl Schmitt"
+        },
+        {
+          "title": "Catolicismo y forma política",
+          "author": "Carl Schmitt"
+        },
+        {
+          "title": "Il nomos della Terra",
+          "author": "Carl Schmitt"
+        },
+        {
+          "title": "Dialéctica de la persona, dialéctica de la situación",
+          "author": "Carlos Castilla del Pino"
+        },
+        {
+          "title": "Contribución a la critica de la economia…",
+          "author": "Carlos Marx"
+        },
+        {
+          "title": "Crítica del programa de Gotha",
+          "author": "Carlos Marx"
+        },
+        {
+          "title": "Obras escogidas (tomo I y II)",
+          "author": "Carlos Marx y Federico Engels"
+        },
+        {
+          "title": "Obras escogidas (tomo I)",
+          "author": "Carlos Marx y Federico Engels"
+        },
+        {
+          "title": "Revolución en España",
+          "author": "Carlos Marx y Federico Engels"
+        },
+        {
+          "title": "La Sagrada Familia",
+          "author": "Carlos Marx y Federico Engels"
+        },
+        {
+          "title": "studi Gramsciani",
+          "author": "Cessi, Garin, Luporini, Togliatti"
+        },
+        {
+          "title": "Gramsci y el Estado",
+          "author": "Christine Buci-Glucksmann"
+        },
+        {
+          "title": "Gramsci: el estado y la revolución",
+          "author": "Christine Buci-Glucksmann"
+        },
+        {
+          "title": "La filosofia politica di Schelling",
+          "author": "Claudio Cesa"
+        },
+        {
+          "title": "Curso de filosofía positiva",
+          "author": "Comte"
+        },
+        {
+          "title": "Friedrich Nietzsche. Los diez años Basilea",
+          "author": "Curt Paul Janz"
+        },
+        {
+          "title": "Friedrich Nietzsche. Los diez años filoso",
+          "author": "Curt Paul Janz"
+        },
+        {
+          "title": "Friedrich Nietzsche. Los años del hundim",
+          "author": "Curt Paul Janz"
+        },
+        {
+          "title": "Friedrich Nietzsche",
+          "author": "Curt Paul Janz"
+        },
+        {
+          "title": "De la moral y otros escritos",
+          "author": "David Hume"
+        },
+        {
+          "title": "Ensayos políticos",
+          "author": "David Hume"
+        },
+        {
+          "title": "De los prejuicios morales y otros ensayos",
+          "author": "David Hume"
+        },
+        {
+          "title": "Tratado de la naturaleza humana. Vol. 1 y 2",
+          "author": "David Hume"
+        },
+        {
+          "title": "Compendio de un tratado de la naturaleza humana",
+          "author": "David Hume"
+        },
+        {
+          "title": "Friedrich Nietzsche",
+          "author": "Desencolado"
+        },
+        {
+          "title": "Kant vida y doctrina",
+          "author": "E. Cassirer",
+          "dedicated": true
+        },
+        {
+          "title": "Pascal e Nietzsche",
+          "author": "E. Castelli"
+        },
+        {
+          "title": "Filosofía y política en Julián Besteiro",
+          "author": "E. Lamo de Espinosa"
+        },
+        {
+          "title": "Vida íntima de Kant",
+          "author": "E. Wasiansky y T. de Quincey"
+        },
+        {
+          "title": "Voltaire. Cartas filosóficas",
+          "author": "Ed. Letra firme"
+        },
+        {
+          "title": "Marxismo y revisionismo 1",
+          "author": "Eduard Bernstein"
+        },
+        {
+          "title": "Filosofia de la historia",
+          "author": "Emmanuel Kant"
+        },
+        {
+          "title": "Papeles de filosofía II:La teoría de las ficciones en la polític y la filosofía",
+          "author": "Enrique E. Marí"
+        },
+        {
+          "title": "Papeles de filosofía",
+          "author": "Enrique E. Marí"
+        },
+        {
+          "title": "Tras los velos del Islam",
+          "author": "Erdmute Heller Hassouna Mosbahi"
+        },
+        {
+          "title": "Revolución y democracia en Gramsci",
+          "author": "Eric Hobsbawm"
+        },
+        {
+          "title": "Hegel e lo stato",
+          "author": "Eric Weil"
+        },
+        {
+          "title": "El principio esperanza I",
+          "author": "Ernst Bloch"
+        },
+        {
+          "title": "El principio esperanza II",
+          "author": "Ernst Bloch"
+        },
+        {
+          "title": "El principio esperanza III",
+          "author": "Ernst Bloch"
+        },
+        {
+          "title": "Thomas Münzer, teólogo de la revolución",
+          "author": "Ernst Bloch"
+        },
+        {
+          "title": "El mito del Estado",
+          "author": "Ernst Cassirer"
+        },
+        {
+          "title": "Filosofía de la ilustración",
+          "author": "Ernst Cassirer"
+        },
+        {
+          "title": "Los dos cuerpos del rey: Un estudio de teología política medieval",
+          "author": "Ernst H. Kantorowicz"
+        },
+        {
+          "title": "Il nodo di Gordio",
+          "author": "Ernst Jünger- Carl Schmitt"
+        },
+        {
+          "title": "Spinoza et la politique",
+          "author": "Étienne Balibar"
+        },
+        {
+          "title": "Marx et sa critique de la politique",
+          "author": "Étienne Balibar…(et al.)"
+        },
+        {
+          "title": "Marx et sa critique de la politique",
+          "author": "Étienne Balibar…(et al.)"
+        },
+        {
+          "title": "La filosofía de Nietzsche",
+          "author": "Eugen Fink"
+        },
+        {
+          "title": "Filosofía y carnaval",
+          "author": "Eugenio Trías"
+        },
+        {
+          "title": "En favor de Nietzsche",
+          "author": "Eugenio Trías..."
+        },
+        {
+          "title": "Aforismos y otros escritos filosóficos",
+          "author": "Federico Nietzsche"
+        },
+        {
+          "title": "Marx, Engels y la Revolución del 1848",
+          "author": "Fernando Claudin"
+        },
+        {
+          "title": "LA FILOSOFIA TACHADA",
+          "author": "FERNANDO SAVATER"
+        },
+        {
+          "title": "Patriarca o el poder natural de los reyes. Primer libro sobre el gobierno",
+          "author": "Filmer-Locke"
+        },
+        {
+          "title": "Patriarca o el poder natural de los reyes. Primer libro sobre el gobierno",
+          "author": "Filmer-Locke"
+        },
+        {
+          "title": "Tecnologías del yo y otros textos afines",
+          "author": "Foucault"
+        },
+        {
+          "title": "Hegel según Hegel",
+          "author": "François Châtelet"
+        },
+        {
+          "title": "Carlos Marx",
+          "author": "Franz Mehring"
+        },
+        {
+          "title": "Sobre el porvenir de nuestras escuelas",
+          "author": "Friedrich Nietzsche"
+        },
+        {
+          "title": "El Anticristo",
+          "author": "Friedrich Nietzsche"
+        },
+        {
+          "title": "Crepusculo de los ídolos",
+          "author": "Friedrich Nietzsche"
+        },
+        {
+          "title": "El libro del filósofo",
+          "author": "Friedrich Nietzsche"
+        },
+        {
+          "title": "Inventario: edición de Fernando Savater",
+          "author": "Friedrich Nietzsche"
+        },
+        {
+          "title": "Sobre la utilidad y el perjuicio de la Historia para la vida ( II intempestiva)",
+          "author": "Friedrich Nietzsche"
+        },
+        {
+          "title": "El nihilismo: escritos póstumos",
+          "author": "Friedrich Nietzsche"
+        },
+        {
+          "title": "El ocaso de los ídolos",
+          "author": "Friedrich Nietzsche"
+        },
+        {
+          "title": "Laa transformaciones en el norte y el sur del mundo: Entre la crisis y la reestructuración capitalisra I",
+          "author": "Fundación de investigciónes Marxistas"
+        },
+        {
+          "title": "Laa transformaciones en el norte y el sur del mundo: Entre la crisis y la reestructuración capitalisra II",
+          "author": "Fundación de investigciónes Marxistas"
+        },
+        {
+          "title": "Filosofía del Derecho",
+          "author": "G. F. Hegel"
+        },
+        {
+          "title": "Discurso de la metafísica",
+          "author": "G.W. Leibniz"
+        },
+        {
+          "title": "Fenomenología del espíritu",
+          "author": "G.W.F. Hegel"
+        },
+        {
+          "title": "DE LA AÑORANZA DEL PODER O CONSOLACION DE LA FILOSOFIA",
+          "author": "GABRIEL ALBIAC"
+        },
+        {
+          "title": "Kant: Antología di scriti politici…",
+          "author": "Gennaro Sasso"
+        },
+        {
+          "title": "Teoría de la novela",
+          "author": "Georg Lukacs"
+        },
+        {
+          "title": "La novela histórica",
+          "author": "Georg Lukacs"
+        },
+        {
+          "title": "Lukacs tomo I y II",
+          "author": "Georg Lukacs"
+        },
+        {
+          "title": "El asalto a la razón",
+          "author": "Georg Lukács"
+        },
+        {
+          "title": "Goethe y su época",
+          "author": "Georg Lukács"
+        },
+        {
+          "title": "Thomas Mann",
+          "author": "Georg Lukács"
+        },
+        {
+          "title": "Significación actual del realismo crítico",
+          "author": "Georg Lukács",
+          "annotated": true
+        },
+        {
+          "title": "Filosofia del dinero",
+          "author": "Georg Simmel"
+        },
+        {
+          "title": "Rembrandt : ensayo de filosofía del arte",
+          "author": "Georg Simmel"
+        },
+        {
+          "title": "Lukacs",
+          "author": "George Lichthein"
+        },
+        {
+          "title": "Antígonas. Una poética y una filosofía de la lectura",
+          "author": "George Steiner"
+        },
+        {
+          "title": "Leibniz et Spinoza",
+          "author": "Georges Friedmann"
+        },
+        {
+          "title": "Robespierre : una política de la filosofía",
+          "author": "Georges Labica"
+        },
+        {
+          "title": "La sociedad transparente",
+          "author": "Gianni Vattimo"
+        },
+        {
+          "title": "Diálogo con Nietzsche: Ensayos 1961-2000",
+          "author": "Gianni Vattimo"
+        },
+        {
+          "title": "Introduzione a Heidegger",
+          "author": "Gianni Vattimo"
+        },
+        {
+          "title": "Foucault",
+          "author": "Gilles Deleuze"
+        },
+        {
+          "title": "Proust y los signos",
+          "author": "Gilles Deleuze"
+        },
+        {
+          "title": "Infanzia e storia",
+          "author": "Giorgio Agamben"
+        },
+        {
+          "title": "Homo Sacer III : Lo que queda de Auschwitz :el archivo y el testigo",
+          "author": "Giorgio Agamben"
+        },
+        {
+          "title": "El nacimiento de la Filosofía",
+          "author": "Giorgio Colli"
+        },
+        {
+          "title": "Después de Nietzsche",
+          "author": "Giorgio Colli"
+        },
+        {
+          "title": "Storia universale e filosofia del diritto",
+          "author": "Giovanni Bonacina"
+        },
+        {
+          "title": "Spinoza: la política de las pasiones",
+          "author": "Gregorio Kaminsky"
+        },
+        {
+          "title": "Cultura y literatura / Antonio Gramsci",
+          "author": "Guillermo Sena Medina"
+        },
+        {
+          "title": "Spinoza. Kant. Nietzsche.",
+          "author": "Guilles Deleuze"
+        },
+        {
+          "title": "Nietzsche y la filosofía",
+          "author": "Guilles Deleuze"
+        },
+        {
+          "title": "Revolución socialisra y antiparlamentarismo",
+          "author": "Gyorgy Lukacs"
+        },
+        {
+          "title": "Marxiamo y &quot;Antropología&quot;",
+          "author": "György Màrkus"
+        },
+        {
+          "title": "Eichmann en Jerusalén",
+          "author": "Hannah Arendt"
+        },
+        {
+          "title": "Introducción a la filosofía del Derecho",
+          "author": "Hans Wezel"
+        },
+        {
+          "title": "Voltaire",
+          "author": "Haydn Mason"
+        },
+        {
+          "title": "Razón y revolución",
+          "author": "Hebert Marcuse"
+        },
+        {
+          "title": "Ensayos sobre política y cultura",
+          "author": "Hebert Marcuse"
+        },
+        {
+          "title": "La Dimensión Estética",
+          "author": "Hebert Marcuse"
+        },
+        {
+          "title": "Filosofía de la historia",
+          "author": "Hegel"
+        },
+        {
+          "title": "Les méditations Metaphysiques De jean-jacques Rousseau",
+          "author": "Henri Gouhier"
+        },
+        {
+          "title": "Eros y civilización",
+          "author": "Herbert Marcuse"
+        },
+        {
+          "title": "El hombre unidimensional",
+          "author": "Herbert Marcuse"
+        },
+        {
+          "title": "Rousseau",
+          "author": "Höffding"
+        },
+        {
+          "title": "Juan Jacobo Rousseau",
+          "author": "Hojas sueltas"
+        },
+        {
+          "title": "investigación sobre los principios de la moral",
+          "author": "Hume"
+        },
+        {
+          "title": "Adam Smith",
+          "author": "Humedad"
+        },
+        {
+          "title": "F.M. Cornford",
+          "author": "Humedad"
+        },
+        {
+          "title": "Aristóteles",
+          "author": "Humedad"
+        },
+        {
+          "title": "Montaigne",
+          "author": "Humedad manchado"
+        },
+        {
+          "title": "Torquato Acceto",
+          "author": "Humedad y hojas pegadas"
+        },
+        {
+          "title": "Etienne de la Boétie",
+          "author": "Humedad y hojas sueltas"
+        },
+        {
+          "title": "Francisco R.Adrados",
+          "author": "Humedad y manchado"
+        },
+        {
+          "title": "Juan Altusio",
+          "author": "Humedad y manchado"
+        },
+        {
+          "title": "Mirabeau",
+          "author": "Humedad y manchado"
+        },
+        {
+          "title": "Instituto de Estudios Políticos",
+          "author": "Humedad y manchado"
+        },
+        {
+          "title": "Instituto de Estudios Políticos",
+          "author": "Humedad y manchado"
+        },
+        {
+          "title": "Francisc M. Cornford",
+          "author": "Humedad y manchado"
+        },
+        {
+          "title": "Adam Smith",
+          "author": "Humedad y sucio"
+        },
+        {
+          "title": "Husserl y la búsqueda de la certeza",
+          "author": "Ieszek Kolakowski"
+        },
+        {
+          "title": "La paz perpetua",
+          "author": "Immanuel Kant"
+        },
+        {
+          "title": "La paz perpetua",
+          "author": "Immanuel Kant"
+        },
+        {
+          "title": "Las raices del romanticismo",
+          "author": "Isaiah Berlin"
+        },
+        {
+          "title": "Crítica jurídica: Revista Latinoamericana de Política, Filosofía y Derecho",
+          "author": "ISSN 0188-3968"
+        },
+        {
+          "title": "El pensamiento vivo de Kant",
+          "author": "Ivien Benda"
+        },
+        {
+          "title": "La pensée allemande de Luther a Nietzsche",
+          "author": "J.E. Spenlé"
+        },
+        {
+          "title": "Cartas desde la montaña",
+          "author": "J.J Rousseau"
+        },
+        {
+          "title": "Lecturas de filosofía contemporánea",
+          "author": "Jacobo Muñoz"
+        },
+        {
+          "title": "Baudelaire",
+          "author": "Jean Paul Sartre"
+        },
+        {
+          "title": "La náusea",
+          "author": "Jean Paul Sartre"
+        },
+        {
+          "title": "Las meditaciones del paseante solitario",
+          "author": "Jean-jacques Rousseau"
+        },
+        {
+          "title": "Les rêveries du promeneur solitaire",
+          "author": "Jean-Jacques Rousseau"
+        },
+        {
+          "title": "Escritos de combate",
+          "author": "Jean-Jacques Rousseau"
+        },
+        {
+          "title": "Discurso sobre la economía política",
+          "author": "Jean-Jacques Rousseau"
+        },
+        {
+          "title": "Emilio, o De la educación",
+          "author": "Jean-Jacques Rousseau"
+        },
+        {
+          "title": "L´homme qui croyait en l´homme",
+          "author": "Jean-Jacquez Rousseau"
+        },
+        {
+          "title": "Cartas a Sofía",
+          "author": "Jean-Jacquez Rousseau"
+        },
+        {
+          "title": "Segundo tratado sobre el gobierno civil",
+          "author": "John Locke"
+        },
+        {
+          "title": "Carta sobre la Tolerancia",
+          "author": "John Locke"
+        },
+        {
+          "title": "John Locke: Lecciones sobre la ley natural",
+          "author": "John Locke",
+          "dedicated": true
+        },
+        {
+          "title": "Filosofía del arte",
+          "author": "José García Leal",
+          "dedicated": true
+        },
+        {
+          "title": "La poesía, la música y el silencio (De Mallarmé a Wittgenstein)",
+          "author": "Juan Carlos Rodriguez"
+        },
+        {
+          "title": "Sin Ítaca. Memorias 1940-1975",
+          "author": "Juan Ramon Capella"
+        },
+        {
+          "title": "Los ciudadanos siervos",
+          "author": "Juan Ramón Capella"
+        },
+        {
+          "title": "Materiales para la crítica de la filosofía del estado",
+          "author": "Juan Ramón Capella"
+        },
+        {
+          "title": "Fruta prohibida",
+          "author": "Juan Ramón Capella"
+        },
+        {
+          "title": "Elementos de análisis juríco",
+          "author": "Juan Ramón Capella"
+        },
+        {
+          "title": "Entrada en la Barbarie",
+          "author": "Juan Ramón Capella"
+        },
+        {
+          "title": "Grandes esperanzas",
+          "author": "Juan Ramón Capella"
+        },
+        {
+          "title": "Impolíticos jardines. Ensayos sobre política y cultura",
+          "author": "Juan Ramón Capella"
+        },
+        {
+          "title": "El aprendizaje del aprendizaje",
+          "author": "Juan Ramón Capella",
+          "dedicated": true
+        },
+        {
+          "title": "La práctica de Manuel Sacristán: Una biografía política",
+          "author": "Juan-Ramón Capella"
+        },
+        {
+          "title": "Para leer a Foucault",
+          "author": "Julián Sauquillo"
+        },
+        {
+          "title": "Michel Foucault: UNA FILOSOFIA DE LA ACCION",
+          "author": "JULIAN SAUQUILLO GONZALEZ"
+        },
+        {
+          "title": "Historia y crítica de la opinión pública",
+          "author": "Jürgen Habermas"
+        },
+        {
+          "title": "Crítica de la razón práctica",
+          "author": "Kant"
+        },
+        {
+          "title": "Kant/cimentación para la metafísica de las costumbres",
+          "author": "Kant"
+        },
+        {
+          "title": "Filosofía de la existencia",
+          "author": "Karl Jaspers"
+        },
+        {
+          "title": "Isaiah Berlin",
+          "author": "Karl Marx"
+        },
+        {
+          "title": "Critica del programa de Gotha",
+          "author": "Karl Marx"
+        },
+        {
+          "title": "Economía y filosofía",
+          "author": "Karl Marx"
+        },
+        {
+          "title": "El 18 brumario de Luis Bonaparte",
+          "author": "Karl Marx"
+        },
+        {
+          "title": "¿Qué es la filosofía política?",
+          "author": "Leo Strauss"
+        },
+        {
+          "title": "La filosofía positivista : ciencia y filosofía",
+          "author": "Leszek Kolakowski"
+        },
+        {
+          "title": "Escritos sobre la tolerancia",
+          "author": "Locke"
+        },
+        {
+          "title": "Lenin y la filosofía",
+          "author": "Louis Althusser"
+        },
+        {
+          "title": "FILOSOFIA Y MARXISMO",
+          "author": "LOUIS ALTHUSSER"
+        },
+        {
+          "title": "La pensée de Rousseau",
+          "author": "Louis Millet"
+        },
+        {
+          "title": "Marxismo y estructuralismo",
+          "author": "Lucien Sebag"
+        },
+        {
+          "title": "Tesis provisionales para la reforma de la Filosofía; Principios de la Filosofía del futuro",
+          "author": "Ludwig Feuerbach"
+        },
+        {
+          "title": "Tractatus lógico-philosophicus",
+          "author": "Ludwig Wittgenstein"
+        },
+        {
+          "title": "Observaciones a La Rama Dorada de Frazer",
+          "author": "Ludwig Wittgenstein"
+        },
+        {
+          "title": "SOBRE FILOSOFIA Y SU NO LUGAR EN EL MARXISMO",
+          "author": "LUIS CRESPO"
+        },
+        {
+          "title": "Max Horkheimer",
+          "author": "Manchado y pintado"
+        },
+        {
+          "title": "Kant",
+          "author": "Manchas de humedad"
+        },
+        {
+          "title": "Pensar en el siglo",
+          "author": "Manuel Cruz, Gianni Vattimo"
+        },
+        {
+          "title": "Karl Marx 1883-1983",
+          "author": "Manuel Sacristán Luzón, et al."
+        },
+        {
+          "title": "Gramsci y la revolución de Occidente",
+          "author": "Maria Antonietta Macciocchi"
+        },
+        {
+          "title": "Pedagogía/Kant",
+          "author": "Mariano Fernández Enguita"
+        },
+        {
+          "title": "La pregunta por la cosa",
+          "author": "Marin Heidegger"
+        },
+        {
+          "title": "La filosofia en el tocador",
+          "author": "Marques de Sade"
+        },
+        {
+          "title": "Carta sobre el humanismo",
+          "author": "Martin Heidegger"
+        },
+        {
+          "title": "Introducción a la metafísica",
+          "author": "Martin Heidegger"
+        },
+        {
+          "title": "La autoafirmación de la universidad…",
+          "author": "Martin Heidegger"
+        },
+        {
+          "title": "La imaginación dialéctica",
+          "author": "Martin Jay"
+        },
+        {
+          "title": "El Marx desconocido: Proletariado y clase media en Marx………",
+          "author": "Martin Nicolaus"
+        },
+        {
+          "title": "Marxiamo y terrorismo",
+          "author": "Marx/ Engels/Lenin"
+        },
+        {
+          "title": "Michel Foucault tal y como yo lo imagino",
+          "author": "Maurice Blanchot"
+        },
+        {
+          "title": "La ausencia del libro: Nietzsche y la escritura fragmentaria",
+          "author": "Maurice Blanchot"
+        },
+        {
+          "title": "Marx como economista",
+          "author": "Maurice Dobb"
+        },
+        {
+          "title": "Teoría Crítica",
+          "author": "Max Horkheimer",
+          "annotated": true
+        },
+        {
+          "title": "Historia de la locura en la época clásica. Tomos I y II.",
+          "author": "Michael Foucault"
+        },
+        {
+          "title": "Theatrum Philosophicum",
+          "author": "Michael Foucault"
+        },
+        {
+          "title": "El orden del discurso",
+          "author": "Michael Foucault"
+        },
+        {
+          "title": "Herculine Barbin llamada Alexina B.",
+          "author": "Michael Foucault"
+        },
+        {
+          "title": "Imperio",
+          "author": "Michael Hardt, Antonio Negri"
+        },
+        {
+          "title": "El Marxismo olvidado : R. Luxemburg, G. Lukács",
+          "author": "Michael Lowy"
+        },
+        {
+          "title": "El Marxismo olvidado : R. Luxemburg, G. Lukács",
+          "author": "Michael Lowy"
+        },
+        {
+          "title": "La arqueología del saber",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Entre filosofía y literatura",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Estrategias de poder",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Estética, ética y hermenéutica",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "La vida de los hombres infames",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Microfísica del poder",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Vigilar y castigar",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Surveiller et punir: Naisasnce de la prison",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Genealogía del racismo",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "El pensamiento del afuera",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Scritti letterari",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "L´usage des plaisirs",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Historia de la sexualidad. 1, 2 y 3.",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "La volonté de savoir",
+          "author": "Michel Foucault"
+        },
+        {
+          "title": "Clases sociales y alianzas por el poder",
+          "author": "N. Poulantzas"
+        },
+        {
+          "title": "El riesgo de Hegel sobre la libertad",
+          "author": "Nicolas M. López Calera"
+        },
+        {
+          "title": "Derecho abstracto o natural en Hegel",
+          "author": "Nicolas Mª López Calera"
+        },
+        {
+          "title": "Hegel y los derechos humanos",
+          "author": "Nicolas María López Calera",
+          "dedicated": true
+        },
+        {
+          "title": "Hegemonía y dominación en el Estado…",
+          "author": "Nicos Poulantzas"
+        },
+        {
+          "title": "Estado, poder y socialismo",
+          "author": "Nicos Poulantzas"
+        },
+        {
+          "title": "Las clases sociales en el capitalismo actual",
+          "author": "Nicos Poulantzas"
+        },
+        {
+          "title": "Pouvoir politique el classes sociales I",
+          "author": "Nicos Poulantzas"
+        },
+        {
+          "title": "Poder político y clases sociales en el estado capitalista",
+          "author": "Nicos Poulantzas"
+        },
+        {
+          "title": "La internacionalización de las relacione capitalista y el estado-nación",
+          "author": "Nicos Poulantzas"
+        },
+        {
+          "title": "Sobre el estado capitalista",
+          "author": "Nicos Poulantzas"
+        },
+        {
+          "title": "Pouvoir politique et classes sociales II",
+          "author": "Nicos Poulantzas"
+        },
+        {
+          "title": "Fragmentos póstumos",
+          "author": "Nietzsche"
+        },
+        {
+          "title": "Pensée de Rousseau",
+          "author": "P. Bénichou"
+        },
+        {
+          "title": "La philosophie allemande depuis Nietzsche",
+          "author": "P. Trotignon"
+        },
+        {
+          "title": "La politica e la storia",
+          "author": "Pavanini Hegel"
+        },
+        {
+          "title": "En el mismo barco : ensayo sobre la hiperpolítica",
+          "author": "Peter Sloterdijk"
+        },
+        {
+          "title": "Normas para el parque humano : una respuesta a la &quot;Carta sobre el humanismo&quot; de Heidegger",
+          "author": "Peter Sloterdijk"
+        },
+        {
+          "title": "Las cenizas de Gramsci",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Las cenizas de Gramsci",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "La ontología política de Martin Heidegger",
+          "author": "Pierre Bourdieu"
+        },
+        {
+          "title": "Nietzsche y el círculo vicioso",
+          "author": "Pierre Klossowski"
+        },
+        {
+          "title": "Michel Foucault",
+          "author": "pintado"
+        },
+        {
+          "title": "Las lágrimas amargas de Petra von Kant",
+          "author": "R.W. Fassbinder"
+        },
+        {
+          "title": "Rousseau e l´alienazione",
+          "author": "Raffaele Vitiello"
+        },
+        {
+          "title": "Saturno y la melancolía : estudios de historia de la filosofía de la naturaleza, la religión y el arte",
+          "author": "Raymond Klibansky, Erwin Panofsky y Fritz Saxl"
+        },
+        {
+          "title": "Meditaciones metafísicas con objeciones y respuestas",
+          "author": "Rene Descartes"
+        },
+        {
+          "title": "Discurso del Método; Meditaciones Metafísicas",
+          "author": "René Descartes"
+        },
+        {
+          "title": "Introduzione a Husserl",
+          "author": "Renzo Raggiunti"
+        },
+        {
+          "title": "La filosofía y el espejo de la naturaleza",
+          "author": "Richad Rorty"
+        },
+        {
+          "title": "La historia del escepticismo desde erasmo hasta Spinoza",
+          "author": "Richard H. Popkin"
+        },
+        {
+          "title": "Pensar y resistir: La sociología crítica después de Foucault",
+          "author": "Robert Castel…(et al.)"
+        },
+        {
+          "title": "La filosofia de Rousseau",
+          "author": "Ronad Grimsley"
+        },
+        {
+          "title": "Les confessions 1",
+          "author": "Rousseau"
+        },
+        {
+          "title": "Les confessions 2",
+          "author": "Rousseau"
+        },
+        {
+          "title": "Economie politique 1755",
+          "author": "Rousseau"
+        },
+        {
+          "title": "Heidegger y el comenzar",
+          "author": "Rüdiger Safranski"
+        },
+        {
+          "title": "Kant",
+          "author": "S. Körner"
+        },
+        {
+          "title": "Effetto Foucault",
+          "author": "Saggi/Feltrinelli"
+        },
+        {
+          "title": "Política e ragione1: Spinoza e il primato della politica",
+          "author": "Sagi Marsillo"
+        },
+        {
+          "title": "La nausée",
+          "author": "Sartre"
+        },
+        {
+          "title": "Kierkegaard vivo",
+          "author": "Sartre Heidegger Jasper y otros",
+          "dedicated": true
+        },
+        {
+          "title": "Hegel y el pensamiento moderno",
+          "author": "Seminario Jean Hyppolite"
+        },
+        {
+          "title": "La contraddizione in Hegel",
+          "author": "Sergio Landucci"
+        },
+        {
+          "title": "Rousseau",
+          "author": "Sir Gavin de Beer"
+        },
+        {
+          "title": "Spinoza",
+          "author": "Stuart Hampshire"
+        },
+        {
+          "title": "Justificación de la filosofía",
+          "author": "Theodor W. Adorno"
+        },
+        {
+          "title": "Kierkegaard",
+          "author": "Theodor W. Adorno"
+        },
+        {
+          "title": "Sociología",
+          "author": "Theodor W. Adorno y Max Horkhe…"
+        },
+        {
+          "title": "Las confesiones y otros textos",
+          "author": "Thomas de Quincey"
+        },
+        {
+          "title": "Del retorno: abecedario biopolítico",
+          "author": "Toni Negri"
+        },
+        {
+          "title": "Col.legi de filosofía",
+          "author": "Toni Vicens…(et al.)"
+        },
+        {
+          "title": "Filosofía de la historia. Voltaire",
+          "author": "Trad. Martín Caparrós"
+        },
+        {
+          "title": "Investigaciones sobre la historia del Marxismo I",
+          "author": "Valentino Gerratana"
+        },
+        {
+          "title": "Hegel interprete di Kant",
+          "author": "Valerio Verra"
+        },
+        {
+          "title": "Conocer Hegel y su obra",
+          "author": "Victor Gómez Pin"
+        },
+        {
+          "title": "El materialismo de Spinoza",
+          "author": "Vidal I. Peña García"
+        },
+        {
+          "title": "Cartas filosóficas",
+          "author": "Voltaire"
+        },
+        {
+          "title": "Opusculos satíricos y filosóficos",
+          "author": "Voltaire"
+        },
+        {
+          "title": "SOBRE EL PROGRAMA DE LA FILOSOFIA FUTURA Y OTROS ENSAYOS",
+          "author": "WALTER BENJAMIN"
+        },
+        {
+          "title": "Sartre",
+          "author": "Walter Biemel"
+        },
+        {
+          "title": "Tragedia y filosofía",
+          "author": "Walter Kaufmann"
+        },
+        {
+          "title": "Cinco lecciones de filosofía",
+          "author": "Xavier zubiri"
+        },
+        {
+          "title": "La posmodernidad y sus descontentos",
+          "author": "Zigmunt Bauman"
+        }
+      ]
+    },
+    {
+      "name": "Poesía y literatura española",
+      "count": 282,
+      "slug": "poesia-esp",
+      "entries": [
+        {
+          "title": "Cien Años de Federico García Lorca —",
+          "author": ""
+        },
+        {
+          "title": "Luis Cernuda : [catálogo de exposición], 1902-1963",
+          "author": "-"
+        },
+        {
+          "title": "Luis García Montero : [antología de poemas]",
+          "author": "-"
+        },
+        {
+          "title": "Luis Rosales : discípulo del aire",
+          "author": "[José Carlos Rosales]"
+        },
+        {
+          "title": "El impuro amor de las ciudades",
+          "author": "Alvaro Salvador"
+        },
+        {
+          "title": "Alvaro Salvador",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Las cortezas del fruto : 1973-1979",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "El impostor",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Aula de poesía",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Después de la poesía: aforismos",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Diez de últimas",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Estación de servicio",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "La canción del Outsider: XI Premio de Poesía Generación del 27",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "La condición del personaje",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Suena una música: poemas, 1971-1995",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Un hombre suave",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Reina de corazones",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Alvaro Salvador",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "El agua de noviembre",
+          "author": "Álvaro Salvador"
+        },
+        {
+          "title": "Lecciones sobre Federico García Lorca",
+          "author": "Andrés Soria Olmedo"
+        },
+        {
+          "title": "Antología poética",
+          "author": "Angel González",
+          "dedicated": true
+        },
+        {
+          "title": "La música y yo",
+          "author": "Ángel González"
+        },
+        {
+          "title": "Nada Grave",
+          "author": "Ángel González"
+        },
+        {
+          "title": "Palabras pronunciadas por Ángel González en el acto de entrega de los Premios Príncipe de Asturias 1985",
+          "author": "Ángel González"
+        },
+        {
+          "title": "Poemas y dibujos",
+          "author": "Ángel González"
+        },
+        {
+          "title": "Otoños y otras luces",
+          "author": "Ángel González"
+        },
+        {
+          "title": "Las otras soledades de Antonio Machado : discurso leído el día 23 de marzo de 1997, en su recepción pública",
+          "author": "Ángel González y Emilio Alarcos Llorach"
+        },
+        {
+          "title": "En ausencia de Blanca",
+          "author": "Antonhio Muñoz Molina"
+        },
+        {
+          "title": "Liturgia del deseo",
+          "author": "Antonio Carvajal ... [et al.]"
+        },
+        {
+          "title": "La poesía de Rafael Alberti : (1930-1939)",
+          "author": "Antonio Jiménez Millán"
+        },
+        {
+          "title": "Poesías completas",
+          "author": "Antonio Machado"
+        },
+        {
+          "title": "Juan de Mairena",
+          "author": "Antonio Machado"
+        },
+        {
+          "title": "Unas gafas de Pla",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Unas gafas de Pla",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "José Guerrero: el artista que vuelve",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Plenilunio",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Beltenebros",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Nada del otro mundo",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "La noche de los tiempos",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Días de diario",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Carlota Fainberg",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Los misterios de Madrid",
+          "author": "Antonio Muñoz Molina",
+          "dedicated": true
+        },
+        {
+          "title": "El Robinson urbano",
+          "author": "Antonio Muñoz Molina",
+          "dedicated": true
+        },
+        {
+          "title": "Diario del Nautilus",
+          "author": "Antonio Muñoz Molina",
+          "dedicated": true
+        },
+        {
+          "title": "El Dueño del secreto",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "El Robinson urbano",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Beatus Ille",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Las otras vidas",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Diario del Nautilus",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "Sefarad",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "El jinete Polaco",
+          "author": "Antonio Muñoz Molina"
+        },
+        {
+          "title": "El corazón del alumbrado",
+          "author": "Benjamín Prado"
+        },
+        {
+          "title": "Fantasías animadas",
+          "author": "Berta Marsé"
+        },
+        {
+          "title": "La familia de Pascual Duarte",
+          "author": "Camilo José Cela"
+        },
+        {
+          "title": "Álvaro Salvador",
+          "author": "Ciclo diversos"
+        },
+        {
+          "title": "Obra olvidada",
+          "author": "Clarín"
+        },
+        {
+          "title": "El Público",
+          "author": "Consorcio Centro Federico García Lorca"
+        },
+        {
+          "title": "Leopoldo Alas &quot;Clarín&quot;",
+          "author": "Ed. de J. María Martínez Cachero"
+        },
+        {
+          "title": "Por eso fui cazador: (a la memoria de Javier Egea)",
+          "author": "edición de Elena Peregrina"
+        },
+        {
+          "title": "Por eso fui cazador: (a la memoria de Javier Egea)",
+          "author": "edición de Elena Peregrina"
+        },
+        {
+          "title": "Poeta en Nueva York",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Alocución al pueblo de Fuentevaqueros",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Poema del cante jondo",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Dibujos",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Divan del Tamarit",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Cartas escogidas",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Conferencias",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Diálogos",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Amor de don Perlimplín con Belisa…",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Poeta en Nueva York",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Canciones",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Yerma",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Doña Rosita la soltera",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Libro de los dibujos de Federíco …",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Semblanzas",
+          "author": "Federico García Lorca",
+          "dedicated": true
+        },
+        {
+          "title": "Canciones (1921-1924)",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Poesía completa 1",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Poeta en Nueva York",
+          "author": "Federico García Lorca"
+        },
+        {
+          "title": "Poesía",
+          "author": "Francisco García Lorca",
+          "dedicated": true
+        },
+        {
+          "title": "Lorca en la residencia de estudiantes",
+          "author": "Fundacion Federico García Lorca"
+        },
+        {
+          "title": "Francisco Bores para un Lorca",
+          "author": "Fundación Federico García Lorca"
+        },
+        {
+          "title": "Imagen sucesiva de Rafael Alberti",
+          "author": "Fundación Rafael Alberti"
+        },
+        {
+          "title": "Clarín en su obra ejemplar",
+          "author": "Gonzalo Sobejano"
+        },
+        {
+          "title": "¿Qué es poesía?",
+          "author": "Gustavo A. Bécquer"
+        },
+        {
+          "title": "¡Es raro! Y otros relatos",
+          "author": "Gustavo Adolfo Bécquer"
+        },
+        {
+          "title": "Federico García Lorca:de Nueva York…1",
+          "author": "Ian Gibson"
+        },
+        {
+          "title": "Federico García Lorca:de Nueva York…2",
+          "author": "Ian Gibson"
+        },
+        {
+          "title": "Clarín político II",
+          "author": "Ivan Lissorgues"
+        },
+        {
+          "title": "La pensée philosophique et religieuse de Leopoldo Alas (Clarín)-1875-1901",
+          "author": "Ivan Lissorgues"
+        },
+        {
+          "title": "Clarín político I",
+          "author": "Ivan Lissorgues"
+        },
+        {
+          "title": "Luces y sombras del flamenco",
+          "author": "J.M. Caballero Bonald"
+        },
+        {
+          "title": "Las personas del verbo",
+          "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "Retrato del artista en 1956",
+          "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "El pie de la letra",
+          "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "Antología personal",
+          "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "El argumento de la obra",
+          "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "Las personas del verbo /",
+          "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "Retrato del artista en 1956 / Jaime Gil de Biedma",
+          "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "Leer poesía, escribir poesía / Jaime Gil de Biedma",
+          "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "El juego de hacer versos",
+          "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "Raro de luna",
+          "author": "Javier Egea",
+          "dedicated": true
+        },
+        {
+          "title": "Un día feliz",
+          "author": "Javier Egea"
+        },
+        {
+          "title": "Javier Egea : contra la soledad",
+          "author": "Javier Egea"
+        },
+        {
+          "title": "Me desperté de nuevo",
+          "author": "Javier Egea"
+        },
+        {
+          "title": "&quot;Troppo Mare&quot;",
+          "author": "Javier Egea"
+        },
+        {
+          "title": "Me desperté de nuevo",
+          "author": "Javier Egea"
+        },
+        {
+          "title": "Sonetos del diente de oro",
+          "author": "Javier Egea"
+        },
+        {
+          "title": "Troppo Mare",
+          "author": "Javier Egea"
+        },
+        {
+          "title": "Paseo de los tristes",
+          "author": "Javier Egea"
+        },
+        {
+          "title": "Sonetos del diente de oro",
+          "author": "Javier Egea ; edición de José Antonio Fortes"
+        },
+        {
+          "title": "La otra sentimentalidad",
+          "author": "Javier Egea, Alvaro Salvador, Luis García Montero"
+        },
+        {
+          "title": "El viajero",
+          "author": "Javier Egea, Juan Vida"
+        },
+        {
+          "title": "1917 versos",
+          "author": "Javier Egea, Luis García Montero, Antonio Jiménez Millán, Benjamín"
+        },
+        {
+          "title": "La regenta de Clarín y la Restauración",
+          "author": "Jean Bécarud"
+        },
+        {
+          "title": "Desnudo",
+          "author": "Jorge Guillén"
+        },
+        {
+          "title": "Seis poemas por el color// Seis litrografías",
+          "author": "Jorge Guillén// José Guerrero"
+        },
+        {
+          "title": "El inocente seguido de Treinta y siete fragmentos",
+          "author": "José Ángel Valente"
+        },
+        {
+          "title": "Palabra y materia",
+          "author": "José Ángel Valente"
+        },
+        {
+          "title": "Ensayo sobre Miguel de Molinos",
+          "author": "José Ángel Valente"
+        },
+        {
+          "title": "Fragmentos de un libro futuro",
+          "author": "José Ángel Valente"
+        },
+        {
+          "title": "Peso Leve",
+          "author": "José Carlos Rosales"
+        },
+        {
+          "title": "Dos movimientos",
+          "author": "José Carlos Rosales"
+        },
+        {
+          "title": "El buzo incorregible",
+          "author": "José Carlos Rosales"
+        },
+        {
+          "title": "El buzo incorregible",
+          "author": "José Carlos Rosales"
+        },
+        {
+          "title": "El horizonte",
+          "author": "José Carlos Rosales"
+        },
+        {
+          "title": "El precio de los días",
+          "author": "José Carlos Rosales"
+        },
+        {
+          "title": "Poemas a Milena",
+          "author": "José Carlos Rosales"
+        },
+        {
+          "title": "Y el aire de los mapas",
+          "author": "José Carlos Rosales"
+        },
+        {
+          "title": "Copias del natural",
+          "author": "José Manuel Caballero Bonald"
+        },
+        {
+          "title": "Clarín, catedrático de Zaragoza",
+          "author": "Juan José Gil Cremades, Leonardo Romero Tobar"
+        },
+        {
+          "title": "El embrujo Shanghai",
+          "author": "Juan Marsé",
+          "dedicated": true
+        },
+        {
+          "title": "Rabos de lagartija",
+          "author": "Juan Marsé",
+          "dedicated": true
+        },
+        {
+          "title": "El fantasma del cine Roxy",
+          "author": "Juan Marsé",
+          "dedicated": true
+        },
+        {
+          "title": "Noches de Bocaccio",
+          "author": "Juan Marsé"
+        },
+        {
+          "title": "La gran desilusión",
+          "author": "Juan Marsé"
+        },
+        {
+          "title": "La muchacha de las bragas de oro",
+          "author": "Juan Marsé"
+        },
+        {
+          "title": "Ronda Guinardo",
+          "author": "Juan Marsé"
+        },
+        {
+          "title": "Si te dicen que caí",
+          "author": "Juan Marsé"
+        },
+        {
+          "title": "Rabos de lagartija",
+          "author": "Juan Marsé"
+        },
+        {
+          "title": "Canciones de amor en Lolita´s club",
+          "author": "Juan Marsé"
+        },
+        {
+          "title": "Libros de poesía",
+          "author": "Juan Ramón Jiménez"
+        },
+        {
+          "title": "El teatro imposible de García Lorca",
+          "author": "Julio Huélamo Kosma"
+        },
+        {
+          "title": "El espía",
+          "author": "Justo Navarro"
+        },
+        {
+          "title": "El alma del controlador aéreo",
+          "author": "Justo Navarro",
+          "annotated": true
+        },
+        {
+          "title": "El doble del doble",
+          "author": "Justo Navarro"
+        },
+        {
+          "title": "Oppi, una obsesión",
+          "author": "Justo Navarro"
+        },
+        {
+          "title": "Accidentes íntimos",
+          "author": "Justo Navarro"
+        },
+        {
+          "title": "Hermana muerte",
+          "author": "Justo Navarro"
+        },
+        {
+          "title": "La casa del padre",
+          "author": "Justo Navarro"
+        },
+        {
+          "title": "Los cuentos de Clarín",
+          "author": "Laura de los Rios"
+        },
+        {
+          "title": "Cuentos Morales",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Preludios de Clarín",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Apuntes de clase de Clarín",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Doña Berta y otros relatos",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "El gallo de Sócrates",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "La regenta I",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Su único hijo",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Apuntes de clase de Clarín",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Clarín Die Präsidentin",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Clarín. Obras selectas II",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Cuesta abajo",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Juan Ruiz",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "La regenta",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "La regenta II",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Sinfonía de dos novelas. Su único hijo",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Solos de Clarín",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "La regenta",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "La Regenta vol. 1 y 2",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Clarín y su obra en el centenario de la regenta",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Clarín. Obras completas II",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Palique",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Pipá",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Superchería. Cuervo. Doña Berta",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Teresa. Avecilla. El hombre de los estrenos",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Treinta relatos",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Su único hijo",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "El señor y los demás cuentos",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Obras completas (Tomo III)",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "La Regenta",
+          "author": "Leopoldo Alas Clarín"
+        },
+        {
+          "title": "Agonizar en Salamanca Unamuno (julio-diciembre 1936)",
+          "author": "Luciano González Egido"
+        },
+        {
+          "title": "Retratos (con flash) de Jaime Gil de Biedma",
+          "author": "Luis Antonio de Villena"
+        },
+        {
+          "title": "Balada en la muerte de la poesía",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Secreto de amistad",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Luis García Montero(14)",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Anuncios por palabras",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Un invierno propio",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Vista cansada",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Habitaciones separadas",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Diario cómplice",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Autorretrato y paisaje",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "El jardín extranjero",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Quedarse sin ciudad",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Poeta y la ciudad",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Pliegos literarios (43)",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Antología personal",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Canciones",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Y ahora ya eres dueño del puente Brooklin",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Las flores del frío",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Casi cien poemas",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Poesía (1980-2005)",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Poética y poesía",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Antología poética",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "A puerta cerrada (2011-2017)",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Desde el empotro(Tertulia literaria del grupo A-7",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "El jardín extranjero",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Poemas",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Dedicación a la poesía",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Francisco Ayala y el cine",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Colección de versos",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "En otra edad",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "La palabra de Ícaro",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Dos poemas sobre el tiempo",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "La poesía más joven ; 4",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "En pie de paz",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Poesía urbana : (antología 1980-2002)",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Poesía urbana : (antología 1980-2002)",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Vista cansada",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Egloga de los dos rascacielos",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Un poema",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Tempo di camere separate",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Canciones",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Antología personal",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Poemas",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "La ideología de las representaciones medievales. Una introducción",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Una forma de resistencia",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Rimannere senza città e altre prose",
+          "author": "Luis García Montero"
+        },
+        {
+          "title": "Diario complice",
+          "author": "Luis García Montero",
+          "dedicated": true
+        },
+        {
+          "title": "Las otra sentimentalidad: The Poetry of expirience",
+          "author": "Luis García Montero y Álvaro Salvador"
+        },
+        {
+          "title": "La poesía señor hidalgo : antología de poemas cervantinos",
+          "author": "Luis García Montero; Damaso Alonso ...[et al.]"
+        },
+        {
+          "title": "La palabra libre en la ciudad libre",
+          "author": "M. Vázquez Montalbán"
+        },
+        {
+          "title": "El intelectual y la urbe: Clarín maestro de Azorín",
+          "author": "Mª. Dolores Dobón Antón"
+        },
+        {
+          "title": "José Ángel Valente : para siempre, la sombra : [Fundación Telefónica, Madrid, 7 de marzo al 1 de abril de 2001]",
+          "author": "Manuel Falces"
+        },
+        {
+          "title": "José Ángel Valente : para siempre, la sombra : [Fundación Telefónica, Madrid, 7 de marzo al 1 de abril de 2001]",
+          "author": "Manuel Falces"
+        },
+        {
+          "title": "El premio",
+          "author": "Manuel Vázquez Montalbán"
+        },
+        {
+          "title": "El manifiesto subnormal",
+          "author": "Manuel Vázquez Montalbán"
+        },
+        {
+          "title": "Hipótesis sobre Clarín : el pensamiento crítico del reformismo español",
+          "author": "Mariano Maresca"
+        },
+        {
+          "title": "Don Quijote de la Mancha",
+          "author": "Miguel de Cervantes"
+        },
+        {
+          "title": "Don Quijote de la Mancha (Volumen complementario)",
+          "author": "Miguel de Cervantes"
+        },
+        {
+          "title": "El ingenioso Hidalgo Don Quijote de la Mancha",
+          "author": "Miguel de Cervantes Saavedra"
+        },
+        {
+          "title": "En torno al casticismo",
+          "author": "Miguel de Unamuno"
+        },
+        {
+          "title": "Mi religión",
+          "author": "Miguel de Unamuno"
+        },
+        {
+          "title": "La dignidad humana",
+          "author": "Miguel de Unamuno"
+        },
+        {
+          "title": "Clarín y la regenta",
+          "author": "Ministerio de cultura"
+        },
+        {
+          "title": "La voz a ti debida ; Razón de amor",
+          "author": "Pedro Salinas"
+        },
+        {
+          "title": "Doña Gramática : juego cómico en ocho escenas y un proscenio para estudiantes de español",
+          "author": "Pedro Salinas, Joaquin Casalduero, Enrique Díez"
+        },
+        {
+          "title": "La poesía de Jaime Gil de Biedma",
+          "author": "Pere Rovira i Planas"
+        },
+        {
+          "title": "El escritor según él y según los críticos",
+          "author": "Pio Baroja"
+        },
+        {
+          "title": "Final del siglo XIX y principios del XX",
+          "author": "Pio Baroja"
+        },
+        {
+          "title": "Familia, infancia y juventud",
+          "author": "Pio Baroja"
+        },
+        {
+          "title": "El árbol de la ciencia",
+          "author": "Pío Baroja"
+        },
+        {
+          "title": "Camino de perfección : (pasión mística)",
+          "author": "Pío Baroja"
+        },
+        {
+          "title": "La historia de Rásselas, príncipe de Abisinia",
+          "author": "Prado, Alvaro Salvador, Javier Samuel Johnson"
+        },
+        {
+          "title": "Federico García Lorca poeta y amigo",
+          "author": "Rafael Alberti"
+        },
+        {
+          "title": "Rafael Alberti : el poema compartido",
+          "author": "Rafael Alberti"
+        },
+        {
+          "title": "Alberti sobre los ángeles : [exposición],",
+          "author": "Rafael Alberti"
+        },
+        {
+          "title": "La buena letra",
+          "author": "Rafael Chirbes"
+        },
+        {
+          "title": "Los disparos del cazador",
+          "author": "Rafael Chirbes"
+        },
+        {
+          "title": "Los viejos amigos",
+          "author": "Rafael Chirbes"
+        },
+        {
+          "title": "La larga marcha",
+          "author": "Rafael Chirbes"
+        },
+        {
+          "title": "La herida",
+          "author": "Rafael Juárez"
+        },
+        {
+          "title": "Otra casa",
+          "author": "Rafael Juárez",
+          "dedicated": true
+        },
+        {
+          "title": "Auluaga",
+          "author": "Rafael Juárez",
+          "dedicated": true
+        },
+        {
+          "title": "Medio siglo",
+          "author": "Rafael Juárez"
+        },
+        {
+          "title": "Para siempre",
+          "author": "Rafael Juárez",
+          "dedicated": true
+        },
+        {
+          "title": "La fuente de la bicha",
+          "author": "Rafael Juárez Ortiz"
+        },
+        {
+          "title": "Bestiario",
+          "author": "Rafael Juárez Ortiz"
+        },
+        {
+          "title": "Emblemas y conversaciones",
+          "author": "Rafael Juárez Ortiz"
+        },
+        {
+          "title": "Las cosas naturales",
+          "author": "Rafael Juárez Ortiz"
+        },
+        {
+          "title": "Fábula de fuentes",
+          "author": "Rafael Juárez Ortiz"
+        },
+        {
+          "title": "La otra casa",
+          "author": "Rafael Juárez Ortiz"
+        },
+        {
+          "title": "Baza de espadas",
+          "author": "Ramon del Valle-Inclán"
+        },
+        {
+          "title": "Viva mi dueño",
+          "author": "Ramon del Valle-Inclán"
+        },
+        {
+          "title": "Luces de bohemia",
+          "author": "Ramon del Valle-Inclán"
+        },
+        {
+          "title": "Sostener la mirada: imágenes de la Alpujarra",
+          "author": "Ricardo Martín, Antonio Muñoz Molina"
+        },
+        {
+          "title": "Dedicado a Federico García Lorca",
+          "author": "Sean Scully"
+        },
+        {
+          "title": "Treinta entrevistas a Federico García Lorca",
+          "author": "selección, introducción y notas de Andrés Soria Olmedo"
+        },
+        {
+          "title": "Clarín y la &quot;Regenta&quot;",
+          "author": "Sergio Beser"
+        },
+        {
+          "title": "Federico García Lorca (1898-1936)",
+          "author": "Tf. Editores"
+        }
+      ]
+    },
+    {
+      "name": "Literatura italiana",
+      "count": 95,
+      "slug": "italiana",
+      "entries": [
+        {
+          "title": "Dossier de prensa Pier Pasolini —",
+          "author": ""
+        },
+        {
+          "title": "Pier Paolo Pasolini Dipinti e disegni dell&apos;Archivio Contemporanoe del Gabinetto Vieusseux —",
+          "author": ""
+        },
+        {
+          "title": "Il cinema di Pier Paolo Pasolini",
+          "author": "Adelio Ferrero"
+        },
+        {
+          "title": "San Pablo",
+          "author": "Andalucía, Pier Paolo Pasolini"
+        },
+        {
+          "title": "Trieste. Una identidad de frontera.",
+          "author": "Angelo Ara, Claudio Magris"
+        },
+        {
+          "title": "Leopardi",
+          "author": "Antonio Colinas"
+        },
+        {
+          "title": "Pasolini: Obra y muerte",
+          "author": "Antonio Monclús"
+        },
+        {
+          "title": "Tristano muere",
+          "author": "Antonio Tabucchi"
+        },
+        {
+          "title": "Sostiene Pereira",
+          "author": "Antonio Tabucchi"
+        },
+        {
+          "title": "Sueños de sueños seguido de Los tres últimos días de Fernando Pessoa",
+          "author": "Antonio Tabucchi"
+        },
+        {
+          "title": "La cabeza perdida de Damasceno…",
+          "author": "Antonio Tabucchi"
+        },
+        {
+          "title": "Dama de Porto Pim",
+          "author": "Antonio Tabucchi"
+        },
+        {
+          "title": "La gastrite di Platone",
+          "author": "Antonio Tabucci",
+          "dedicated": true
+        },
+        {
+          "title": "La posizione storica di Giacomo Leopardi",
+          "author": "Bruno Biral"
+        },
+        {
+          "title": "Pesquisa sobre Piero",
+          "author": "Carlo Ginzburg"
+        },
+        {
+          "title": "Conversaciones con Antonio Tabucchi",
+          "author": "Carlos Gumpert"
+        },
+        {
+          "title": "Pasolini Roma",
+          "author": "Centro Cultura Contemporánea Barcelona"
+        },
+        {
+          "title": "Vita attraverso le lettere",
+          "author": "Cesare Pavese"
+        },
+        {
+          "title": "Poesie",
+          "author": "Cesare Pavese"
+        },
+        {
+          "title": "Poesía",
+          "author": "Cesare Pavese"
+        },
+        {
+          "title": "Utopía y desencanto",
+          "author": "Claudio Magris"
+        },
+        {
+          "title": "L&apos;Altra ego dei poeti da baudeleire a Pasolini",
+          "author": "Daniela Pazzolini"
+        },
+        {
+          "title": "Comedia infierno",
+          "author": "Dante Alighieri"
+        },
+        {
+          "title": "Pasolini",
+          "author": "Davide Toffolo"
+        },
+        {
+          "title": "Tra lucciole e Palazzo: Il mito Pasolini dentro la realtà",
+          "author": "Enzo Golino"
+        },
+        {
+          "title": "El gato pardo",
+          "author": "G. Tomasi di Lampedusa"
+        },
+        {
+          "title": "Giacomo Leopardi",
+          "author": "Ganti del conte"
+        },
+        {
+          "title": "Diálogos",
+          "author": "Giacomo Leopardi"
+        },
+        {
+          "title": "Pasolini L´Universo Orrendo",
+          "author": "Gian Carlo Ferretti"
+        },
+        {
+          "title": "Pasolini Il corpo della città",
+          "author": "Gianni Biondillo"
+        },
+        {
+          "title": "Pasolini tra enigma e profezia",
+          "author": "Giuseppe Zigaina"
+        },
+        {
+          "title": "Seis propuestas para el próximo milenio",
+          "author": "Italo Calvino",
+          "annotated": true
+        },
+        {
+          "title": "Processo Pasolini",
+          "author": "L´Unità"
+        },
+        {
+          "title": "Una historia sencilla",
+          "author": "Leonardo Sciascia"
+        },
+        {
+          "title": "El caballero y la muerte",
+          "author": "Leonardo Sciascia"
+        },
+        {
+          "title": "El contexto",
+          "author": "Leonardo Sciascia"
+        },
+        {
+          "title": "La tierra de los infieles",
+          "author": "Leonardo Sciascia"
+        },
+        {
+          "title": "Crucigrama",
+          "author": "Leonardo Sciascia"
+        },
+        {
+          "title": "Una storia semplice",
+          "author": "Leonardo Sciascia"
+        },
+        {
+          "title": "Pasolini nella città del cinema",
+          "author": "Lino Micciché"
+        },
+        {
+          "title": "Pasolini rilegge Pasolini",
+          "author": "Luigi Fontanella"
+        },
+        {
+          "title": "Sciata. El maestro de Regalpetra",
+          "author": "Matteo Collura",
+          "annotated": true
+        },
+        {
+          "title": "Antón chéjov",
+          "author": "Natalia Ginzburg"
+        },
+        {
+          "title": "Album Pasolini",
+          "author": "Oscar Mondadori"
+        },
+        {
+          "title": "Pier Paolo Pasolini dibujos y pinturas",
+          "author": "Pier paolo Pasolini"
+        },
+        {
+          "title": "Pier Paolo Pasolini figurativitá e figurazione",
+          "author": "Pier paolo Pasolini"
+        },
+        {
+          "title": "Le regole di un&apos;illusione",
+          "author": "Pier paolo Pasolini"
+        },
+        {
+          "title": "Calderón",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Chicos del arroyo",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "El padre salvaje",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "El sueño de una cosa",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Escritos corsarios",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "La religión de mi tiempo",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Larga carretera de arena",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Mamma Roma",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Nueva York",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Orgía",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Poesía en forma de rosa",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Scritti corsari",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Trilogía de la vida: El Decamerón, Los cuentos de Canterbury, Las mil y una noches",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "La poesia popolare italiana",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Chicos del arroyo",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Descripciones de descripciones",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "El olor de la India",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "El padre salvaje",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Escritos corsarios",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Fragmentos de noches Romanas",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Historias de la ciudad de Dios",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "La nuova gioventú",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Las películas de los otros",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Lettere luterane",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Orgía",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Pasiones heréticas",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Teorema",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Transhumanar y organizar",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Una vida violenta",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Who is me: Poeta de las cenizas",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "El Evangelio según Mateo",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Cartas luteranas",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Palabra de corsario",
+          "author": "Pier Paolo Pasolini"
+        },
+        {
+          "title": "Salo: El Infierno según Pasolini",
+          "author": "Por Maresca Garcia-Esteller, Mariano, (Córdoba : Filmoteca de"
+        },
+        {
+          "title": "Entrevistas y conversaciones",
+          "author": "Primo Levi"
+        },
+        {
+          "title": "La tregua",
+          "author": "Primo Levi"
+        },
+        {
+          "title": "Los hundidos y los salvados",
+          "author": "Primo Levi"
+        },
+        {
+          "title": "Si esto es un hombre",
+          "author": "Primo Levi"
+        },
+        {
+          "title": "Leopardi infelicidad y titanismo",
+          "author": "Rafael Argullol"
+        },
+        {
+          "title": "Pier Paolo Pasolini contra Eric Rohmer. Cine de poesía contra cine de prosa",
+          "author": "Serie dirigida por Joaquín Jordá"
+        },
+        {
+          "title": "Castellio contra Calvino : conciencia contra violencia",
+          "author": "Stefan Zweig"
+        },
+        {
+          "title": "Castellio contra Calvino : conciencia contra violencia",
+          "author": "Stefan Zweig"
+        },
+        {
+          "title": "Pasolini su Pasolini: Conversazioni con Jon Halliday",
+          "author": "Ugo Guanda editore in Parma"
+        },
+        {
+          "title": "El cementerio de Praga",
+          "author": "Umberto Eco"
+        },
+        {
+          "title": "Cinco escritos morales",
+          "author": "Umberto Eco"
+        },
+        {
+          "title": "El nombre de la rosa",
+          "author": "Umberto Eco"
+        },
+        {
+          "title": "Socialismo y consolación : reflexiones en torno a &quot;Los misterios de París&quot; de Eugène Sue",
+          "author": "Umberto Eco... [et al.]"
+        },
+        {
+          "title": "La protesta di Leopardi",
+          "author": "Walter Binni"
+        }
+      ]
+    },
+    {
+      "name": "Literatura francesa",
+      "count": 75,
+      "slug": "francesa",
+      "entries": [
+        {
+          "title": "Artes En torno a Marcell Proust —",
+          "author": ""
+        },
+        {
+          "title": "Vida y hechos de Arthur Rimbaud",
+          "author": "-"
+        },
+        {
+          "title": "Rimbaud en Arabia",
+          "author": "Alain Border"
+        },
+        {
+          "title": "El primer hombre",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "El verano. Bodas",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "Crónicas (1944-1953)",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "La peste extraits",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "Los justos",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "El extranjero",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "La peste",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "La peste",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "El hombre rebelde",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "Le mythe de Sisyphe",
+          "author": "Albert Camus"
+        },
+        {
+          "title": "Peter Burke: Montaigne",
+          "author": "Alianza Editorial"
+        },
+        {
+          "title": "El regreso del hijo pródigo",
+          "author": "André Gide"
+        },
+        {
+          "title": "El nunc manet in te Corydon",
+          "author": "André Gide"
+        },
+        {
+          "title": "Balzac vol. I y II",
+          "author": "André Maurois"
+        },
+        {
+          "title": "Albert Camus ou Le Vrai Prométhée",
+          "author": "André Nicolas"
+        },
+        {
+          "title": "Sade",
+          "author": "Chantal Thomas"
+        },
+        {
+          "title": "Montaigne and Bayle",
+          "author": "Craig B. Brush"
+        },
+        {
+          "title": "Balzac y la joven costurera china",
+          "author": "Dai Sijie"
+        },
+        {
+          "title": "Stendhal",
+          "author": "Desencolado"
+        },
+        {
+          "title": "Stendhal",
+          "author": "Desencolado+ humedad"
+        },
+        {
+          "title": "Rimbaud en Arabia",
+          "author": "Edmund White"
+        },
+        {
+          "title": "La verdad en marcha: yo acuso",
+          "author": "Emile Zola"
+        },
+        {
+          "title": "Salammbô",
+          "author": "Flaubert"
+        },
+        {
+          "title": "Baudelaire por Gautier. Gautier por Baudelaire. Dos biografías románticas",
+          "author": "Gautier y Bodelaire"
+        },
+        {
+          "title": "Vida y hechos de Arthur Rimbaud",
+          "author": "Gonzalo Armero"
+        },
+        {
+          "title": "Viaje a Oriente",
+          "author": "Gustave Flaubert"
+        },
+        {
+          "title": "La educación sentimental 1 y 2",
+          "author": "Gustave Flaubert"
+        },
+        {
+          "title": "Flaubert",
+          "author": "Henri Troyat"
+        },
+        {
+          "title": "Montaigne en mouvement",
+          "author": "Jean Starbinski",
+          "dedicated": true
+        },
+        {
+          "title": "Vida de Rimbaud",
+          "author": "Jean-Marie Carre"
+        },
+        {
+          "title": "Camus o rebelión y libertad",
+          "author": "Joseph Majault"
+        },
+        {
+          "title": "El loro de Flaubert",
+          "author": "Julian Barnes"
+        },
+        {
+          "title": "Viaje al fin de la noche",
+          "author": "Louis-Ferdinand Céline"
+        },
+        {
+          "title": "Michel Montaigne",
+          "author": "Manchas de humedad"
+        },
+        {
+          "title": "Zola Par lui-même",
+          "author": "Marc Bernard"
+        },
+        {
+          "title": "En busca del tiempo perdido. 2 A la sombra de la muchacha en flor",
+          "author": "Marcel Proust"
+        },
+        {
+          "title": "En busca del tiempo perdido. 6 La fugitiva",
+          "author": "Marcel Proust"
+        },
+        {
+          "title": "En busca del tiempo perdido. 7 El tiempo recobrado",
+          "author": "Marcel Proust"
+        },
+        {
+          "title": "En busca del tiempo perdido. 3 El mundo de Guermantes",
+          "author": "Marcel Proust"
+        },
+        {
+          "title": "En busca del tiempo perdido. 4 Sodoma y Gomorra",
+          "author": "Marcel Proust"
+        },
+        {
+          "title": "En busca del tiempo perdido. 5 La prisionera",
+          "author": "Marcel Proust"
+        },
+        {
+          "title": "En busca del tiempo perdido. 1 Por el camino de Swann",
+          "author": "Marcel Proust"
+        },
+        {
+          "title": "Mishima o la visión del vacío",
+          "author": "Marguerite Yourcenar"
+        },
+        {
+          "title": "Fuegos",
+          "author": "Marguerite Yourcenar"
+        },
+        {
+          "title": "Archivos del norte",
+          "author": "Marguerite Yourcenar"
+        },
+        {
+          "title": "A beneficio de inventario",
+          "author": "Marguerite Yourcenar"
+        },
+        {
+          "title": "Les yeux ouverts",
+          "author": "Marguerite Yourcenar"
+        },
+        {
+          "title": "Alexis",
+          "author": "Marguerite Yourcenar"
+        },
+        {
+          "title": "Recordatorios",
+          "author": "Marguerite Yourcenar"
+        },
+        {
+          "title": "Memorias de Adriano",
+          "author": "Marguerite Yourcenar"
+        },
+        {
+          "title": "Elogio de la insurrección",
+          "author": "Marqués de Sade"
+        },
+        {
+          "title": "Escritos políticos",
+          "author": "Marqués de Sade"
+        },
+        {
+          "title": "Lautréamont y Sade",
+          "author": "Maurice Blanchot"
+        },
+        {
+          "title": "Gustave Flaubert escritor",
+          "author": "Maurice Nadeau"
+        },
+        {
+          "title": "Ensayos I, II y III",
+          "author": "Michel de Montaigne"
+        },
+        {
+          "title": "Lautréamont",
+          "author": "Miguel Bayón"
+        },
+        {
+          "title": "Balzac et le mal du siècle",
+          "author": "Pierre Barbéris"
+        },
+        {
+          "title": "Sade mon prochain",
+          "author": "Pierre Klossowski"
+        },
+        {
+          "title": "Travail de Flaubert",
+          "author": "R. Debray -Genette"
+        },
+        {
+          "title": "Arthur Rimbaud: esbozo biográfico",
+          "author": "Ramón Buenaventura"
+        },
+        {
+          "title": "Obra completa : verso y prosa",
+          "author": "Rimbaud"
+        },
+        {
+          "title": "sistema de la agresión",
+          "author": "Sade"
+        },
+        {
+          "title": "Adorable Stendhal",
+          "author": "Sciata"
+        },
+        {
+          "title": "Vida de Napoleón I",
+          "author": "Stendhal"
+        },
+        {
+          "title": "Vida de Napoleón II",
+          "author": "Stendhal"
+        },
+        {
+          "title": "Rojo y negro",
+          "author": "Stendhal"
+        },
+        {
+          "title": "Paseos por Roma I",
+          "author": "Stendhal"
+        },
+        {
+          "title": "Paseos por Roma II",
+          "author": "Stendhal"
+        },
+        {
+          "title": "Vida de Rossini",
+          "author": "Stendhal"
+        },
+        {
+          "title": "Vida de Henry Brulard",
+          "author": "Stendhal"
+        },
+        {
+          "title": "Eschilo",
+          "author": "Victor Hugo"
+        },
+        {
+          "title": "William Shakespeare",
+          "author": "Victor Hugo"
+        }
+      ]
+    },
+    {
+      "name": "Literatura anglosajona",
+      "count": 145,
+      "slug": "anglosajona",
+      "entries": [
+        {
+          "title": "Poesía en el jardín IV",
+          "author": "-"
+        },
+        {
+          "title": "Carver Country",
+          "author": "ANAGRAMA"
+        },
+        {
+          "title": "Scott Fitzgerald",
+          "author": "André Le Vot"
+        },
+        {
+          "title": "Shakespeare: la biografía más breve y más encantadora",
+          "author": "Anthony Burgess"
+        },
+        {
+          "title": "La literatura de Picasso : notas a Poemas y declaraciones / Antonio Jimenez Millán. El Picassito Mexicano casi medio siglo después / Francisco Giner de los Ríos. Poemas y",
+          "author": "Antonio Jimenez Millán"
+        },
+        {
+          "title": "Poemas y canciones",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Grandes esperanzas",
+          "author": "Charles Dickens"
+        },
+        {
+          "title": "Histroria de dos ciudades",
+          "author": "Charles Dickens"
+        },
+        {
+          "title": "El hombre embrujado; La batalla de la vida",
+          "author": "Dickens"
+        },
+        {
+          "title": "Las campanas",
+          "author": "Dickens"
+        },
+        {
+          "title": "El visitante y otras historias",
+          "author": "Dylan Thomas"
+        },
+        {
+          "title": "Bajo el bosque lácteo",
+          "author": "Dylan Thomas"
+        },
+        {
+          "title": "Notas sobre el art de la poesía",
+          "author": "Dylan Thomas"
+        },
+        {
+          "title": "Hemingway en Cuba",
+          "author": "Enrique Cirules"
+        },
+        {
+          "title": "El gato bajo la lluvia y otros relatos",
+          "author": "Ernest Hemingway"
+        },
+        {
+          "title": "París era una fiesta",
+          "author": "Ernest Hemingway"
+        },
+        {
+          "title": "Tener y no tener",
+          "author": "Ernest Hemingway"
+        },
+        {
+          "title": "Por quién doblan las campanas",
+          "author": "Ernest Hemingway"
+        },
+        {
+          "title": "Hermosos y malditos",
+          "author": "F. Scott Fitzgerald"
+        },
+        {
+          "title": "El precio era alto",
+          "author": "F. Scott Fitzgerald"
+        },
+        {
+          "title": "Los relatos de Basil y Josephine",
+          "author": "F. Scott Fitzgerald"
+        },
+        {
+          "title": "The Great Gatsby",
+          "author": "F. Scott Fitzgerald"
+        },
+        {
+          "title": "Suave es la noche",
+          "author": "F. Scott Fitzgerald"
+        },
+        {
+          "title": "The crack-up",
+          "author": "F. Scott Fitzgerald"
+        },
+        {
+          "title": "Historias de Pat Hobby",
+          "author": "F. Scott Fitzgerald"
+        },
+        {
+          "title": "Shakespeare",
+          "author": "F.E. Halliday"
+        },
+        {
+          "title": "Poesía",
+          "author": "François Villon"
+        },
+        {
+          "title": "Poemas",
+          "author": "Friedrich Hölderlin"
+        },
+        {
+          "title": "Poemas de la locura",
+          "author": "Friedrich Hölderlin"
+        },
+        {
+          "title": "Poemas",
+          "author": "Friedrich Hölderlin"
+        },
+        {
+          "title": "L´incantesimo è compiuto: Shakespeare secondo Orson Welles",
+          "author": "Gherardo Casale"
+        },
+        {
+          "title": "Bartleby. Mliss. Daisy Miller",
+          "author": "H. Melville. B. Harte. H. James"
+        },
+        {
+          "title": "Los papeles de aspern. El pupilo",
+          "author": "Henry James"
+        },
+        {
+          "title": "La lección del maestro",
+          "author": "Henry James"
+        },
+        {
+          "title": "Diario de un hombre de cincuenta años",
+          "author": "Henry James"
+        },
+        {
+          "title": "Las alas de la paloma",
+          "author": "Henry James"
+        },
+        {
+          "title": "Relatos",
+          "author": "Henry James"
+        },
+        {
+          "title": "Una estrella brilla sobre Mount Morris Park",
+          "author": "Henry Roth"
+        },
+        {
+          "title": "Réquiem por Harlem",
+          "author": "Henry Roth"
+        },
+        {
+          "title": "Rendención",
+          "author": "Henry Roth"
+        },
+        {
+          "title": "Llámalo sueño",
+          "author": "Henry Roth"
+        },
+        {
+          "title": "Un trampolín de piedra sobre el Hudson",
+          "author": "Henry Roth"
+        },
+        {
+          "title": "John Marr y otros marinos",
+          "author": "Herman Melville"
+        },
+        {
+          "title": "Moby Dick-Benito Cereno-Billy Budd-Taipi",
+          "author": "Herman Melville"
+        },
+        {
+          "title": "Diario italiano",
+          "author": "Herman Melville"
+        },
+        {
+          "title": "El estafador y sus disfraces",
+          "author": "Herman Melville"
+        },
+        {
+          "title": "El timador",
+          "author": "Herman Melville"
+        },
+        {
+          "title": "El enigma del Santo Domingo",
+          "author": "Herman Melville"
+        },
+        {
+          "title": "Stories, Poems, and Letters by the author of Moby Dick",
+          "author": "Herman Melville"
+        },
+        {
+          "title": "Las encantadas",
+          "author": "Herman Melville"
+        },
+        {
+          "title": "Poemas",
+          "author": "Hölderlin"
+        },
+        {
+          "title": "Retrato del artista adolescente",
+          "author": "James Joyce"
+        },
+        {
+          "title": "Ulises Vol I.",
+          "author": "James Joyce"
+        },
+        {
+          "title": "Ulises Vol II",
+          "author": "James Joyce"
+        },
+        {
+          "title": "Dublineses",
+          "author": "James Joyce"
+        },
+        {
+          "title": "Orgullo y Prejuicio",
+          "author": "Jane Austen"
+        },
+        {
+          "title": "Poemas del guiño",
+          "author": "Javier Benítez"
+        },
+        {
+          "title": "Poemas del guiño",
+          "author": "Javier Benítez"
+        },
+        {
+          "title": "Capital de la gloria. Poemas de la defensa de Madrid.",
+          "author": "Jesús García Sánchez",
+          "dedicated": true
+        },
+        {
+          "title": "Callas: el arte y la vida / John Ardoin ; Lo grandes años / Gerald Fitzgerald",
+          "author": "John Ardoin"
+        },
+        {
+          "title": "Pregúntale al polvo",
+          "author": "John Fante"
+        },
+        {
+          "title": "Camino de Los Ángeles",
+          "author": "John Fante",
+          "annotated": true
+        },
+        {
+          "title": "Sueños de Bunker Hill",
+          "author": "John Fante",
+          "annotated": true
+        },
+        {
+          "title": "Las vidas de Joseph Conrad",
+          "author": "John Stape"
+        },
+        {
+          "title": "La memoria de Shakespeare",
+          "author": "Jorge Luis Borges"
+        },
+        {
+          "title": "Poetas del sur",
+          "author": "José Espada Sánchez"
+        },
+        {
+          "title": "El autor y su obra: Joyce",
+          "author": "José Maria Valverde"
+        },
+        {
+          "title": "El cuento",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El copartícipe secreto",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El copartícipe secreto",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Amy Foster",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Bajo la mirada de occidente",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Con la soga al cuello",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Crónica personal",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El alma de los guerreros y otros cuentos de oídas",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El cabo de la cuerda",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El corazón de las tinieblas",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El espejo del mar",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El hombre de ninguna parte",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El negro del &quot;narcissus&quot;",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El pirata",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Freya, la de las siete islas",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Gaspar Ruiz",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Karain, un recuerdo",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "La flecha de oro",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "La línea de sombra",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "La locura de Almayer",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Lord Jim",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Notas de vida y letras",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Situación límite",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Tifón",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Un vagabundo de las islas",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Una avanzada del progreso. Las hermanas",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Una cuestión de honor",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Victoria",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El anarquista y otros relatos",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "El regreso",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Heart of Darkness",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Nostromo",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "Notas de vida y letras",
+          "author": "Joseph Conrad"
+        },
+        {
+          "title": "La naturaleza de un crimen",
+          "author": "Joseph Conrad, Ford Madox Ford"
+        },
+        {
+          "title": "Moratín o el Arte Nuevo de hacer teatro: con la edición facsímil de la Vida de Guillermo Shakespeare y la traducción de Hamlet de Leandro Fernández de Moratín",
+          "author": "Juan Carlos Rodríguez"
+        },
+        {
+          "title": "Retrato de Hemingway",
+          "author": "Lillian Ross",
+          "annotated": true
+        },
+        {
+          "title": "Poesía, 1970-1982",
+          "author": "Luis Antonio de Villena"
+        },
+        {
+          "title": "El guardián de los sueños",
+          "author": "Margaret A. Salinger"
+        },
+        {
+          "title": "Poesía, alma del mundo",
+          "author": "Mario Benedetti"
+        },
+        {
+          "title": "Poesía nº 27 y 28",
+          "author": "Ministerio de Cultura"
+        },
+        {
+          "title": "Poesía nº 23 y 24",
+          "author": "Ministerio de Cultura"
+        },
+        {
+          "title": "La flor azul",
+          "author": "Penelope Fitzgerald"
+        },
+        {
+          "title": "Poesía (1979-2004)",
+          "author": "Pere Rovira"
+        },
+        {
+          "title": "Poesía, 1979-2004",
+          "author": "Pere Rovira"
+        },
+        {
+          "title": "Patrimonio: una historia verdadera",
+          "author": "Philip Roth"
+        },
+        {
+          "title": "Cien años de El corazón de las tinieblas de Joseph Conrad",
+          "author": "Planeta Kurtz"
+        },
+        {
+          "title": "Sonetos de Shakespeare = Shakespeare&apos;s sonnets",
+          "author": "Ramón Gutiérrez Izquierdo"
+        },
+        {
+          "title": "¿Quieres hacer el favor de callarte, por favor?",
+          "author": "Raymond Carver"
+        },
+        {
+          "title": "Principiantes",
+          "author": "Raymond Carver"
+        },
+        {
+          "title": "Si me necesitas, llámame",
+          "author": "Raymond Carver"
+        },
+        {
+          "title": "Tres rosas amarillas",
+          "author": "Raymond Carver"
+        },
+        {
+          "title": "Catedral",
+          "author": "Raymond Carver"
+        },
+        {
+          "title": "De qué hablamos cuando hablamos de amor",
+          "author": "Raymond Carver"
+        },
+        {
+          "title": "Francis Scott Fitzgerald, el último Laoconte",
+          "author": "Robert Sklar"
+        },
+        {
+          "title": "Poesía completa",
+          "author": "Ryszard Kapuscinski"
+        },
+        {
+          "title": "Prefacio a Shakespeare",
+          "author": "Samuel Johnson"
+        },
+        {
+          "title": "Poesias completas y otras páginas",
+          "author": "San Juan de la Cruz"
+        },
+        {
+          "title": "La verdadera",
+          "author": "Saul Bellow"
+        },
+        {
+          "title": "Cuentos/1",
+          "author": "Scott Fitzgerald"
+        },
+        {
+          "title": "Cuentos/2",
+          "author": "Scott Fitzgerald"
+        },
+        {
+          "title": "Poesías reunidas : 1909-1962",
+          "author": "T.S. Eliot"
+        },
+        {
+          "title": "Lolita",
+          "author": "Vladimir Nabokov"
+        },
+        {
+          "title": "Parad los relojes y otros poemas",
+          "author": "W. H. Auden"
+        },
+        {
+          "title": "La rosa secreta",
+          "author": "W.B. Yeats"
+        },
+        {
+          "title": "E.A. Poe",
+          "author": "Walter Lenning"
+        },
+        {
+          "title": "Las palmeras salvajes",
+          "author": "William Faulkner"
+        },
+        {
+          "title": "Visión en primavera",
+          "author": "William Faulkner"
+        },
+        {
+          "title": "Santuario",
+          "author": "William Faulkner"
+        },
+        {
+          "title": "Enrique IV",
+          "author": "William Shakespeare"
+        },
+        {
+          "title": "Julio César",
+          "author": "William Shakespeare"
+        },
+        {
+          "title": "Las esposas alegres de Windsor",
+          "author": "William Shakespeare"
+        },
+        {
+          "title": "Hamlet. MacBeth",
+          "author": "William Shakespeare"
+        },
+        {
+          "title": "Obras completas",
+          "author": "William Shakespeare"
+        },
+        {
+          "title": "Macbeth",
+          "author": "William Shakespeare"
+        },
+        {
+          "title": "Hamlet. MacBeth",
+          "author": "William Shakespeare"
+        },
+        {
+          "title": "Hamlet",
+          "author": "William Shakespeare"
+        },
+        {
+          "title": "Sonetos",
+          "author": "William Shakespeare ; versión de Carlos Pujol"
+        },
+        {
+          "title": "30 poemas",
+          "author": "Yeats"
+        }
+      ]
+    },
+    {
+      "name": "Literatura alemana y centroeuropea",
+      "count": 118,
+      "slug": "alemana",
+      "entries": [
+        {
+          "title": "Kafka y el Holocausto",
+          "author": "Álvaro de la Rica"
+        },
+        {
+          "title": "El compromiso en literatura y arte",
+          "author": "Beltrolt Brecht"
+        },
+        {
+          "title": "El lector",
+          "author": "Bernhard Schlink"
+        },
+        {
+          "title": "Los días de la comuna. Apogeo y caída de la ciudad de Mahagonny. El que dijo sí. El que dijo no",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Historias del señor Keuner. Me-ti libro de los cambios",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Teatro completo. Vol. 3, La ópera de cuatro cuartos ; Ascensión y caída de la ciudad de Mahagonny ; Vuelo sobre el océano ; Pieza didáctica de Baden sobre el acuerdo ; El consentidor y el disentidor",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Sur le cinéma",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Historias del señor Keuner",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Arbeitsjournal",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "La resistible ascensión de Arturo Ui",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Más de cien poemas : edición bilingüe",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Baal. Tambores en la noche. En la jungla de las ciudades",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "El preceptor. Antígona. Coriolano",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Vida de Galileo. Madre coraje y sus hijos",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "La opera de dos centavos. Herr puntilla y su sirviente Matti",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Bertolt Brecht Diario de trabajo. Volumen I",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Bertolt Brecht Diario de trabajo. Volumen II",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Bertolt Brecht Diario de trabajo. Volumen III",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Ausgewählte Gedichte",
+          "author": "Bertolt Brecht"
+        },
+        {
+          "title": "Le Siecle de Kafka",
+          "author": "Centro Geoge Pompidou"
+        },
+        {
+          "title": "La vida del Rey Eduardo II de Inglaterra",
+          "author": "Christopher Marlowe, Bertold Brecht"
+        },
+        {
+          "title": "El otro proceso de Kafka",
+          "author": "Elias Canetti"
+        },
+        {
+          "title": "La lengua absuelta",
+          "author": "Elias Canetti"
+        },
+        {
+          "title": "Masa y poder",
+          "author": "Elias Canetti"
+        },
+        {
+          "title": "La conciencia de las palabras",
+          "author": "Elias Canetti"
+        },
+        {
+          "title": "Fiesta bajo las bombas",
+          "author": "Elias Canetti"
+        },
+        {
+          "title": "Las voces de Marrakesh",
+          "author": "Elias Canetti"
+        },
+        {
+          "title": "El juego de ojos",
+          "author": "Elias Canetti"
+        },
+        {
+          "title": "Cuadros de viaje",
+          "author": "Enrique Heine"
+        },
+        {
+          "title": "El archipielago",
+          "author": "Federico Hölderlin"
+        },
+        {
+          "title": "En la colonia penitenciaria,con materiales para un relato de Klaus Wagenbach",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "I Cartas a Felice y otra correspondencia de la época del noviazgo,1912",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "II Cartas a Felice y otra correspondencia de la época del noviazgo,1913",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "III Cartas a Felice y otra correspondencia de la época del noviazgo,1914-17",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "La metamorfosis y otros relatos",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "Obras completas I. Novelas: El desaparecido (América), El proceso, El castillo",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "Obras completas II. Diarios: Carta al padre",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "Obras completas III. Narraciones y otros escritos",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "Carta al padre",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "Cartas a Milena",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "La metamorfosis",
+          "author": "Franz Kafka"
+        },
+        {
+          "title": "Obra completa en poesía Tomo I",
+          "author": "Friedrich Hölderlin"
+        },
+        {
+          "title": "Obra completa en poesía Tomo II",
+          "author": "Friedrich Hölderlin"
+        },
+        {
+          "title": "Hölderlin poemas",
+          "author": "Friedrich Hölderlin"
+        },
+        {
+          "title": "Las grandes elegías : (1800-1801)",
+          "author": "Friedrich Hölderlin"
+        },
+        {
+          "title": "Hiperión o el eremita en Grecia",
+          "author": "Friedrich Hölderlin"
+        },
+        {
+          "title": "El santo bebedor: Recuerso de Joseph Roth",
+          "author": "Géza von Cziffra"
+        },
+        {
+          "title": "Escribir después de Auschwitz",
+          "author": "Günter Grass"
+        },
+        {
+          "title": "Diálogo sobre la desmemoria, los tabúes y el olvido",
+          "author": "Günter Grass, Juan Goytisolo"
+        },
+        {
+          "title": "Conversaciones con Kafka",
+          "author": "Gustav Janouch"
+        },
+        {
+          "title": "Germania Muerte en Berlín",
+          "author": "Heiner Müller"
+        },
+        {
+          "title": "Maquina Hamlet. Cuarteto. Medeamaterial",
+          "author": "Heiner Müller"
+        },
+        {
+          "title": "Confesiones y memorias",
+          "author": "Heinrich Heine"
+        },
+        {
+          "title": "Alemania. Un cuento de invierno",
+          "author": "Heinrich Heine"
+        },
+        {
+          "title": "Para una historia de la nueva literatura alemana",
+          "author": "Heinrich Heine"
+        },
+        {
+          "title": "Gedichte-Auswahl = Antología poética",
+          "author": "Heinrich Heine"
+        },
+        {
+          "title": "El país de Jauja",
+          "author": "Heinrich Mann"
+        },
+        {
+          "title": "El súbdito",
+          "author": "Heinrich Mann"
+        },
+        {
+          "title": "Relatos escogidos",
+          "author": "Heinrich Mann"
+        },
+        {
+          "title": "Angel Azul (El profesor Unrat)",
+          "author": "Heinrich Mann"
+        },
+        {
+          "title": "Fragmento de Hiperión",
+          "author": "Johann Christian Friedrich Hölderlin"
+        },
+        {
+          "title": "El leviatán y otros relatos",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "Escena de la vida burguesa",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "El triunfo de la belleza",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "La cripta de los Capuchinos",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "El espejo ciego",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "El peso Falso",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "Jefe de estación Fallmerayer",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "Crónicas berlinesas",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "La leyenda del santo bebedor",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "La marcha Radetzky",
+          "author": "Joseph Roth"
+        },
+        {
+          "title": "Cronica de Brecht datos sobre su vida y obra",
+          "author": "Klaus Völker"
+        },
+        {
+          "title": "La juventud de Granz Kafka",
+          "author": "Klaus Wagenbach"
+        },
+        {
+          "title": "Conversaciones con Thomas Bernhard",
+          "author": "Kurt Hofmann"
+        },
+        {
+          "title": "El derecho en Kafka",
+          "author": "Lorenzo Silva"
+        },
+        {
+          "title": "El mundo formidable de Franz Kafka",
+          "author": "Louis Begley"
+        },
+        {
+          "title": "El acusado Kafka",
+          "author": "Lucio Lombardo Radice"
+        },
+        {
+          "title": "Conocer Kafka y su obra",
+          "author": "Luis Izquierdo"
+        },
+        {
+          "title": "Acerca de Kafka, acerca de Freud",
+          "author": "Martha Robert"
+        },
+        {
+          "title": "Heinrich Heine",
+          "author": "Max Brod",
+          "annotated": true
+        },
+        {
+          "title": "Kafka",
+          "author": "Max Brod"
+        },
+        {
+          "title": "Léresia dellámore di sé",
+          "author": "Paul Zweig"
+        },
+        {
+          "title": "Robert Musil y la crisis del arte",
+          "author": "Pedro Madrigal Devesa"
+        },
+        {
+          "title": "Hölderlin: una novela",
+          "author": "Peter Härtling"
+        },
+        {
+          "title": "Hölderlin",
+          "author": "Peter Weiss"
+        },
+        {
+          "title": "Kafka",
+          "author": "Pietro Citati"
+        },
+        {
+          "title": "Diarios 1899-1941/42",
+          "author": "Robert Musil"
+        },
+        {
+          "title": "Los alucinados. Vinzenz y la amiga de los hombres importantes",
+          "author": "Robert Musil"
+        },
+        {
+          "title": "El hombre sin atributos. Vol I",
+          "author": "Robert Musil"
+        },
+        {
+          "title": "El hombre sin atributos. Vol II",
+          "author": "Robert Musil"
+        },
+        {
+          "title": "Sobre la estupidez",
+          "author": "Robert Musil"
+        },
+        {
+          "title": "Thomas Mann, historia de una disonancia",
+          "author": "Roman Karst"
+        },
+        {
+          "title": "Kafka Biografía",
+          "author": "Ronald Hayman"
+        },
+        {
+          "title": "Brecht",
+          "author": "Ronald Hayman"
+        },
+        {
+          "title": "Historia de un alemán. Memorias 1914-1933",
+          "author": "Sebastian Haffner"
+        },
+        {
+          "title": "Carta a una desconocida",
+          "author": "Stefan Zweig"
+        },
+        {
+          "title": "La impaciencia del corazon",
+          "author": "Stefan Zweig"
+        },
+        {
+          "title": "El origen",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "El origen",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "El sobrino de wittgenstein",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "El sótano",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "Teatro",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "El malogrado",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "Helada",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "El aliento",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "Un niño",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "El frío",
+          "author": "Thomas Bernhard"
+        },
+        {
+          "title": "Tristán. Mario y el mago",
+          "author": "Thomas Mann"
+        },
+        {
+          "title": "Los Buddenbrook",
+          "author": "Thomas Mann"
+        },
+        {
+          "title": "La montaña mágica",
+          "author": "Thomas Mann"
+        },
+        {
+          "title": "La muerte en Venecia",
+          "author": "Thomas Mann"
+        },
+        {
+          "title": "Confesiones del estafador Felix Krull",
+          "author": "Thomas Mann"
+        },
+        {
+          "title": "Austerlitz",
+          "author": "W.G. Sebald"
+        },
+        {
+          "title": "Vértigo",
+          "author": "W.G. Sebald"
+        },
+        {
+          "title": "Del natural",
+          "author": "W.G. Sebald"
+        },
+        {
+          "title": "El paseante solitario",
+          "author": "W.G. Sebald"
+        },
+        {
+          "title": "Pútrida patria",
+          "author": "W.G. Sebald"
+        },
+        {
+          "title": "Los aforismos de Kafka",
+          "author": "Werner Hoffman"
+        }
+      ]
+    },
+    {
+      "name": "Literatura rusa y eslava",
+      "count": 22,
+      "slug": "rusa",
+      "entries": [
+        {
+          "title": "Populismo y marxismo en Rusia",
+          "author": "Andrzej Walicki",
+          "annotated": true
+        },
+        {
+          "title": "El monje negro",
+          "author": "Antón Chéjov"
+        },
+        {
+          "title": "Sin trama y sin final. 99 consejos para…..",
+          "author": "Antón Chéjov"
+        },
+        {
+          "title": "Cartas a Olga",
+          "author": "Antón Chéjov"
+        },
+        {
+          "title": "La gaviota ; El tío Vania ; Las tres hermanas ; El jardín de los cerezos",
+          "author": "Antón Chéjov ; edición de Isabel Vicente ; traducción de Isabel"
+        },
+        {
+          "title": "Memorias del subsuelo",
+          "author": "Fiodor M. Dostoievski",
+          "annotated": true
+        },
+        {
+          "title": "Leyendo a Chéjov",
+          "author": "Janet Malcom"
+        },
+        {
+          "title": "La ideología del pequeño burgués",
+          "author": "Jorge Pleganov",
+          "annotated": true
+        },
+        {
+          "title": "Sonata a Keutzer",
+          "author": "Leon Tolstoi"
+        },
+        {
+          "title": "La muerte de Iván Ilich y otros cuentos",
+          "author": "Leon Tolstoi"
+        },
+        {
+          "title": "Sonata a Krentzeg",
+          "author": "Leu Tolstói"
+        },
+        {
+          "title": "Guerra y paz",
+          "author": "Liev N. Tolstói"
+        },
+        {
+          "title": "El síndrome Chéjov",
+          "author": "Miguel Ángel Muñoz"
+        },
+        {
+          "title": "El Sha o la desmesura del poder",
+          "author": "R. Kapuscinski"
+        },
+        {
+          "title": "Ébano",
+          "author": "Ryszard Kapuscinski"
+        },
+        {
+          "title": "El mundo de hoy: autoretrato de un reportero",
+          "author": "Ryszard Kapuscinski"
+        },
+        {
+          "title": "El Emperador",
+          "author": "Ryszard Kapuscinski"
+        },
+        {
+          "title": "Encuentro con el Otro",
+          "author": "Ryszard Kapuscinski"
+        },
+        {
+          "title": "Lapidarium IV",
+          "author": "Ryszard Kapuscinski"
+        },
+        {
+          "title": "Viajes con Heródoto",
+          "author": "Ryszard Kapuscinski"
+        },
+        {
+          "title": "Los cínicos no sirven para este oficio: sobre el buen periodismo",
+          "author": "Ryszard Kapuscinski"
+        },
+        {
+          "title": "Un día más con vida",
+          "author": "Ryszard Kapuscinski"
+        }
+      ]
+    },
+    {
+      "name": "Literatura hispanoamericana",
+      "count": 65,
+      "slug": "hispanoamericana",
+      "entries": [
+        {
+          "title": "Historias desaforadas",
+          "author": "Adolfo Bioy Casares"
+        },
+        {
+          "title": "Una magia modesta",
+          "author": "Adolfo Bioy Casares"
+        },
+        {
+          "title": "Una muñeca rusa",
+          "author": "Adolfo Bioy Casares"
+        },
+        {
+          "title": "Plan de evasión",
+          "author": "Adolfo Bioy Casares"
+        },
+        {
+          "title": "La aventura de un fotógrafo en La Plata",
+          "author": "Adolfo Bioy Casares"
+        },
+        {
+          "title": "La invención de Morel",
+          "author": "Adolfo Bioy Casares"
+        },
+        {
+          "title": "La invención y la trama : obras escogidas",
+          "author": "Adolfo Bioy Casares"
+        },
+        {
+          "title": "Con Borges",
+          "author": "Alberto Manguel"
+        },
+        {
+          "title": "Los pasos perdidos",
+          "author": "Alejo Carpentier"
+        },
+        {
+          "title": "El siglo de las luces",
+          "author": "Alejo Carpentier"
+        },
+        {
+          "title": "El arpa y la sombra",
+          "author": "Alejo Carpentier"
+        },
+        {
+          "title": "Concierto barroco",
+          "author": "Alejo Carpentier"
+        },
+        {
+          "title": "La consagración de la primavera",
+          "author": "Alejo Carpentier"
+        },
+        {
+          "title": "El acoso",
+          "author": "Alejo Carpentier"
+        },
+        {
+          "title": "El recurso del método : novela",
+          "author": "Alejo Carpentier"
+        },
+        {
+          "title": "Cortázar de la a a la z. Un álbum biográfico",
+          "author": "Aurora Bernárdez"
+        },
+        {
+          "title": "Nómina de huesos y otros poemas",
+          "author": "César Vallejo"
+        },
+        {
+          "title": "La Virgen de los Sicarios",
+          "author": "Fernando Vallejo"
+        },
+        {
+          "title": "El desbarrancadero",
+          "author": "Fernando Vallejo"
+        },
+        {
+          "title": "El don de la vida",
+          "author": "Fernando Vallejo"
+        },
+        {
+          "title": "Vivir para contarla II",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "Relatos de un náufrago",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "El coronel en su laberinto",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "LA increíble y triste historia de la candida eréndira y de su abuela deslamada",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "Noticia de un secuestro",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "El olor de la guayaba",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "El mismo cuento distinto / Gabriel García Márquez. El hombre en la calle : apéndice, El comisario Maigret y su creador, Georges Simenon / Georges Simenon",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "Del amor y otros demonios",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "El coronel no tiene quien le escriba",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "Crónica de una muerte anunciada",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "El otoño del patriarca",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "Cien años de soledad",
+          "author": "Gabriel García Márquez"
+        },
+        {
+          "title": "Delito por bailar el cha cha cha",
+          "author": "Guillermo Cabrera Infante",
+          "annotated": true
+        },
+        {
+          "title": "Mi música extremada",
+          "author": "Guillermo Cabrera Infante"
+        },
+        {
+          "title": "Cine o sardina",
+          "author": "Guillermo Cabrera Infante"
+        },
+        {
+          "title": "Literaturas germánicas medievales",
+          "author": "Jorge Luis Borges"
+        },
+        {
+          "title": "Los conjurados",
+          "author": "Jorge Luis Borges"
+        },
+        {
+          "title": "El lugar sin límites",
+          "author": "Jose Donoso"
+        },
+        {
+          "title": "Dejemos hablar al viento",
+          "author": "Juan Carlos Onetti"
+        },
+        {
+          "title": "Cuando entonces",
+          "author": "Juan Carlos Onetti"
+        },
+        {
+          "title": "La novia robada",
+          "author": "Juan Carlos Onetti"
+        },
+        {
+          "title": "Los adioses",
+          "author": "Juan Carlos Onetti"
+        },
+        {
+          "title": "Cuando ya no importe",
+          "author": "Juan Carlos Onetti"
+        },
+        {
+          "title": "Pedro Páramo",
+          "author": "Juan Rulfo"
+        },
+        {
+          "title": "Años de alambradas culturales",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "Alguien que anda por ahí",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "Los relatos 3 : Paisajes",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "Los relatos 4: Ahí y ahora",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "Prosa del observatorio",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "La vuelta al día en ochenta mundos. Tomo I",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "La vuelta al día en ochenta mundos. Tomo II",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "Rayuela",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "Queremos tanto a Glenda",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "Los relatos 2 : Juegos",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "Los relatos 1 : Ritos",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "Salvo el crepúsculo",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "62 modelo para armar",
+          "author": "Julio Cortázar"
+        },
+        {
+          "title": "La orgía perpetua",
+          "author": "Mario Vargas Llosa"
+        },
+        {
+          "title": "La fiesta del chivo",
+          "author": "Mario Vargas Llosa"
+        },
+        {
+          "title": "Luis Buñuel: El doble arco de la belleza y la rebeldía",
+          "author": "Octavio Paz"
+        },
+        {
+          "title": "El laberinto de la soledad",
+          "author": "Octavio Paz"
+        },
+        {
+          "title": "La fascinación de las palabras conversaciones con Julio Cortázar",
+          "author": "Omar Prego"
+        },
+        {
+          "title": "Veinte poemas de amor. Cien sonetos de amor",
+          "author": "Pablo Neruda"
+        },
+        {
+          "title": "Un novelista lumpen",
+          "author": "Roberto Bolaño"
+        },
+        {
+          "title": "Los que aman, odian",
+          "author": "Silvina Ocampo y Adolfo Bioy Casares"
+        }
+      ]
+    },
+    {
+      "name": "Arte, cine y estética",
+      "count": 49,
+      "slug": "arte-cine",
+      "entries": [
+        {
+          "title": "Picasso en Madrid —",
+          "author": ""
+        },
+        {
+          "title": "Juan Vida: Mayo- Junio 1997",
+          "author": "Afinsa -Allmirante",
+          "dedicated": true
+        },
+        {
+          "title": "Velázquez: Exposición celebrada…",
+          "author": "Antonio Dominguez Ortiz"
+        },
+        {
+          "title": "Miguel Ángel arquitecto",
+          "author": "Argan, Giolio Carlo"
+        },
+        {
+          "title": "Juan Vida: Configuraciones 1987-2003",
+          "author": "Ayuntamiento de Granada"
+        },
+        {
+          "title": "Juan Vida: Pinturas 1987-2002",
+          "author": "Ayuntamiento de Las Rozas"
+        },
+        {
+          "title": "Mata Mua. Paul Gauguin (1848-1903)",
+          "author": "Centro Arte Reina Sofía"
+        },
+        {
+          "title": "Durero y la Edad de Oro del grabado alemán",
+          "author": "Concha Huidobro"
+        },
+        {
+          "title": "Juan Vida: Noviembre- Diciembre 1992",
+          "author": "Concisa-Alarcón"
+        },
+        {
+          "title": "Juan Vida",
+          "author": "Diputación de Granada"
+        },
+        {
+          "title": "Caravaggio, exquisito y violento",
+          "author": "Franch... [et al.] Luis Antonio de Villena"
+        },
+        {
+          "title": "Durero",
+          "author": "Franz Winzinger"
+        },
+        {
+          "title": "Juan Vida: Granada",
+          "author": "Fundación de Rodríguez-Acosta"
+        },
+        {
+          "title": "Obras maestras del museo de Wuppertd: De Marées a Picasso",
+          "author": "Fundación Juan March"
+        },
+        {
+          "title": "Juan Vida. Obra gráfica 1984-2007",
+          "author": "Fundación Provincial de Artes plásticas &quot;Rafael Batí&quot;",
+          "dedicated": true
+        },
+        {
+          "title": "Juan Vida. Vida y Milagros",
+          "author": "Galería Almirante"
+        },
+        {
+          "title": "Juan Vida: Vida y Milagros",
+          "author": "Galería Almirante",
+          "dedicated": true
+        },
+        {
+          "title": "Juan Vida: Cielo desde un navío",
+          "author": "Galería Ovidio"
+        },
+        {
+          "title": "Cuestiones fundamentales de sociología",
+          "author": "Georg Simmel"
+        },
+        {
+          "title": "Sociología I",
+          "author": "Georg Simmel"
+        },
+        {
+          "title": "Sociología II",
+          "author": "Georg Simmel"
+        },
+        {
+          "title": "Caravaggio",
+          "author": "Giorgio Bonsanti"
+        },
+        {
+          "title": "Historia del arte como historia de la ciudad",
+          "author": "Giulio Carlo Argan"
+        },
+        {
+          "title": "Miguel Angel",
+          "author": "Heinrich Koch"
+        },
+        {
+          "title": "Les Goaches découpèes de Henri Matisse",
+          "author": "Jean Guicard-Meili"
+        },
+        {
+          "title": "El toldo rojo de Bolonia",
+          "author": "John Berger"
+        },
+        {
+          "title": "Fotocopias",
+          "author": "John Berger"
+        },
+        {
+          "title": "Mirar",
+          "author": "John Berger"
+        },
+        {
+          "title": "Una vez en Europa",
+          "author": "John Berger"
+        },
+        {
+          "title": "Como crece una pluma 1999-2005",
+          "author": "John Berger y Marisa Camino"
+        },
+        {
+          "title": "Velázquez",
+          "author": "Juan A. Gaya Nuño"
+        },
+        {
+          "title": "Iré a Santiago",
+          "author": "Juan Vida"
+        },
+        {
+          "title": "Un Cuento Chino",
+          "author": "Juan Vida"
+        },
+        {
+          "title": "Sin ir mas lejos",
+          "author": "Juan Vida",
+          "dedicated": true
+        },
+        {
+          "title": "Tratado de la pintura",
+          "author": "Leonardo Da Vinci"
+        },
+        {
+          "title": "conocer Leonardo Da Vinci y su obra",
+          "author": "Luis Racionero"
+        },
+        {
+          "title": "Almería…Un lugar en el tiempo",
+          "author": "Manuel Falces"
+        },
+        {
+          "title": "Contrapunto Mediterráneo",
+          "author": "Manuel Falces"
+        },
+        {
+          "title": "Declaraciones / Picasso LAS COSAS QUE HEMOS VISTO",
+          "author": "MARIANO MARESCA"
+        },
+        {
+          "title": "El corazón de los caballos",
+          "author": "Miguel Ángel Muñoz"
+        },
+        {
+          "title": "Historia de la ciencia y de la técnica 28",
+          "author": "Miguel Ángel Puig-Samper"
+        },
+        {
+          "title": "El Palacio de La Calahorra",
+          "author": "Miguel Angel Zalama"
+        },
+        {
+          "title": "El siglo de Rembrandt",
+          "author": "Ministerio de Cultura"
+        },
+        {
+          "title": "Matisse in Morocco",
+          "author": "National Gallery of Art, Washington"
+        },
+        {
+          "title": "Diario íntimo",
+          "author": "Paul Gauguin"
+        },
+        {
+          "title": "El mito trágico del &quot;Ángelus&quot; de Millet",
+          "author": "Salvador Dalí"
+        },
+        {
+          "title": "Los putrefactos",
+          "author": "Salvador Dalí y Federio Garcia Lorca"
+        },
+        {
+          "title": "Cartas a Theo",
+          "author": "Vincent Van Gogh"
+        },
+        {
+          "title": "Estudios sobre Caravaggio",
+          "author": "Walter Friedlaender"
+        }
+      ]
+    },
+    {
+      "name": "Historia y política",
+      "count": 37,
+      "slug": "historia",
+      "entries": [
+        {
+          "title": "La mafia non esiste",
+          "author": "Alfredo Galasso",
+          "dedicated": true
+        },
+        {
+          "title": "Los consejos obreros",
+          "author": "Anton Pannekoek",
+          "dedicated": true
+        },
+        {
+          "title": "Josep Fontana",
+          "author": "Desencolado"
+        },
+        {
+          "title": "El Mediterráneo",
+          "author": "Dirección Fernand Braudel"
+        },
+        {
+          "title": "Ensayo sobre la posición de Lenin",
+          "author": "Dominique Lecourt"
+        },
+        {
+          "title": "La otra sentimentalidad: Estudio y antología",
+          "author": "Edición: Francisco Díaz de Castro"
+        },
+        {
+          "title": "Historia del movimiento obrero",
+          "author": "Edouard Dolleans"
+        },
+        {
+          "title": "Historia del movimiento obrero…",
+          "author": "Edouard Dolleans",
+          "dedicated": true
+        },
+        {
+          "title": "Años interesantes, una vida en el…",
+          "author": "Eric Hobsbawm"
+        },
+        {
+          "title": "Memoria testamentaria",
+          "author": "Fernando de Castro"
+        },
+        {
+          "title": "La bandiera degli elettori italiani",
+          "author": "Francesco Ingrao"
+        },
+        {
+          "title": "La bandiera degli elettori italiani",
+          "author": "Francesco Ingrao",
+          "dedicated": true
+        },
+        {
+          "title": "La revolución Liberal (Política y Hacienda 1833-45)",
+          "author": "Josep Fontana"
+        },
+        {
+          "title": "La dictadura del proletariado y la revo…",
+          "author": "Karl Kaustsky y V.I. Lenin"
+        },
+        {
+          "title": "Tiempos modernos",
+          "author": "Luis Castro Nogueira"
+        },
+        {
+          "title": "Obras escogidas: V.I.Lenin I",
+          "author": "PCUS"
+        },
+        {
+          "title": "Obras escogidas: V.I.Lenin II",
+          "author": "PCUS"
+        },
+        {
+          "title": "Obras escogidas: V.I.Lenin III",
+          "author": "PCUS"
+        },
+        {
+          "title": "Obras escogidas: V.I.Lenin I",
+          "author": "PCUS"
+        },
+        {
+          "title": "Obras escogidas: V.I.Lenin II",
+          "author": "PCUS"
+        },
+        {
+          "title": "Obras escogidas: V.I.Lenin III",
+          "author": "PCUS"
+        },
+        {
+          "title": "La democracia griega, una nueva visión: Ensayos de historiografía antigua y moderna",
+          "author": "Pierre Vidal-Naquet"
+        },
+        {
+          "title": "Variazioni Serali",
+          "author": "Pietro Ingrao"
+        },
+        {
+          "title": "Il dubbio del vincitori",
+          "author": "Pietro Ingrao"
+        },
+        {
+          "title": "Il nuovo specchio,Pietro Ingrao, L´alta febbre del fare",
+          "author": "Pietro Ingrao"
+        },
+        {
+          "title": "Le cose impossibili: un´autobiografia raccontata e discussa con Nicola Tranfaglia",
+          "author": "Pietro Ingrao"
+        },
+        {
+          "title": "Volevo la luna",
+          "author": "Pietro Ingrao"
+        },
+        {
+          "title": "Interventi sul campo",
+          "author": "Pietro Ingrao"
+        },
+        {
+          "title": "Interventi sul campo",
+          "author": "Pietro Ingrao"
+        },
+        {
+          "title": "España 1808-1939",
+          "author": "Raimond Carr"
+        },
+        {
+          "title": "&quot;Eurocomunismo&quot; y Estado",
+          "author": "Santiago Carrillo"
+        },
+        {
+          "title": "Lenin y el partido bolchevique",
+          "author": "Umberto da Cruz"
+        },
+        {
+          "title": "Sobre el problema de los mercados",
+          "author": "V.I. Lenin"
+        },
+        {
+          "title": "¿Qué hacer?",
+          "author": "V.I. Lenin"
+        },
+        {
+          "title": "Contenido económico del populismo",
+          "author": "V.I. Lenin"
+        },
+        {
+          "title": "El imperialismo fase superior del capi…",
+          "author": "V.I. Lenin"
+        },
+        {
+          "title": "Stato e revoluzione: La dottrina marxista dello Stato …….",
+          "author": "Vladimir Ilic Lenin"
+        }
+      ]
+    },
+    {
+      "name": "Derecho y filosofía política",
+      "count": 15,
+      "slug": "derecho",
+      "entries": [
+        {
+          "title": "Universidad y política. Tradición y secularización en el siglo XIX.",
+          "author": "A. Ollero Tassara"
+        },
+        {
+          "title": "Philosophie et économie",
+          "author": "Adam Smith"
+        },
+        {
+          "title": "Lecciones sobre jurisprudencia",
+          "author": "Adm Smith",
+          "dedicated": true
+        },
+        {
+          "title": "De los delitos y de las penas",
+          "author": "Beccaria Cesare"
+        },
+        {
+          "title": "De los delitos y de las penas",
+          "author": "Cesare Beccaria"
+        },
+        {
+          "title": "Il pensiero politico di Hobbes",
+          "author": "Howard Warrender"
+        },
+        {
+          "title": "Democracia autoritaria y capitalismo maduro",
+          "author": "Luigi Ferrajoli y Danilo Zolo"
+        },
+        {
+          "title": "La canción de la ley",
+          "author": "María Theres Fögen",
+          "dedicated": true
+        },
+        {
+          "title": "¿Es posible un mundo justo?",
+          "author": "Nicolás López Calera"
+        },
+        {
+          "title": "Derecho, Política y Razón",
+          "author": "Nicolás López Calera",
+          "dedicated": true
+        },
+        {
+          "title": "Gromsci y la concepción de la sociedad civil",
+          "author": "Norberto Bobbio"
+        },
+        {
+          "title": "Behemoth",
+          "author": "Thomas Hobbes"
+        },
+        {
+          "title": "Elementos de derecho natural y político",
+          "author": "Thomas Hobbes"
+        },
+        {
+          "title": "Diálogo entre un filósofo y un jurista",
+          "author": "Thomas Hobbes"
+        },
+        {
+          "title": "Leviatán",
+          "author": "Thomas Hobbes"
+        },
+        {
+          "title": "Otros (música, viajes, cultura) (11)",
+          "author": ""
+        },
+        {
+          "title": "Bob Dylan. Crónicas",
+          "author": "Izquierdo",
+          "dedicated": true
+        },
+        {
+          "title": "Vagabundo en África",
+          "author": "Javier Reverte",
+          "dedicated": true
+        },
+        {
+          "title": "Conversaciones con Woody Allen",
+          "author": "Jean Michel Frodon"
+        },
+        {
+          "title": "Sombras y niebla",
+          "author": "Woody Allen"
+        },
+        {
+          "title": "Maridos y mujeres",
+          "author": "Woody Allen"
+        },
+        {
+          "title": "Delitos y faltas",
+          "author": "Woody Allen"
+        },
+        {
+          "title": "Zelig",
+          "author": "Woody Allen"
+        },
+        {
+          "title": "Interiores",
+          "author": "Woody Allen"
+        },
+        {
+          "title": "Annie Hall",
+          "author": "Woody Allen"
+        },
+        {
+          "title": "Manhattan",
+          "author": "Woody Allen"
+        },
+        {
+          "title": "Granujas de medio pelo",
+          "author": "Woody Allen"
+        }
+      ]
+    }
+  ]
+}
