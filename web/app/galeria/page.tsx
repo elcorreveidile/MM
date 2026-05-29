@@ -40,7 +40,7 @@ const fotos = [
   {
     src: '/exposicion/foto-03.jpg',
     alt: 'Lectura en el acto de inauguración',
-    caption: 'Antonio Arias leyendo en el acto de inauguración. Al fondo, Pedro Mercado, rector de la Universidad de Granada.',
+    caption: 'Antonio Mª Álvarez Arias de Saavedra leyendo en el acto de inauguración. Al fondo, Pedro Mercado, rector de la Universidad de Granada.',
   },
   {
     src: '/exposicion/foto-07.jpg',
