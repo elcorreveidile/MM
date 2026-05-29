@@ -118,20 +118,30 @@ export default function ExposicionPage() {
             Mariano y los libros
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <blockquote className="text-lg sm:text-xl leading-relaxed text-zinc-200 space-y-5">
+            <blockquote className="text-base sm:text-lg leading-relaxed text-zinc-200 space-y-5">
               <p>
                 Mariano Maresca no era un libro abierto, sino una bibliografía completa. Su manera de unir el
                 conocimiento universitario y la cultura vital se llenaba de citas, páginas, matices y rincones.
                 Daba gusto oírle hablar sobre lo que había vivido en sus títulos más amados y lo que había leído
-                en sus amores y sus desamores.
+                en sus amores y sus desamores. Yo lo recuerdo entre libros, porque lo conocí cuando entré a
+                trabajar como dependiente en la librería Teoría y en cada visita, además de buscarle lo que
+                me pedía, acababa por comprarme lo que me aconsejaba. Y lo recuerdo mientras ordenaba y ampliaba
+                la biblioteca del Departamento de Filosofía del Derecho, mientras buscaba a Hegel, Clarín,
+                Althusser y los autores de novela negra en la biblioteca de su casa o mientras buscaba sitio
+                para colocar los ejemplares que sus amigos escritores le habían dedicado.
               </p>
               <p>
-                Los libros de Mariano son un testimonio, reúnen en cuerpo y alma la experiencia de un tiempo en
-                el que las ciudades españolas, las universidades, las barras de los bares, las librerías, los
-                compañeros y los amigos lucharon por conquistar la democracia y asumieron después la necesidad de
-                aprender a vivir en ella. Las preguntas sobre el poeta, el filósofo o el jurista que estábamos
-                leyendo eran inseparables de los horizontes que se veían desde nuestras ventanas o de las puertas
-                que se cerraban a nuestras espaldas.
+                Su amor decidido por la vida, su compromiso político, su capacidad para escuchar música o para
+                conversar en las mesas de trabajo y en los restaurantes compartidos, fueron conformando una
+                memoria con muchos recuerdos y una biblioteca personal con muchas historias personales y
+                colectivas que se llenaban de pudor a la hora de hablar y de sabiduría al escribir, opinar e
+                interpretar el sol en los amaneceres y la luna en las noches más oscuras. Los libros de Mariano
+                son un testimonio, reúnen en cuerpo y alma la experiencia de un tiempo en el que las ciudades
+                españolas, las universidades, las barras de los bares, las librerías, los compañeros y los
+                amigos lucharon por conquistar la democracia y asumieron después la necesidad de aprender a
+                vivir en ella. Las preguntas sobre el poeta, el filósofo o el jurista que estábamos leyendo
+                eran inseparables de los horizontes que se veían desde nuestras ventanas o de las puertas que
+                se cerraban a nuestras espaldas.
               </p>
               <cite className="block text-sm text-zinc-400 not-italic pt-2">
                 — Luis García Montero
