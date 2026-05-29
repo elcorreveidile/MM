@@ -55,7 +55,7 @@ const fotos = [
   {
     src: '/exposición/foto-17.jpg',
     alt: 'Comida tras la inauguración',
-    caption: 'Comida de celebración tras la inauguración. La familia de Mariano Maresca, Nene y Javier Benítez, amigos de Mariano y promotores de la exposición, junto al equipo. 29 de mayo de 2026.',
+    caption: 'Comida de celebración tras la inauguración. La familia de Mariano Maresca, Nene y Javier Benítez, amigos de Mariano. 29 de mayo de 2026.',
   },
 ]
 
