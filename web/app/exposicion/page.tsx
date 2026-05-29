@@ -172,6 +172,72 @@ export default function ExposicionPage() {
         </div>
       </section>
 
+      {/* La donación — stats + libros dedicados */}
+      <section className="py-16 bg-zinc-900 text-white">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+          <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-4">La donación</p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-14">
+            {[
+              { n: '3.794', label: 'entradas totales' },
+              { n: '3.521', label: 'libros' },
+              { n: '63', label: 'libros dedicados' },
+              { n: '15', label: 'con anotaciones' },
+            ].map(s => (
+              <div key={s.label} className="border border-zinc-700 p-5">
+                <div className="font-crimson font-bold text-4xl text-[#E84878] mb-1">{s.n}</div>
+                <div className="font-libre text-xs text-zinc-400 uppercase tracking-wider">{s.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="font-crimson font-bold text-2xl text-white mb-2">Libros dedicados</h2>
+          <p className="font-libre text-sm text-zinc-400 mb-8">
+            Ejemplares con dedicatorias autógrafas del autor, autora, traductor u otros.
+          </p>
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-x-8 divide-y divide-zinc-800 sm:divide-y-0">
+            {[
+              { title: 'Balada en la muerte de la poesía', author: 'Luis García Montero' },
+              { title: 'El jardín extranjero', author: 'Luis García Montero' },
+              { title: 'Diario cómplice', author: 'Luis García Montero' },
+              { title: 'Habitaciones separadas', author: 'Luis García Montero' },
+              { title: 'Canciones', author: 'Luis García Montero' },
+              { title: 'Vista cansada', author: 'Luis García Montero' },
+              { title: 'Poesía (1980–2005)', author: 'Luis García Montero' },
+              { title: 'Un invierno propio', author: 'Luis García Montero' },
+              { title: 'Una forma de resistencia', author: 'Luis García Montero' },
+              { title: 'Raro de luna', author: 'Javier Egea' },
+              { title: 'Antología poética', author: 'Ángel González' },
+              { title: 'El embrujo Shanghai', author: 'Juan Marsé' },
+              { title: 'Rabos de lagartija', author: 'Juan Marsé' },
+              { title: 'Los misterios de Madrid', author: 'Antonio Muñoz Molina' },
+              { title: 'El Robinson urbano', author: 'Antonio Muñoz Molina' },
+              { title: 'Bob Dylan. Crónicas', author: 'Bob Dylan' },
+              { title: 'La gastrite di Platone', author: 'Antonio Tabucchi' },
+              { title: 'Los hijos del drago', author: 'Rafael Alberti' },
+              { title: 'Semblanzas', author: 'Federico García Lorca' },
+              { title: 'Poesía', author: 'Francisco García Lorca (dedicado por Laura García Lorca)' },
+              { title: 'Santa Anorexia', author: 'Sergio Hinojosa' },
+              { title: 'Capital de la gloria', author: 'Jesús García Sánchez' },
+              { title: 'Vagabundo en África', author: 'Javier Reverte' },
+            ].map((book, i) => (
+              <div key={i} className="py-3 break-inside-avoid">
+                <p className="font-crimson text-white leading-snug">{book.title}</p>
+                <p className="font-libre text-zinc-500 text-xs mt-0.5">{book.author}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10">
+            <a
+              href="/archivo"
+              className="inline-block border border-[#E84878] text-[#E84878] px-8 py-3 font-libre text-sm uppercase tracking-wider hover:bg-[#E84878] hover:text-white transition-colors"
+            >
+              Ver el catálogo completo →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Las estanterías */}
       <section className="py-16 bg-[#FAF7F2]">
         <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
