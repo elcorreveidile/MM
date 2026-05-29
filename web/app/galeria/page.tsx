@@ -50,7 +50,7 @@ const fotos = [
   {
     src: '/exposicion/foto-09.jpg',
     alt: 'El público asistente',
-    caption: 'El público asistente al acto de inauguración.',
+    caption: 'En primera fila, la familia de Mariano Maresca: sus hermanas Luisa y Maruja y su hermano Paco.',
   },
   {
     src: '/exposicion/foto-05.jpg',
