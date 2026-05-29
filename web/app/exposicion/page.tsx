@@ -159,7 +159,7 @@ export default function ExposicionPage() {
               </div>
               <div className="p-6 border-b border-zinc-700">
                 <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Coordinación</p>
-                <p className="text-zinc-300 text-sm">Antonio Arias</p>
+                <p className="text-zinc-300 text-sm leading-relaxed">Antonio Mª Álvarez Arias de Saavedra · Luisa Martínez Osorio</p>
               </div>
               <div className="p-6 border-b border-zinc-700">
                 <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Colaboración</p>
