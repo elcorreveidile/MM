@@ -135,26 +135,6 @@ export default function ExposicionPage() {
         </div>
       </section>
 
-      {/* Datos del proyecto */}
-      <section className="bg-[#E8447A] py-12 border-t border-black/20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-          <dl className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm">
-            <div>
-              <dt className="font-black uppercase text-xs tracking-widest mb-1 opacity-60">Organización</dt>
-              <dd className="font-medium">Asociación Cultural Olvidos de Granada<br />Universidad de Granada<br />Biblioteca Pública de Andalucía</dd>
-            </div>
-            <div>
-              <dt className="font-black uppercase text-xs tracking-widest mb-1 opacity-60">Comisariado</dt>
-              <dd className="font-medium">Javier Benítez</dd>
-            </div>
-            <div>
-              <dt className="font-black uppercase text-xs tracking-widest mb-1 opacity-60">Año</dt>
-              <dd className="font-medium">2026</dd>
-            </div>
-          </dl>
-        </div>
-      </section>
-
     </div>
   )
 }
