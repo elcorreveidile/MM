@@ -8,67 +8,52 @@ export const metadata: Metadata = {
 
 const fotos = [
   {
-    src: '/exposicion/foto-01.jpg',
+    src: '/exposición/foto-01.jpg',
     alt: 'Las estanterías de la exposición',
     caption: 'Las estanterías. Selección representativa de la biblioteca personal de Mariano Maresca: ejemplares de Olvidos de Granada, La Fábrica del Sur, cine, pensamiento político y poesía.',
   },
   {
-    src: '/exposicion/foto-14.jpg',
+    src: '/exposición/foto-14.jpg',
     alt: 'Cartel de la exposición en la puerta de entrada',
     caption: 'El cartel de entrada a la Biblioteca de Derecho. Mariano Maresca leyendo el periódico Ideal. Diseño: Manigua. 29.5 / 31.7 / 2026.',
   },
   {
-    src: '/exposicion/foto-15.jpg',
+    src: '/exposición/foto-15.jpg',
     alt: 'Vista general de la sala de exposición',
     caption: 'Vista general de la sala. Los paneles con los retratos de Mariano y el texto «Mariano y los libros», de Luis García Montero, y las vitrinas con los documentos expuestos.',
   },
   {
-    src: '/exposicion/foto-12.jpg',
+    src: '/exposición/foto-12.jpg',
     alt: 'La sala de exposición con paneles y estanterías',
     caption: 'La sala de la exposición. Paneles con «Las cosas que hemos leído» y el logotipo MM, las estanterías al fondo y los viniles en las ventanas.',
   },
   {
-    src: '/exposicion/foto-13.jpg',
+    src: '/exposición/foto-13.jpg',
     alt: 'Paneles con citas de Mariano Maresca',
     caption: '«El trabajo de la memoria es esencial, casi nuestra única arma» · «Cuando un día despertemos de este sueño idiota, tendremos que volver a abrir los libros». Junto al televisor que reproduce fragmentos de Imaginaria (Canal Sur, 1999).',
   },
   {
-    src: '/exposicion/foto-16.jpg',
+    src: '/exposición/foto-16.jpg',
     alt: 'Vitrina con libros dedicados y manuscritos',
     caption: 'Vitrina con libros dedicados y manuscritos. En primer plano, Granada Tango (1982).',
   },
   {
-    src: '/exposicion/foto-03.jpg',
+    src: '/exposición/foto-3.jpg',
     alt: 'Lectura en el acto de inauguración',
     caption: 'Antonio Mª Álvarez Arias de Saavedra leyendo en el acto de inauguración. Al fondo, Pedro Mercado, rector de la Universidad de Granada.',
   },
   {
-    src: '/exposicion/foto-07.jpg',
+    src: '/exposición/foto-7.jpg',
     alt: 'El público durante el acto de inauguración',
     caption: 'El público durante el acto de inauguración. Biblioteca de la Facultad de Derecho, UGR, 29 de mayo de 2026.',
   },
   {
-    src: '/exposicion/foto-09.jpg',
+    src: '/exposición/foto-9.jpg',
     alt: 'El público asistente',
     caption: 'En primera fila, la familia de Mariano Maresca: sus hermanas Luisa y Maruja y su hermano Paco.',
   },
   {
-    src: '/exposicion/foto-05.jpg',
-    alt: 'La sala durante el acto inaugural',
-    caption: 'La sala durante el acto inaugural con los paneles de la exposición al fondo.',
-  },
-  {
-    src: '/exposicion/foto-10.jpg',
-    alt: 'Visitantes recorriendo la exposición',
-    caption: 'Los visitantes recorren la exposición tras el acto inaugural.',
-  },
-  {
-    src: '/exposicion/foto-11.jpg',
-    alt: 'Vitrina con los documentos expuestos',
-    caption: 'Vista de las vitrinas con los documentos expuestos y los paneles al fondo.',
-  },
-  {
-    src: '/exposicion/foto-17.jpg',
+    src: '/exposición/foto-17.jpg',
     alt: 'Comida tras la inauguración',
     caption: 'Comida de celebración tras la inauguración. La familia de Mariano Maresca, Nene y Javier Benítez, amigos de Mariano y promotores de la exposición, junto al equipo. 29 de mayo de 2026.',
   },
