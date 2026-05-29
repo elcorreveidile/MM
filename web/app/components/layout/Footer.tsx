@@ -42,9 +42,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4 font-libre">Información</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/exposicion#informacion" className="hover:text-white transition-colors">Proyecto</Link></li>
-              <li><Link href="/exposicion#informacion" className="hover:text-white transition-colors">Promotores</Link></li>
-              <li><Link href="/exposicion#contacto" className="hover:text-white transition-colors">Contacto</Link></li>
+              <li><Link href="/exposicion" className="hover:text-white transition-colors">Proyecto</Link></li>
+              <li><Link href="/contacto" className="hover:text-white transition-colors">Contacto</Link></li>
               <li><Link href="https://olvidosdegranada.es" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Olvidosdegranada</Link></li>
             </ul>
           </div>
