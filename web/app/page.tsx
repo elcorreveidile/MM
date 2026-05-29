@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function HomePage() {
   return (
@@ -35,7 +36,7 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-crimson font-bold text-zinc-900 mb-4 text-center">
-            Las 7 Disciplinas Artísticas
+            Las 8 Disciplinas Artísticas
           </h2>
           <p className="text-center text-zinc-600 mb-16 font-libre max-w-2xl mx-auto">
             Mariano Maresca trabajó incansablemente en múltiples manifestaciones artísticas que enriquecieron la vida cultural de Granada.
@@ -43,30 +44,38 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: 'Literatura', slug: 'literatura', icon: '📚', color: 'bg-amber-100 text-amber-800' },
-              { name: 'Música', slug: 'musica', icon: '🎵', color: 'bg-blue-100 text-blue-800' },
-              { name: 'Cine', slug: 'cine', icon: '🎬', color: 'bg-purple-100 text-purple-800' },
-              { name: 'Fotografía', slug: 'fotografia', icon: '📸', color: 'bg-green-100 text-green-800' },
-              { name: 'Arquitectura', slug: 'arquitectura', icon: '🏛️', color: 'bg-orange-100 text-orange-800' },
-              { name: 'Diseño', slug: 'diseno', icon: '✨', color: 'bg-pink-100 text-pink-800' },
-              { name: 'Cómic', slug: 'comic', icon: '💬', color: 'bg-indigo-100 text-indigo-800' },
-              { name: 'Filosofía', slug: 'filosofia', icon: '🤔', color: 'bg-zinc-100 text-zinc-800' },
+              { name: 'Literatura', slug: 'literatura' },
+              { name: 'Música', slug: 'musica' },
+              { name: 'Cine', slug: 'cine' },
+              { name: 'Fotografía', slug: 'fotografia' },
+              { name: 'Arquitectura', slug: 'arquitectura' },
+              { name: 'Diseño', slug: 'diseno' },
+              { name: 'Cómic', slug: 'comic' },
+              { name: 'Pensamiento Político', slug: 'pensamiento-politico' },
             ].map((discipline) => (
               <Link
                 key={discipline.slug}
                 href={`/disciplinas/${discipline.slug}`}
                 className="group"
               >
-                <div className="bg-zinc-50 rounded-lg p-6 hover:shadow-lg transition-all duration-300 h-full">
-                  <div className={`text-4xl mb-4 ${discipline.color} w-16 h-16 rounded-full flex items-center justify-center`}>
-                    {discipline.icon}
+                <div className="rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 bg-zinc-100">
+                  <div className="relative aspect-square">
+                    <Image
+                      src={`/disciplinas/${discipline.slug}.jpg`}
+                      alt={discipline.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    />
                   </div>
-                  <h3 className="text-xl font-crimson font-semibold text-zinc-900 mb-2 group-hover:text-zinc-700 transition-colors">
-                    {discipline.name}
-                  </h3>
-                  <p className="text-sm text-zinc-600 font-libre">
-                    Explorar proyectos y contribuciones
-                  </p>
+                  <div className="p-4">
+                    <h3 className="text-xl font-crimson font-semibold text-zinc-900 group-hover:text-zinc-600 transition-colors">
+                      {discipline.name}
+                    </h3>
+                    <p className="text-sm text-zinc-500 font-libre mt-1">
+                      Explorar proyectos y contribuciones
+                    </p>
+                  </div>
                 </div>
               </Link>
             ))}
