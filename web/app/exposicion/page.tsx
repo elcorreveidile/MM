@@ -2,12 +2,24 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Las cosas que hemos leído — Mariano Maresca',
-  description: 'Muestra significativa de la biblioteca personal de Mariano Maresca. Organizada por la Asociación Cultural Olvidos de Granada.',
+  description: 'Exposición inaugurada el 29 de mayo de 2026. Muestra significativa de la biblioteca personal de Mariano Maresca. Hasta el 31 de julio de 2026.',
 }
 
 export default function ExposicionPage() {
   return (
     <div className="min-h-screen bg-[#E8447A] text-black font-libre">
+
+      {/* Franja de fechas */}
+      <div className="border-b border-black/20">
+        <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <p className="font-black uppercase text-xs tracking-[0.2em]">
+            Inaugurada el 29 de mayo de 2026
+          </p>
+          <p className="font-black uppercase text-xs tracking-[0.2em]">
+            Hasta el 31 de julio de 2026
+          </p>
+        </div>
+      </div>
 
       {/* Hero: título + texto intro */}
       <section className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pt-20 pb-16">
