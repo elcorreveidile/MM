@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 
 type Socio = {
@@ -12,11 +13,13 @@ type Socio = {
 }
 
 export default function SociosTable({ socios: initial, showAddButton }: { socios: Socio[], showAddButton?: boolean }) {
+  const router = useRouter()
   const [socios, setSocios] = useState(initial)
   const [search, setSearch] = useState('')
   const [showForm, setShowForm] = useState(false)
   const [form, setForm] = useState({ nombre: '', email: '', tipo: 'amigo' as Socio['tipo'], notas: '' })
   const [saving, setSaving] = useState(false)
+  const [formError, setFormError] = useState('')
 
   const filtered = socios.filter(s =>
     s.nombre.toLowerCase().includes(search.toLowerCase()) ||
@@ -25,17 +28,18 @@ export default function SociosTable({ socios: initial, showAddButton }: { socios
 
   async function handleAdd(e: React.FormEvent) {
     e.preventDefault()
+    setFormError('')
     setSaving(true)
     const supabase = createClient()
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('socios')
-      .insert([form])
-      .select()
-      .single()
-    if (!error && data) {
-      setSocios(prev => [...prev, data].sort((a, b) => a.nombre.localeCompare(b.nombre)))
-      setForm({ nombre: '', email: '', tipo: 'simpatizante', notas: '' })
+      .insert([{ ...form, notas: form.notas || null }])
+    if (error) {
+      setFormError(error.code === '23505' ? 'Ese email ya existe en la base de datos.' : `Error: ${error.message}`)
+    } else {
+      setForm({ nombre: '', email: '', tipo: 'amigo', notas: '' })
       setShowForm(false)
+      router.refresh()
     }
     setSaving(false)
   }
@@ -44,7 +48,7 @@ export default function SociosTable({ socios: initial, showAddButton }: { socios
     if (!confirm('¿Eliminar este contacto?')) return
     const supabase = createClient()
     await supabase.from('socios').delete().eq('id', id)
-    setSocios(prev => prev.filter(s => s.id !== id))
+    router.refresh()
   }
 
   if (showAddButton) {
@@ -84,12 +88,13 @@ export default function SociosTable({ socios: initial, showAddButton }: { socios
                 <input value={form.notas} onChange={e => setForm(f => ({ ...f, notas: e.target.value }))}
                   className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900" />
               </div>
+              {formError && <p className="font-libre text-xs text-[#E84878]">{formError}</p>}
               <div className="flex gap-3 pt-2">
                 <button type="submit" disabled={saving}
                   className="flex-1 bg-[#E84878] text-white font-libre text-xs tracking-widest uppercase py-2 hover:bg-[#d03868] disabled:opacity-50">
                   {saving ? 'Guardando...' : 'Guardar'}
                 </button>
-                <button type="button" onClick={() => setShowForm(false)}
+                <button type="button" onClick={() => { setShowForm(false); setFormError('') }}
                   className="flex-1 border border-zinc-300 font-libre text-xs tracking-widest uppercase py-2 hover:bg-zinc-50">
                   Cancelar
                 </button>
