@@ -46,6 +46,30 @@ export default async function PanelPage() {
         </div>
       </div>
 
+      {/* CTA mantenimiento de la web — solo para amigos */}
+      {!esSocio && (
+        <div className="bg-white border border-zinc-200 p-6">
+          <p className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-3">
+            Apoya la web
+          </p>
+          <h2 className="font-crimson font-bold text-zinc-900 text-xl mb-3">
+            Esta página depende de ti
+          </h2>
+          <p className="font-libre text-zinc-700 text-sm leading-relaxed mb-4">
+            Mantener viva la memoria de Mariano en la red tiene un coste. Esta web, que estás
+            viendo, existe gracias a quienes la sostienen. Si quieres contribuir a su mantenimiento,
+            puedes hacerlo con una cuota simbólica de <strong>1&nbsp;€ al mes</strong>, pagadera
+            de forma anual.
+          </p>
+          <p className="font-libre text-zinc-500 text-xs">
+            Para colaborar, escríbenos a{' '}
+            <a href="mailto:olvidosdegranada@gmail.com" className="text-[#E84878] hover:underline">
+              olvidosdegranada@gmail.com
+            </a>
+          </p>
+        </div>
+      )}
+
       {/* CTA hacerse socio — solo para amigos */}
       {!esSocio && (
         <div className="bg-zinc-900 text-white p-6">
@@ -56,9 +80,12 @@ export default async function PanelPage() {
             Hazte Socio de Olvidos de Granada
           </h2>
           <p className="font-libre text-zinc-300 text-sm leading-relaxed mb-4">
-            Como Amigo de Olvidos formas parte de nuestra comunidad. Dar el paso de hacerte socio
-            nos ayuda a mantener viva la memoria de Mariano y a seguir impulsando la cultura en Granada.
-            La cuota es un gesto simbólico de apoyo.
+            Olvidos de Granada es la revista cultural que Mariano puso en marcha y que sigue viva:
+            publica, organiza encuentros y mantiene activa una forma de entender la cultura en Granada
+            que él encarnó como nadie. La asociación que lleva su nombre es quien la sostiene y la impulsa.
+          </p>
+          <p className="font-libre text-zinc-300 text-sm leading-relaxed mb-4">
+            Hacerse socio es comprometerse con ese proyecto. La cuota anual es de <strong>30&nbsp;€</strong>.
           </p>
           <p className="font-libre text-zinc-400 text-xs">
             Para hacerte socio, escríbenos a{' '}
