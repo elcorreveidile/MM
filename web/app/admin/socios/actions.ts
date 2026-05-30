@@ -4,44 +4,62 @@ import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
 import { createClient as createAdminClient } from '@supabase/supabase-js'
 
-async function enviarBienvenida(nombre: string, email: string, tipo: string) {
+async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: string) {
+  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+  const resendKey = process.env.RESEND_API_KEY
+  if (!serviceKey || !resendKey) return
+
+  const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, serviceKey)
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://marianomaresca.com'
+
+  const { data: linkData } = await admin.auth.admin.generateLink({
+    type: 'invite',
+    email,
+    options: {
+      redirectTo: `${siteUrl}/auth/callback?next=/panel`,
+    },
+  })
+
+  const magicLink = linkData?.properties?.action_link ?? null
+
   const esSocio = tipo === 'socio'
   const tratamiento = esSocio ? 'Socio de Olvidos' : 'Amigo de Olvidos'
   const asunto = esSocio
     ? 'Bienvenido/a a la Asociación Olvidos de Granada'
     : 'Bienvenido/a como Amigo/a de Olvidos de Granada'
 
-  const cuerpo = esSocio
-    ? `<p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
-        Querido/a ${nombre},
-      </p>
-      <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
-        Gracias por hacerte <strong>Socio de Olvidos</strong>. Tu apoyo es fundamental para mantener
+  const textoBienvenida = esSocio
+    ? `Gracias por hacerte <strong>Socio de Olvidos</strong>. Tu apoyo es fundamental para mantener
         viva la memoria de Mariano Maresca y seguir impulsando la cultura en Granada.
-      </p>
-      <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
-        Como socio, formas parte de la historia de la asociación. Nos alegra mucho tenerte con nosotros.
-      </p>
-      <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
-        Un saludo afectuoso,<br/>
-        <strong>Asociación Olvidos de Granada</strong>
-      </p>`
-    : `<p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
-        Querido/a ${nombre},
-      </p>
-      <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
-        Gracias por hacerte <strong>Amigo de Olvidos</strong>. Nos alegra que formes parte
-        de nuestra comunidad y de la memoria de Mariano Maresca.
-      </p>
-      <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
+        Como socio, formas parte de la historia de la asociación. Nos alegra mucho tenerte con nosotros.`
+    : `Gracias por hacerte <strong>Amigo de Olvidos</strong>. Nos alegra que formes parte
+        de nuestra comunidad y de la memoria de Mariano Maresca.`
+
+  const textoAmigo = !esSocio
+    ? `<p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
         Si algún día quieres dar el paso de hacerte socio, escríbenos a
         <a href="mailto:olvidosdegranada@gmail.com" style="color: #E84878;">olvidosdegranada@gmail.com</a>.
         Será un placer contarte todo.
-      </p>
-      <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
-        Un saludo afectuoso,<br/>
-        <strong>Asociación Olvidos de Granada</strong>
       </p>`
+    : ''
+
+  const bloqueAcceso = magicLink
+    ? `<div style="margin: 32px 0; padding: 24px; background: #FAF7F2; border-left: 3px solid #E84878;">
+        <p style="font-family: 'Trebuchet MS', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #E84878; margin: 0 0 12px;">
+          Tu espacio personal
+        </p>
+        <p style="font-family: Georgia, serif; font-size: 15px; color: #1a1a1a; line-height: 1.6; margin: 0 0 16px;">
+          Tienes acceso a un panel privado donde puedes ver tu ficha y personalizar tu relación con Mariano.
+        </p>
+        <a href="${magicLink}"
+           style="display: inline-block; background: #1a1a1a; color: #ffffff; font-family: 'Trebuchet MS', sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; padding: 12px 24px;">
+          Acceder a mi panel
+        </a>
+        <p style="font-family: 'Trebuchet MS', sans-serif; font-size: 11px; color: #a1a1aa; margin: 12px 0 0;">
+          Este enlace es de un solo uso y caduca en 24 horas.
+        </p>
+      </div>`
+    : ''
 
   const html = `<!DOCTYPE html>
 <html>
@@ -51,7 +69,18 @@ async function enviarBienvenida(nombre: string, email: string, tipo: string) {
     <p style="font-family: 'Trebuchet MS', sans-serif; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: #E84878; margin: 0 0 24px;">
       ${tratamiento}
     </p>
-    ${cuerpo}
+    <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
+      Querido/a ${nombre},
+    </p>
+    <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
+      ${textoBienvenida}
+    </p>
+    ${textoAmigo}
+    ${bloqueAcceso}
+    <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
+      Un saludo afectuoso,<br/>
+      <strong>Asociación Olvidos de Granada</strong>
+    </p>
     <hr style="border: none; border-top: 1px solid #e4e4e7; margin: 32px 0;" />
     <p style="font-family: 'Trebuchet MS', sans-serif; font-size: 11px; color: #a1a1aa; letter-spacing: 1px; text-transform: uppercase;">
       Asociación Cultural Olvidos de Granada · <a href="https://marianomaresca.com" style="color: #a1a1aa;">marianomaresca.com</a>
@@ -63,7 +92,7 @@ async function enviarBienvenida(nombre: string, email: string, tipo: string) {
   await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
+      'Authorization': `Bearer ${resendKey}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
@@ -72,15 +101,6 @@ async function enviarBienvenida(nombre: string, email: string, tipo: string) {
       subject: asunto,
       html,
     }),
-  })
-}
-
-async function invitarAlPanel(email: string) {
-  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
-  if (!serviceKey) return
-  const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, serviceKey)
-  await admin.auth.admin.inviteUserByEmail(email, {
-    redirectTo: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://marianomaresca.com'}/auth/callback?next=/panel`,
   })
 }
 
@@ -101,10 +121,7 @@ export async function addSocio(formData: FormData) {
     return { error: error.message }
   }
 
-  await Promise.all([
-    enviarBienvenida(nombre, email, tipo),
-    invitarAlPanel(email),
-  ])
+  await enviarBienvenidaConAcceso(nombre, email, tipo)
 
   revalidatePath('/admin/socios')
   return { error: null }
