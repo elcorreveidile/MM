@@ -108,7 +108,7 @@ export default function HomePage() {
                 1982 · 1987 · 2011
               </p>
               <h2 className="font-crimson font-bold text-white mb-6" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
-                Olvidosdegranada
+                Olvidos de Granada
               </h2>
               <p className="text-lg text-zinc-300 mb-6 leading-relaxed font-libre">
                 Mariano Maresca fundó y dirigió la revista <em>Olvidos de Granada</em> (noviembre 1982 – mayo 1987), publicación fundamental para la cultura de la ciudad. En 2011 nació OlvidosdeGranada.es, versión digital y repositorio de todos los números en PDF.
@@ -122,7 +122,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-block bg-[#E84878] text-white px-8 py-4 font-libre font-semibold hover:bg-[#d03868] transition-colors"
               >
-                Visitar Olvidosdegranada.es
+                Visitar OlvidosdeGranada.es
               </Link>
             </div>
             <div className="space-y-0 border border-zinc-700">

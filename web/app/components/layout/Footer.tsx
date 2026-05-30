@@ -43,7 +43,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/exposicion" className="hover:text-white transition-colors">Proyecto</Link></li>
               <li><Link href="/contacto" className="hover:text-white transition-colors">Contacto</Link></li>
-              <li><Link href="https://olvidosdegranada.es" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Olvidosdegranada</Link></li>
+              <li><Link href="https://olvidosdegranada.es" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Olvidos de Granada</Link></li>
             </ul>
           </div>
         </div>
