@@ -1,4 +1,4 @@
-import { createClient } from '@/lib/supabase/server'
+import { createClient as createAdminClient } from '@supabase/supabase-js'
 import Link from 'next/link'
 import type { Metadata } from 'next'
 
@@ -10,7 +10,10 @@ export const metadata: Metadata = {
 }
 
 export default async function MemoriasPage() {
-  const supabase = await createClient()
+  const supabase = createAdminClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  )
   const { data: testimonios } = await supabase
     .from('socios')
     .select('nombre, notas, ciudad, mostrar_nombre, foto_url')
