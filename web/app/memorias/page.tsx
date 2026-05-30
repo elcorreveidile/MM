@@ -13,7 +13,7 @@ export default async function MemoriasPage() {
   const supabase = await createClient()
   const { data: testimonios } = await supabase
     .from('socios')
-    .select('nombre, notas, ciudad, mostrar_nombre')
+    .select('nombre, notas, ciudad, mostrar_nombre, foto_url')
     .eq('publicar_testimonio', true)
     .not('notas', 'is', null)
     .neq('notas', '')
@@ -45,13 +45,24 @@ export default async function MemoriasPage() {
           <div className="space-y-8">
             {testimonios.map((t, i) => (
               <blockquote key={i} className="bg-white p-8 border-l-4 border-[#E84878]">
-                <p className="font-crimson text-zinc-900 text-xl leading-relaxed italic">
-                  «{t.notas}»
-                </p>
-                <footer className="mt-5 font-libre text-sm text-zinc-500">
-                  — {t.mostrar_nombre ? t.nombre : 'Amigo/a de Mariano'}
-                  {t.mostrar_nombre && t.ciudad ? `, ${t.ciudad}` : ''}
-                </footer>
+                <div className="flex gap-5 items-start">
+                  {t.foto_url && (
+                    <img
+                      src={t.foto_url}
+                      alt=""
+                      className="w-20 h-20 object-cover shrink-0"
+                    />
+                  )}
+                  <div className="flex-1">
+                    <p className="font-crimson text-zinc-900 text-xl leading-relaxed italic">
+                      «{t.notas}»
+                    </p>
+                    <footer className="mt-5 font-libre text-sm text-zinc-500">
+                      — {t.mostrar_nombre ? t.nombre : 'Amigo/a de Mariano'}
+                      {t.mostrar_nombre && t.ciudad ? `, ${t.ciudad}` : ''}
+                    </footer>
+                  </div>
+                </div>
               </blockquote>
             ))}
           </div>
