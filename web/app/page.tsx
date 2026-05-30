@@ -207,7 +207,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-zinc-200">
             {[
-              { title: 'Festival de Tango de Granada', year: '1990–2023', description: 'Fundó y dirigió durante más de tres décadas el festival que convirtió Granada en la capital española del tango.', category: 'Música' },
+              { title: 'Granada Tango', year: '1982', description: 'Participó en este libro de letras de tango, resultado de un concurso que organizó en La Tertulia. También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.', category: 'Música' },
               { title: 'Omega · Enrique Morente', year: '1996', description: 'Colaboró con Morente en el álbum que unió el flamenco con Leonard Cohen y los Sonic Youth. Solo podía nacer en Granada.', category: 'Música' },
               { title: 'Olvidos de Granada', year: '1982–2011', description: 'Fundó y dirigió la revista cultural que fue archivo vivo de la creación artística granadina durante tres décadas.', category: 'Literatura' },
               { title: 'La Fábrica del Sur', year: '1989–1990', description: 'Dirigió esta revista donde el diseño era argumento y la tipografía tenía tanto peso como el texto.', category: 'Diseño' },
