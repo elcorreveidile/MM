@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const dynamic = 'force-dynamic'
@@ -76,12 +77,12 @@ export default async function MemoriasPage() {
             <p className="font-libre text-zinc-700 text-sm leading-relaxed mb-6">
               Hacerse amigo o amiga de Mariano no tiene coste. Solo necesitas escribirnos.
             </p>
-            <a
-              href="mailto:olvidosdegranada@gmail.com?subject=Quiero%20ser%20amigo%20de%20Mariano"
+            <Link
+              href="/memorias/contacto"
               className="inline-block bg-zinc-900 text-white font-libre text-xs tracking-widest uppercase px-6 py-3 hover:bg-zinc-700 transition-colors"
             >
               Escríbenos →
-            </a>
+            </Link>
           </div>
 
           <div className="md:border-l md:border-zinc-100 md:pl-12">
