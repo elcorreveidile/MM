@@ -1,23 +1,10 @@
 'use client'
 
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
-import { createClient } from '@/lib/supabase/client'
+import { useState } from 'react'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [loggedIn, setLoggedIn] = useState(false)
-
-  useEffect(() => {
-    const supabase = createClient()
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setLoggedIn(!!session)
-    })
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_e, session) => {
-      setLoggedIn(!!session)
-    })
-    return () => subscription.unsubscribe()
-  }, [])
 
   return (
     <header className="bg-white border-b border-zinc-200 sticky top-0 z-50">
@@ -76,14 +63,12 @@ export default function Header() {
             <Link href="/memorias" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
               Memorias
             </Link>
-            {loggedIn && (
-              <Link
-                href="/panel"
-                className="font-libre text-xs tracking-widest uppercase px-3 py-1.5 border border-zinc-300 text-zinc-700 hover:bg-zinc-900 hover:text-white hover:border-zinc-900 transition-colors"
-              >
-                Mi panel
-              </Link>
-            )}
+            <Link
+              href="/panel"
+              className="font-libre text-xs tracking-widest uppercase px-3 py-1.5 border border-zinc-300 text-zinc-700 hover:bg-zinc-900 hover:text-white hover:border-zinc-900 transition-colors"
+            >
+              Mi panel
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -122,11 +107,9 @@ export default function Header() {
             <Link href="/galeria" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Galería</Link>
             <Link href="/exposicion" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Exposición</Link>
             <Link href="/memorias" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Memorias</Link>
-            {loggedIn && (
-              <Link href="/panel" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-[#E84878] font-libre font-medium hover:bg-zinc-50 rounded-md">
-                Mi panel →
-              </Link>
-            )}
+            <Link href="/panel" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-[#E84878] font-libre font-medium hover:bg-zinc-50 rounded-md">
+              Mi panel →
+            </Link>
           </div>
         )}
       </nav>
