@@ -105,7 +105,7 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
             <span className="font-libre text-sm text-zinc-900">{s.nombre}</span>
             <span className="font-libre text-sm text-zinc-500">{s.email}</span>
             <span className={`font-libre text-xs px-2 py-0.5 ${s.tipo === 'socio' ? 'bg-[#E84878] text-white' : 'bg-zinc-100 text-zinc-600'}`}>
-              {s.tipo === 'socio' ? 'Socio de Olvidos' : 'Amigo de Olvidos'}
+              {s.tipo === 'socio' ? 'Socio de Olvidos' : 'Amigo de Mariano'}
             </span>
             <button
               onClick={() => openEdit(s)}
@@ -157,7 +157,7 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
                 <select name="tipo" defaultValue={editingSocio?.tipo ?? 'amigo'}
                   className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900 bg-white">
                   <option value="socio">Socio de Olvidos</option>
-                  <option value="amigo">Amigo de Olvidos</option>
+                  <option value="amigo">Amigo de Mariano</option>
                 </select>
               </div>
               <div>

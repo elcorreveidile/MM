@@ -46,7 +46,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
             <span className="font-crimson font-bold text-[#8B1A1A] text-xs">MM</span>
           </div>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-500">
-            {socio.tipo === 'socio' ? 'Socio de Olvidos' : 'Amigo de Olvidos'}
+            {socio.tipo === 'socio' ? 'Socio de Olvidos' : 'Amigo de Mariano'}
           </span>
         </div>
         <div className="flex items-center gap-4">
