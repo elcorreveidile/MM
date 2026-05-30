@@ -109,6 +109,35 @@ export default function ContactoPage() {
             />
           </div>
 
+          {/* Preferencias de publicación */}
+          <div className="border border-zinc-200 p-5 space-y-3">
+            <p className="font-libre text-xs tracking-widest uppercase text-zinc-400 mb-1">
+              Publicación en Memorias
+            </p>
+            <label className="flex items-start gap-3 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                name="publicar"
+                defaultChecked
+                className="mt-0.5 cursor-pointer"
+              />
+              <span className="font-libre text-sm text-zinc-700">
+                Quiero que publiquéis mi recuerdo en la página Memorias
+              </span>
+            </label>
+            <label className="flex items-start gap-3 cursor-pointer select-none">
+              <input
+                type="checkbox"
+                name="mostrar_nombre"
+                defaultChecked
+                className="mt-0.5 cursor-pointer"
+              />
+              <span className="font-libre text-sm text-zinc-700">
+                Podéis mostrar mi nombre junto al recuerdo
+              </span>
+            </label>
+          </div>
+
           {/* Verificación humana */}
           <div className="border border-zinc-200 p-4 bg-zinc-50">
             <label className="flex items-start gap-3 cursor-pointer select-none">
