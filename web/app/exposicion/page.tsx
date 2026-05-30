@@ -167,7 +167,7 @@ export default function ExposicionPage() {
               </div>
               <div className="p-6 border-b border-zinc-700">
                 <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Diseño</p>
-                <p className="text-zinc-300 text-sm">Manigua</p>
+                <p className="text-zinc-300 text-sm"><a href="https://www.manigua.es" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">Manigua</a></p>
               </div>
               <div className="p-6 border-b border-zinc-700">
                 <p className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-2">Fotos</p>
