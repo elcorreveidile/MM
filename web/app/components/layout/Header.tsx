@@ -80,23 +80,23 @@ export default function Header() {
         {/* Mobile Navigation */}
         {menuOpen && (
           <div className="lg:hidden py-4 space-y-2">
-            <Link href="/biografia" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Biografía</Link>
+            <Link href="/biografia" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Biografía</Link>
             <div className="px-4 py-2">
               <p className="text-sm font-semibold text-zinc-900 mb-2">Disciplinas</p>
               <div className="space-y-1 ml-4">
-                <Link href="/disciplinas/literatura" className="block py-1 text-sm text-zinc-600">Literatura</Link>
-                <Link href="/disciplinas/musica" className="block py-1 text-sm text-zinc-600">Música</Link>
-                <Link href="/disciplinas/cine" className="block py-1 text-sm text-zinc-600">Cine</Link>
-                <Link href="/disciplinas/fotografia" className="block py-1 text-sm text-zinc-600">Fotografía</Link>
-                <Link href="/disciplinas/arquitectura" className="block py-1 text-sm text-zinc-600">Arquitectura</Link>
-                <Link href="/disciplinas/diseno" className="block py-1 text-sm text-zinc-600">Diseño</Link>
-                <Link href="/disciplinas/comic" className="block py-1 text-sm text-zinc-600">Cómic</Link>
-                <Link href="/disciplinas/filosofia" className="block py-1 text-sm text-zinc-600">Filosofía</Link>
+                <Link href="/disciplinas/literatura" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-zinc-600">Literatura</Link>
+                <Link href="/disciplinas/musica" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-zinc-600">Música</Link>
+                <Link href="/disciplinas/cine" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-zinc-600">Cine</Link>
+                <Link href="/disciplinas/fotografia" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-zinc-600">Fotografía</Link>
+                <Link href="/disciplinas/arquitectura" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-zinc-600">Arquitectura</Link>
+                <Link href="/disciplinas/diseno" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-zinc-600">Diseño</Link>
+                <Link href="/disciplinas/comic" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-zinc-600">Cómic</Link>
+                <Link href="/disciplinas/filosofia" onClick={() => setMenuOpen(false)} className="block py-1 text-sm text-zinc-600">Filosofía</Link>
               </div>
             </div>
-            <Link href="/archivo" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Archivo</Link>
-            <Link href="/galeria" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Galería</Link>
-            <Link href="/exposicion" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Exposición</Link>
+            <Link href="/archivo" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Archivo</Link>
+            <Link href="/galeria" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Galería</Link>
+            <Link href="/exposicion" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Exposición</Link>
           </div>
         )}
       </nav>
