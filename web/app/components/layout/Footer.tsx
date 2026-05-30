@@ -22,7 +22,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed">
-              Exposición homenaje a Mariano Maresca García-Esteller (Almería 1945 - Granada 2023), profesor de Filosofía del Derecho, editor de Olvidosdegranada y estudioso de Clarín y Pasolini.
+              Homenaje a Mariano Maresca García-Esteller. Almería, 1945 · Granada, 2023.
             </p>
           </div>
 
