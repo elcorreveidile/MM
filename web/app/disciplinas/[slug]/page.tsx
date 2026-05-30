@@ -113,13 +113,13 @@ const disciplinasData: Record<string, DisciplinaData> = {
   },
   musica: {
     nombre: 'Música',
-    subtitulo: 'Festival de Tango y crítica musical',
-    descripcion: 'La contribución de Maresca a la música granadina fue monumental. Fundó y dirigió el Festival de Tango de Granada durante más de tres décadas, convirtiendo la ciudad en referencia del tango en España. La historia de ese festival es inseparable de la historia cultural de Granada en la democracia. También publicó crítica musical en Olvidos de Granada y colaboró en proyectos de música flamenca, incluido el célebre disco Omega de Enrique Morente —ese encuentro imposible y necesario entre el flamenco y Leonard Cohen que solo podía nacer en Granada—. Organizó también el histórico concurso de letras de tango en La Tertulia. Su biblioteca musical —una de las más reveladoras de su carácter— incluye monografías sobre Wagner (dos biografías), Mozart, Mahler, Debussy, Beethoven, Verdi, Stravinsky, Bach, Glenn Gould y Chet Baker, junto al CD de Omega y el libro Universo Morente.',
+    subtitulo: 'Crítica musical, tango y flamenco',
+    descripcion: 'La música atravesó toda la vida cultural de Maresca. Publicó crítica musical en Olvidos de Granada y colaboró en proyectos de música flamenca, incluido el célebre disco Omega de Enrique Morente —ese encuentro imposible y necesario entre el flamenco y Leonard Cohen que solo podía nacer en Granada—. El tango fue otra de sus pasiones: en La Tertulia organizó un concurso de letras de tango que dio lugar al libro Granada Tango (1982), y colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada. Su biblioteca musical —una de las más reveladoras de su carácter— incluye monografías sobre Wagner (dos biografías), Mozart, Mahler, Debussy, Beethoven, Verdi, Stravinsky, Bach, Glenn Gould y Chet Baker, junto al CD de Omega y el libro Universo Morente.',
     libros: {
       secciones: [
         { nombre: 'Música clásica y ópera', autores: 'Richard Wagner (dos biografías) · Wolfgang Amadeus Mozart · Gustav Mahler · Claude Debussy · Ludwig van Beethoven · Giuseppe Verdi · Igor Stravinsky · Johann Sebastian Bach · Glenn Gould · historia de la ópera' },
         { nombre: 'Jazz y música contemporánea', autores: 'Chet Baker · historia del jazz · Bob Dylan: Crónicas (con dedicatoria) · música popular del siglo XX' },
-        { nombre: 'Flamenco y tango', autores: 'Enrique Morente: Omega (CD) · Universo Morente · Granada Tango (1982) · historia del flamenco · Festival de Tango de Granada · cantaores y guitarristas granadinos' },
+        { nombre: 'Flamenco y tango', autores: 'Enrique Morente: Omega (CD) · Universo Morente · Granada Tango (1982) · historia del flamenco · cantaores y guitarristas granadinos' },
       ],
     },
   },

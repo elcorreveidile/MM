@@ -89,11 +89,11 @@ export default function BiographyPage() {
 
             <section className="p-8">
               <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
-                El Festival de Tango e Imaginaria
+                El tango, Imaginaria y Omega
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  En 1990 Maresca fundó el Festival de Tango de Granada, que dirigió durante más de tres décadas. Lo que empezó como una apuesta arriesgada se convirtió en la cita de referencia del tango en España, llevando a la ciudad a figuras de primer orden del género rioplatense. El festival nació en La Tertulia, donde antes había organizado un histórico concurso de letras de tango.
+                  El tango fue una de sus pasiones. En La Tertulia organizó un concurso de letras de tango cuyo resultado fue el libro <em>Granada Tango</em> (1982). También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
                   En 1999 participó como guionista en <em>Imaginaria</em> (Canal Sur), el programa cultural nocturno que se convirtió en referencia del pensamiento y las artes en Andalucía. Ese mismo año colaboró con Enrique Morente en el proyecto <em>Omega</em> —el encuentro entre el flamenco y Leonard Cohen que solo podía nacer en Granada—, cuya trascendencia cultural reivindicó desde sus páginas en Olvidos y en El País.
