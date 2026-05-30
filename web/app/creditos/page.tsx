@@ -26,6 +26,10 @@ export default function CreditosPage() {
             <h2 className="font-crimson font-bold text-zinc-900 text-2xl mb-6">Exposición</h2>
             <dl className="space-y-6">
               <div>
+                <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Coordinación</dt>
+                <dd className="font-libre text-zinc-700">Antonio Mª Álvarez Arias de Saavedra · Luisa Martínez Osorio</dd>
+              </div>
+              <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Textos y selección de contenidos</dt>
                 <dd className="font-libre text-zinc-700">Javier Benítez</dd>
               </div>
@@ -35,11 +39,7 @@ export default function CreditosPage() {
               </div>
               <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Organización</dt>
-                <dd className="font-libre text-zinc-700">Asociación Cultural Olvidos de Granada</dd>
-              </div>
-              <div>
-                <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Con el reconocimiento de</dt>
-                <dd className="font-libre text-zinc-700">Universidad de Granada<br />Biblioteca de la Facultad de Derecho, UGR</dd>
+                <dd className="font-libre text-zinc-700">Biblioteca de la Facultad de Derecho · Universidad de Granada</dd>
               </div>
             </dl>
           </div>
@@ -50,6 +50,18 @@ export default function CreditosPage() {
               <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Identidad visual</dt>
                 <dd className="font-libre text-zinc-700">Basada en el diseño de Manigua para la exposición</dd>
+              </div>
+              <div>
+                <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Página web</dt>
+                <dd className="font-libre text-zinc-700">Asociación Cultural Olvidos de Granada</dd>
+              </div>
+              <div>
+                <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Diseño y desarrollo web</dt>
+                <dd className="font-libre text-zinc-700">
+                  <a href="https://www.espanias.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">
+                    espanias.com
+                  </a>
+                </dd>
               </div>
             </dl>
           </div>
