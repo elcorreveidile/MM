@@ -82,7 +82,7 @@ export default function BiographyPage() {
                   <em>Argumentos morales</em> (Asociación Cultural del Diente de Oro / La Isleta del Moro, Granada, 2004) recoge las presentaciones de tres libros: <em>Los aires difíciles</em> de Almudena Grandes, <em>La intimidad de la serpiente</em> de Luis García Montero y <em>Miedo rentable</em> de José Carlos Rosales. Entre 2004 y 2008 escribió la columna «La nuestra» en <em>El País Andalucía</em>, una de las voces más singulares del periodismo cultural de aquellos años. Esos artículos se recogieron en <em>Las cosas que hemos visto</em> (Renacimiento, 2011), con prólogo de Luis García Montero —título que inspira el nombre de esta exposición.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  También publicó en colaboración: <em>Granada Tango</em> (1982), <em>Latinos</em> (1995, con Horacio Rébora) y <em>Un debate sobre natural y artificial</em> (1997). Participó en <em>Visiones de Pasolini</em> (2006) con un ensayo propio, y fue coeditor de la revista <em>Olvidos de Granada</em> y de <em>La Fábrica del Sur</em>.
+                  También publicó en colaboración: <em>Granada Tango</em> (1982), <em>Latinos</em> (1995, con Horacio Rébora) y <em>Un debate sobre lo natural y lo artificial</em> (1997). Participó en <em>Visiones de Pasolini</em> (2006) con un ensayo propio, y fue coeditor de la revista <em>Olvidos de Granada</em> y de <em>La Fábrica del Sur</em>.
                 </p>
               </div>
             </section>
@@ -93,7 +93,7 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  El tango fue una de sus pasiones. Redactó las bases del concurso de letras de tango celebrado en <a href="https://www.instagram.com/tertuliagranada?igsh=Zmd2NGU4amZxYmo5" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">La Tertulia</a> que dio lugar al libro colectivo <em>Granada Tango</em> (1982), y escribió el texto de presentación. También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.
+                  Entre los proyectos que nacieron en las mesas de <a href="https://www.instagram.com/tertuliagranada?igsh=Zmd2NGU4amZxYmo5" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">La Tertulia</a> está <em>Granada Tango</em> (1982), libro colectivo editado por La Tertulia que recoge los poemas surgidos de un concurso de letras para tango. Maresca redactó las bases del concurso y presentó el libro el 21 de octubre en el Ayuntamiento de Granada, junto a Horacio Rébora y Juan Carlos Rodríguez. En ese texto describía el tango como el lugar de «los cuerpos derrotados» —quienes sabían que cuarenta años de franquismo no desaparecen con un cambio de gobierno—: «Hemos hecho este libro porque nos gusta el tango, pero sobre todo porque preferiríamos que no nos gustara».
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
                   En 1999 participó como guionista en <em>Imaginaria</em> (Canal Sur), el programa cultural nocturno que se convirtió en referencia del pensamiento y las artes en Andalucía. Siguió de cerca la música flamenca y el célebre disco <em>Omega</em> de Enrique Morente ocupa un lugar destacado en su biblioteca.
