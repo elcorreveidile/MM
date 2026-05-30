@@ -37,12 +37,22 @@ export default async function PanelPage() {
           ) : (
             <p className="font-libre text-zinc-400 text-sm italic">Aún no has escrito nada.</p>
           )}
-          <Link
-            href="/panel/perfil"
-            className="inline-block mt-3 font-libre text-xs text-zinc-500 hover:text-zinc-900 underline transition-colors"
-          >
-            Editar mi ficha →
-          </Link>
+          <div className="flex items-center gap-4 mt-3">
+            <Link
+              href="/panel/perfil"
+              className="font-libre text-xs text-zinc-500 hover:text-zinc-900 underline transition-colors"
+            >
+              Editar mi ficha →
+            </Link>
+            {socio.notas && (
+              <Link
+                href="/memorias"
+                className="font-libre text-xs text-zinc-400 hover:text-zinc-700 transition-colors"
+              >
+                Ver página Memorias →
+              </Link>
+            )}
+          </div>
         </div>
       </div>
 

@@ -60,6 +60,9 @@ export default function Header() {
             <Link href="/exposicion" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
               Exposición
             </Link>
+            <Link href="/memorias" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
+              Memorias
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -97,6 +100,7 @@ export default function Header() {
             <Link href="/archivo" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Archivo</Link>
             <Link href="/galeria" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Galería</Link>
             <Link href="/exposicion" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Exposición</Link>
+            <Link href="/memorias" onClick={() => setMenuOpen(false)} className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Memorias</Link>
           </div>
         )}
       </nav>
