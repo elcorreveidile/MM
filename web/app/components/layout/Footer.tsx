@@ -31,7 +31,6 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4 font-libre">Explorar</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/biografia" className="hover:text-white transition-colors">Biografía</Link></li>
-              <li><Link href="/cronologia" className="hover:text-white transition-colors">Cronología</Link></li>
               <li><Link href="/archivo" className="hover:text-white transition-colors">Archivo</Link></li>
               <li><Link href="/galeria" className="hover:text-white transition-colors">Galería</Link></li>
               <li><Link href="/exposicion" className="hover:text-white transition-colors">Exposición</Link></li>
