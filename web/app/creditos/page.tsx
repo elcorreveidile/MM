@@ -35,7 +35,7 @@ export default function CreditosPage() {
               </div>
               <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Diseño y montaje</dt>
-                <dd className="font-libre text-zinc-700">Manigua</dd>
+                <dd className="font-libre text-zinc-700"><a href="https://www.manigua.es" target="_blank" rel="noopener noreferrer" className="underline hover:text-zinc-900 transition-colors">Manigua</a></dd>
               </div>
               <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Organización</dt>
@@ -49,7 +49,7 @@ export default function CreditosPage() {
             <dl className="space-y-6">
               <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Identidad visual</dt>
-                <dd className="font-libre text-zinc-700">Basada en el diseño de Manigua para la exposición</dd>
+                <dd className="font-libre text-zinc-700">Basada en el diseño de <a href="https://www.manigua.es" target="_blank" rel="noopener noreferrer" className="underline hover:text-zinc-900 transition-colors">Manigua</a> para la exposición</dd>
               </div>
               <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Página web</dt>

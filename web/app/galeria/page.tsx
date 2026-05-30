@@ -1,12 +1,15 @@
 import Image from 'next/image'
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: 'Galería — Las cosas que hemos leído · Mariano Maresca',
   description: 'Fotografías de la exposición «Las cosas que hemos leído». Biblioteca de Derecho, Universidad de Granada, 29 de mayo – 31 de julio de 2026.',
 }
 
-const fotos = [
+const maniguaLink = <a href="https://www.manigua.es" target="_blank" rel="noopener noreferrer" className="underline hover:text-zinc-700 transition-colors">Manigua</a>
+
+const fotos: { src: string; alt: string; caption: ReactNode }[] = [
   {
     src: '/exposición/foto-01.jpg',
     alt: 'Las estanterías de la exposición',
@@ -15,7 +18,7 @@ const fotos = [
   {
     src: '/exposición/foto-14.jpg',
     alt: 'Cartel de la exposición en la puerta de entrada',
-    caption: 'El cartel de entrada a la Biblioteca de Derecho. Mariano Maresca leyendo el periódico Ideal. Diseño: Manigua. 29.5 / 31.7 / 2026.',
+    caption: <>El cartel de entrada a la Biblioteca de Derecho. Mariano Maresca leyendo el periódico Ideal. Diseño: {maniguaLink}. 29.5 / 31.7 / 2026.</>,
   },
   {
     src: '/exposición/foto-15.jpg',
