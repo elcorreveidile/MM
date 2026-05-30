@@ -82,7 +82,7 @@ export default function BiographyPage() {
                   <em>Argumentos morales</em> (Asociación Cultural del Diente de Oro / La Isleta del Moro, Granada, 2004) recoge las presentaciones de tres libros: <em>Los aires difíciles</em> de Almudena Grandes, <em>La intimidad de la serpiente</em> de Luis García Montero y <em>Miedo rentable</em> de José Carlos Rosales. Entre 2004 y 2008 escribió la columna «La nuestra» en <em>El País Andalucía</em>, una de las voces más singulares del periodismo cultural de aquellos años. Esos artículos se recogieron en <em>Las cosas que hemos visto</em> (Renacimiento, 2011), con prólogo de Luis García Montero —título que inspira el nombre de esta exposición.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  También publicó en colaboración: <em>Granada Tango</em> (1982), <em>Latinos</em> (1995, con Horacio Rébora) y <em>Un debate sobre natural y artificial</em> (1997). Participó en <em>Visiones de Pasolini</em> (2006) con un ensayo propio, y fue coeditor de la revista <em>Olvidos de Granada</em> y de <em>La Fábrica del Sur</em>.
+                  También publicó en colaboración: <em>Granada Tango</em> (1982), <em>Latinos</em> (1995, con Horacio Rébora) y <em>Un debate sobre lo natural y lo artificial</em> (1997). Participó en <em>Visiones de Pasolini</em> (2006) con un ensayo propio, y fue coeditor de la revista <em>Olvidos de Granada</em> y de <em>La Fábrica del Sur</em>.
                 </p>
               </div>
             </section>
