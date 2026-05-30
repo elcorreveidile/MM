@@ -79,24 +79,25 @@ export default function GaleriaPage() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-        {/* Vídeo de la inauguración */}
-        <figure className="mb-8 bg-white">
-          <div className="w-full">
-            <video
-              controls
-              playsInline
-              className="w-full h-auto"
-              preload="metadata"
-            >
-              <source src="/video_galeria.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <figcaption className="px-4 py-3 border-t border-zinc-100">
-            <p className="font-libre text-xs text-zinc-500 leading-relaxed">Acto de inauguración de la exposición <em>Las cosas que hemos leído</em>. Biblioteca de la Facultad de Derecho, UGR, 29 de mayo de 2026.</p>
-          </figcaption>
-        </figure>
-
         <div className="columns-1 md:columns-2 gap-4">
+
+          {/* Vídeo de la inauguración */}
+          <figure className="break-inside-avoid mb-4 bg-white">
+            <div className="w-full">
+              <video
+                controls
+                playsInline
+                className="w-full h-auto"
+                preload="metadata"
+              >
+                <source src="/video_galeria.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <figcaption className="px-4 py-3 border-t border-zinc-100">
+              <p className="font-libre text-xs text-zinc-500 leading-relaxed">Acto de inauguración de la exposición <em>Las cosas que hemos leído</em>. Biblioteca de la Facultad de Derecho, UGR, 29 de mayo de 2026.</p>
+            </figcaption>
+          </figure>
+
           {fotos.map((foto, i) => (
             <figure key={i} className="break-inside-avoid mb-4 bg-white">
               <div className="relative w-full overflow-hidden bg-zinc-200">
