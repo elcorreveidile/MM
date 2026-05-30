@@ -155,7 +155,7 @@ export default function HomePage() {
               </h2>
               <div className="space-y-4 mb-6">
                 <p className="text-lg text-zinc-700 leading-relaxed font-libre">
-                  <strong>La Tertulia</strong> —el mítico bar-librería de la calle Pintor López Mezquita, fundado en 1980 por Horacio Rébora— fue el corazón de la vida cultural y nocturna de Mariano desde sus inicios. Allí nació <em>La Otra Sentimentalidad</em> con García Montero, Egea y Álvaro Salvador. Allí redactó las bases del concurso de letras de tango que daría lugar al libro <em>Granada Tango</em> (1983). Tres generaciones de escritores, músicos y artistas granadinos pasaron por sus mesas. Hoy, tras 46 años, La Tertulia busca sobrevivir convirtiéndose en asociación cultural: un grupo de clientes y amigos ha lanzado una plataforma para inscribirse como socio y comprometerse al pago de una cuota periódica.
+                  <strong>La Tertulia</strong> —el mítico bar-librería de la calle Pintor López Mezquita, fundado en 1980 por Horacio Rébora— fue el corazón de la vida cultural y nocturna de Mariano desde sus inicios. Allí nació <em>La Otra Sentimentalidad</em> con García Montero, Egea y Álvaro Salvador. Allí redactó las bases del concurso de letras de tango que dio lugar al libro colectivo <em>Granada Tango</em> (1982). Tres generaciones de escritores, músicos y artistas granadinos pasaron por sus mesas. Hoy, tras 46 años, La Tertulia busca sobrevivir convirtiéndose en asociación cultural: un grupo de clientes y amigos ha lanzado una plataforma para inscribirse como socio y comprometerse al pago de una cuota periódica.
                 </p>
                 <p className="text-zinc-600 leading-relaxed font-libre">
                   Con el tiempo llegó también el <strong>café Botánico</strong> —calle Duquesa, junto a la Facultad—: allí citaba a comer a amigos, a la familia, a compañeros y a sus discípulos. Pero La Tertulia siguió siendo La Tertulia, y Mariano siguió yendo hasta el ictus de 2011.
@@ -207,7 +207,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-zinc-200">
             {[
-              { title: 'Granada Tango', year: '1983', description: 'Redactó las bases del concurso de letras de tango celebrado en La Tertulia. El libro resultante incluye tangos de Egea, García Montero, Álvaro Salvador, Antonio Jiménez Millán, Juan de Loxa y Claudio Sánchez Muros.', category: 'Música' },
+              { title: 'Granada Tango', year: '1982', description: 'Libro colectivo surgido de un concurso de letras de tango en La Tertulia. Maresca redactó las bases del concurso y escribió el texto de presentación.', category: 'Música' },
               { title: 'Olvidos de Granada', year: 'nov. 1982–may. 1987', description: 'Fundó y dirigió la revista que fue archivo vivo de la creación artística granadina. En 2011 nació OlvidosdeGranada.es, con todos los números en PDF.', category: 'Literatura' },
               { title: 'La Fábrica del Sur', year: '1989–1990', description: 'Dirigió esta revista donde el diseño era argumento y la tipografía tenía tanto peso como el texto.', category: 'Diseño' },
               { title: 'Las cosas que hemos visto', year: '2011', description: 'Sus columnas de El País Andalucía reunidas en libro, con prólogo de Luis García Montero. El título inspira esta exposición.', category: 'Literatura' },
