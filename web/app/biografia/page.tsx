@@ -96,7 +96,7 @@ export default function BiographyPage() {
                   El tango fue una de sus pasiones. En La Tertulia organizó un concurso de letras de tango cuyo resultado fue el libro <em>Granada Tango</em> (1982). También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  En 1999 participó como guionista en <em>Imaginaria</em> (Canal Sur), el programa cultural nocturno que se convirtió en referencia del pensamiento y las artes en Andalucía. Ese mismo año colaboró con Enrique Morente en el proyecto <em>Omega</em> —el encuentro entre el flamenco y Leonard Cohen que solo podía nacer en Granada—, cuya trascendencia cultural reivindicó desde sus páginas en Olvidos y en El País.
+                  En 1999 participó como guionista en <em>Imaginaria</em> (Canal Sur), el programa cultural nocturno que se convirtió en referencia del pensamiento y las artes en Andalucía. Siguió de cerca la música flamenca y el célebre disco <em>Omega</em> de Enrique Morente ocupa un lugar destacado en su biblioteca.
                 </p>
               </div>
             </section>
