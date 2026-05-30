@@ -12,7 +12,7 @@ export default function BiographyPage() {
             Mariano Maresca
           </h1>
           <p className="font-libre text-zinc-300 max-w-2xl text-lg leading-relaxed">
-            Profesor de Filosofía del Derecho, editor de Olvidosdegranada, crítico y promotor cultural.
+            Profesor de Filosofía del Derecho, editor de Olvidos de Granada, crítico y promotor cultural.
             Una de las figuras más influyentes de la cultura granadina del siglo XX.
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function BiographyPage() {
 
             <section className="p-8">
               <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
-                Editor de Olvidosdegranada
+                Editor de Olvidos de Granada
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
