@@ -44,7 +44,7 @@ export default async function MemoriasPage() {
               Hazte amigo de Mariano →
             </Link>
             <Link
-              href="/panel/login"
+              href="/panel"
               className="font-libre text-xs tracking-widest uppercase text-zinc-400 hover:text-white transition-colors"
             >
               Ya soy amigo — acceder →
