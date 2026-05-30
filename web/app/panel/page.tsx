@@ -73,6 +73,9 @@ export default async function PanelPage() {
       {/* CTA hacerse socio — solo para amigos */}
       {!esSocio && (
         <div className="bg-zinc-900 text-white p-6">
+          <a href="https://www.olvidosdegranada.es" target="_blank" rel="noopener noreferrer" className="inline-block mb-5">
+            <img src="/logo-olvidos.jpg" alt="Olvidos de Granada" className="h-10 w-auto" />
+          </a>
           <p className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-3">
             Únete a la asociación
           </p>
