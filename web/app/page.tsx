@@ -207,7 +207,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-zinc-200">
             {[
-              { title: 'Granada Tango', year: '1983', description: 'Redactó las bases del concurso de letras de tango celebrado en La Tertulia. El libro resultante incluye tangos de Egea, García Montero, Álvaro Salvador y contribuciones de Cortázar, Benedetti y Moyano.', category: 'Música' },
+              { title: 'Granada Tango', year: '1983', description: 'Redactó las bases del concurso de letras de tango celebrado en La Tertulia. El libro resultante incluye tangos de Egea, García Montero, Álvaro Salvador, Antonio Jiménez Millán, Juan de Loxa y Claudio Sánchez Muros.', category: 'Música' },
               { title: 'Olvidos de Granada', year: 'nov. 1982–may. 1987', description: 'Fundó y dirigió la revista que fue archivo vivo de la creación artística granadina. En 2011 nació OlvidosdeGranada.es, con todos los números en PDF.', category: 'Literatura' },
               { title: 'La Fábrica del Sur', year: '1989–1990', description: 'Dirigió esta revista donde el diseño era argumento y la tipografía tenía tanto peso como el texto.', category: 'Diseño' },
               { title: 'Las cosas que hemos visto', year: '2011', description: 'Sus columnas de El País Andalucía reunidas en libro, con prólogo de Luis García Montero. El título inspira esta exposición.', category: 'Literatura' },
