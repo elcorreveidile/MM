@@ -18,11 +18,11 @@ export default function Footer() {
                 <h3 className="text-lg font-crimson font-semibold text-white">
                   Mariano Maresca
                 </h3>
-                <p className="text-sm text-zinc-400">Memoria Viva</p>
+                <p className="text-sm text-zinc-400">Memoria viva</p>
               </div>
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed">
-              Exposición homenaje a Mariano Maresca García-Esteller (Almería 1945 - Granada 2023), profesor de Filosofía del Derecho, editor de Olvidosdegranada y estudioso de Clarín y Pasolini.
+              Homenaje a Mariano Maresca García-Esteller. Almería, 1945 · Granada, 2023.
             </p>
           </div>
 

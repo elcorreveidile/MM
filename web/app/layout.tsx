@@ -21,7 +21,7 @@ const libreFranklin = Libre_Franklin({
 });
 
 export const metadata: Metadata = {
-  title: "Mariano Maresca - Memoria Viva de la Cultura Granadina",
+  title: "Mariano Maresca - Memoria viva de la cultura granadina",
   description: "Exposición homenaje a Mariano Maresca, editor de Olvidosdegranada y figura fundamental de la cultura granadina. Universidad de Granada, Hospital Real.",
 };
 
