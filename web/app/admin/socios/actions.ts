@@ -4,7 +4,13 @@ import { revalidatePath } from 'next/cache'
 import { createClient } from '@/lib/supabase/server'
 import { createClient as createAdminClient } from '@supabase/supabase-js'
 
-async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: string) {
+function generar(genero: string | null, m: string, f: string, neutro: string) {
+  if (genero === 'm') return m
+  if (genero === 'f') return f
+  return neutro
+}
+
+async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: string, genero: string | null) {
   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
   const resendKey = process.env.RESEND_API_KEY
   if (!serviceKey || !resendKey) return
@@ -15,29 +21,34 @@ async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: st
   const { data: linkData } = await admin.auth.admin.generateLink({
     type: 'invite',
     email,
-    options: {
-      redirectTo: `${siteUrl}/auth/callback?next=/panel`,
-    },
+    options: { redirectTo: `${siteUrl}/auth/callback?next=/panel` },
   })
-
   const magicLink = linkData?.properties?.action_link ?? null
 
   const esSocio = tipo === 'socio'
-  const tratamiento = esSocio ? 'Socio de Olvidos' : 'Amigo de Olvidos'
+
+  const bienvenidoA = generar(genero, 'Bienvenido', 'Bienvenida', 'Bienvenido/a')
+  const querido = generar(genero, 'Querido', 'Querida', 'Querido/a')
+  const amigo = generar(genero, esSocio ? 'Socio' : 'Amigo', esSocio ? 'Socia' : 'Amiga', esSocio ? 'Socio/a' : 'Amigo/a')
+
+  const tratamiento = esSocio
+    ? `${amigo} de Olvidos`
+    : `${amigo} de Mariano Maresca`
+
   const asunto = esSocio
-    ? 'Bienvenido/a a la Asociación Olvidos de Granada'
-    : 'Bienvenido/a como Amigo/a de Olvidos de Granada'
+    ? `${bienvenidoA} a la Asociación Olvidos de Granada`
+    : `${bienvenidoA} como ${amigo} de Mariano Maresca`
 
   const textoBienvenida = esSocio
-    ? `Gracias por hacerte <strong>Socio de Olvidos</strong>. Tu apoyo es fundamental para mantener
+    ? `Gracias por hacerte <strong>${amigo} de Olvidos</strong>. Tu apoyo es fundamental para mantener
         viva la memoria de Mariano Maresca y seguir impulsando la cultura en Granada.
-        Como socio, formas parte de la historia de la asociación. Nos alegra mucho tenerte con nosotros.`
-    : `Gracias por hacerte <strong>Amigo de Olvidos</strong>. Nos alegra que formes parte
-        de nuestra comunidad y de la memoria de Mariano Maresca.`
+        Como ${amigo.toLowerCase()}, formas parte de la historia de la asociación. Nos alegra mucho tenerte con nosotros.`
+    : `Gracias por hacerte <strong>${amigo} de Mariano Maresca</strong>. Nos alegra que formes parte
+        de nuestra comunidad y de su memoria.`
 
   const textoAmigo = !esSocio
     ? `<p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
-        Si algún día quieres dar el paso de hacerte socio, escríbenos a
+        Si algún día quieres dar el paso de hacerte ${generar(genero, 'socio', 'socia', 'socio/a')}, escríbenos a
         <a href="mailto:olvidosdegranada@gmail.com" style="color: #E84878;">olvidosdegranada@gmail.com</a>.
         Será un placer contarte todo.
       </p>`
@@ -70,7 +81,7 @@ async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: st
       ${tratamiento}
     </p>
     <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
-      Querido/a ${nombre},
+      ${querido} ${nombre},
     </p>
     <p style="font-family: Georgia, serif; font-size: 16px; color: #1a1a1a; line-height: 1.7;">
       ${textoBienvenida}
@@ -109,19 +120,20 @@ export async function addSocio(formData: FormData) {
   const nombre = formData.get('nombre') as string
   const email = formData.get('email') as string
   const tipo = formData.get('tipo') as string
+  const genero = (formData.get('genero') as string) || null
   const notas = (formData.get('notas') as string) || null
   const telefono = (formData.get('telefono') as string) || null
   const direccion = (formData.get('direccion') as string) || null
   const ciudad = (formData.get('ciudad') as string) || null
 
-  const { error } = await supabase.from('socios').insert([{ nombre, email, tipo, notas, telefono, direccion, ciudad }])
+  const { error } = await supabase.from('socios').insert([{ nombre, email, tipo, genero, notas, telefono, direccion, ciudad }])
 
   if (error) {
     if (error.code === '23505') return { error: 'Ese email ya existe en la base de datos.' }
     return { error: error.message }
   }
 
-  await enviarBienvenidaConAcceso(nombre, email, tipo)
+  await enviarBienvenidaConAcceso(nombre, email, tipo, genero)
 
   revalidatePath('/admin/socios')
   return { error: null }
@@ -132,6 +144,7 @@ export async function updateSocio(id: number, formData: FormData) {
   const nombre = formData.get('nombre') as string
   const email = formData.get('email') as string
   const tipo = formData.get('tipo') as string
+  const genero = (formData.get('genero') as string) || null
   const notas = (formData.get('notas') as string) || null
   const telefono = (formData.get('telefono') as string) || null
   const direccion = (formData.get('direccion') as string) || null
@@ -139,7 +152,7 @@ export async function updateSocio(id: number, formData: FormData) {
 
   const { error } = await supabase
     .from('socios')
-    .update({ nombre, email, tipo, notas, telefono, direccion, ciudad })
+    .update({ nombre, email, tipo, genero, notas, telefono, direccion, ciudad })
     .eq('id', id)
 
   if (error) {

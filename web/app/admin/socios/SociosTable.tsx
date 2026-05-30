@@ -8,6 +8,7 @@ type Socio = {
   nombre: string
   email: string
   tipo: 'socio' | 'amigo'
+  genero: string | null
   notas: string | null
   telefono: string | null
   direccion: string | null
@@ -15,8 +16,6 @@ type Socio = {
 }
 
 type ModalMode = 'add' | 'edit'
-
-const emptyForm = { nombre: '', email: '', tipo: 'amigo', notas: '', telefono: '', direccion: '', ciudad: '' }
 
 export default function SociosTable({ socios }: { socios: Socio[] }) {
   const [search, setSearch] = useState('')
@@ -152,13 +151,24 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
               <input name="email" type="email" required defaultValue={editingSocio?.email ?? ''}
                 className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900" />
             </div>
-            <div>
-              <label className="font-libre text-xs tracking-widest uppercase text-zinc-500 block mb-1">Tipo</label>
-              <select name="tipo" defaultValue={editingSocio?.tipo ?? 'amigo'}
-                className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900 bg-white">
-                <option value="socio">Socio de Olvidos</option>
-                <option value="amigo">Amigo de Olvidos</option>
-              </select>
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="font-libre text-xs tracking-widest uppercase text-zinc-500 block mb-1">Tipo</label>
+                <select name="tipo" defaultValue={editingSocio?.tipo ?? 'amigo'}
+                  className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900 bg-white">
+                  <option value="socio">Socio de Olvidos</option>
+                  <option value="amigo">Amigo de Olvidos</option>
+                </select>
+              </div>
+              <div>
+                <label className="font-libre text-xs tracking-widest uppercase text-zinc-500 block mb-1">Género</label>
+                <select name="genero" defaultValue={editingSocio?.genero ?? ''}
+                  className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900 bg-white">
+                  <option value="">No especificar</option>
+                  <option value="m">Hombre</option>
+                  <option value="f">Mujer</option>
+                </select>
+              </div>
             </div>
             <div>
               <label className="font-libre text-xs tracking-widest uppercase text-zinc-500 block mb-1">Teléfono</label>
