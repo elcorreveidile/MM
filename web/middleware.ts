@@ -1,12 +1,6 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
-
-const ALLOWED_ADMINS = [
-  'olvidosdegranada@gmail.com',
-  'alfonso.olvidos@gmail.com',
-  'ramonrepiso@gmail.com',
-  'benitezl@go.ugr.es',
-]
+import { ALLOWED_ADMINS } from '@/lib/admins'
 
 export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request })

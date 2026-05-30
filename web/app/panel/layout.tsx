@@ -1,11 +1,17 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
+import { ALLOWED_ADMINS } from '@/lib/admins'
 
 export default async function PanelLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
   if (!user) return children // middleware redirige al login
+
+  // Los admins tienen su propio panel
+  if (ALLOWED_ADMINS.includes(user.email ?? '')) {
+    redirect('/admin')
+  }
 
   // Verificar que el usuario está en la tabla socios
   const { data: socio } = await supabase
