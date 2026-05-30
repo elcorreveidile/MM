@@ -46,6 +46,30 @@ export default async function PanelPage() {
         </div>
       </div>
 
+      {/* CTA mantenimiento de la web — solo para amigos */}
+      {!esSocio && (
+        <div className="bg-white border border-zinc-200 p-6">
+          <p className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-3">
+            Apoya la web
+          </p>
+          <h2 className="font-crimson font-bold text-zinc-900 text-xl mb-3">
+            Esta página depende de ti
+          </h2>
+          <p className="font-libre text-zinc-700 text-sm leading-relaxed mb-4">
+            Mantener viva la memoria de Mariano en la red tiene un coste. Esta web, que estás
+            viendo, existe gracias a quienes la sostienen. Si quieres contribuir a su mantenimiento,
+            puedes hacerlo con una cuota simbólica de <strong>1&nbsp;€ al mes</strong>, pagadera
+            de forma anual.
+          </p>
+          <p className="font-libre text-zinc-500 text-xs">
+            Para colaborar, escríbenos a{' '}
+            <a href="mailto:olvidosdegranada@gmail.com" className="text-[#E84878] hover:underline">
+              olvidosdegranada@gmail.com
+            </a>
+          </p>
+        </div>
+      )}
+
       {/* CTA hacerse socio — solo para amigos */}
       {!esSocio && (
         <div className="bg-zinc-900 text-white p-6">
