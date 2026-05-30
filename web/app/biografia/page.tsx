@@ -48,7 +48,7 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Su mesa en el café Botánico de la calle Duquesa fue el epicentro de una vida cultural extraordinaria. Punto de encuentro que Maresca convirtió en «informal alternativa a su despacho en la Facultad», allí se gestaron proyectos, se discutieron ideas y se tejió la red cultural que marcaría a toda una generación.
+                  Su mesa en el <a href="https://botanicocafe.es" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">café Botánico</a> de la calle Duquesa fue el epicentro de una vida cultural extraordinaria. Punto de encuentro que Maresca convirtió en «informal alternativa a su despacho en la Facultad», allí se gestaron proyectos, se discutieron ideas y se tejió la red cultural que marcaría a toda una generación.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
                   En torno a aquella mesa y a su tertulia se formaron escritores que luego serían figuras de primer orden de las letras españolas: Antonio Muñoz Molina, Luis García Montero, Javier Egea. Maresca fue para ellos un referente, un interlocutor exigente y un impulsor generoso del talento ajeno.
@@ -93,7 +93,7 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  El tango fue una de sus pasiones. Redactó las bases del concurso de letras de tango celebrado en La Tertulia que dio lugar al libro colectivo <em>Granada Tango</em> (1982), y escribió el texto de presentación. También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.
+                  El tango fue una de sus pasiones. Redactó las bases del concurso de letras de tango celebrado en <a href="https://www.instagram.com/tertuliagranada?igsh=Zmd2NGU4amZxYmo5" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">La Tertulia</a> que dio lugar al libro colectivo <em>Granada Tango</em> (1982), y escribió el texto de presentación. También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
                   En 1999 participó como guionista en <em>Imaginaria</em> (Canal Sur), el programa cultural nocturno que se convirtió en referencia del pensamiento y las artes en Andalucía. Siguió de cerca la música flamenca y el célebre disco <em>Omega</em> de Enrique Morente ocupa un lugar destacado en su biblioteca.
