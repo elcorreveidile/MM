@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { addSocio, updateSocio, deleteSocio, togglePublicarTestimonio } from './actions'
+import { addSocio, updateSocio, deleteSocio, togglePublicarTestimonio, reenviarBienvenida } from './actions'
 
 type Socio = {
   id: number
@@ -261,6 +261,20 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
                 Cancelar
               </button>
             </div>
+
+            {modalMode === 'edit' && editingSocio && (
+              <div className="border-t border-zinc-100 pt-4">
+                <form action={async () => {
+                  if (!confirm(`¿Reenviar email de bienvenida a ${editingSocio.nombre}?`)) return
+                  startTransition(async () => { await reenviarBienvenida(editingSocio.id) })
+                }}>
+                  <button type="submit" disabled={isPending}
+                    className="font-libre text-xs text-zinc-400 hover:text-zinc-700 transition-colors disabled:opacity-50">
+                    Reenviar email de bienvenida →
+                  </button>
+                </form>
+              </div>
+            )}
           </form>
         </div>
       )}

@@ -55,7 +55,9 @@ export default function ContactoPage() {
           </Link>
           <h1 className="font-crimson font-bold text-4xl mt-4 mb-2">Escríbenos</h1>
           <p className="font-libre text-zinc-300 text-sm leading-relaxed">
-            Cuéntanos tu relación con Mariano o cómo llegaste hasta él.
+            Cuéntanos tu relación con Mariano o cómo llegaste hasta él. Al enviarnos tu mensaje,
+            solicitarás unirte como <strong>amigo o amiga de Mariano Maresca</strong> y recibirás
+            un correo de bienvenida cuando lo aprobemos.
           </p>
         </div>
       </div>
