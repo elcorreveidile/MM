@@ -23,7 +23,7 @@ export default function Header() {
                 Mariano Maresca
               </h1>
               <p className="text-xs text-zinc-600 font-libre">
-                Memoria Viva de la Cultura Granadina
+                Memoria viva de la cultura granadina
               </p>
             </div>
           </Link>

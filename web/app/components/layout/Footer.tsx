@@ -18,7 +18,7 @@ export default function Footer() {
                 <h3 className="text-lg font-crimson font-semibold text-white">
                   Mariano Maresca
                 </h3>
-                <p className="text-sm text-zinc-400">Memoria Viva</p>
+                <p className="text-sm text-zinc-400">Memoria viva</p>
               </div>
             </div>
             <p className="text-sm text-zinc-400 leading-relaxed">
