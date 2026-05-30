@@ -26,7 +26,7 @@ export default async function PanelPage() {
             <p className="font-libre text-zinc-500 text-sm mt-1">{socio.email}</p>
           </div>
           <span className={`font-libre text-xs px-3 py-1 ${esSocio ? 'bg-[#E84878] text-white' : 'bg-zinc-100 text-zinc-600'}`}>
-            {esSocio ? 'Socio de Olvidos' : 'Amigo de Olvidos'}
+            {esSocio ? 'Socio de Olvidos' : 'Amigo de Mariano'}
           </span>
         </div>
 
