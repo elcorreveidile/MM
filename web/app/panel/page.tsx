@@ -80,9 +80,12 @@ export default async function PanelPage() {
             Hazte Socio de Olvidos de Granada
           </h2>
           <p className="font-libre text-zinc-300 text-sm leading-relaxed mb-4">
-            Como Amigo de Olvidos formas parte de nuestra comunidad. Dar el paso de hacerte socio
-            nos ayuda a mantener viva la memoria de Mariano y a seguir impulsando la cultura en Granada.
-            La cuota anual es de <strong>30&nbsp;€</strong>.
+            Olvidos de Granada es la revista cultural que Mariano puso en marcha y que sigue viva:
+            publica, organiza encuentros y mantiene activa una forma de entender la cultura en Granada
+            que él encarnó como nadie. La asociación que lleva su nombre es quien la sostiene y la impulsa.
+          </p>
+          <p className="font-libre text-zinc-300 text-sm leading-relaxed mb-4">
+            Hacerse socio es comprometerse con ese proyecto. La cuota anual es de <strong>30&nbsp;€</strong>.
           </p>
           <p className="font-libre text-zinc-400 text-xs">
             Para hacerte socio, escríbenos a{' '}
