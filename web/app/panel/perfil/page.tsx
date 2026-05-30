@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation'
 export default function PerfilPage() {
   const [nombre, setNombre] = useState('')
   const [notas, setNotas] = useState('')
+  const [mostrarNombre, setMostrarNombre] = useState(true)
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
   const [loading, setLoading] = useState(true)
@@ -19,12 +20,13 @@ export default function PerfilPage() {
       if (!user) return
       const { data } = await supabase
         .from('socios')
-        .select('nombre, notas')
+        .select('nombre, notas, mostrar_nombre')
         .eq('email', user.email!)
         .single()
       if (data) {
         setNombre(data.nombre ?? '')
         setNotas(data.notas ?? '')
+        setMostrarNombre(data.mostrar_nombre ?? true)
       }
       setLoading(false)
     }
@@ -39,7 +41,7 @@ export default function PerfilPage() {
     if (user) {
       await supabase
         .from('socios')
-        .update({ nombre, notas })
+        .update({ nombre, notas, mostrar_nombre: mostrarNombre })
         .eq('email', user.email!)
     }
     setSaving(false)
@@ -67,7 +69,7 @@ export default function PerfilPage() {
             Mi relación con Mariano
           </label>
           <p className="font-libre text-xs text-zinc-400 mb-2">
-            Cuéntanos cómo le conociste, qué significó para ti, algún recuerdo...
+            Cuéntanos cómo le conociste, qué significó para ti, algún recuerdo... o cómo llegaste hasta él si no le conociste en persona.
           </p>
           <textarea
             value={notas}
@@ -76,6 +78,20 @@ export default function PerfilPage() {
             placeholder="Conocí a Mariano en..."
             className="w-full border border-zinc-300 text-zinc-900 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900 resize-y placeholder:text-zinc-400"
           />
+        </div>
+        <div className="border border-zinc-100 p-4 bg-zinc-50">
+          <label className="flex items-start gap-3 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={mostrarNombre}
+              onChange={e => setMostrarNombre(e.target.checked)}
+              className="mt-0.5"
+            />
+            <div>
+              <span className="font-libre text-sm text-zinc-900 block">Quiero aparecer con mi nombre en la página Memorias</span>
+              <span className="font-libre text-xs text-zinc-400">Si no lo marcas, tu testimonio se publicará de forma anónima</span>
+            </div>
+          </label>
         </div>
         <div className="flex items-center gap-3">
           <button

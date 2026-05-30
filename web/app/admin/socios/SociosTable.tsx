@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { addSocio, updateSocio, deleteSocio } from './actions'
+import { addSocio, updateSocio, deleteSocio, togglePublicarTestimonio } from './actions'
 
 type Socio = {
   id: number
@@ -13,6 +13,7 @@ type Socio = {
   telefono: string | null
   direccion: string | null
   ciudad: string | null
+  publicar_testimonio: boolean
 }
 
 type ModalMode = 'add' | 'edit'
@@ -93,20 +94,40 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
 
       {/* Tabla */}
       <div className="bg-white">
-        <div className="grid grid-cols-[1fr_1fr_auto_auto_auto] gap-0 border-b border-zinc-200 px-4 py-2">
+        <div className="grid grid-cols-[1fr_1fr_auto_auto_auto_auto] gap-0 border-b border-zinc-200 px-4 py-2">
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Nombre</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Email</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Tipo</span>
+          <span className="font-libre text-xs tracking-widest uppercase text-zinc-400 ml-4">Pub.</span>
           <span></span>
           <span></span>
         </div>
         {filtered.map(s => (
-          <div key={s.id} className="grid grid-cols-[1fr_1fr_auto_auto_auto] gap-0 border-b border-zinc-100 px-4 py-3 items-center hover:bg-zinc-50">
+          <div key={s.id} className="grid grid-cols-[1fr_1fr_auto_auto_auto_auto] gap-0 border-b border-zinc-100 px-4 py-3 items-center hover:bg-zinc-50">
             <span className="font-libre text-sm text-zinc-900">{s.nombre}</span>
             <span className="font-libre text-sm text-zinc-500">{s.email}</span>
             <span className={`font-libre text-xs px-2 py-0.5 ${s.tipo === 'socio' ? 'bg-[#E84878] text-white' : 'bg-zinc-100 text-zinc-600'}`}>
               {s.tipo === 'socio' ? 'Socio de Olvidos' : 'Amigo de Mariano'}
             </span>
+            <form action={async () => {
+              if (!s.notas) return
+              await togglePublicarTestimonio(s.id, !s.publicar_testimonio)
+            }} className="ml-4">
+              <button
+                type="submit"
+                title={s.notas ? (s.publicar_testimonio ? 'Publicado en Memorias' : 'No publicado') : 'Sin testimonio'}
+                disabled={!s.notas}
+                className={`font-libre text-xs px-2 py-0.5 transition-colors ${
+                  !s.notas
+                    ? 'text-zinc-200 cursor-default'
+                    : s.publicar_testimonio
+                    ? 'bg-[#E84878] text-white hover:bg-[#d03868]'
+                    : 'border border-zinc-300 text-zinc-400 hover:border-zinc-500 hover:text-zinc-600'
+                }`}
+              >
+                {s.publicar_testimonio ? '✓' : '—'}
+              </button>
+            </form>
             <button
               onClick={() => openEdit(s)}
               className="font-libre text-xs text-zinc-400 hover:text-zinc-900 ml-4 transition-colors"

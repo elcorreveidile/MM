@@ -179,3 +179,10 @@ export async function deleteSocio(id: number) {
   await supabase.from('socios').delete().eq('id', id)
   revalidatePath('/admin/socios')
 }
+
+export async function togglePublicarTestimonio(id: number, publicar: boolean) {
+  const supabase = await createClient()
+  await supabase.from('socios').update({ publicar_testimonio: publicar }).eq('id', id)
+  revalidatePath('/admin/socios')
+  revalidatePath('/memorias')
+}
