@@ -105,13 +105,13 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="font-libre text-xs tracking-[0.3em] uppercase text-[#E84878] mb-4">
-                Desde 1982
+                1982 · 1987 · 2011
               </p>
               <h2 className="font-crimson font-bold text-white mb-6" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}>
                 Olvidosdegranada
               </h2>
               <p className="text-lg text-zinc-300 mb-6 leading-relaxed font-libre">
-                Mariano Maresca fue el editor de la revista Olvidosdegranada, publicación fundamental para la cultura de la ciudad. Durante décadas, archivo vivo de la creación artística y cultural granadina.
+                Mariano Maresca fundó y dirigió la revista <em>Olvidos de Granada</em> (noviembre 1982 – mayo 1987), publicación fundamental para la cultura de la ciudad. En 2011 nació OlvidosdeGranada.es, versión digital y repositorio de todos los números en PDF.
               </p>
               <p className="text-zinc-400 mb-10 leading-relaxed font-libre">
                 A través de sus páginas, Mariano dio voz a escritores, artistas, músicos y pensadores, construyendo un corpus documental invaluable.
@@ -208,7 +208,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-zinc-200">
             {[
               { title: 'Granada Tango', year: '1982', description: 'Participó en este libro de letras de tango, resultado de un concurso que organizó en La Tertulia. También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.', category: 'Música' },
-              { title: 'Olvidos de Granada', year: '1982–2011', description: 'Fundó y dirigió la revista cultural que fue archivo vivo de la creación artística granadina durante tres décadas.', category: 'Literatura' },
+              { title: 'Olvidos de Granada', year: 'nov. 1982–may. 1987', description: 'Fundó y dirigió la revista que fue archivo vivo de la creación artística granadina. En 2011 nació OlvidosdeGranada.es, con todos los números en PDF.', category: 'Literatura' },
               { title: 'La Fábrica del Sur', year: '1989–1990', description: 'Dirigió esta revista donde el diseño era argumento y la tipografía tenía tanto peso como el texto.', category: 'Diseño' },
               { title: 'Las cosas que hemos visto', year: '2011', description: 'Sus columnas de El País Andalucía reunidas en libro, con prólogo de Luis García Montero. El título inspira esta exposición.', category: 'Literatura' },
               { title: 'Saló: el infierno según Pasolini', year: '1993', description: 'Coeditó con Juan Ignacio Mendiguchía el libro-catálogo de la Filmoteca Andalucía sobre Pasolini, uno de sus grandes referentes intelectuales.', category: 'Cine' },

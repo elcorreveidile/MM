@@ -97,7 +97,7 @@ export default function ExposicionPage() {
 
               <p>
                 En los años ochenta y noventa tuvo un papel muy activo en la vida cultural de Granada: dirigió la
-                revista <em>Olvidos de Granada</em> (1982–1987, impresa y luego digital 2011) y{' '}
+                revista <em>Olvidos de Granada</em> (nov. 1982 – may. 1987; desde 2011 en OlvidosdeGranada.es) y{' '}
                 <em>La Fábrica del Sur</em> (1989–90), espacios de debate estético y literario. También participó
                 en <em>Imaginaria</em> (Canal Sur, 1999), el programa cultural nocturno, y fue columnista en{' '}
                 <em>El País Andalucía</em> (2004–2008), artículos que reunió en <em>Las cosas que hemos visto</em>{' '}
