@@ -100,3 +100,7 @@ insert into socios (nombre, email, tipo) values
   ('Roque Hidalgo Álvarez', 'rhidalgo@ugr.es', 'amigo'),
   ('Jesús Ambel', 'ateneodegranada@gmail.com', 'amigo')
 on conflict (email) do nothing;
+
+-- Notas adicionales
+update socios set notas = 'También: alfonso.olvidos@gmail.com'
+  where email = 'alfonsosalazar.mendias@gmail.com';
