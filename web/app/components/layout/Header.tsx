@@ -33,9 +33,6 @@ export default function Header() {
             <Link href="/biografia" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
               Biografía
             </Link>
-            <Link href="/cronologia" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-              Cronología
-            </Link>
             <div className="relative group">
               <button className="text-zinc-700 hover:text-zinc-900 font-libre text-sm flex items-center">
                 Disciplinas
@@ -63,9 +60,6 @@ export default function Header() {
             <Link href="/exposicion" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
               Exposición
             </Link>
-            <Link href="/buscador" className="text-zinc-700 hover:text-zinc-900 font-libre text-sm">
-              Buscador
-            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -87,7 +81,6 @@ export default function Header() {
         {menuOpen && (
           <div className="lg:hidden py-4 space-y-2">
             <Link href="/biografia" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Biografía</Link>
-            <Link href="/cronologia" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Cronología</Link>
             <div className="px-4 py-2">
               <p className="text-sm font-semibold text-zinc-900 mb-2">Disciplinas</p>
               <div className="space-y-1 ml-4">
@@ -104,7 +97,6 @@ export default function Header() {
             <Link href="/archivo" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Archivo</Link>
             <Link href="/galeria" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Galería</Link>
             <Link href="/exposicion" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Exposición</Link>
-            <Link href="/buscador" className="block px-4 py-2 text-zinc-700 hover:bg-zinc-50 rounded-md">Buscador</Link>
           </div>
         )}
       </nav>
