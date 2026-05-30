@@ -65,7 +65,7 @@ export async function enviarContacto(formData: FormData): Promise<{ ok: boolean;
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: 'Mariano Maresca <noreply@marianomaresca.com>',
+      from: 'Amigos de Mariano <noreply@marianomaresca.com>',
       to: ['olvidosdegranada@gmail.com'],
       reply_to: email,
       subject: `Mensaje de ${nombre} — Memorias`,
