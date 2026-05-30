@@ -180,6 +180,18 @@ export async function deleteSocio(id: number) {
   revalidatePath('/admin/socios')
 }
 
+export async function reenviarBienvenida(id: number) {
+  const supabase = await createClient()
+  const { data: socio } = await supabase
+    .from('socios')
+    .select('nombre, email, tipo, genero')
+    .eq('id', id)
+    .single()
+  if (!socio) return { error: 'Contacto no encontrado' }
+  await enviarBienvenidaConAcceso(socio.nombre, socio.email, socio.tipo, socio.genero)
+  return { error: null }
+}
+
 export async function togglePublicarTestimonio(id: number, publicar: boolean) {
   const supabase = await createClient()
   await supabase.from('socios').update({ publicar_testimonio: publicar }).eq('id', id)

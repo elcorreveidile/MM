@@ -83,6 +83,12 @@ export default async function MemoriasPage() {
             >
               Escríbenos →
             </Link>
+            <p className="font-libre text-xs text-zinc-400 mt-4">
+              ¿Ya eres amigo o amiga de Mariano?{' '}
+              <Link href="/panel/login" className="text-zinc-600 hover:text-zinc-900 underline transition-colors">
+                Accede a tu panel →
+              </Link>
+            </p>
           </div>
 
           <div className="md:border-l md:border-zinc-100 md:pl-12">
