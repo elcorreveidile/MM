@@ -75,7 +75,7 @@ insert into socios (nombre, email, tipo) values
   ('Teresa Gómez', 'trsgmz@gmail.com', 'amigo'),
   ('Álvaro López Osuna', 'alvak7@gmail.com', 'amigo'),
   ('David Ferrez Gutiérrez', 'davidfg95@hotmail.com', 'amigo'),
-  ('García', 'garciaga@ugr.es', 'amigo'),
+  ('Miguel Ángel García García', 'garciaga@ugr.es', 'amigo'),
   ('Andrés Soria', 'asoria@ugr.es', 'amigo'),
   ('Carmen Canet', 'ccanetr@hotmail.com', 'amigo'),
   ('Tatá Maresca', 'tata1967.marm@gmail.com', 'amigo'),
