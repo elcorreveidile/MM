@@ -62,10 +62,10 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  En 1982 Maresca fundó la revista <em>Olvidos de Granada</em>, que dirigió durante décadas. La publicación se convirtió en el archivo vivo de la creación artística y cultural granadina, dando voz a escritores, artistas, músicos y pensadores que de otra manera habrían quedado en el olvido.
+                  En noviembre de 1982 Maresca fundó la revista <em>Olvidos de Granada</em>, que dirigió hasta mayo de 1987. La publicación se convirtió en el archivo vivo de la creación artística y cultural granadina, dando voz a escritores, artistas, músicos y pensadores que de otra manera habrían quedado en el olvido.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  A través de sus páginas construyó un corpus documental invaluable: entrevistas, ensayos, crónicas, fotografías y memorias que hoy constituyen una fuente de primer orden para entender la cultura de Granada en el último tercio del siglo XX.
+                  A través de sus páginas construyó un corpus documental invaluable: entrevistas, ensayos, crónicas, fotografías y memorias que hoy constituyen una fuente de primer orden para entender la cultura de Granada en los años ochenta. En 2011 nació <em>OlvidosdeGranada.es</em>, versión digital de la revista y repositorio de todos los números de la primera época en PDF.
                 </p>
               </div>
             </section>
@@ -130,7 +130,7 @@ export default function BiographyPage() {
                   { label: 'Fallecimiento', value: 'Granada, 2023' },
                   { label: 'Profesión', value: 'Profesor de Filosofía del Derecho, UGR' },
                   { label: 'Lugar emblemático', value: 'Café Botánico, calle Duquesa, Granada' },
-                  { label: 'Proyecto principal', value: 'Editor de Olvidos de Granada (desde 1982)' },
+                  { label: 'Proyecto principal', value: 'Editor de Olvidos de Granada (nov. 1982 – may. 1987); OlvidosdeGranada.es (desde 2011)' },
                   { label: 'Tesis doctoral', value: 'Hipótesis sobre Clarín (UGR, 1982; Comares, 1985)' },
                 ].map(item => (
                   <div key={item.label}>
@@ -169,7 +169,8 @@ export default function BiographyPage() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  'Olvidosdegranada (desde 1982)',
+                  'Olvidos de Granada (nov. 1982 – may. 1987)',
+                  'OlvidosdeGranada.es (desde 2011)',
                   'La Fábrica del Sur (1989–1990)',
                   'Rimado de ciudad (1983)',
                   'Hipótesis sobre Clarín (1985)',
