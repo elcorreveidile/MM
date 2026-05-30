@@ -23,10 +23,10 @@ const libreFranklin = Libre_Franklin({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.marianomaresca.com'),
   title: "Mariano Maresca - Memoria viva de la cultura granadina",
-  description: "Exposición homenaje a Mariano Maresca, editor de Olvidos de Granada y figura fundamental de la cultura granadina. Universidad de Granada, Hospital Real.",
+  description: "Exposición homenaje a Mariano Maresca, editor de Olvidos de Granada. Biblioteca de la Facultad de Derecho. Web de la Asociación Olvidos de Granada.",
   openGraph: {
     title: 'Mariano Maresca - Memoria viva de la cultura granadina',
-    description: 'Exposición homenaje a Mariano Maresca, editor de Olvidos de Granada y figura fundamental de la cultura granadina. Universidad de Granada.',
+    description: 'Exposición homenaje a Mariano Maresca, editor de Olvidos de Granada. Biblioteca de la Facultad de Derecho. Web de la Asociación Olvidos de Granada.',
     url: 'https://www.marianomaresca.com',
     siteName: 'Mariano Maresca',
     locale: 'es_ES',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mariano Maresca - Memoria viva de la cultura granadina',
-    description: 'Exposición homenaje a Mariano Maresca, editor de Olvidos de Granada y figura fundamental de la cultura granadina.',
+    description: 'Exposición homenaje a Mariano Maresca, editor de Olvidos de Granada. Biblioteca de la Facultad de Derecho. Web de la Asociación Olvidos de Granada.',
   },
 };
 
