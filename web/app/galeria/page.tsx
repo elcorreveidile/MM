@@ -35,7 +35,7 @@ const fotos = [
   {
     src: '/exposición/foto-16.jpg',
     alt: 'Vitrina con libros dedicados y manuscritos',
-    caption: 'Vitrina con libros dedicados y manuscritos. En primer plano, Granada Tango (1982).',
+    caption: 'Vitrina con libros dedicados y manuscritos. En primer plano, Granada Tango (1983).',
   },
   {
     src: '/exposición/foto-3.jpg',
