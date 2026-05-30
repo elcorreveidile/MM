@@ -207,13 +207,13 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-zinc-200">
             {[
-              { title: 'Festival de Tango', year: '1990–2023', description: 'Fundación y organización del festival que llevó el tango a las calles de Granada.', category: 'Música' },
-              { title: 'Disco Omega de Morente', year: '2008', description: 'Contribución crítica y divulgativa en este álbum seminal del flamenco.', category: 'Música' },
-              { title: 'Rimado de ciudad', year: '1983', description: 'Disco pionero que integró rock, poesía y fotografía de manera insólita.', category: 'Música' },
-              { title: 'La Fábrica del Sur', year: '1989–1990', description: 'Dirección de esta revista cultural que continuó el trabajo editorial de Olvidos.', category: 'Literatura' },
-              { title: 'Columna «La nuestra» en El País Andalucía', year: '2004–2008', description: 'Columnista en El País (Andalucía) con reflexiones sobre memoria y cultura.', category: 'Literatura' },
-              { title: 'Documental «Palabra a palabra»', year: '2015', description: 'Documental de José Sánchez Montes sobre su recuperación tras el ictus de 2011.', category: 'Cine' },
-              { title: 'Exposición «La mesa de Mariano»', year: '2023', description: 'Homenaje póstumo en el Botánico con placa conmemorativa en su mesa habitual.', category: 'Fotografía' },
+              { title: 'Festival de Tango de Granada', year: '1990–2023', description: 'Fundó y dirigió durante más de tres décadas el festival que convirtió Granada en la capital española del tango.', category: 'Música' },
+              { title: 'Omega · Enrique Morente', year: '1996', description: 'Colaboró con Morente en el álbum que unió el flamenco con Leonard Cohen y los Sonic Youth. Solo podía nacer en Granada.', category: 'Música' },
+              { title: 'Olvidos de Granada', year: '1982–2011', description: 'Fundó y dirigió la revista cultural que fue archivo vivo de la creación artística granadina durante tres décadas.', category: 'Literatura' },
+              { title: 'La Fábrica del Sur', year: '1989–1990', description: 'Dirigió esta revista donde el diseño era argumento y la tipografía tenía tanto peso como el texto.', category: 'Diseño' },
+              { title: 'Las cosas que hemos visto', year: '2011', description: 'Sus columnas de El País Andalucía reunidas en libro, con prólogo de Luis García Montero. El título inspira esta exposición.', category: 'Literatura' },
+              { title: 'Saló: el infierno según Pasolini', year: '1993', description: 'Coeditó con Juan Ignacio Mendiguchía el libro-catálogo de la Filmoteca Andalucía sobre Pasolini, uno de sus grandes referentes intelectuales.', category: 'Cine' },
+              { title: 'Documental «Palabra a palabra»', year: '2015', description: 'José Sánchez Montes documentó su recuperación tras el ictus de 2011. Narrado por Almudena Grandes. Íntegramente optimista.', category: 'Cine' },
             ].map((project, index) => (
               <div key={index} className="bg-white p-8 hover:bg-[#FAF7F2] transition-colors">
                 <div className="flex items-center justify-between mb-6">
