@@ -27,7 +27,7 @@ export default function CreditosPage() {
             <dl className="space-y-6">
               <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Coordinación</dt>
-                <dd className="font-libre text-zinc-700">Antonio Mª Álvarez Arias de Saavedra · Luisa Martínez Osorio</dd>
+                <dd className="font-libre text-zinc-700">Antonio Arias · Luisa Martínez Osorio</dd>
               </div>
               <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Textos y selección de contenidos</dt>
