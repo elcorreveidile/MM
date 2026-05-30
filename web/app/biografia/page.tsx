@@ -48,10 +48,10 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Su mesa en el <a href="https://botanicocafe.es" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">café Botánico</a> de la calle Duquesa fue el epicentro de una vida cultural extraordinaria. Punto de encuentro que Maresca convirtió en «informal alternativa a su despacho en la Facultad», allí se gestaron proyectos, se discutieron ideas y se tejió la red cultural que marcaría a toda una generación.
+                  Su mesa en el <a href="https://botanicocafe.es" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">café Botánico</a> de la calle Duquesa era, como él mismo decía, su «informal alternativa al despacho de la Facultad»: allí quedaba con amigos, compañeros y discípulos para comer y conversar.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  En torno a aquella mesa y a su tertulia se formaron escritores que luego serían figuras de primer orden de las letras españolas: Antonio Muñoz Molina, Luis García Montero, Javier Egea. Maresca fue para ellos un referente, un interlocutor exigente y un impulsor generoso del talento ajeno.
+                  <a href="https://www.instagram.com/tertuliagranada?igsh=Zmd2NGU4amZxYmo5" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">La Tertulia</a>, el bar-librería de la calle Pintor López Mezquita, fue el espacio de la vida cultural nocturna de Mariano. En torno a aquellas mesas se reunían escritores como Antonio Muñoz Molina, Luis García Montero, Javier Egea. Maresca fue para ellos un referente, un interlocutor exigente y un impulsor generoso del talento ajeno.
                 </p>
               </div>
             </section>
