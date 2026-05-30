@@ -8,7 +8,7 @@ type Socio = {
   id: number
   nombre: string
   email: string
-  tipo: 'socio' | 'amigo'
+  tipo: 'socio' | 'simpatizante'
   notas: string | null
 }
 
@@ -17,7 +17,7 @@ export default function SociosTable({ socios: initial, showAddButton }: { socios
   const [socios, setSocios] = useState(initial)
   const [search, setSearch] = useState('')
   const [showForm, setShowForm] = useState(false)
-  const [form, setForm] = useState({ nombre: '', email: '', tipo: 'amigo' as Socio['tipo'], notas: '' })
+  const [form, setForm] = useState({ nombre: '', email: '', tipo: 'simpatizante' as Socio['tipo'], notas: '' })
   const [saving, setSaving] = useState(false)
   const [formError, setFormError] = useState('')
 
@@ -79,8 +79,8 @@ export default function SociosTable({ socios: initial, showAddButton }: { socios
                 <label className="font-libre text-xs tracking-widest uppercase text-zinc-500 block mb-1">Tipo</label>
                 <select value={form.tipo} onChange={e => setForm(f => ({ ...f, tipo: e.target.value as Socio['tipo'] }))}
                   className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900 bg-white">
-                  <option value="socio">Socio de Olvidos</option>
-                  <option value="amigo">Amigo de Olvidos</option>
+                  <option value="socio">Socio</option>
+                  <option value="simpatizante">Simpatizante</option>
                 </select>
               </div>
               <div>
@@ -128,7 +128,7 @@ export default function SociosTable({ socios: initial, showAddButton }: { socios
             <span className="font-libre text-sm text-zinc-900">{s.nombre}</span>
             <span className="font-libre text-sm text-zinc-500">{s.email}</span>
             <span className={`font-libre text-xs px-2 py-0.5 ${s.tipo === 'socio' ? 'bg-[#E84878] text-white' : 'bg-zinc-100 text-zinc-600'}`}>
-              {s.tipo === 'socio' ? 'Socio de Olvidos' : 'Amigo de Olvidos'}
+              {s.tipo}
             </span>
             <button onClick={() => handleDelete(s.id)} className="font-libre text-xs text-zinc-400 hover:text-red-500 ml-4 transition-colors">
               ×
