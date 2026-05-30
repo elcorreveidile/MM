@@ -15,6 +15,13 @@ export default async function PanelLayout({ children }: { children: React.ReactN
     .single()
 
   if (!socio) {
+    async function signOutAndGoHome() {
+      'use server'
+      const supabase = await createClient()
+      await supabase.auth.signOut()
+      redirect('/')
+    }
+
     // Email autenticado pero no en la asociación
     return (
       <div className="min-h-screen bg-[#FAF7F2] flex items-center justify-center px-4">
@@ -23,9 +30,19 @@ export default async function PanelLayout({ children }: { children: React.ReactN
             <span className="font-crimson font-bold text-[#8B1A1A] text-lg">MM</span>
           </div>
           <h1 className="font-crimson font-bold text-zinc-900 text-2xl mb-2">Acceso no autorizado</h1>
-          <p className="font-libre text-zinc-500 text-sm">
+          <p className="font-libre text-zinc-500 text-sm mb-6">
             Este correo no está registrado en la Asociación Olvidos de Granada.
           </p>
+          <div className="flex flex-col gap-3 items-center">
+            <a href="/" className="font-libre text-xs tracking-widest uppercase bg-zinc-900 text-white px-6 py-3 hover:bg-zinc-700 transition-colors">
+              Volver al inicio
+            </a>
+            <form action={signOutAndGoHome}>
+              <button type="submit" className="font-libre text-xs text-zinc-400 hover:text-zinc-700 transition-colors">
+                Cerrar sesión
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     )
