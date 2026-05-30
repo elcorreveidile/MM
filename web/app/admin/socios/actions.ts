@@ -18,12 +18,25 @@ async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: st
   const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, serviceKey)
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://marianomaresca.com'
 
-  const { data: linkData } = await admin.auth.admin.generateLink({
+  const redirectTo = `${siteUrl}/auth/callback?next=/panel`
+  let magicLink: string | null = null
+
+  // invite funciona para usuarios nuevos; si ya existe en auth, usamos magiclink
+  const { data: inviteData, error: inviteError } = await admin.auth.admin.generateLink({
     type: 'invite',
     email,
-    options: { redirectTo: `${siteUrl}/auth/callback?next=/panel` },
+    options: { redirectTo },
   })
-  const magicLink = linkData?.properties?.action_link ?? null
+  if (!inviteError && inviteData?.properties?.action_link) {
+    magicLink = inviteData.properties.action_link
+  } else {
+    const { data: mlData } = await admin.auth.admin.generateLink({
+      type: 'magiclink',
+      email,
+      options: { redirectTo },
+    })
+    magicLink = mlData?.properties?.action_link ?? null
+  }
 
   const esSocio = tipo === 'socio'
 
