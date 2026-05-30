@@ -88,13 +88,14 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
           onClick={openAdd}
           className="bg-[#E84878] text-white font-libre text-xs tracking-widest uppercase px-4 py-2 hover:bg-[#d03868] transition-colors whitespace-nowrap"
         >
-          + Añadir contacto
+          + Añadir
         </button>
       </div>
 
       {/* Tabla */}
       <div className="bg-white">
-        <div className="grid grid-cols-[1fr_1fr_auto_auto_auto_auto] gap-0 border-b border-zinc-200 px-4 py-2">
+        {/* Cabecera — solo desktop */}
+        <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto] gap-0 border-b border-zinc-200 px-4 py-2">
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Nombre</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Email</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Tipo</span>
@@ -102,17 +103,19 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
           <span></span>
           <span></span>
         </div>
-        {filtered.map(s => (
-          <div key={s.id} className="grid grid-cols-[1fr_1fr_auto_auto_auto_auto] gap-0 border-b border-zinc-100 px-4 py-3 items-center hover:bg-zinc-50">
-            <span className="font-libre text-sm text-zinc-900">{s.nombre}</span>
-            <span className="font-libre text-sm text-zinc-500">{s.email}</span>
-            <span className={`font-libre text-xs px-2 py-0.5 ${s.tipo === 'socio' ? 'bg-[#E84878] text-white' : 'bg-zinc-100 text-zinc-600'}`}>
-              {s.tipo === 'socio' ? 'Socio de Olvidos' : 'Amigo de Mariano'}
+
+        {filtered.map(s => {
+          const tipoBadge = (
+            <span className={`font-libre text-xs px-2 py-0.5 whitespace-nowrap ${s.tipo === 'socio' ? 'bg-[#E84878] text-white' : 'bg-zinc-100 text-zinc-600'}`}>
+              {s.tipo === 'socio' ? 'Socio' : 'Amigo'}
             </span>
+          )
+
+          const pubToggle = (
             <form action={async () => {
               if (!s.notas) return
               await togglePublicarTestimonio(s.id, !s.publicar_testimonio)
-            }} className="ml-4">
+            }}>
               <button
                 type="submit"
                 title={s.notas ? (s.publicar_testimonio ? 'Publicado en Memorias' : 'No publicado') : 'Sin testimonio'}
@@ -128,22 +131,56 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
                 {s.publicar_testimonio ? '✓' : '—'}
               </button>
             </form>
+          )
+
+          const editBtn = (
             <button
               onClick={() => openEdit(s)}
-              className="font-libre text-xs text-zinc-400 hover:text-zinc-900 ml-4 transition-colors"
+              className="font-libre text-xs text-zinc-400 hover:text-zinc-900 transition-colors"
             >
               Editar
             </button>
+          )
+
+          const deleteBtn = (
             <form action={async () => {
               if (!confirm('¿Eliminar este contacto?')) return
               await deleteSocio(s.id)
             }}>
-              <button type="submit" className="font-libre text-xs text-zinc-400 hover:text-red-500 ml-4 transition-colors">
+              <button type="submit" className="font-libre text-xs text-zinc-400 hover:text-red-500 transition-colors">
                 ×
               </button>
             </form>
-          </div>
-        ))}
+          )
+
+          return (
+            <div key={s.id} className="border-b border-zinc-100 hover:bg-zinc-50">
+              {/* Móvil */}
+              <div className="lg:hidden px-4 py-3">
+                <div className="flex items-start justify-between gap-2 mb-1">
+                  <span className="font-libre text-sm text-zinc-900 font-medium leading-tight">{s.nombre}</span>
+                  {tipoBadge}
+                </div>
+                <div className="font-libre text-xs text-zinc-400 mb-3 truncate">{s.email}</div>
+                <div className="flex items-center gap-3">
+                  {pubToggle}
+                  {editBtn}
+                  {deleteBtn}
+                </div>
+              </div>
+              {/* Desktop */}
+              <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto] gap-0 px-4 py-3 items-center">
+                <span className="font-libre text-sm text-zinc-900">{s.nombre}</span>
+                <span className="font-libre text-sm text-zinc-500">{s.email}</span>
+                {tipoBadge}
+                <div className="ml-4">{pubToggle}</div>
+                <div className="ml-4">{editBtn}</div>
+                <div className="ml-4">{deleteBtn}</div>
+              </div>
+            </div>
+          )
+        })}
+
         {filtered.length === 0 && (
           <div className="px-4 py-8 text-center font-libre text-sm text-zinc-400">
             {search ? 'Sin resultados' : 'No hay contactos todavía'}

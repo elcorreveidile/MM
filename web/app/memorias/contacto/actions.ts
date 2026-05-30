@@ -1,5 +1,7 @@
 'use server'
 
+import { createClient } from '@/lib/supabase/server'
+
 export async function enviarContacto(formData: FormData): Promise<{ ok: boolean; error?: string }> {
   const trampa = formData.get('website') as string
   if (trampa) return { ok: true } // honeypot: silencioso para no revelar el filtro
@@ -57,6 +59,12 @@ export async function enviarContacto(formData: FormData): Promise<{ ok: boolean;
   </div>
 </body>
 </html>`
+
+  // Guardar en BD para que aparezca en el panel admin
+  const supabase = await createClient()
+  await supabase.from('solicitudes_memorias').insert([{
+    nombre, email, mensaje, publicar, mostrar_nombre: mostrarNombre,
+  }])
 
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
