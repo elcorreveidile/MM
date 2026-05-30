@@ -355,7 +355,7 @@ export default function ExposicionPage() {
                 original y el volumen publicado en 1985.
               </p>
               <p className="text-sm leading-relaxed mt-4">
-                Entre sus libros como ensayista: <em>Argumentos morales</em> (2004) y{' '}
+                Entre sus libros: <em>Argumentos morales</em> (2004, presentaciones de libros de Almudena Grandes, García Montero y José Carlos Rosales) y{' '}
                 <em>Las cosas que hemos visto</em> (2011). En colaboración: <em>Granada Tango</em> (1982),{' '}
                 <em>Un debate sobre natural y artificial</em> (1997), <em>Del otro lado de la barra</em> (2005)
                 y <em>Un día feliz</em>, álbum de Javier Egea en el que Maresca participó también como diseñador.
