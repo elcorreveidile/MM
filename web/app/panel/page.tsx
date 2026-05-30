@@ -82,7 +82,7 @@ export default async function PanelPage() {
           <p className="font-libre text-zinc-300 text-sm leading-relaxed mb-4">
             Como Amigo de Olvidos formas parte de nuestra comunidad. Dar el paso de hacerte socio
             nos ayuda a mantener viva la memoria de Mariano y a seguir impulsando la cultura en Granada.
-            La cuota es un gesto simbólico de apoyo.
+            La cuota anual es de <strong>30&nbsp;€</strong>.
           </p>
           <p className="font-libre text-zinc-400 text-xs">
             Para hacerte socio, escríbenos a{' '}
