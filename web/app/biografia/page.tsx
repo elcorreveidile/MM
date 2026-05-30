@@ -93,7 +93,7 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  El tango fue una de sus pasiones. En La Tertulia organizó un concurso de letras de tango cuyo resultado fue el libro <em>Granada Tango</em> (1982). También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.
+                  El tango fue una de sus pasiones. Escribió letras de tango para un concurso celebrado en La Tertulia, publicadas en el libro <em>Granada Tango</em> (1982). También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
                   En 1999 participó como guionista en <em>Imaginaria</em> (Canal Sur), el programa cultural nocturno que se convirtió en referencia del pensamiento y las artes en Andalucía. Siguió de cerca la música flamenca y el célebre disco <em>Omega</em> de Enrique Morente ocupa un lugar destacado en su biblioteca.
