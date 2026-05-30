@@ -12,7 +12,7 @@ export default function BiographyPage() {
             Mariano Maresca
           </h1>
           <p className="font-libre text-zinc-300 max-w-2xl text-lg leading-relaxed">
-            Profesor de Filosofía del Derecho, editor de Olvidos de Granada, crítico y promotor cultural.
+            Profesor titular de Filosofía del Derecho, editor de Olvidos de Granada, crítico y promotor cultural.
             Una de las figuras más influyentes de la cultura granadina del siglo XX.
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Mariano Maresca nació en Almería en 1945. Estudió Derecho y Filosofía en la Universidad de Granada, donde sería después catedrático de Filosofía del Derecho. Desde el primer momento, su labor trascendió el ámbito académico para convertirse en una de las figuras más influyentes de la cultura granadina contemporánea.
+                  Mariano Maresca nació en Almería en 1945. Fue profesor titular de Filosofía del Derecho en la Universidad de Granada. Desde el primer momento, su labor trascendió el ámbito académico para convertirse en una de las figuras más influyentes de la cultura granadina contemporánea.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
                   Desde finales de los años sesenta hasta su fallecimiento en 2023 trabajó incansablemente en múltiples disciplinas: literatura, música, cine, fotografía, arquitectura, diseño, cómic, filosofía y pensamiento político. Su método siempre fue el mismo: reunir personas, crear espacios de conversación y dar voz a quienes merecían ser escuchados.
@@ -128,7 +128,7 @@ export default function BiographyPage() {
                 {[
                   { label: 'Nacimiento', value: 'Almería, 1945' },
                   { label: 'Fallecimiento', value: 'Granada, 2023' },
-                  { label: 'Profesión', value: 'Profesor de Filosofía del Derecho, UGR' },
+                  { label: 'Profesión', value: 'Profesor titular de Filosofía del Derecho, UGR' },
                   { label: 'Lugar emblemático', value: 'Café Botánico, calle Duquesa, Granada' },
                   { label: 'Proyecto principal', value: 'Editor de Olvidos de Granada (nov. 1982 – may. 1987); OlvidosdeGranada.es (desde 2011)' },
                   { label: 'Tesis doctoral', value: 'Hipótesis sobre Clarín (UGR, 1982; Comares, 1985)' },
