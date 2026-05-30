@@ -23,10 +23,13 @@ export default async function AdminPage() {
           </div>
         </Link>
 
-        <div className="bg-white p-6 opacity-50 cursor-not-allowed">
-          <div className="font-libre text-xs tracking-widest uppercase text-zinc-400 mb-2">Contenido</div>
-          <div className="font-libre text-zinc-500 text-xs">Próximamente</div>
-        </div>
+        <Link href="/admin/contenido" className="bg-white p-6 hover:shadow-md transition-shadow group">
+          <div className="text-3xl font-crimson font-bold text-zinc-900 mb-1">9</div>
+          <div className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-2">Secciones de contenido</div>
+          <div className="font-libre text-zinc-500 text-xs group-hover:text-zinc-700 transition-colors">
+            Editar textos →
+          </div>
+        </Link>
 
         <div className="bg-white p-6 opacity-50 cursor-not-allowed">
           <div className="font-libre text-xs tracking-widest uppercase text-zinc-400 mb-2">Galería</div>

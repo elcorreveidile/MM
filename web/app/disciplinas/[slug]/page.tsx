@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
+import { createClient } from '@/lib/supabase/server'
 
 type Seccion = { nombre: string; count?: number; autores: string }
 type DisciplinaData = {
@@ -138,6 +139,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function DisciplinaPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const data = disciplinasData[slug]
+
+  if (data) {
+    const supabase = await createClient()
+    const { data: row } = await supabase
+      .from('contenido')
+      .select('valor')
+      .eq('clave', `disciplina_${slug}`)
+      .single()
+    if (row?.valor) data.descripcion = row.valor
+  }
 
   if (!data) {
     return (
