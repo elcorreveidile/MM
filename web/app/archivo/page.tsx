@@ -106,7 +106,7 @@ export default function ArchivoPage() {
               value={search}
               onChange={e => setSearch(e.target.value)}
               placeholder="Buscar título o autor…"
-              className="flex-1 px-4 py-2 border border-zinc-300 font-libre text-sm focus:outline-none focus:border-zinc-900 bg-white"
+              className="flex-1 px-4 py-2 border border-zinc-300 font-libre text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:border-zinc-900 bg-white"
             />
             <div className="flex gap-2">
               {(['todos', 'dedicados', 'anotados'] as const).map(f => (

@@ -1556,7 +1556,7 @@
     },
     {
       "name": "Poesía y literatura española",
-      "count": 282,
+      "count": 284,
       "slug": "poesia-esp",
       "entries": [
         {
@@ -1964,6 +1964,14 @@
         {
           "title": "El juego de hacer versos",
           "author": "Jaime Gil de Biedma"
+        },
+        {
+          "title": "Poemas del guiño",
+          "author": "Javier Benítez"
+        },
+        {
+          "title": "Poemas del guiño",
+          "author": "Javier Benítez"
         },
         {
           "title": "Raro de luna",
@@ -3409,7 +3417,7 @@
     },
     {
       "name": "Literatura anglosajona",
-      "count": 145,
+      "count": 143,
       "slug": "anglosajona",
       "entries": [
         {
@@ -3635,14 +3643,6 @@
         {
           "title": "Orgullo y Prejuicio",
           "author": "Jane Austen"
-        },
-        {
-          "title": "Poemas del guiño",
-          "author": "Javier Benítez"
-        },
-        {
-          "title": "Poemas del guiño",
-          "author": "Javier Benítez"
         },
         {
           "title": "Capital de la gloria. Poemas de la defensa de Madrid.",
