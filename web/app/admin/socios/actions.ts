@@ -21,7 +21,7 @@ async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: st
   const redirectTo = `${siteUrl}/auth/callback?next=/panel`
   let magicLink: string | null = null
 
-  // invite funciona para usuarios nuevos; si ya existe en auth, usamos magiclink
+  // invite funciona para usuarios nuevos sin cuenta en auth; no envía email por su cuenta
   const { data: inviteData, error: inviteError } = await admin.auth.admin.generateLink({
     type: 'invite',
     email,
@@ -30,12 +30,9 @@ async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: st
   if (!inviteError && inviteData?.properties?.action_link) {
     magicLink = inviteData.properties.action_link
   } else {
-    const { data: mlData } = await admin.auth.admin.generateLink({
-      type: 'magiclink',
-      email,
-      options: { redirectTo },
-    })
-    magicLink = mlData?.properties?.action_link ?? null
+    // Usuario ya existe en auth: enlazamos a la página de login del panel
+    // (no usamos type:'magiclink' porque enviaría un segundo email de Supabase)
+    magicLink = `${siteUrl}/panel/login`
   }
 
   const esSocio = tipo === 'socio'
