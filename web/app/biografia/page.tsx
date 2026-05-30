@@ -31,10 +31,13 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Mariano Maresca nació en Almería en 1945. Profesor de Filosofía del Derecho en la Universidad de Granada, su labor trascendió desde el primer momento el ámbito académico para convertirse en una de las figuras más influyentes de la cultura granadina contemporánea.
+                  Mariano Maresca nació en Almería en 1945. Estudió Derecho y Filosofía en la Universidad de Granada, donde sería después catedrático de Filosofía del Derecho. Desde el primer momento, su labor trascendió el ámbito académico para convertirse en una de las figuras más influyentes de la cultura granadina contemporánea.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Desde finales de los años sesenta hasta su fallecimiento en 2023 trabajó incansablemente en múltiples disciplinas —literatura, música, cine, fotografía, arquitectura, diseño, cómic, filosofía, pensamiento político—, dejando una huella imborrable en la ciudad que amó.
+                  Desde finales de los años sesenta hasta su fallecimiento en 2023 trabajó incansablemente en múltiples disciplinas: literatura, música, cine, fotografía, arquitectura, diseño, cómic, filosofía y pensamiento político. Su método siempre fue el mismo: reunir personas, crear espacios de conversación y dar voz a quienes merecían ser escuchados.
+                </p>
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  Su biblioteca personal —más de 3.500 libros donados a la Universidad de Granada— es el retrato más fiel de esa curiosidad sin fronteras: de Gramsci a Fritz Lang, de Luis García Montero a Glenn Gould, de Matisse a Bakunin, de la novela negra americana al tango rioplatense.
                 </p>
               </div>
             </section>
@@ -73,10 +76,27 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Autor de libros fundamentales sobre literatura y cine: <em>Hipótesis sobre Clarín</em> (Granada, 1985), un estudio de rigor sobre Leopoldo Alas; y <em>Salò. El infierno según Pasolini</em> (Córdoba, 1993), escrito junto a J. Ignacio Mendiguchía.
+                  Su obra académica arranca con <em>Hipótesis sobre Clarín. El pensamiento crítico del reformismo español</em> (Granada, 1985), versión revisada de su tesis doctoral. Siguió <em>Salò. El infierno según Pasolini</em> (Filmoteca Andalucía, 1993), escrito junto a Juan Ignacio Mendiguchía, que acompañó el ciclo de cine que organizó sobre Pasolini.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  Entre 2004 y 2008 publicó regularmente la columna «Países» en <em>El País</em> (edición Andalucía), una de las voces más singulares del periodismo cultural de aquellos años.
+                  Sus reflexiones como intelectual público se reunieron en <em>Argumentos morales</em> (2004) y <em>El grito</em> (2005). Entre 2004 y 2008 escribió la columna «La nuestra» en <em>El País Andalucía</em>, una de las voces más singulares del periodismo cultural de aquellos años. Esos artículos se recogieron en <em>Las cosas que hemos visto</em> (Renacimiento, 2011), con prólogo de Luis García Montero —título que inspira el nombre de esta exposición.
+                </p>
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  También publicó en colaboración: <em>Granada Tango</em> (1982), <em>Latinos</em> (1995, con Horacio Rébora) y <em>Un debate sobre natural y artificial</em> (1997). Participó en <em>Visiones de Pasolini</em> (2006) con un ensayo propio, y fue coeditor de la revista <em>Olvidos de Granada</em> y de <em>La Fábrica del Sur</em>.
+                </p>
+              </div>
+            </section>
+
+            <section className="p-8">
+              <h2 className="font-crimson font-bold text-zinc-900 text-3xl mb-6">
+                El Festival de Tango e Imaginaria
+              </h2>
+              <div className="space-y-4">
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  En 1990 Maresca fundó el Festival de Tango de Granada, que dirigió durante más de tres décadas. Lo que empezó como una apuesta arriesgada se convirtió en la cita de referencia del tango en España, llevando a la ciudad a figuras de primer orden del género rioplatense. El festival nació en La Tertulia, donde antes había organizado un histórico concurso de letras de tango.
+                </p>
+                <p className="text-zinc-700 leading-relaxed font-libre">
+                  En 1999 participó como guionista en <em>Imaginaria</em> (Canal Sur), el programa cultural nocturno que se convirtió en referencia del pensamiento y las artes en Andalucía. Ese mismo año colaboró con Enrique Morente en el proyecto <em>Omega</em> —el encuentro entre el flamenco y Leonard Cohen que solo podía nacer en Granada—, cuya trascendencia cultural reivindicó desde sus páginas en Olvidos y en El País.
                 </p>
               </div>
             </section>
@@ -110,7 +130,8 @@ export default function BiographyPage() {
                   { label: 'Fallecimiento', value: 'Granada, 2023' },
                   { label: 'Profesión', value: 'Profesor de Filosofía del Derecho, UGR' },
                   { label: 'Lugar emblemático', value: 'Café Botánico, calle Duquesa, Granada' },
-                  { label: 'Proyecto principal', value: 'Editor de Olvidosdegranada (desde 1982)' },
+                  { label: 'Proyecto principal', value: 'Editor de Olvidos de Granada (desde 1982)' },
+                  { label: 'Tesis doctoral', value: 'Hipótesis sobre Clarín (UGR, 1982; Comares, 1985)' },
                 ].map(item => (
                   <div key={item.label}>
                     <dt className="text-xs font-libre tracking-widest uppercase text-[#E84878] mb-1">{item.label}</dt>

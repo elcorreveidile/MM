@@ -14,99 +14,114 @@ const disciplinasData: Record<string, DisciplinaData> = {
   literatura: {
     nombre: 'Literatura',
     subtitulo: 'Poesía, narrativa y ensayo',
-    descripcion: 'La literatura fue el territorio central de la curiosidad intelectual de Mariano Maresca. Su biblioteca reúne más de 800 títulos literarios distribuidos en siete tradiciones: la española —con Luis García Montero como el autor más presente, seguido de Ángel González, Javier Egea, Federico García Lorca, Luis Cernuda y Antonio Machado—, la anglosajona (Hemingway, Fitzgerald, Carver, Dickens), la alemana y centroeuropea (Brecht, Kafka, Canetti, Hölderlin), la italiana —donde Pasolini ocupa un lugar central—, la francesa (Camus, Rimbaud, Proust, Gide), la hispanoamericana (Borges, García Márquez, Bioy Casares, Rulfo) y la rusa (Chéjov, Dostoievski, Tolstói). La poesía española de la segunda mitad del siglo XX —la llamada «otra sentimentalidad», con García Montero, Álvaro Salvador y Javier Egea— es la sección más densa y personal de la biblioteca.',
+    descripcion: 'La literatura fue el territorio central de la curiosidad intelectual de Mariano Maresca. Su biblioteca reúne más de 800 títulos literarios distribuidos en siete tradiciones: la española —con Luis García Montero como el autor más presente, seguido de Ángel González, Javier Egea, Federico García Lorca, Luis Cernuda y Antonio Machado—, la anglosajona (Hemingway, Fitzgerald, Carver, Dickens), la alemana y centroeuropea (Brecht, Kafka, Canetti, Hölderlin), la italiana —donde Pasolini ocupa un lugar central—, la francesa (Camus, Rimbaud, Proust, Gide), la hispanoamericana (Borges, García Márquez, Bioy Casares, Rulfo) y la rusa (Chéjov, Dostoievski, Tolstói). La poesía española de la segunda mitad del siglo XX —la llamada «otra sentimentalidad», con García Montero, Álvaro Salvador y Javier Egea— es la sección más densa y personal de la biblioteca. Entre los libros con dedicatoria autógrafa se encuentran nueve títulos de Luis García Montero (desde la primera edición de El jardín extranjero hasta Un invierno propio), y ejemplares de Ángel González, Juan Marsé, Antonio Muñoz Molina, Rafael Alberti, Javier Egea y Luis Antonio de Villena.',
     libros: {
       total: 802,
       secciones: [
-        { nombre: 'Poesía y literatura española', count: 282, autores: 'Luis García Montero · Ángel González · Javier Egea · Federico García Lorca · Luis Cernuda · Antonio Machado · Álvaro Salvador · Antonio Muñoz Molina' },
-        { nombre: 'Literatura anglosajona', count: 145, autores: 'Ernest Hemingway · F. Scott Fitzgerald · Raymond Carver · Charles Dickens · Shakespeare · Dylan Thomas' },
-        { nombre: 'Literatura alemana y centroeuropea', count: 118, autores: 'Bertolt Brecht · Franz Kafka · Elias Canetti · Friedrich Hölderlin · Bernhard Schlink' },
-        { nombre: 'Literatura italiana', count: 95, autores: 'Pier Paolo Pasolini · Antonio Tabucchi · Cesare Pavese · Carlo Ginzburg · Trieste y el mito centroeuropeo' },
-        { nombre: 'Literatura francesa', count: 75, autores: 'Albert Camus · Arthur Rimbaud · Marcel Proust · André Gide · André Malraux' },
-        { nombre: 'Literatura hispanoamericana', count: 65, autores: 'Jorge Luis Borges · Gabriel García Márquez · Adolfo Bioy Casares · Juan Rulfo · César Vallejo · Juan Carlos Onetti' },
-        { nombre: 'Literatura rusa y eslava', count: 22, autores: 'Antón Chéjov · Fiodor Dostoievski · León Tolstói · Ryszard Kapuscinski' },
+        { nombre: 'Poesía y narrativa española', count: 282, autores: 'Luis García Montero · Ángel González · Javier Egea · Federico García Lorca · Luis Cernuda · Antonio Machado · Álvaro Salvador · Antonio Muñoz Molina · Rafael Alberti · Luis Antonio de Villena · Rafael Juárez · José Carlos Rosales · Juan Barja · Almudena Grandes' },
+        { nombre: 'Literatura anglosajona', count: 145, autores: 'Ernest Hemingway · F. Scott Fitzgerald · Raymond Carver · Charles Dickens · Shakespeare · Dylan Thomas · Joseph Conrad · Henry James · Philip Roth · Don DeLillo · Jonathan Lethem · James Ellroy · John Le Carré' },
+        { nombre: 'Literatura alemana y centroeuropea', count: 118, autores: 'Bertolt Brecht · Franz Kafka · Elias Canetti · Friedrich Hölderlin · Bernhard Schlink · Thomas Mann · Heinrich Böll · Friedrich Schiller' },
+        { nombre: 'Literatura italiana', count: 95, autores: 'Pier Paolo Pasolini · Antonio Tabucchi · Cesare Pavese · Leonardo Sciascia · Italo Calvino · Carlo Ginzburg · Primo Levi · Umberto Eco' },
+        { nombre: 'Literatura francesa', count: 75, autores: 'Albert Camus · Arthur Rimbaud · Marcel Proust · André Gide · André Malraux · Gustave Flaubert · Stendhal · Simone de Beauvoir' },
+        { nombre: 'Literatura hispanoamericana', count: 65, autores: 'Jorge Luis Borges · Gabriel García Márquez · Adolfo Bioy Casares · Juan Rulfo · César Vallejo · Juan Carlos Onetti · Mario Vargas Llosa · Julio Cortázar' },
+        { nombre: 'Literatura rusa y eslava', count: 22, autores: 'Antón Chéjov · Fiodor Dostoievski · León Tolstói · Ryszard Kapuscinski · Isaak Bábel' },
       ],
     },
   },
   filosofia: {
     nombre: 'Filosofía',
     subtitulo: 'Filosofía del Derecho y pensamiento contemporáneo',
-    descripcion: 'Catedrático de Filosofía del Derecho en la Universidad de Granada, Maresca dedicó su vida académica a la reflexión filosófica sobre el poder, el derecho y la sociedad. Su biblioteca filosófica, de más de 300 títulos, refleja un pensamiento marcado por la tradición marxista y el materialismo histórico —Gramsci, Negri, Althusser, Foucault— junto a los clásicos del empirismo y la filosofía analítica anglosajona: Hume, A.J. Ayer. La sección jurídico-filosófica incluye a Beccaria, Hobbes, Adam Smith, Bobbio y Ferrajoli. El derecho no como técnica, sino como campo de disputa política y filosófica.',
+    descripcion: 'Catedrático de Filosofía del Derecho en la Universidad de Granada, Maresca dedicó su vida académica a la reflexión filosófica sobre el poder, el derecho y la sociedad. Su biblioteca filosófica, de más de 300 títulos, refleja un pensamiento marcado por la tradición marxista y el materialismo histórico —Gramsci, Negri, Althusser, Foucault— junto a los clásicos del empirismo y la filosofía analítica anglosajona: Hume, A.J. Ayer. La sección jurídico-filosófica incluye a Beccaria, Hobbes, Adam Smith, Bobbio y Ferrajoli. El derecho no como técnica, sino como campo de disputa política y filosófica. Entre los títulos señalados: sus propios trabajos —Hipótesis sobre Clarín (1982-1985), Argumentos morales (2004)— y los apuntes y anotaciones manuscritas que conservaba sobre Marcuse, Alfred von Martin y Clarín. También destacan los estudios sobre feminismo y teoría crítica: Alicia H. Puleo, Simone de Beauvoir, y los debates sobre autonomía y soberanía.',
     libros: {
       total: 319,
       secciones: [
-        { nombre: 'Filosofía y pensamiento', count: 304, autores: 'Antonio Gramsci · Michel Foucault · Antonio Negri · Althusser · David Hume · A.J. Ayer · Friedrich Nietzsche · Alicia H. Puleo' },
-        { nombre: 'Derecho y filosofía política', count: 15, autores: 'Cesare Beccaria · Thomas Hobbes · Adam Smith · Norberto Bobbio · Luigi Ferrajoli' },
+        { nombre: 'Filosofía y pensamiento', count: 304, autores: 'Antonio Gramsci · Michel Foucault · Antonio Negri · Louis Althusser · David Hume · A.J. Ayer · Friedrich Nietzsche · Alicia H. Puleo · Herbert Marcuse · Walter Benjamin · György Lukács · Georg Simmel · Max Weber · Antonio Gramsci' },
+        { nombre: 'Derecho y filosofía política', count: 15, autores: 'Cesare Beccaria · Thomas Hobbes · Adam Smith · Norberto Bobbio · Luigi Ferrajoli · Hans Kelsen · Carl Schmitt' },
       ],
     },
   },
   'pensamiento-politico': {
     nombre: 'Pensamiento Político',
     subtitulo: 'Historia, política y compromiso intelectual',
-    descripcion: 'El compromiso político de Maresca estuvo siempre fundado en el rigor histórico y filosófico. Su biblioteca de historia y política —donde conviven Hobsbawm, Josep Fontana, Kapuscinski, Gramsci y Pannekoek— refleja un pensamiento de izquierdas crítico, atento a las tradiciones obreras y a la historia desde abajo. Columnista en El País Andalucía con la sección «La nuestra» y editor de Olvidos de Granada, ejerció como intelectual público durante más de cuatro décadas. La memoria —la memoria de los vencidos, la memoria cultural— fue su arma teórica y política constante.',
+    descripcion: 'El compromiso político de Maresca estuvo siempre fundado en el rigor histórico y filosófico. Su biblioteca de historia y política —donde conviven Hobsbawm, Josep Fontana, Kapuscinski, Gramsci y Pannekoek— refleja un pensamiento de izquierdas crítico, atento a las tradiciones obreras y a la historia desde abajo. Columnista en El País Andalucía con la sección «La nuestra» y editor de Olvidos de Granada, ejerció como intelectual público durante más de cuatro décadas. La memoria —la memoria de los vencidos, la memoria cultural— fue su arma teórica y política constante. Su biblioteca incluye también clásicos del anarquismo (Bakunin, Kropotkin) y del movimiento obrero internacional, junto a estudios sobre la Transición española y la política andaluza.',
     libros: {
       total: 37,
       secciones: [
-        { nombre: 'Historia y política', count: 37, autores: 'Eric Hobsbawm · Josep Fontana · Ryszard Kapuscinski · Antonio Gramsci · Anton Pannekoek · V.I. Lenin · Fernand Braudel' },
+        { nombre: 'Historia y política', count: 37, autores: 'Eric Hobsbawm · Josep Fontana · Ryszard Kapuscinski · Antonio Gramsci · Anton Pannekoek · V.I. Lenin · Fernand Braudel · Mijaíl Bakunin · Piotr Kropotkin · E.P. Thompson · Perry Anderson · Julio Aróstegui' },
       ],
     },
   },
   cine: {
     nombre: 'Cine',
     subtitulo: 'Crítica cinematográfica y ciclos de cine',
-    descripcion: 'El cine fue para Maresca una forma de pensamiento. Organizó ciclos de cine en Granada y publicó crítica cinematográfica en Olvidos de Granada durante décadas. La biblioteca refleja una cinefilia de gran amplitud: de los clásicos del cine de autor europeo —Pasolini, Fritz Lang, Fassbinder, Luchino Visconti, Truffaut, Bergman— al cine español contemporáneo (Almodóvar) y al Hollywood del gran estudio (Kubrick). *La Fábrica del Sur* nº1 (1989), la revista andaluza que recogió buena parte de la cultura de la transición, abre también con cine. Pasolini ocupa un lugar central: varios libros sobre su obra —incluido el catálogo de sus pinturas— revelan una afinidad profunda con ese intelectual total que fue también poeta, novelista y polemista.',
+    descripcion: 'El cine fue para Maresca una forma de pensamiento. Organizó ciclos de cine en Granada y publicó crítica cinematográfica en Olvidos de Granada durante décadas. La biblioteca de cine —en torno a 50 títulos, más una extensa colección de DVDs agrupados en varias cajas— refleja una cinefilia de gran amplitud y profundidad. Pasolini ocupa un lugar central y tiene su propia caja dedicada: decenas de libros, revistas y documentos de trabajo, entre ellos el catálogo de sus pinturas y los materiales de producción de Saló: el infierno según Pasolini (Filmoteca Andalucía, 1993), que Maresca coeditó con Juan Ignacio Mendiguchía. Fritz Lang tiene asimismo una caja entera: más de quince monografías y dos colecciones de DVDs sobre su obra completa. A estos núcleos se añaden Fassbinder, Visconti, Truffaut, Bergman, Kubrick, Orson Welles, Buñuel, Almodóvar y Woody Allen.',
     libros: {
       total: 49,
       secciones: [
-        { nombre: 'Arte, cine y estética', count: 49, autores: 'Pier Paolo Pasolini · Fritz Lang · Rainer W. Fassbinder · Luchino Visconti · François Truffaut · Pedro Almodóvar · Stanley Kubrick · Ingmar Bergman · Juan Vida · Velázquez · Picasso' },
+        { nombre: 'Pasolini — colección completa', autores: 'Trilogía de la vida · Salò (Filmoteca Andalucía, 1993) · Visiones de Pasolini (2006) · Pinturas de Pasolini · Pasolini: crónica judicial · Il cinema in forma di poesia · Pier Paolo Pasolini: poeta delle ceneri · materiales de maquetación originales' },
+        { nombre: 'Fritz Lang — colección completa', autores: 'Fritz Lang: el expresionismo alemán · M, el vampiro de Düsseldorf · Metrópolis · Los nibelungos · El testamento del Dr. Mabuse · Lang en Hollywood · DVDs obras completas (2 cajas)' },
+        { nombre: 'Otros directores', autores: 'Rainer W. Fassbinder · Luchino Visconti · François Truffaut · Ingmar Bergman · Stanley Kubrick · Orson Welles · Luis Buñuel · Pedro Almodóvar · Woody Allen · Jean-Luc Godard · John Cassavetes' },
+        { nombre: 'Arte cinematográfico', autores: 'El lenguaje cinematográfico · Historia del cine · La Fábrica del Sur nº1 (1989) · DVDs cine negro americano · DVDs cine europeo de autor' },
       ],
     },
   },
   fotografia: {
     nombre: 'Fotografía',
     subtitulo: 'Memoria visual e imagen documental',
-    descripcion: 'La fotografía interesó a Maresca como instrumento de memoria histórica y de combate político. El libro más significativo de su biblioteca en este campo es *El fotógrafo de Mauthausen*, sobre Francisco Boix —el fotógrafo republicano catalán que sobrevivió al campo de concentración nazi y cuyas fotografías fueron la única prueba visual en los juicios de Núremberg—. *Imágenes de la Guerra Civil Española* completa esa mirada sobre la imagen como archivo de los vencidos. Maresca impulsó también el Archivo de Fotografía Granadina y organizó exposiciones fotográficas que documentaron la vida cultural de la ciudad.',
+    descripcion: 'La fotografía interesó a Maresca como instrumento de memoria histórica y de combate político. Su biblioteca fotográfica es más rica de lo que aparenta: junto al célebre El fotógrafo de Mauthausen —sobre Francisco Boix, el republicano catalán cuyas imágenes fueron la única prueba visual en los juicios de Núremberg—, la colección incluye una sección extensa dedicada a Manuel Falces, fotógrafo granadino con quien Maresca colaboró estrechamente en Olvidos de Granada y en múltiples proyectos culturales. Joan Fontcuberta tiene varios títulos, incluido Contranatura. También aparecen Susan Sontag (Sobre la fotografía), Henri Cartier-Bresson, Sebastião Salgado, Lewis Hine y Carlos Pérez Siquier. Maresca impulsó el Archivo de Fotografía Granadina y organizó exposiciones fotográficas que documentaron la vida cultural de la ciudad.',
     libros: {
       secciones: [
-        { nombre: 'Fotografía e imagen documental', autores: 'Francisco Boix: El fotógrafo de Mauthausen · Imágenes de la Guerra Civil Española · Diego Lara' },
+        { nombre: 'Fotografía documental y política', autores: 'Francisco Boix: El fotógrafo de Mauthausen · Imágenes de la Guerra Civil Española · Lewis Hine · Sebastião Salgado · Susan Sontag: Sobre la fotografía' },
+        { nombre: 'Manuel Falces', autores: 'Catálogos y libros de Manuel Falces · Fotografías de Granada · Archivo de Fotografía Granadina · colaboraciones en Olvidos de Granada' },
+        { nombre: 'Fotografía contemporánea', autores: 'Joan Fontcuberta: Contranatura y otros títulos · Henri Cartier-Bresson · Carlos Pérez Siquier · Diego Lara · fotografía española contemporánea' },
       ],
     },
   },
   arquitectura: {
     nombre: 'Arquitectura',
     subtitulo: 'Urbanismo, ciudad y espacio público',
-    descripcion: 'La ciudad fue para Maresca un objeto de reflexión constante. Su biblioteca de arquitectura y urbanismo incluye a Ledoux —el arquitecto utópico de la Ilustración—, a Álvaro Siza, la monografía sobre la iconografía de la Alhambra y un libro específico sobre *La Gran Vía de Granada*, esa cicatriz urbana que fascina y escandaliza a partes iguales. Las *Escenografías* de Adolphe Appia —que pensó el espacio teatral como arquitectura viva— y *Metrópolis* cierran una biblioteca que entiende la ciudad como texto político y estético. Sus escritos en Olvidos de Granada abordaron las grandes transformaciones urbanísticas de la ciudad con la misma exigencia con que leía una novela.',
+    descripcion: 'La ciudad fue para Maresca un objeto de reflexión constante. Sus escritos en Olvidos de Granada abordaron las grandes transformaciones urbanísticas de Granada con la misma exigencia con que leía una novela. La biblioteca de arquitectura incluye desde los utópicos ilustrados —Ledoux, La ciudad ideal— hasta la modernidad radical de Le Corbusier, Mies van der Rohe y la Bauhaus. Richard Sennett (Carne y piedra) aporta la dimensión sociológica. La iconografía de la Alhambra y el libro específico sobre La Gran Vía de Granada —esa cicatriz urbana que fascina y escandaliza a partes iguales— anclan la reflexión en el territorio concreto. Las Escenografías de Adolphe Appia y las vistas de Canaletto añaden la dimensión estética: la ciudad como texto político y como imagen.',
     libros: {
       secciones: [
-        { nombre: 'Arquitectura y ciudad', autores: 'Ledoux: La Arquitectura · Álvaro Siza · La Alhambra: iconografía · La Gran Vía de Granada · Adolphe Appia: Escenografías · Metrópolis · Le Corbusier' },
+        { nombre: 'Modernismo y vanguardia', autores: 'Le Corbusier · Mies van der Rohe · Walter Gropius y la Bauhaus · Adolphe Appia: Escenografías · Metrópolis · constructivismo ruso' },
+        { nombre: 'Historia y teoría urbana', autores: 'Claude-Nicolas Ledoux: La Arquitectura · La ciudad ideal · Richard Sennett: Carne y piedra · Álvaro Siza · Canaletto: vedute · historia del urbanismo' },
+        { nombre: 'Granada y Andalucía', autores: 'La Alhambra: iconografía y simbolismo · La Gran Vía de Granada · arquitectura granadina · transformaciones urbanas de Granada' },
       ],
     },
   },
   diseno: {
     nombre: 'Diseño',
     subtitulo: 'Arte, diseño editorial e identidad visual',
-    descripcion: 'La biblioteca de arte de Maresca —Matisse, Francis Bacon, Paul Cézanne, Caravaggio, Andy Warhol— revela un ojo educado en la modernidad del siglo XX. *Matisse in Morocco*, *Matisse: Gouaches découpées*, el libro sobre Francisco Bores (*Para un Lorca*) o el volumen sobre Juan Vida forman una colección de arte que dialoga permanentemente con su trabajo editorial. *La Fábrica del Sur* nº1 (1989) encarna ese ideal: una revista donde el diseño era argumento, donde la tipografía y la imagen tenían tanto peso como el texto. El cuidado formal de Olvidos de Granada, que dirigió durante décadas, fue heredero directo de esa convicción.',
+    descripcion: 'La biblioteca de arte y diseño de Maresca —Matisse, Francis Bacon, Paul Cézanne, Caravaggio, Andy Warhol— revela un ojo educado en la modernidad del siglo XX. Matisse está especialmente presente: Matisse in Morocco, Matisse: Gouaches découpées, el libro sobre su estudio. La colección incluye también José Guerrero (varios catálogos), Juan Vida (múltiples catálogos de exposición), el Francisco Bores Para un Lorca, los Carteles constructivistas rusos de Rodchenko y el Equipo Crónica. Un volumen sobre la tipografía de Giambattista Bodoni completa la dimensión tipográfica. La Fábrica del Sur nº1 (1989) —la revista que dirigió— encarna ese ideal donde diseño y contenido eran inseparables. El cuidado formal de Olvidos de Granada, que dirigió durante décadas, fue heredero directo de esa convicción.',
     libros: {
       secciones: [
-        { nombre: 'Arte y diseño visual', autores: 'Henri Matisse · Francis Bacon · Paul Cézanne · Caravaggio · Andy Warhol · Francisco Bores: Para un Lorca · Juan Vida · La Fábrica del Sur' },
+        { nombre: 'Arte moderno', autores: 'Henri Matisse (Matisse in Morocco · Gouaches découpées · estudio) · Paul Cézanne · Francis Bacon · Caravaggio · Andy Warhol · Pablo Picasso · Velázquez · Francisco Bores: Para un Lorca' },
+        { nombre: 'Diseño gráfico y tipografía', autores: 'Rodchenko y los carteles constructivistas rusos · Equipo Crónica · Giambattista Bodoni (tipografía) · La Fábrica del Sur nº1 (1989) · diseño editorial granadino' },
+        { nombre: 'Arte granadino y andaluz', autores: 'Juan Vida (catálogos de exposición) · José Guerrero (catálogos) · Juan Vida y la nueva figuración · arte contemporáneo andaluz' },
       ],
     },
   },
   comic: {
     nombre: 'Cómic',
     subtitulo: 'El noveno arte',
-    descripcion: 'Maresca fue uno de los primeros en tratar el cómic como forma artística legítima en Granada. *Boronia* —la revista de historieta que forma parte de su biblioteca— es una muestra de ese interés por las formas de expresión que escapaban a la alta cultura tradicional. Su trabajo de divulgación y crítica contribuyó a que la historieta fuera reconocida como parte del patrimonio cultural de la ciudad. Publicó artículos en Olvidos de Granada que exploraban el lenguaje del cómic y reivindicaban a sus autores como artistas de pleno derecho.',
+    descripcion: 'Maresca fue uno de los primeros en tratar el cómic como forma artística legítima en Granada. Su biblioteca en este campo es más amplia de lo que parece: junto a la revista Boronia —la publicación de historieta que incluye un número con Enrique Morente en portada—, aparecen Hola soy Gaudeamus de Andrés Sopeña (con dibujo dedicado a Mariano), Los tebeos de Granada, La Granada de papel, y números de Hermano Lobo. También Perfidia moruna de Pamies, con un dibujo original dedicado a Mariano. Su trabajo de divulgación y crítica contribuyó a que la historieta fuera reconocida como parte del patrimonio cultural de la ciudad, y publicó artículos en Olvidos de Granada que exploraban el lenguaje del cómic y reivindicaban a sus autores como artistas de pleno derecho.',
     libros: {
       secciones: [
-        { nombre: 'Cómic e historieta', autores: 'Boronia' },
+        { nombre: 'Cómic e historieta', autores: 'Boronia (con Enrique Morente en portada) · Andrés Sopeña: Hola soy Gaudeamus (con dedicatoria y dibujo original) · Los tebeos de Granada · La Granada de papel · Hermano Lobo · Pamies: Perfidia moruna (con dibujo dedicado a Mariano)' },
       ],
     },
   },
   musica: {
     nombre: 'Música',
     subtitulo: 'Festival de Tango y crítica musical',
-    descripcion: 'La contribución de Maresca a la música granadina fue monumental. Fundó y dirigió el Festival de Tango de Granada durante más de tres décadas, convirtiendo la ciudad en referencia del tango en España. La historia de ese festival es inseparable de la historia cultural de Granada en la democracia. También publicó crítica musical en Olvidos de Granada y colaboró en proyectos de música flamenca, incluido el célebre disco *Omega* de Enrique Morente —ese encuentro imposible y necesario entre el flamenco y Leonard Cohen que solo podía nacer en Granada—. Organizó también el histórico concurso de letras de tango en La Tertulia, donde nació buena parte de la escena cultural de la ciudad.',
-    libros: null,
+    descripcion: 'La contribución de Maresca a la música granadina fue monumental. Fundó y dirigió el Festival de Tango de Granada durante más de tres décadas, convirtiendo la ciudad en referencia del tango en España. La historia de ese festival es inseparable de la historia cultural de Granada en la democracia. También publicó crítica musical en Olvidos de Granada y colaboró en proyectos de música flamenca, incluido el célebre disco Omega de Enrique Morente —ese encuentro imposible y necesario entre el flamenco y Leonard Cohen que solo podía nacer en Granada—. Organizó también el histórico concurso de letras de tango en La Tertulia. Su biblioteca musical —una de las más reveladoras de su carácter— incluye monografías sobre Wagner (dos biografías), Mozart, Mahler, Debussy, Beethoven, Verdi, Stravinsky, Bach, Glenn Gould y Chet Baker, junto al CD de Omega y el libro Universo Morente.',
+    libros: {
+      secciones: [
+        { nombre: 'Música clásica y ópera', autores: 'Richard Wagner (dos biografías) · Wolfgang Amadeus Mozart · Gustav Mahler · Claude Debussy · Ludwig van Beethoven · Giuseppe Verdi · Igor Stravinsky · Johann Sebastian Bach · Glenn Gould · historia de la ópera' },
+        { nombre: 'Jazz y música contemporánea', autores: 'Chet Baker · historia del jazz · Bob Dylan: Crónicas (con dedicatoria) · música popular del siglo XX' },
+        { nombre: 'Flamenco y tango', autores: 'Enrique Morente: Omega (CD) · Universo Morente · Granada Tango (1982) · historia del flamenco · Festival de Tango de Granada · cantaores y guitarristas granadinos' },
+      ],
+    },
   },
 }
 
