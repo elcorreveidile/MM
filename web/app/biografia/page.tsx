@@ -82,7 +82,7 @@ export default function BiographyPage() {
                   Sus reflexiones como intelectual público se reunieron en <em>Argumentos morales</em> (2004) y <em>El grito</em> (2005). Entre 2004 y 2008 escribió la columna «La nuestra» en <em>El País Andalucía</em>, una de las voces más singulares del periodismo cultural de aquellos años. Esos artículos se recogieron en <em>Las cosas que hemos visto</em> (Renacimiento, 2011), con prólogo de Luis García Montero —título que inspira el nombre de esta exposición.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  También publicó en colaboración: <em>Granada Tango</em> (1982), <em>Latinos</em> (1995, con Horacio Rébora) y <em>Un debate sobre natural y artificial</em> (1997). Participó en <em>Visiones de Pasolini</em> (2006) con un ensayo propio, y fue coeditor de la revista <em>Olvidos de Granada</em> y de <em>La Fábrica del Sur</em>.
+                  También publicó en colaboración: <em>Granada Tango</em> (1983), <em>Latinos</em> (1995, con Horacio Rébora) y <em>Un debate sobre natural y artificial</em> (1997). Participó en <em>Visiones de Pasolini</em> (2006) con un ensayo propio, y fue coeditor de la revista <em>Olvidos de Granada</em> y de <em>La Fábrica del Sur</em>.
                 </p>
               </div>
             </section>
@@ -93,7 +93,7 @@ export default function BiographyPage() {
               </h2>
               <div className="space-y-4">
                 <p className="text-zinc-700 leading-relaxed font-libre">
-                  El tango fue una de sus pasiones. Escribió letras de tango para un concurso celebrado en La Tertulia, publicadas en el libro <em>Granada Tango</em> (1982). También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.
+                  El tango fue una de sus pasiones. Redactó las bases del concurso de letras de tango celebrado en La Tertulia, que dio lugar al libro <em>Granada Tango</em> (1983), con tangos de Egea, García Montero, Álvaro Salvador y contribuciones de Cortázar, Benedetti y Moyano. También colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada.
                 </p>
                 <p className="text-zinc-700 leading-relaxed font-libre">
                   En 1999 participó como guionista en <em>Imaginaria</em> (Canal Sur), el programa cultural nocturno que se convirtió en referencia del pensamiento y las artes en Andalucía. Siguió de cerca la música flamenca y el célebre disco <em>Omega</em> de Enrique Morente ocupa un lugar destacado en su biblioteca.

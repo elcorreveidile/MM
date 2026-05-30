@@ -114,12 +114,12 @@ const disciplinasData: Record<string, DisciplinaData> = {
   musica: {
     nombre: 'Música',
     subtitulo: 'Crítica musical, tango y flamenco',
-    descripcion: 'La música atravesó toda la vida cultural de Maresca. Publicó crítica musical en Olvidos de Granada y siguió de cerca la música flamenca —el célebre disco Omega de Enrique Morente tiene un lugar destacado en su biblioteca—. El tango fue otra de sus pasiones: escribió letras de tango para un concurso en La Tertulia, publicadas en el libro Granada Tango (1982), y colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada. Su biblioteca musical —una de las más reveladoras de su carácter— incluye monografías sobre Wagner (dos biografías), Mozart, Mahler, Debussy, Beethoven, Verdi, Stravinsky, Bach, Glenn Gould y Chet Baker, junto al CD de Omega y el libro Universo Morente.',
+    descripcion: 'La música atravesó toda la vida cultural de Maresca. Publicó crítica musical en Olvidos de Granada y siguió de cerca la música flamenca —el célebre disco Omega de Enrique Morente tiene un lugar destacado en su biblioteca—. El tango fue otra de sus pasiones: redactó las bases del concurso de letras de tango celebrado en La Tertulia, que dio lugar al libro Granada Tango (1983), y colaboró en el diseño del cartel de alguna edición del Festival de Tango de Granada. Su biblioteca musical —una de las más reveladoras de su carácter— incluye monografías sobre Wagner (dos biografías), Mozart, Mahler, Debussy, Beethoven, Verdi, Stravinsky, Bach, Glenn Gould y Chet Baker, junto al CD de Omega y el libro Universo Morente.',
     libros: {
       secciones: [
         { nombre: 'Música clásica y ópera', autores: 'Richard Wagner (dos biografías) · Wolfgang Amadeus Mozart · Gustav Mahler · Claude Debussy · Ludwig van Beethoven · Giuseppe Verdi · Igor Stravinsky · Johann Sebastian Bach · Glenn Gould · historia de la ópera' },
         { nombre: 'Jazz y música contemporánea', autores: 'Chet Baker · historia del jazz · Bob Dylan: Crónicas (con dedicatoria) · música popular del siglo XX' },
-        { nombre: 'Flamenco y tango', autores: 'Enrique Morente: Omega (CD) · Universo Morente · Granada Tango (1982) · historia del flamenco · cantaores y guitarristas granadinos' },
+        { nombre: 'Flamenco y tango', autores: 'Enrique Morente: Omega (CD) · Universo Morente · Granada Tango (1983) · historia del flamenco · cantaores y guitarristas granadinos' },
       ],
     },
   },
