@@ -33,9 +33,23 @@ export default async function MemoriasPage() {
           <h1 className="font-crimson font-bold mb-4" style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)' }}>
             Memorias
           </h1>
-          <p className="font-libre text-zinc-300 max-w-2xl text-lg leading-relaxed">
+          <p className="font-libre text-zinc-300 max-w-2xl text-lg leading-relaxed mb-8">
             Testimonios de quienes conocieron a Mariano Maresca o llegaron hasta él a través de su obra.
           </p>
+          <div className="flex flex-wrap gap-4 items-center">
+            <Link
+              href="/memorias/contacto"
+              className="inline-block bg-[#E84878] text-white font-libre text-xs tracking-widest uppercase px-6 py-3 hover:bg-[#c73060] transition-colors"
+            >
+              Hazte amigo de Mariano →
+            </Link>
+            <Link
+              href="/panel/login"
+              className="font-libre text-xs tracking-widest uppercase text-zinc-400 hover:text-white transition-colors"
+            >
+              Ya soy amigo — acceder →
+            </Link>
+          </div>
         </div>
       </div>
 
