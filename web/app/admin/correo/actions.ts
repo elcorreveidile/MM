@@ -21,13 +21,24 @@ export async function enviarCorreoMasivo(formData: FormData): Promise<EnvioResul
 
   const supabase = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, serviceKey)
 
-  let query = supabase.from('socios').select('nombre, email, genero')
-  if (audiencia === 'socios') query = query.eq('tipo', 'socio')
-  if (audiencia === 'amigos') query = query.eq('tipo', 'amigo')
+  let destinatarios: { nombre: string; email: string }[] = []
 
-  const { data: destinatarios, error: dbError } = await query
-  if (dbError) return { enviados: 0, errores: 0, error: dbError.message }
-  if (!destinatarios || destinatarios.length === 0) return { enviados: 0, errores: 0, error: 'No hay destinatarios.' }
+  if (audiencia === 'individual') {
+    const email = (formData.get('email_individual') as string).trim()
+    if (!email) return { enviados: 0, errores: 0, error: 'Indica el email del destinatario.' }
+    const { data } = await supabase.from('socios').select('nombre, email').eq('email', email).single()
+    if (!data) return { enviados: 0, errores: 0, error: `No se encontró ningún contacto con el email ${email}.` }
+    destinatarios = [data]
+  } else {
+    let query = supabase.from('socios').select('nombre, email')
+    if (audiencia === 'socios') query = query.eq('tipo', 'socio')
+    if (audiencia === 'amigos') query = query.eq('tipo', 'amigo')
+    const { data, error: dbError } = await query
+    if (dbError) return { enviados: 0, errores: 0, error: dbError.message }
+    destinatarios = data ?? []
+  }
+
+  if (destinatarios.length === 0) return { enviados: 0, errores: 0, error: 'No hay destinatarios.' }
 
   const cuerpoHtml = cuerpo
     .split('\n\n')
