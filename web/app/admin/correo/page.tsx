@@ -7,15 +7,20 @@ const AUDIENCIAS = [
   { value: 'todos', label: 'Todos (socios y amigos)' },
   { value: 'socios', label: 'Solo socios de Olvidos' },
   { value: 'amigos', label: 'Solo amigos de Mariano' },
+  { value: 'individual', label: 'Persona específica' },
 ]
 
 export default function CorreoPage() {
+  const [audiencia, setAudiencia] = useState('todos')
   const [resultado, setResultado] = useState<EnvioResult | null>(null)
   const [isPending, startTransition] = useTransition()
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    if (!confirm('¿Enviar este correo? Esta acción no se puede deshacer.')) return
+    const msg = audiencia === 'individual'
+      ? '¿Enviar este correo a esta persona?'
+      : '¿Enviar este correo? Esta acción no se puede deshacer.'
+    if (!confirm(msg)) return
     const formData = new FormData(e.currentTarget)
     startTransition(async () => {
       const res = await enviarCorreoMasivo(formData)
@@ -27,7 +32,7 @@ export default function CorreoPage() {
     <div className="max-w-2xl">
       <div className="mb-6">
         <h1 className="font-crimson font-bold text-zinc-900 text-3xl mb-1">Envío de correo</h1>
-        <p className="font-libre text-zinc-500 text-sm">Envía un mensaje a todos los contactos o a un grupo específico.</p>
+        <p className="font-libre text-zinc-500 text-sm">Envía un mensaje a todos los contactos, a un grupo o a una persona.</p>
       </div>
 
       {resultado && (
@@ -46,6 +51,8 @@ export default function CorreoPage() {
           </label>
           <select
             name="audiencia"
+            value={audiencia}
+            onChange={e => { setAudiencia(e.target.value); setResultado(null) }}
             className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900 bg-white"
           >
             {AUDIENCIAS.map(a => (
@@ -53,6 +60,24 @@ export default function CorreoPage() {
             ))}
           </select>
         </div>
+
+        {audiencia === 'individual' && (
+          <div>
+            <label className="font-libre text-xs tracking-widest uppercase text-zinc-500 block mb-2">
+              Email del destinatario
+            </label>
+            <input
+              name="email_individual"
+              type="email"
+              required
+              className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900"
+              placeholder="correo@ejemplo.com"
+            />
+            <p className="font-libre text-xs text-zinc-400 mt-1">
+              Debe estar registrado como contacto en el sistema.
+            </p>
+          </div>
+        )}
 
         <div>
           <label className="font-libre text-xs tracking-widest uppercase text-zinc-500 block mb-2">
