@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { addSocio, updateSocio, deleteSocio, togglePublicarTestimonio, toggleDestacado, reenviarBienvenida } from './actions'
+import { addSocio, updateSocio, deleteSocio, togglePublicarTestimonio, toggleDestacado, reenviarBienvenida, ciclarRolConsejo } from './actions'
 
 type Socio = {
   id: number
@@ -15,6 +15,8 @@ type Socio = {
   ciudad: string | null
   publicar_testimonio: boolean
   destacado: boolean
+  consejo_redaccion: boolean
+  rol_consejo: string | null
 }
 
 type ModalMode = 'add' | 'edit'
@@ -96,12 +98,13 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
       {/* Tabla */}
       <div className="bg-white">
         {/* Cabecera — solo desktop */}
-        <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto_auto] gap-0 border-b border-zinc-200 px-4 py-2">
+        <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto_auto_auto] gap-0 border-b border-zinc-200 px-4 py-2">
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Nombre</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Email</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Tipo</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400 ml-4">Pub.</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400 ml-2">Dest.</span>
+          <span className="font-libre text-xs tracking-widest uppercase text-zinc-400 ml-2">CR</span>
           <span></span>
           <span></span>
         </div>
@@ -157,6 +160,30 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
             </form>
           )
 
+          const consejoToggle = (
+            <form action={async () => { await ciclarRolConsejo(s.id, s.consejo_redaccion, s.rol_consejo) }}>
+              <button
+                type="submit"
+                title={
+                  !s.consejo_redaccion
+                    ? 'Sin cargo (clic para añadir al Consejo)'
+                    : s.rol_consejo === 'vocal'
+                    ? 'Vocal del Consejo (clic para promover a Editor Principal)'
+                    : 'Editor Principal (clic para quitar del Consejo)'
+                }
+                className={`font-libre text-xs px-2 py-0.5 transition-colors ${
+                  !s.consejo_redaccion
+                    ? 'border border-zinc-300 text-zinc-400 hover:border-zinc-500 hover:text-zinc-600'
+                    : s.rol_consejo === 'editor_principal'
+                    ? 'bg-[#F2BE2A] text-[#8B1A1A] hover:opacity-80'
+                    : 'bg-[#E84878] text-white hover:bg-[#d03868]'
+                }`}
+              >
+                {!s.consejo_redaccion ? '—' : s.rol_consejo === 'editor_principal' ? 'EP' : 'C'}
+              </button>
+            </form>
+          )
+
           const editBtn = (
             <button
               onClick={() => openEdit(s)}
@@ -189,17 +216,19 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
                 <div className="flex items-center gap-3">
                   {pubToggle}
                   {destToggle}
+                  {consejoToggle}
                   {editBtn}
                   {deleteBtn}
                 </div>
               </div>
               {/* Desktop */}
-              <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto_auto] gap-0 px-4 py-3 items-center">
+              <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto_auto_auto] gap-0 px-4 py-3 items-center">
                 <span className="font-libre text-sm text-zinc-900">{s.nombre}</span>
                 <span className="font-libre text-sm text-zinc-500">{s.email}</span>
                 {tipoBadge}
                 <div className="ml-4">{pubToggle}</div>
                 <div className="ml-2">{destToggle}</div>
+                <div className="ml-2">{consejoToggle}</div>
                 <div className="ml-4">{editBtn}</div>
                 <div className="ml-4">{deleteBtn}</div>
               </div>
