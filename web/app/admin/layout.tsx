@@ -51,6 +51,15 @@ export default async function AdminLayout({ children }: { children: React.ReactN
             <Link href="/admin/correo" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
               Correo
             </Link>
+            <Link href="/admin/avisos" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
+              Avisos
+            </Link>
+            <Link href="/admin/calendario" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
+              Calendario
+            </Link>
+            <Link href="/admin/propuestas-socios" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
+              Propuestas
+            </Link>
           </div>
         </div>
         <div className="flex items-center gap-3">

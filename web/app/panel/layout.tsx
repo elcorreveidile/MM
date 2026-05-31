@@ -1,5 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
+import Link from 'next/link'
 import { ALLOWED_ADMINS } from '@/lib/admins'
 
 export default async function PanelLayout({ children }: { children: React.ReactNode }) {
@@ -61,6 +62,8 @@ export default async function PanelLayout({ children }: { children: React.ReactN
     redirect('/panel/login')
   }
 
+  const esSocio = socio.tipo === 'socio'
+
   return (
     <div className="min-h-screen bg-[#FAF7F2]">
       <nav className="bg-white border-b border-zinc-200 px-6 py-3 flex items-center justify-between">
@@ -69,7 +72,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
             <span className="font-crimson font-bold text-[#8B1A1A] text-xs">MM</span>
           </div>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-500">
-            {socio.tipo === 'socio' ? 'Socio de Olvidos' : 'Amigo de Mariano'}
+            {esSocio ? 'Socio de Olvidos' : 'Amigo de Mariano'}
           </span>
         </div>
         <div className="flex items-center gap-4">
@@ -81,6 +84,17 @@ export default async function PanelLayout({ children }: { children: React.ReactN
           </form>
         </div>
       </nav>
+
+      {esSocio && (
+        <div className="bg-white border-b border-zinc-100 px-6 py-2 flex gap-5 overflow-x-auto">
+          <Link href="/panel" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Mi ficha</Link>
+          <Link href="/panel/avisos" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Tablón</Link>
+          <Link href="/panel/calendario" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Calendario</Link>
+          <Link href="/panel/propuestas" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Propuestas</Link>
+          <Link href="/panel/votaciones" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Votaciones</Link>
+        </div>
+      )}
+
       <main className="max-w-2xl mx-auto px-4 py-10">{children}</main>
     </div>
   )
