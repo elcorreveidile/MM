@@ -1,6 +1,6 @@
-import Link from 'next/link'
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
+import AdminNav from './AdminNav'
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
@@ -22,58 +22,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   return (
     <div className="min-h-screen bg-zinc-100">
-      <nav className="bg-zinc-900 text-white px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 bg-[#F2BE2A] flex items-center justify-center shrink-0">
-              <span className="font-crimson font-bold text-[#8B1A1A] text-xs">MM</span>
-            </div>
-            <span className="font-libre text-xs tracking-widest uppercase text-zinc-300 hidden sm:inline">Admin</span>
-          </div>
-          <div className="flex gap-3 sm:gap-4">
-            <Link href="/admin" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors">
-              Inicio
-            </Link>
-            <Link href="/admin/socios" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors">
-              Contactos
-            </Link>
-            <Link href="/admin/solicitudes" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors flex items-center gap-1">
-              Solicitudes
-              {!!pendientes && pendientes > 0 && (
-                <span className="bg-[#E84878] text-white font-libre text-xs px-1.5 py-0.5 rounded-full leading-none">
-                  {pendientes}
-                </span>
-              )}
-            </Link>
-            <Link href="/admin/contenido" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
-              Contenido
-            </Link>
-            <Link href="/admin/correo" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
-              Correo
-            </Link>
-            <Link href="/admin/avisos" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
-              Avisos
-            </Link>
-            <Link href="/admin/calendario" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
-              Calendario
-            </Link>
-            <Link href="/admin/propuestas-socios" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
-              Propuestas
-            </Link>
-            <Link href="/admin/votaciones" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
-              Votaciones
-            </Link>
-          </div>
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="font-libre text-xs text-zinc-400 hidden md:inline">{user.email}</span>
-          <form action={signOut}>
-            <button type="submit" className="font-libre text-xs text-zinc-400 hover:text-white transition-colors">
-              Salir
-            </button>
-          </form>
-        </div>
-      </nav>
+      <AdminNav email={user.email!} pendientes={pendientes ?? 0} signOut={signOut} />
       <main className="p-4 sm:p-6">{children}</main>
     </div>
   )
