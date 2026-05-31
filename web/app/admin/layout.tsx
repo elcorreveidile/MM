@@ -60,6 +60,9 @@ export default async function AdminLayout({ children }: { children: React.ReactN
             <Link href="/admin/propuestas-socios" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
               Propuestas
             </Link>
+            <Link href="/admin/votaciones" className="font-libre text-xs text-zinc-300 hover:text-white transition-colors hidden sm:inline">
+              Votaciones
+            </Link>
           </div>
         </div>
         <div className="flex items-center gap-3">
