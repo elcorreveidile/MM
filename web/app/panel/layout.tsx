@@ -92,6 +92,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
           <Link href="/panel/calendario" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Calendario</Link>
           <Link href="/panel/propuestas" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Propuestas</Link>
           <Link href="/panel/votaciones" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Votaciones</Link>
+          <Link href="/panel/consejo" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Consejo</Link>
         </div>
       )}
 

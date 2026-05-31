@@ -205,3 +205,18 @@ export async function toggleDestacado(id: number, destacado: boolean) {
   revalidatePath('/admin/socios')
   revalidatePath('/memorias')
 }
+
+export async function ciclarRolConsejo(id: number, consejo_actual: boolean, rol_actual: string | null) {
+  const supabase = await createClient()
+  let update: Record<string, unknown>
+  if (!consejo_actual) {
+    update = { consejo_redaccion: true, rol_consejo: 'vocal' }
+  } else if (rol_actual === 'vocal') {
+    update = { rol_consejo: 'editor_principal' }
+  } else {
+    update = { consejo_redaccion: false, rol_consejo: null }
+  }
+  await supabase.from('socios').update(update).eq('id', id)
+  revalidatePath('/admin/socios')
+  revalidatePath('/panel/consejo')
+}
