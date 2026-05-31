@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { addSocio, updateSocio, deleteSocio, togglePublicarTestimonio, reenviarBienvenida } from './actions'
+import { addSocio, updateSocio, deleteSocio, togglePublicarTestimonio, toggleDestacado, reenviarBienvenida } from './actions'
 
 type Socio = {
   id: number
@@ -14,6 +14,7 @@ type Socio = {
   direccion: string | null
   ciudad: string | null
   publicar_testimonio: boolean
+  destacado: boolean
 }
 
 type ModalMode = 'add' | 'edit'
@@ -95,11 +96,12 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
       {/* Tabla */}
       <div className="bg-white">
         {/* Cabecera — solo desktop */}
-        <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto] gap-0 border-b border-zinc-200 px-4 py-2">
+        <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto_auto] gap-0 border-b border-zinc-200 px-4 py-2">
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Nombre</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Email</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400">Tipo</span>
           <span className="font-libre text-xs tracking-widest uppercase text-zinc-400 ml-4">Pub.</span>
+          <span className="font-libre text-xs tracking-widest uppercase text-zinc-400 ml-2">Dest.</span>
           <span></span>
           <span></span>
         </div>
@@ -129,6 +131,28 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
                 }`}
               >
                 {s.publicar_testimonio ? '✓' : '—'}
+              </button>
+            </form>
+          )
+
+          const destToggle = (
+            <form action={async () => {
+              if (!s.publicar_testimonio) return
+              await toggleDestacado(s.id, !s.destacado)
+            }}>
+              <button
+                type="submit"
+                title={!s.publicar_testimonio ? 'Solo se pueden destacar testimonios publicados' : (s.destacado ? 'Destacado' : 'No destacado')}
+                disabled={!s.publicar_testimonio}
+                className={`font-libre text-xs px-2 py-0.5 transition-colors ${
+                  !s.publicar_testimonio
+                    ? 'text-zinc-200 cursor-default'
+                    : s.destacado
+                    ? 'bg-[#F2BE2A] text-[#8B1A1A] hover:opacity-80'
+                    : 'border border-zinc-300 text-zinc-400 hover:border-zinc-500 hover:text-zinc-600'
+                }`}
+              >
+                ★
               </button>
             </form>
           )
@@ -164,16 +188,18 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
                 <div className="font-libre text-xs text-zinc-400 mb-3 truncate">{s.email}</div>
                 <div className="flex items-center gap-3">
                   {pubToggle}
+                  {destToggle}
                   {editBtn}
                   {deleteBtn}
                 </div>
               </div>
               {/* Desktop */}
-              <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto] gap-0 px-4 py-3 items-center">
+              <div className="hidden lg:grid lg:grid-cols-[1fr_1fr_auto_auto_auto_auto_auto] gap-0 px-4 py-3 items-center">
                 <span className="font-libre text-sm text-zinc-900">{s.nombre}</span>
                 <span className="font-libre text-sm text-zinc-500">{s.email}</span>
                 {tipoBadge}
                 <div className="ml-4">{pubToggle}</div>
+                <div className="ml-2">{destToggle}</div>
                 <div className="ml-4">{editBtn}</div>
                 <div className="ml-4">{deleteBtn}</div>
               </div>
