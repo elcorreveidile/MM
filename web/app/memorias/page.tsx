@@ -16,10 +16,11 @@ export default async function MemoriasPage() {
   )
   const { data: testimonios } = await supabase
     .from('socios')
-    .select('nombre, notas, ciudad, mostrar_nombre, foto_url')
+    .select('nombre, notas, ciudad, mostrar_nombre, foto_url, destacado')
     .eq('publicar_testimonio', true)
     .not('notas', 'is', null)
     .neq('notas', '')
+    .order('destacado', { ascending: false })
     .order('nombre', { ascending: true })
 
   return (
@@ -61,7 +62,7 @@ export default async function MemoriasPage() {
         ) : (
           <div className="space-y-8">
             {testimonios.map((t, i) => (
-              <blockquote key={i} className="bg-white p-8 border-l-4 border-[#E84878]">
+              <blockquote key={i} className={`bg-white p-8 border-l-4 ${t.destacado ? 'border-[#F2BE2A]' : 'border-[#E84878]'}`}>
                 <div className="flex gap-5 items-start">
                   {t.foto_url && (
                     <img

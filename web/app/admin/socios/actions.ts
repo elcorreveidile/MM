@@ -198,3 +198,10 @@ export async function togglePublicarTestimonio(id: number, publicar: boolean) {
   revalidatePath('/admin/socios')
   revalidatePath('/memorias')
 }
+
+export async function toggleDestacado(id: number, destacado: boolean) {
+  const supabase = await createClient()
+  await supabase.from('socios').update({ destacado }).eq('id', id)
+  revalidatePath('/admin/socios')
+  revalidatePath('/memorias')
+}
