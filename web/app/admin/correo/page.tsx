@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useTransition } from 'react'
-import { enviarCorreoMasivo, type EnvioResult } from './actions'
+import { enviarCorreoMasivo, enviarBienvenidaMasiva, type EnvioResult } from './actions'
 
 const AUDIENCIAS = [
   { value: 'todos', label: 'Todos (socios y amigos)' },
@@ -10,10 +10,27 @@ const AUDIENCIAS = [
   { value: 'individual', label: 'Persona específica' },
 ]
 
+const AUDIENCIAS_BIENVENIDA = [
+  { value: 'todos', label: 'Todos (socios y amigos)' },
+  { value: 'socios', label: 'Solo socios de Olvidos' },
+  { value: 'amigos', label: 'Solo amigos de Mariano' },
+]
+
 export default function CorreoPage() {
   const [audiencia, setAudiencia] = useState('todos')
   const [resultado, setResultado] = useState<EnvioResult | null>(null)
   const [isPending, startTransition] = useTransition()
+  const [audienciaBienvenida, setAudienciaBienvenida] = useState<'todos' | 'socios' | 'amigos'>('todos')
+  const [resultadoBienvenida, setResultadoBienvenida] = useState<EnvioResult | null>(null)
+  const [isPendingBienvenida, startTransitionBienvenida] = useTransition()
+
+  function handleBienvenida() {
+    if (!confirm(`¿Enviar el correo de bienvenida con enlace de acceso personalizado a ${audienciaBienvenida === 'todos' ? 'todos los contactos' : audienciaBienvenida === 'socios' ? 'todos los socios' : 'todos los amigos'}?`)) return
+    startTransitionBienvenida(async () => {
+      const res = await enviarBienvenidaMasiva(audienciaBienvenida)
+      setResultadoBienvenida(res)
+    })
+  }
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -116,6 +133,51 @@ export default function CorreoPage() {
           {isPending ? 'Enviando...' : 'Enviar correo'}
         </button>
       </form>
+
+      {/* Correo de bienvenida */}
+      <div className="mt-10">
+        <h2 className="font-crimson font-bold text-zinc-900 text-xl mb-1">Correo de bienvenida</h2>
+        <p className="font-libre text-zinc-500 text-sm mb-4">
+          Envía el correo de bienvenida con el enlace de acceso personalizado a cada destinatario. Útil para nuevos miembros o para reenviar accesos.
+        </p>
+
+        {resultadoBienvenida && (
+          <div className={`mb-4 p-4 border font-libre text-sm ${resultadoBienvenida.error ? 'border-red-300 bg-red-50 text-red-700' : 'border-green-300 bg-green-50 text-green-700'}`}>
+            {resultadoBienvenida.error
+              ? `Error: ${resultadoBienvenida.error}`
+              : `✓ Enviados: ${resultadoBienvenida.enviados}${resultadoBienvenida.errores > 0 ? ` · Errores: ${resultadoBienvenida.errores}` : ''}`
+            }
+          </div>
+        )}
+
+        <div className="bg-white border border-zinc-200 p-6 space-y-4">
+          <div>
+            <label className="font-libre text-xs tracking-widest uppercase text-zinc-500 block mb-2">
+              Destinatarios
+            </label>
+            <select
+              value={audienciaBienvenida}
+              onChange={e => { setAudienciaBienvenida(e.target.value as typeof audienciaBienvenida); setResultadoBienvenida(null) }}
+              className="w-full border border-zinc-300 font-libre text-sm px-3 py-2 focus:outline-none focus:border-zinc-900 bg-white"
+            >
+              {AUDIENCIAS_BIENVENIDA.map(a => (
+                <option key={a.value} value={a.value}>{a.label}</option>
+              ))}
+            </select>
+          </div>
+          <p className="font-libre text-xs text-zinc-400">
+            Cada destinatario recibirá su propio enlace mágico de acceso único. El proceso puede tardar unos segundos según el número de contactos.
+          </p>
+          <button
+            type="button"
+            onClick={handleBienvenida}
+            disabled={isPendingBienvenida}
+            className="w-full bg-[#E84878] text-white font-libre text-xs tracking-widest uppercase py-3 hover:bg-[#d03868] transition-colors disabled:opacity-50"
+          >
+            {isPendingBienvenida ? 'Enviando bienvenidas...' : 'Enviar correo de bienvenida'}
+          </button>
+        </div>
+      </div>
     </div>
   )
 }

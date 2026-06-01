@@ -319,15 +319,17 @@ export default function SociosTable({ socios }: { socios: Socio[] }) {
 
             {modalMode === 'edit' && editingSocio && (
               <div className="border-t border-zinc-100 pt-4">
-                <form action={async () => {
-                  if (!confirm(`¿Reenviar email de bienvenida a ${editingSocio.nombre}?`)) return
-                  startTransition(async () => { await reenviarBienvenida(editingSocio.id) })
-                }}>
-                  <button type="submit" disabled={isPending}
-                    className="font-libre text-xs text-zinc-400 hover:text-zinc-700 transition-colors disabled:opacity-50">
-                    Reenviar email de bienvenida →
-                  </button>
-                </form>
+                <button
+                  type="button"
+                  disabled={isPending}
+                  onClick={() => {
+                    if (!confirm(`¿Reenviar email de bienvenida a ${editingSocio.nombre}?`)) return
+                    startTransition(async () => { await reenviarBienvenida(editingSocio.id) })
+                  }}
+                  className="font-libre text-xs text-zinc-400 hover:text-zinc-700 transition-colors disabled:opacity-50"
+                >
+                  Reenviar email de bienvenida →
+                </button>
               </div>
             )}
           </form>

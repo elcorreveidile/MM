@@ -9,17 +9,17 @@ export default async function PanelLayout({ children }: { children: React.ReactN
 
   if (!user) return children // middleware redirige al login
 
-  // Los admins tienen su propio panel
-  if (ALLOWED_ADMINS.includes(user.email ?? '')) {
-    redirect('/admin')
-  }
-
   // Verificar que el usuario está en la tabla socios
   const { data: socio } = await supabase
     .from('socios')
     .select('nombre, tipo')
     .eq('email', user.email!)
     .single()
+
+  // Los admins que no están en socios van al panel de admin
+  if (!socio && ALLOWED_ADMINS.includes(user.email ?? '')) {
+    redirect('/admin')
+  }
 
   if (!socio) {
     async function signOutAndGoHome() {
