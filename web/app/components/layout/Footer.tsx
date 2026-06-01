@@ -53,6 +53,13 @@ export default function Footer() {
           <p className="text-sm text-zinc-500">
             © 2026 Asociación Cultural Olvidos de Granada
           </p>
+          <p className="text-sm text-zinc-500">
+  Diseño y desarrollo web:{' '}
+  <a href="<https://www.por2duros.com>" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+    Por 2 duros
+  </a>
+</p>
+
           <div className="flex space-x-6">
             <Link href="/creditos" className="text-sm text-zinc-500 hover:text-white transition-colors">
               Créditos
