@@ -9,17 +9,17 @@ export default async function PanelLayout({ children }: { children: React.ReactN
 
   if (!user) return children // middleware redirige al login
 
-  // Los admins tienen su propio panel
-  if (ALLOWED_ADMINS.includes(user.email ?? '')) {
-    redirect('/admin')
-  }
-
   // Verificar que el usuario está en la tabla socios
   const { data: socio } = await supabase
     .from('socios')
     .select('nombre, tipo')
     .eq('email', user.email!)
     .single()
+
+  // Los admins que no están en socios van al panel de admin
+  if (!socio && ALLOWED_ADMINS.includes(user.email ?? '')) {
+    redirect('/admin')
+  }
 
   if (!socio) {
     async function signOutAndGoHome() {
@@ -94,7 +94,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
             <Link href="/panel/calendario" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Calendario</Link>
             <Link href="/panel/propuestas" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Propuestas</Link>
             <Link href="/panel/votaciones" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Votaciones</Link>
-            <Link href="/panel/consejo" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Consejo</Link>
+            <Link href="/panel/consejo" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Equipo</Link>
           </>
         )}
       </div>

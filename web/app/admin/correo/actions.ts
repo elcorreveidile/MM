@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient as createAdminClient } from '@supabase/supabase-js'
+import { enviarBienvenidaConAcceso } from '../socios/actions'
 
 export type EnvioResult = {
   enviados: number
@@ -87,5 +88,31 @@ export async function enviarCorreoMasivo(formData: FormData): Promise<EnvioResul
     }
   }
 
+  return { enviados, errores }
+}
+
+export async function enviarBienvenidaMasiva(audiencia: 'todos' | 'socios' | 'amigos'): Promise<EnvioResult> {
+  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+  const resendKey = process.env.RESEND_API_KEY
+  if (!serviceKey || !resendKey) return { enviados: 0, errores: 0, error: 'Faltan variables de entorno.' }
+
+  const admin = createAdminClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, serviceKey)
+  let query = admin.from('socios').select('nombre, email, tipo, genero')
+  if (audiencia === 'socios') query = query.eq('tipo', 'socio')
+  if (audiencia === 'amigos') query = query.eq('tipo', 'amigo')
+
+  const { data: socios, error: dbError } = await query
+  if (dbError) return { enviados: 0, errores: 0, error: dbError.message }
+  if (!socios?.length) return { enviados: 0, errores: 0, error: 'No hay destinatarios.' }
+
+  let enviados = 0, errores = 0
+  for (const s of socios) {
+    try {
+      await enviarBienvenidaConAcceso(s.nombre, s.email, s.tipo, s.genero)
+      enviados++
+    } catch {
+      errores++
+    }
+  }
   return { enviados, errores }
 }

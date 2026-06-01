@@ -60,7 +60,7 @@ export default async function ConsejoPanelPage() {
     <div className="space-y-10">
       <div>
         <p className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Área de socios</p>
-        <h1 className="font-crimson font-bold text-zinc-900 text-2xl">Consejo de Redacción</h1>
+        <h1 className="font-crimson font-bold text-zinc-900 text-2xl">Equipo de Olvidos</h1>
       </div>
 
       {/* Miembros — visible para todos los socios */}
@@ -70,10 +70,7 @@ export default async function ConsejoPanelPage() {
           {editorPrincipal && (
             <div className="px-5 py-4 flex items-center gap-3">
               <div className="w-2 h-2 rounded-full bg-[#F2BE2A] shrink-0" />
-              <div>
-                <p className="font-libre text-sm text-zinc-900 font-medium">{editorPrincipal.nombre}</p>
-                <p className="font-libre text-xs text-[#8B1A1A]">Editor principal</p>
-              </div>
+              <p className="font-libre text-sm text-zinc-900">{editorPrincipal.nombre}</p>
             </div>
           )}
           {vocales.map(m => (

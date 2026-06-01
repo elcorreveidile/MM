@@ -10,7 +10,7 @@ function generar(genero: string | null, m: string, f: string, neutro: string) {
   return neutro
 }
 
-async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: string, genero: string | null) {
+export async function enviarBienvenidaConAcceso(nombre: string, email: string, tipo: string, genero: string | null) {
   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
   const resendKey = process.env.RESEND_API_KEY
   if (!serviceKey || !resendKey) return
