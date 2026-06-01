@@ -85,16 +85,19 @@ export default async function PanelLayout({ children }: { children: React.ReactN
         </div>
       </nav>
 
-      {esSocio && (
-        <div className="bg-white border-b border-zinc-100 px-6 py-2 flex gap-5 overflow-x-auto">
-          <Link href="/panel" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Mi ficha</Link>
-          <Link href="/panel/avisos" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Tablón</Link>
-          <Link href="/panel/calendario" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Calendario</Link>
-          <Link href="/panel/propuestas" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Propuestas</Link>
-          <Link href="/panel/votaciones" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Votaciones</Link>
-          <Link href="/panel/consejo" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Consejo</Link>
-        </div>
-      )}
+      <div className="bg-white border-b border-zinc-100 px-6 py-2 flex gap-5 overflow-x-auto">
+        <Link href="/panel" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Mi ficha</Link>
+        <Link href="/panel/frase" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">La presente</Link>
+        {esSocio && (
+          <>
+            <Link href="/panel/avisos" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Tablón</Link>
+            <Link href="/panel/calendario" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Calendario</Link>
+            <Link href="/panel/propuestas" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Propuestas</Link>
+            <Link href="/panel/votaciones" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Votaciones</Link>
+            <Link href="/panel/consejo" className="font-libre text-xs text-zinc-500 hover:text-zinc-900 transition-colors whitespace-nowrap">Consejo</Link>
+          </>
+        )}
+      </div>
 
       <main className="max-w-2xl mx-auto px-4 py-10">{children}</main>
     </div>

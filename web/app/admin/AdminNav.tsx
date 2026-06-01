@@ -14,6 +14,7 @@ const LINKS = [
   { href: '/admin/calendario', label: 'Calendario' },
   { href: '/admin/propuestas-socios', label: 'Propuestas' },
   { href: '/admin/votaciones', label: 'Votaciones' },
+  { href: '/admin/frase', label: 'La presente' },
 ]
 
 export default function AdminNav({

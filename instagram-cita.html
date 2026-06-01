@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Carrusel — Mariano Maresca</title>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Libre+Franklin:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #1a1a1a;
+    font-family: 'Crimson Text', Georgia, serif;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .label {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #555;
+    align-self: flex-start;
+    max-width: 540px;
+    width: 100%;
+  }
+  .slide {
+    width: 540px;
+    height: 540px;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  /* —— DIAPOSITIVA 1: "Sabrás" —— */
+  .s1 .word {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-size: 52px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #e8e0d4;
+  }
+  .s1 .cursor {
+    display: inline-block;
+    width: 3px;
+    height: 52px;
+    background: #E84878;
+    margin-left: 4px;
+    vertical-align: middle;
+    animation: blink 1s step-end infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+  /* —— DIAPOSITIVA 2: "por" —— */
+  .s2 {
+    background: #E84878;
+  }
+  .s2 .word {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    font-size: 220px;
+    line-height: 1;
+    color: #0a0a0a;
+    letter-spacing: -0.04em;
+  }
+
+  /* —— DIAPOSITIVA 3: "la presente" —— */
+  .s3 .inner {
+    text-align: center;
+  }
+  .s3 .art {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 24px;
+  }
+  .s3 .word {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 96px;
+    line-height: 1.05;
+    color: #e8e0d4;
+    letter-spacing: -0.01em;
+  }
+
+  /* —— DIAPOSITIVA 4: "que empeoré" —— */
+  .s4 {
+    background: #0a0a0a;
+  }
+  .s4 .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 56px;
+    gap: 0;
+  }
+  .s4 .que {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 8px;
+  }
+  .s4 .emp {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    font-size: 108px;
+    line-height: 0.92;
+    color: #e8e0d4;
+    letter-spacing: -0.02em;
+  }
+
+  /* —— DIAPOSITIVA 5: "de vida" + atribución —— */
+  .s5 .inner {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .s5 .word {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    font-size: 80px;
+    line-height: 1.1;
+    color: #e8e0d4;
+  }
+  .s5 .line {
+    width: 40px;
+    height: 1px;
+    background: #E84878;
+  }
+  .s5 .autor {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #666;
+  }
+  .s5 .sub {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: -20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="label">1 / 5</div>
+<div class="slide s1">
+  <div>
+    <span class="word">Sabrás</span><span class="cursor"></span>
+  </div>
+</div>
+
+<div class="label">2 / 5</div>
+<div class="slide s2">
+  <span class="word">por</span>
+</div>
+
+<div class="label">3 / 5</div>
+<div class="slide s3">
+  <div class="inner">
+    <p class="art">la</p>
+    <p class="word">presente</p>
+  </div>
+</div>
+
+<div class="label">4 / 5</div>
+<div class="slide s4">
+  <div class="inner">
+    <span class="que">que</span>
+    <span class="emp">empeoré</span>
+  </div>
+</div>
+
+<div class="label">5 / 5</div>
+<div class="slide s5">
+  <div class="inner">
+    <p class="word">de vida.</p>
+    <div class="line"></div>
+    <p class="autor">Mariano Maresca</p>
+    <p class="sub">marianomaresca.com</p>
+  </div>
+</div>
+
+</body>
+</html>

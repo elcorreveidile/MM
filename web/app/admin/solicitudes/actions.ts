@@ -57,6 +57,12 @@ export async function rechazarSolicitud(id: number) {
   return { error: null }
 }
 
+export async function eliminarSolicitud(id: number) {
+  const supabase = await createClient()
+  await supabase.from('solicitudes_memorias').delete().eq('id', id)
+  revalidatePath('/admin/solicitudes')
+}
+
 async function enviarBienvenida(nombre: string, email: string) {
   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
   const resendKey = process.env.RESEND_API_KEY
