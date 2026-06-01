@@ -58,8 +58,8 @@ export default function CreditosPage() {
               <div>
                 <dt className="font-libre text-xs tracking-widest uppercase text-[#E84878] mb-1">Diseño y desarrollo web</dt>
                 <dd className="font-libre text-zinc-700">
-                  <a href="https://www.espanias.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">
-                    espanias.com
+                  <a href="https://www.por2duros.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#E84878] transition-colors underline">
+                    por2duros.com
                   </a>
                 </dd>
               </div>
