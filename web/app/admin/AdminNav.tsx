@@ -15,6 +15,7 @@ const LINKS = [
   { href: '/admin/propuestas-socios', label: 'Propuestas' },
   { href: '/admin/votaciones', label: 'Votaciones' },
   { href: '/admin/frase', label: 'La presente' },
+  { href: '/admin/testimonios', label: 'Testimonios' },
 ]
 
 export default function AdminNav({
