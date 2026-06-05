@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
+  <defs>
+    <linearGradient id="n1bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E63535;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C42B2B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="460" height="460" fill="url(#n1bg)" />
+
+  <!-- Subtle geometric accents -->
+  <polygon points="380,0 460,0 460,80" fill="#000000" opacity="0.06" />
+  <polygon points="0,380 0,460 80,460" fill="#000000" opacity="0.06" />
+
+  <!-- Top: brush stroke with name -->
+  <rect x="35" y="40" width="390" height="48" rx="5" fill="#1A1A1A" transform="rotate(-1.5 230 64)" />
+  <text x="230" y="73" text-anchor="middle"
+    font-family="'Georgia', serif"
+    font-style="italic" font-weight="700" font-size="31" fill="#FFFFFF">
+    El correveidile
+  </text>
+
+  <!-- 5 icon circles representing the 5 pillars -->
+  <!-- Row of 5 small iconic badges -->
+
+  <!-- 1. ELE / Language - speech bubble -->
+  <g transform="translate(68, 115)">
+    <circle cx="0" cy="0" r="22" fill="#FFFFFF" opacity="0.15" />
+    <text x="0" y="1" text-anchor="middle" dominant-baseline="central"
+      font-family="'Georgia', serif" font-size="16" fill="#FFFFFF" opacity="0.9">Ñ</text>
+  </g>
+
+  <!-- 2. AI / Tech - circuit/brain -->
+  <g transform="translate(149, 115)">
+    <circle cx="0" cy="0" r="22" fill="#FFFFFF" opacity="0.15" />
+    <text x="0" y="2" text-anchor="middle" dominant-baseline="central"
+      font-family="'Courier New', monospace" font-weight="700" font-size="14" fill="#FFFFFF" opacity="0.9">IA</text>
+  </g>
+
+  <!-- 3. Poetry / Literature - quill -->
+  <g transform="translate(230, 115)">
+    <circle cx="0" cy="0" r="22" fill="#FFFFFF" opacity="0.15" />
+    <text x="0" y="2" text-anchor="middle" dominant-baseline="central"
+      font-family="'Georgia', serif" font-style="italic" font-size="20" fill="#FFFFFF" opacity="0.9">&#x270E;</text>
+  </g>
+
+  <!-- 4. Culture / Granada - arch -->
+  <g transform="translate(311, 115)">
+    <circle cx="0" cy="0" r="22" fill="#FFFFFF" opacity="0.15" />
+    <path d="M-10,8 L-10,-2 Q0,-14 10,-2 L10,8" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.9" />
+  </g>
+
+  <!-- 5. Digital / Code -->
+  <g transform="translate(392, 115)">
+    <circle cx="0" cy="0" r="22" fill="#FFFFFF" opacity="0.15" />
+    <text x="0" y="2" text-anchor="middle" dominant-baseline="central"
+      font-family="'Courier New', monospace" font-weight="700" font-size="16" fill="#FFFFFF" opacity="0.9">&lt;/&gt;</text>
+  </g>
+
+  <!-- Central CVD monogram - larger, more prominent -->
+  <circle cx="230" cy="258" r="82" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.8" />
+  <circle cx="230" cy="258" r="72" fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.3" />
+  <circle cx="230" cy="258" r="68" fill="#FFFFFF" opacity="0.08" />
+
+  <text x="230" y="272" text-anchor="middle"
+    font-family="'Helvetica Neue', 'Arial', sans-serif"
+    font-weight="900" font-size="56" fill="#FFFFFF" letter-spacing="6">
+    CVD
+  </text>
+
+  <!-- Taglines reflecting all activities -->
+  <text x="230" y="370" text-anchor="middle"
+    font-family="'Helvetica Neue', 'Arial', sans-serif"
+    font-weight="700" font-size="18" fill="#FFFFFF" letter-spacing="4">
+    LENGUA · IA · POESÍA
+  </text>
+
+  <line x1="90" y1="388" x2="370" y2="388" stroke="#FFFFFF" stroke-width="0.8" opacity="0.25" />
+
+  <text x="230" y="412" text-anchor="middle"
+    font-family="'Georgia', serif"
+    font-style="italic" font-size="14" fill="#FFFFFF" opacity="0.6" letter-spacing="1">
+    cultura · educación · tecnología
+  </text>
+
+  <!-- Granada reference -->
+  <text x="230" y="442" text-anchor="middle"
+    font-family="'Helvetica Neue', sans-serif"
+    font-weight="300" font-size="11" fill="#FFFFFF" opacity="0.4" letter-spacing="3">
+    GRANADA
+  </text>
+
+  <!-- Sparkles -->
+  <g fill="#FFFFFF" opacity="0.6">
+    <polygon points="42,30 45,20 48,30 58,33 48,36 45,46 42,36 32,33" />
+    <polygon points="415,35 417,28 419,35 426,37 419,39 417,46 415,39 408,37" />
+  </g>
+
+  <!-- Heart -->
+  <g fill="#FFFFFF" opacity="0.4" transform="translate(42, 430) scale(0.7)">
+    <path d="M10,6 C10,2 6,0 3,3 C0,0 -4,2 -4,6 C-4,10 3,14 3,14 C3,14 10,10 10,6 Z" />
+  </g>
+</svg>
