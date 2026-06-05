@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
+  <defs>
+    <linearGradient id="redBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E63232;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C82828;stop-opacity:1" />
+    </linearGradient>
+    <clipPath id="roundClip">
+      <circle cx="230" cy="230" r="230" />
+    </clipPath>
+  </defs>
+
+  <!-- Round red background -->
+  <circle cx="230" cy="230" r="230" fill="url(#redBg)" />
+
+  <!-- Decorative brush stroke behind name -->
+  <rect x="40" y="95" width="380" height="56" rx="6" fill="#1A1A1A" transform="rotate(-2 230 123)" />
+
+  <!-- El correveidile - script style -->
+  <text x="230" y="133" text-anchor="middle"
+    font-family="'Georgia', 'Crimson Text', serif"
+    font-style="italic" font-weight="700" font-size="34" fill="#FFFFFF" letter-spacing="1">
+    El correveidile
+  </text>
+
+  <!-- CVD monogram in center -->
+  <circle cx="230" cy="230" r="68" fill="none" stroke="#FFFFFF" stroke-width="2.5" opacity="0.9" />
+  <circle cx="230" cy="230" r="58" fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.4" />
+
+  <text x="230" y="243" text-anchor="middle"
+    font-family="'Helvetica Neue', 'Arial', sans-serif"
+    font-weight="800" font-size="48" fill="#FFFFFF" letter-spacing="6">
+    CVD
+  </text>
+
+  <!-- Tagline below -->
+  <text x="230" y="340" text-anchor="middle"
+    font-family="'Helvetica Neue', 'Arial', sans-serif"
+    font-weight="300" font-size="18" fill="#FFFFFF" letter-spacing="4" opacity="0.85">
+    VISITAS LINGÜÍSTICAS
+  </text>
+
+  <!-- Subtle bottom line -->
+  <line x1="100" y1="360" x2="360" y2="360" stroke="#FFFFFF" stroke-width="1" opacity="0.3" />
+
+  <!-- Small details: clases, literatura, cocina -->
+  <text x="230" y="385" text-anchor="middle"
+    font-family="'Georgia', serif"
+    font-style="italic" font-size="14" fill="#FFFFFF" opacity="0.6" letter-spacing="1">
+    clases · visitas · literatura · cocina
+  </text>
+
+  <!-- Decorative sparkles -->
+  <g fill="#FFFFFF" opacity="0.7">
+    <!-- Top left sparkle -->
+    <polygon points="75,60 78,50 81,60 91,63 81,66 78,76 75,66 65,63" />
+    <!-- Top right sparkle -->
+    <polygon points="370,45 373,35 376,45 386,48 376,51 373,61 370,51 360,48" />
+    <!-- Bottom left sparkle -->
+    <polygon points="90,400 92,393 94,400 101,402 94,404 92,411 90,404 83,402" />
+    <!-- Bottom right sparkle -->
+    <polygon points="365,390 367,383 369,390 376,392 369,394 367,401 365,394 358,392" />
+  </g>
+
+  <!-- Small heart decorations -->
+  <g fill="#FFFFFF" opacity="0.5" transform="translate(55, 180)">
+    <path d="M10,6 C10,2 6,0 3,3 C0,0 -4,2 -4,6 C-4,10 3,14 3,14 C3,14 10,10 10,6 Z" transform="scale(0.8)" />
+  </g>
+  <g fill="#FFFFFF" opacity="0.5" transform="translate(400, 290)">
+    <path d="M10,6 C10,2 6,0 3,3 C0,0 -4,2 -4,6 C-4,10 3,14 3,14 C3,14 10,10 10,6 Z" transform="scale(0.7)" />
+  </g>
+</svg>

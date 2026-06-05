@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460">
+  <defs>
+    <linearGradient id="redBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E63535;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC2B2B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="460" height="460" fill="url(#redBg3)" />
+
+  <!-- Geometric accent: diagonal stripe -->
+  <polygon points="360,0 460,0 460,100" fill="#000000" opacity="0.08" />
+  <polygon points="0,360 0,460 100,460" fill="#000000" opacity="0.08" />
+
+  <!-- Top: brush stroke with name -->
+  <rect x="30" y="45" width="400" height="50" rx="5" fill="#1A1A1A" transform="rotate(-2 230 70)" />
+  <text x="230" y="80" text-anchor="middle"
+    font-family="'Georgia', serif"
+    font-style="italic" font-weight="700" font-size="33" fill="#FFFFFF">
+    El correveidile
+  </text>
+
+  <!-- Polaroid-style frame (nod to the original) -->
+  <g transform="translate(130, 130) rotate(3)">
+    <rect x="0" y="0" width="200" height="220" rx="2" fill="#FFFFFF" opacity="0.95" />
+    <rect x="12" y="12" width="176" height="150" rx="1" fill="#2A2A3A" />
+
+    <!-- Stylized Alhambra silhouette inside polaroid -->
+    <g transform="translate(12, 62)">
+      <!-- Night sky -->
+      <rect x="0" y="0" width="176" height="100" fill="#1A1535" />
+      <!-- Stars -->
+      <circle cx="30" cy="20" r="1.5" fill="#FFFFFF" opacity="0.8" />
+      <circle cx="80" cy="12" r="1" fill="#FFFFFF" opacity="0.6" />
+      <circle cx="140" cy="25" r="1.5" fill="#FFFFFF" opacity="0.7" />
+      <circle cx="110" cy="8" r="1" fill="#FFFFFF" opacity="0.5" />
+      <circle cx="55" cy="35" r="0.8" fill="#FFFFFF" opacity="0.4" />
+      <!-- Moon glow -->
+      <circle cx="150" cy="20" r="8" fill="#F2BE2A" opacity="0.3" />
+      <circle cx="150" cy="20" r="4" fill="#F2BE2A" opacity="0.7" />
+      <!-- Alhambra silhouette -->
+      <path d="M0,100 L0,70 L15,70 L15,60 L20,55 L25,60 L25,70 L40,70 L40,50 L45,45 L50,50 L50,65 L55,65 L55,55 L65,45 L75,55 L75,65 L85,65 L85,45 L90,40 L95,45 L95,55 L100,55 L100,50 L110,42 L120,50 L120,60 L130,60 L130,50 L140,42 L150,50 L150,65 L160,65 L160,55 L170,50 L176,55 L176,100 Z" fill="#2A1A35" />
+      <!-- Alhambra towers detail -->
+      <rect x="42" y="48" width="6" height="4" rx="3" fill="#3A2A45" />
+      <rect x="87" y="38" width="6" height="4" rx="3" fill="#3A2A45" />
+      <rect x="112" y="40" width="6" height="4" rx="3" fill="#3A2A45" />
+      <!-- Warm lights -->
+      <rect x="45" y="70" width="3" height="3" fill="#F2BE2A" opacity="0.6" rx="0.5" />
+      <rect x="90" y="60" width="3" height="3" fill="#F2BE2A" opacity="0.5" rx="0.5" />
+      <rect x="115" y="62" width="3" height="3" fill="#F2BE2A" opacity="0.5" rx="0.5" />
+      <rect x="145" y="68" width="3" height="3" fill="#F2BE2A" opacity="0.4" rx="0.5" />
+    </g>
+
+    <!-- Polaroid text area -->
+    <text x="100" y="185" text-anchor="middle"
+      font-family="'Georgia', serif"
+      font-style="italic" font-size="14" fill="#333333">
+      Granada
+    </text>
+  </g>
+
+  <!-- CVD badge bottom right -->
+  <circle cx="355" cy="345" r="42" fill="#FFFFFF" opacity="0.15" />
+  <circle cx="355" cy="345" r="35" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7" />
+  <text x="355" y="352" text-anchor="middle"
+    font-family="'Helvetica Neue', sans-serif"
+    font-weight="800" font-size="26" fill="#FFFFFF" letter-spacing="3">
+    CVD
+  </text>
+
+  <!-- Bottom: Visitas linguisticas -->
+  <text x="230" y="410" text-anchor="middle"
+    font-family="'Helvetica Neue', 'Arial', sans-serif"
+    font-weight="700" font-size="26" fill="#FFFFFF" letter-spacing="2">
+    VISITAS LINGÜÍSTICAS
+  </text>
+
+  <!-- Subtle bottom tagline -->
+  <text x="230" y="440" text-anchor="middle"
+    font-family="'Georgia', serif"
+    font-style="italic" font-size="13" fill="#FFFFFF" opacity="0.55">
+    clases · visitas · literatura · cocina
+  </text>
+
+  <!-- Sparkles -->
+  <g fill="#FFFFFF" opacity="0.65">
+    <polygon points="400,60 403,50 406,60 416,63 406,66 403,76 400,66 390,63" />
+    <polygon points="55,280 57,273 59,280 66,282 59,284 57,291 55,284 48,282" transform="scale(0.7)" />
+  </g>
+
+  <!-- Heart -->
+  <g fill="#FFFFFF" opacity="0.4" transform="translate(60, 380) scale(0.8)">
+    <path d="M10,6 C10,2 6,0 3,3 C0,0 -4,2 -4,6 C-4,10 3,14 3,14 C3,14 10,10 10,6 Z" />
+  </g>
+</svg>

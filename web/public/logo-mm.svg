@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F2BE2A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4A520;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B1010;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background square with subtle rounded corners -->
+  <rect x="0" y="0" width="512" height="512" rx="48" ry="48" fill="url(#bgGrad)" />
+
+  <!-- Thin decorative border inset -->
+  <rect x="20" y="20" width="472" height="472" rx="32" ry="32" fill="none" stroke="#8B1A1A" stroke-width="1.5" opacity="0.3" />
+
+  <!-- MM monogram - elegant serif style -->
+  <text x="256" y="295" text-anchor="middle" dominant-baseline="central"
+    font-family="'Crimson Text', 'Georgia', 'Times New Roman', serif"
+    font-weight="700" font-size="220" fill="url(#textGrad)" letter-spacing="-8">
+    MM
+  </text>
+
+  <!-- Decorative line above -->
+  <line x1="120" y1="140" x2="392" y2="140" stroke="#8B1A1A" stroke-width="2" opacity="0.5" />
+
+  <!-- Subtitle text -->
+  <text x="256" y="400" text-anchor="middle"
+    font-family="'Libre Franklin', 'Helvetica Neue', sans-serif"
+    font-weight="300" font-size="28" fill="#8B1A1A" letter-spacing="8" opacity="0.7">
+    MEMORIA VIVA
+  </text>
+
+  <!-- Decorative line below -->
+  <line x1="120" y1="430" x2="392" y2="430" stroke="#8B1A1A" stroke-width="2" opacity="0.5" />
+</svg>
